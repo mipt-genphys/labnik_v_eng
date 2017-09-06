@@ -1,0 +1,71 @@
+%translator Mironchuk, date 29.11.12
+
+\let\oldTheEquation=\theEquation
+\def\theEquation{\arabic{Equation}}
+\let\oldTheFigure=\theFigure
+\def\theFigure{\arabic{Figure}}
+
+\setcounter{Equation}{0}
+\setcounter{Figure}{0}
+
+\Work
+{C}
+{Franck--Hertz experiment}
+{The energy of the first excited level of helium atom is measured in both dynamic and static modes by means of electron excitation.}
+
+A simple method to verify the existence of discrete energy states in atoms is provided by the famous Franck--Hertz experiment. The setup is shown in~\refFigure{2_1_1}.
+
+A three-electrode vacuum tube is filled with a monatomic gas (in our case, it is helium) at low pressure. Electrons emitted by the heated cathode are accelerated by a constant electric field between the cathode and a grid anode of the tube. On the way to the anode electrons collide with atoms of  helium. If the energy of approaching electron is not enough to excite (or ionize) atom, the collision is elastic. In this case the electron energy is almost conserved since its mass is thousands times less than the mass of atom.
+
+As the accelerating voltage between anode and cathode increases, the energy gained by an electron grows as well and finally reaches the value large enough to excite atom.
+
+\fFigure {Setup of the Franck--Hertz experiment}2_1_1 {5.96cm}{4.04cm}{PIC/l02_1_01.eps}
+
+When such (inelastic) collision occurs, the kinetic energy of incident electron is transferred to one of atomic electrons thereby causing its transition to a free energy level (excitation) or separation from the atom (ionization).
+
+A collector is the third electron of the tube. It has a slightly lower electric potential relative to the anode (retarding voltage). The collector current which is proportional to the number of electrons reaching it per second is measured by a microammeter.
+
+Initially the current grows as the anode potential increases, much like in a vacuum diode (\refFigure{2_1_2}). However, 
+
+\fFigure {Schematic dependence of collector current on anode voltage}2_1_2 {4.74cm}{3.62cm}{PIC/l02_1_02.eps} 
+
+when the electron energy becomes large enough to excite atom of helium the collector current drops abruptly. This happens because the electrons loose almost all their kinetic energy in inelastic collisions and can no longer overcome the retarding potential (about $1\;\V$) between anode and collector. As the anode voltage increases further, the collector current rises again since an electron on its way to the anode after the inelastic collision gains the energy required to reach the cathode.
+
+The second drop of the current occurs when electrons begin participating in two succeeding inelastic collisions with atoms: halfway to the anode and just in front of it. Therefore, the dependence of the collector current on the anode voltage exhibits a number of peaks and troughs separated by $\Delta V$ corresponding to the energy of the first excited state.
+
+In a more accurate experimental setting one can observe a fine structure of I-V curve slopes, i.e. the minima corresponding to excitation of higher energy levels and ionization of helium atom. This requires a tube of special design. Our setup does not allow one to see the fine structure.
+
+\vspace{6pt}
+\so{\textbf{Experimental setup}}
+
+\vspace{4pt}
+\refFigure{2_1_3} shows the scheme of the experimental setup. In our experiment the tube of ionization gauge ЛМ-$2$ \cFigure {Experimental setup}2_1_3 {7.86cm}{7.23cm}{PIC/l02_1_03.eps} 
+filled with helium at $\simeq1\;\tor$ is used. A tungsten cathode heated with alternating current serves as electron source. The heating voltage is supplied by a stabilized power source Б$7$-$4$. The heating current is measured by an ammeter~A. The source Б$7$-$4$ is connected to the circuit via a switch $K_1$.
+
+A double helix around the cathode serves as the anode. The collector is a hollow metal cylinder coaxial with the cathode and anode.
+
+The accelerating voltage on the anode is supplied by the rectifier Б$5$-$10$. The voltage is varied by means of a potentiometer $\mathit{\Pi}_3$ and measured by a voltmeter $V_1$. The battery КБСЛ ($4{,}5\;\V$), which serves as a source of retarding voltage, is connected to the circuit via a switch $\mathit{K}_2$. The voltage is varied by means of a potentiometer $\mathit{\Pi}_2$ and measured by a voltmeter $V_2$. The collector current is measured by a microammeter.
+
+The setup can be operated in a static or a dynamic mode selected with a switch $K_3$. Two parts of this double switch are shown separately in \refFigure{2_1_3}. In the dynamic mode the accelerating voltage is supplied by a step-down transformer $T$ ($220/50\;\V$) and the collector current is displayed by an oscilloscope connected to a load resistor $R$. The oscilloscope should be syncronized with $50\;\Hz$ of the mains.
+
+While determining the electron energy from the potential difference between anode and cathode one should take into account that the first maximum does not correspond to the energy of the first excited state because of the contact potential between the cathode and anode. However, the contact potential shifts all maxima and minima by the same amount, so the distance between them is not affected.
+
+\vspace{6pt}
+\so{\textbf{Task}}
+\vspace{4pt}
+
+\begin{Enumerate}{tab} \Item. Before turning the circuit on, make sure that the knobs of  potentiometers $\mathit{\Pi}_1$, $\mathit{\Pi}_2$, and $\mathit{\Pi}_3$ are at the leftmost position. Plug the power sources in the mains.
+
+\Item. Set the switch $K_3$ in the dynamic mode. Connect the resistor $R$ to the input channel of the oscilloscope. Adjust the frequency sweep to display half of the oscillation period with the frequency of $f=50\;\Hz$ on the oscilloscope screen. Turn the heater on by the switch $K_1$ and set the current to $\sim1\;\A$ using the potentiometer $\mathit{\Pi}_1$. Obtain the I-V curve $I\sub{c}=I\sub{c}(V_{\mathrm a})$ of the tube on the oscilloscope screen. Observe its behaviour at various voltages $V_2$ and heating currents $I$.
+
+\Item. Select the microammeter measurement range of $100\;\mkA$. Set the potential difference between cathode and anode to about $35\;\V$ using the potentiometer $\mathit{\Pi}_3$ and set the switch $K_3$ in the static mode. Adjust the heating current using the potentiometer $\mathit{\Pi}_1$, so that the microammeter pointer is deflected at $80$--$90\%$ of the scale. It is recommended to change the heating current slowly to keep the cathode operation at stationary regime. After setting the heating current reduce the accelerating voltage to zero.
+
+\Item. Connect the battery КБСЛ to the circuit using the switch $K_2$. Set the retarding voltage at $V_2=2\;\V$ by turning the knob $\mathit{\Pi}_2$. Gradually increase the accelerating electric field using the potentiometer $\mathit{\Pi}_3$ and observe the microammeter readings. Notice the voltage values at which the current drops to a minimum.
+
+\Item. Measure the dependence $I\sub{c}=I\sub{c}(V_1)$, $V_2=\mathrm{const}$ for several values of $V_2$ ($V_2=1\;\V;~1{,}5\;\V;~2\;\V;~2{,}5\;\V;~4\;\V$). The experimental points must be more frequent where the current drops.
+
+\Item. Plot the dependence $I\sub{c}=I\sub{c}(V_1)$ at $V_2=\mathrm{const}$. Determine the energy of the first excited state of helium using the plots. Estimate the error. \end{Enumerate} \pagebreak \begin{center}\so{\textsf{\small LITERATURE}}\end{center} {\small
+
+1. \textit{Гольдин\;Л.\;Л., Новикова\;Г.\;И.} Введение в атомную физику.\,---\,М.: Наука, $1988$, \textsection\,$14$.
+
+2. \textit{Белонучкин\;В.\;Е., Заикин\;Д.\;А., Ципенюк\;Ю.\;М.} Основы физики. Т.\;II.\,---\,М.: Физматлит, $2007$. Гл.\;$3$, $4$. }

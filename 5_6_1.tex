@@ -1,0 +1,243 @@
+%translator Savrov, date 05.01.13
+
+\let\oldTheEquation=\theEquation
+\def\theEquation{\arabic{Equation}}
+\let\oldTheFigure=\theFigure
+\def\theFigure{\arabic{Figure}}
+\setcounter{Equation}{0}
+\setcounter{Figure}{0}
+
+\Work
+{Resonant absorption of $\boldsymbol\gamma$-quanta \\ (the M\"{o}ssbauer effect)}
+{Resonant absorption of $\boldsymbol\gamma$-quanta \\ (the M\"{o}ssbauer effect)}
+{Resonant absorption of $\gamma$-quanta emitted by $^{119}\mathrm{Sn}$ nuclei of $\mathrm{BaSnO}_3$ compound at room temperature is studied by the method of Doppler shift of the M\"{o}ssbauer absorption line. A position of the resonant absorption maximum, its magnitude, and the experimental width $\Gamma_\textrm{exp}$ are determined. The half-life of the excited state of $^{119}\mathrm{Sn}$ nucleus is estimated.}
+
+Nucleons (neutrons and protons) in atomic nucleus, like electrons in atom, can occupy discrete energy states (energy levels). The lowest energy level is called the \textit{ground} state, other levels are called \textit{excited}. A nucleus in an excited state can jump to a lower state, in particular, to the ground state. Such transitions are spontaneous. The released energy is carried away by a photon \Footnotemark \Footnotetext{The energy of transition can be transfered not only to a photon but to an atomic electron as well. The energetic electron leaves the atom. Such electron is called the \textit{electron of internal conversion}.}. This is where $\gamma$-radiation comes from.
+
+Unlike the ground state, an excited nuclear level has a finite width. Let us plot the nucleus energy on abscissa 
+%
+\fFigure{Energy distribution which specifies excited nuclear state \textit{(a)}, and energy shift of absorption and emission curves of free nucleus due to recoil \textit{(b)}}6_1_1 {4.3cm}{4.2cm}{pic/L06_1_01.eps}
+%
+and the probability to find a nucleus in a state with a given energy on the ordinate (see~\refFigure{6_1_1}\textit{a}). The peak width measured at half of its maximum value is call the natural linewidth $\Gamma$. It is related to the mean lifetime $\tau$ of the excited state by the uncertainty relation:
+$$
+\Gamma\tau \Simeq \hbar,
+\eqMark{6_1_1}
+$$
+where $\hbar$~is Planck's constant. The uncertainty in the energy of an excited state is the width of $\gamma$-emission curve.
+
+Atomic nuclei can both emit and absorb photons. If a photon striking a nucleus has the energy equal to the energy difference between the ground state and one of the excited states, the nucleus can absorb the photon and jump to the corresponding excited state. This is possible only for $\gamma$-rays of certain energies and therefore the absorption is a resonant process. 
+
+It seems that the resonant $\gamma$-ray absorption must be quite common and easily observed phenomenon. One should only direct a beam of $\gamma$-rays emitted by a radionuclide to a target containing the same nuclei in the ground state. However, this is not so. The energy $E_{\gamma}$ of the $\gamma\text{-}$quantum is less than the energy $E_0$ of transition between the levels. A small although noticeable energy fraction is carried away by the nucleus itself due to its recoil in the direction opposite to the emitted $\gamma\text{-}$quantum.
+
+Let us do a simple estimate. A nucleus emitting a \mbox{$\gamma$-quantum} acquires the  momentum which absolute value is equal to that of the $\gamma\text{-}$quantum. If the nucleus is free and initially at rest, the recoil energy $R$ is
+$$
+R=\frac{p^2}{M_\textrm{n}}=\frac{E_{\gamma}^2}{2M_\textrm{n}c^2}.
+\eqMark{6_1_2}
+$$
+
+As an example consider a nucleus of tin $^{119}\mathrm{Sn}$, in which the ground state and the first excited state are separated by the energy gap $E_0=23{.}8\;\keV$. Then the energy of recoil is\Footnotemark\Footnotetext{The quantities $E_0$, $E_\gamma$, and $R$ are related by the law of conservation of energy: $E_0=E_\gamma+R$. Since $R\ll E_\gamma$, the energy $E_\gamma$ in Eq.~(\refEquation{6_1_2}) can be replaced by~$E_0$.}
+$$
+R=\frac{E_{\gamma}^2}{2M_\textrm{n}c^2}\Simeq\frac{E_0^2}{2M_\textrm{n}c^2}=2{,}5\cdot10^{-3}\;\eV.
+$$
+
+The energy taken away by a (recoiled) nucleus absorbing the \mbox{$\gamma$-quantum} is the same. The diagram in~\refFigure{6_1_1}\textit{b} illustrates the net result: the emission curve is shifted to the left from $E_0$ by $R$, and the absorption curve is shifted to the right by the same amount.
+
+It should be noted that the magnitude of $R$ by itself is not important for the resonant absorption of $\gamma$-rays. What is important is the relation between $R$ and the decay width $\Gamma$ of the corresponding resonance curve. A resonant absorption is possible providing the emission and absorption spectra overlap, i.e. if
+$$
+2R\leqslant\Gamma.
+\eqMark{6_1_3}
+$$
+
+This condition is almost never met for $\gamma$-transitions in free nuclei. For instance, the decay width of $^{119}\mathrm{Sn}$ is $\Gamma\Simeq 3\cdot 10^{-8}\;\eV$, i.e. it is many orders of magnitude less than $R$. \Footnotemark\Footnotetext{Notice that for optical transitions the relation between $R$ and $\Gamma$ is quite different. The transition energy is $4$ orders of magnitude less and therefore $R$ is $8$ orders of magnitude less than for $\gamma$-radiation, while the decay width is, roughly, of the same order of magnitude. In this case the resonant absorption is easily observed (R.\,Wood, $1904$).}. In principle, one can try to compensate the energy shift $2R$ by using the Doppler effect. In so doing, the relative velocity $V$ of the absorbing and emitting nuclei must be 
+$$
+V=c\cdot 2R/E_{\gamma}.
+\eqMark{6_1_4}
+$$
+
+The relative velocity for nuclei $^{119}\mathrm{Sn}$ must be $V\Simeq60\;\m/\s$.
+
+Actually the width of absorption (emission) curve is the sum of its decay width and Doppler width. The main contribution is due to the Doppler width arising because of thermal motion of atoms. Let us do some estimates. The Doppler shift $D$ of energy levels can be calculated according to non-relativistic formulae since the velocity $v$ of thermal motion is much less than the speed of light:
+$$
+D=\frac{v}{c}E_{\gamma} \Simeq\frac{v}{c}E_0.
+\eqMark{6_1_5}
+$$
+
+Let us estimate $v$. The mean kinetic energy per one degree of freedom (a motion toward the absorber or in the opposite direction) is ${\kb}T/2$. Therefore:
+$$
+\frac{M_\textrm{n}v^2}{2}=\frac{{\kb}T}{2},
+$$
+or
+$$
+v=\sqrt{{\kb}T/M_\textrm{n}}.
+\eqMark{6_1_6}
+$$
+Substituting this expression into Eq.~(\refEquation{6_1_5}) and taking into account Eq.~(\refEquation{6_1_2}) one finds
+$$
+D=\sqrt{2R{\kb}T}.
+$$
+A more accurate calculation yields:
+$$
+D=2\sqrt{R{\kb}T}.
+\eqMark{6_1_7}
+$$
+At room temperature ${\kb}T\Simeq 1/40\;\eV$, which for $^{119}\mathrm{Sn}$ gives:
+$$
+D=1{.}5\cdot 10^{-2}\;\eV.
+$$
+
+One can see that the Doppler width significantly exceeds the decay width and in some cases (e.g. for $^{119}\mathrm{Sn}$) it is greater than $R$. Because of Doppler widening the absorption and emission curves partially overlap, 
+%
+\fFigure{Overlap of absorption and emission curves because of Doppler effect}6_1_2 {4.9cm}{1.7cm}{pic/L06_1_02.eps}
+%
+as it is shown in~\refFigure{6_1_2}. This implies that there is a certain fraction of $\gamma\text{-}$quanta for which the recoil energy $R$ is compensated and the resonant absorption can be in principle observed, although the probability of this process is very small.
+
+This is how emission and absorption of $\gamma\text{-}$quanta in nuclear transitions take place providing one can neglect the binding energy, i.e. \textit{regard atomic nuclei as free}.
+
+Now let us discuss the emission and absorption of $\gamma\text{-}$quanta by nuclei bound in an atomic lattice. The most trivial is the case when the recoil energy significantly exceeds the binding energy of atom in a lattice. If this is so, the nucleus can be considered practically free and no new phenomena arise. The energy required to remove an atom from a lattice is rather large, it is $10\div30\;\eV$. Equation~(\refEquation{6_1_2}) shows that this can only happen for large energies of $\gamma\text{-}$quanta.
+
+The recoil energy corresponding to emission of $\gamma\text{-}$quantum with the energy less than ${E<1}\;\MeV$ is not large enough to release a nucleus from the lattice, and the recoil momentum is eventually transferred to the lattice in some form. Often the recoil energy is converted into sound waves propagating in the lattice. This conversion is evident both from classical and quantum perspective. The recoiled nucleus is displaced from its initial position although it remains bound to the lattice site. The recoil momentum is transferred to the neighboring nuclei which transfer it to their neighbors etc., in other words the sound wave is excited. Using the language of quantum theory one says that the energy of recoil is transferred to quanta of sonic vibrations, phonons. 
+
+Phonon emission (and therefore conversion of the recoil momentum into sound waves) is facilitated if there are phonons in the lattice already, i.e. at sufficiently high temperature. At low temperatures the probability of conversion is small. In this case a phononless process becomes important, i.e. the transfer of the recoil momentum to the lattice as a whole. In this case the lattice mass should be substituted into Eq.~(\refEquation{6_1_2}) instead of the nucleus mass; this lowers the recoil energy by $10\div20$ orders of magnitude and makes it completely irrelevant. \looseness=-1
+
+The phononless emission/absorption of $\gamma\text{-}$quanta in solids is called the \textit{M\"{o}ssbauer effect}. This effect is studied in our experiment.
+
+The probability of the M\"{o}ssbauer effect equals
+$$
+f=\exp(-4\pi^2\langle u^2 \rangle /\lambda^2),
+\eqMark{6_2_8}
+$$
+where $\langle u^2\rangle$~is the mean square displacement of a nucleus due to quantum and thermal effects (in the direction of emission of $\gamma\text{-}$quantum) and $\lambda$~is the wavelength of $\gamma$-quantum. Equation~(\refEquation{6_2_8}) confirms our conclusion that the probability of phononless emission (and absorption) of $\gamma\text{-}$quanta decreases as the temperature grows ($\langle u^2\rangle$ increases) and as the transition energy increases ($\lambda$ decreases).\looseness=-1
+
+A simple calculation based on these considerations shows that the M\"{o}ssbauer effect is limited by small energies of $\gamma$-quanta ($\Simeq 200\;\keV$). Estimation of the temperature interval in which the M\"{o}ssbauer effect can be observed is not easy. Usually the effect is observed at low temperature, although in some compounds the effect is possible even at room temperature.
+
+Finally notice that the (M\"{o}ssbauer) curve of resonant absorption of $\gamma$-rays is not widened by thermal motion (which is basically a superposition of sonic vibrations of the lattice), so it has the natural width which is very small. This sharp and high peak is prominent on the background of regular wide resonant absorption curves.
+
+The absence of Doppler widening of the emission line despite the chaotic thermal motion of atoms in the lattice is due to the fact that the frequency of thermal oscillations is $10^{12}\div10^{13}\;\Hz$, i.e. it varies on the time scale of $10^{-12}\div10^{-13}\;\s$ while the half-life of a M\"{o}ssbauer nuclear level is much longer, $\simeq10^{-7}\div10^{-9}\;\s$. Hence the nucleus changes its velocity many times during the emission of $\gamma\text{-}$quantum, so the average velocity vanishes.
+
+In this experiment the M\"{o}ssbauer effect is observed on nuclei of tin $^{119}\mathrm{Sn}$ in $\mathrm{BaSnO}_3$ compound. The probability of the phononless emission in this compound is high even at room temperature.
+
+Gamma-rays of a source pass through a resonance absorber, i.e. a substance containing the stable nuclei of $^{119}\mathrm{Sn}$. In the resonance absorber the $\gamma\text{-}$quanta interact both with atomic electrons via the Compton effect and with the nuclei. Therefore the intensity of radiation passing through the absorber decreases as
+$$
+\exp(-n_e\sigma_e)\exp[-nf\sigma(E)],
+$$
+where $n_e$ and $n$~is the number of electrons and nuclei per $1\;\cm^2$ of the absorber, $f$~is the probability of the M\"{o}ssbauer effect, and $\sigma_e$ and $\sigma (E)$~are the cross-section of the interaction with electrons and the resonance absorption cross-section. The latter has the Lorentz profile (\textit{the Breit-Wigner formula}):
+$$
+\sigma(E)\propto\frac{(\Gamma/2)^2}{(E-E_0)^2+(\Gamma/2)^2}.
+\eqMark{6_1_9}
+$$
+Here $E_0$~is the energy of nuclear transition and $\Gamma$~is the decay width.
+
+The radiation passing through the absorber is registered by a scintillation spectrometer which consists of a counter and an electronic circuit. The latter separates $\gamma$-rays of a required energy while discarding the rest. The operation principles of the scintillation spectrometer is described in detail in the experiment~5.3.
+
+The observation of resonant absorption of $\gamma$-rays is based on the method of Doppler shift of emission and/or absorption curves. The shift is provided by a slow motion of the absorber. The M\"{o}ssbauer curve is so narrow that the resonance disappears even at small velocity. Substituting the decay width $\Gamma =3\cdot10^{-8}\;\eV$ into Eq.~(\refEquation{6_1_4}) instead of $R$ one finds that velocity of one millimeter per second is enough! (Compare with $60\;\m/\s$ required to obtain the resonance on free nuclei.)
+
+If the source and absorber nuclei belong to identical compounds maintained at the same temperature, the emission curve overlaps the absorption curve and the maximal absorption is detected at zero velocity, as it is shown in~\refFigure{6_1_3}. If the nuclei belong to
+%
+\hFigure{Spectrum of elastic resonance absorption of $\gamma\text{-}$quanta. Source and absorber belong to identical crystal lattices. Inelastic absorption is due to interaction between $\gamma$-rays and atomic electrons.}6_1_3 {7.7cm}{3.95cm}{pic/L06_1_03.eps}
+%
+different chemical compounds, the maximum of absorption can be at non-zero velocity. This is due to the fact that in principle the energy of nuclear transition depends on electrostatic interaction of the nucleus and the neighboring atomic electrons. The corresponding energy shift is so tiny that it cannot be directly detected. However the M\"{o}ssbauer effect allows one to observe this effect! In this case the influence of electrostatic forces on the energy of nuclear levels must be comparable with the width of resonant absorption curve rather than with the energy of $\gamma$-transition or even with the chemical binding energy. The corresponding shift of the absorption maximum is easily detected. It is called the \textit{chemical shift}.
+ 
+If the source and the absorber belong to different chemical compounds, the maximum of resonant absorption is shifted from zero velocity by
+\vspace{-4pt}
+$$
+v\sub{r}=\frac{\Delta E}{E_0}\;\s.
+\eqMark{6_1_10}
+$$
+
+Usually the quantity measured in an experiment on resonant absorption is the <<amplitude>
+\vspace{-6pt}
+$$
+\epsilon (v) =\frac{N(\infty)-N(v)}{N(\infty)-N\sub{b}},
+\eqMark{6_1_11}
+$$
+where $N(v)$~is the count rate of quanta passed through the absorber at a velocity $v$, $N(\infty)$~is the count rate of quanta at a large velocity when the resonant absorption disappears, and $N\sub{b}$~is the background count rate. The quantity $\epsilon (v)$ is dimensionless and depends neither on the source activity, nor on the absorption due to electrons. 
+
+The resonance curve width $\Gamma\sub{exp}$~measured in the experiment is a superposition of the source and the absorber curves. For a thin source and absorber and in the absence of vibrations the linewidth equals the doubled decay width $2\Gamma$ (see~\refFigure{6_1_3}). A thick absorber significantly widens the resonance curve due to the following reasons: 1)\: quanta with energies close to the maximum are already absorbed in a thin layer, while the curve <<wings>> are amplified by a thick absorber; 2)\: curve widening can also occur due to a quanta self-absorption by the source itself provided it contains the resonant absorbing nuclei; 3)\: the curve is significantly widened because of imperfections of the measurement apparatus, in particular, because of vibrations of the source and the absorber (the Doppler widening); 4)\: the widening is also caused by an irregular relative speed of the source and the absorber.  \vspace{1ex}
+
+\textbf{\so{Experimental installation}}
+
+\vspace{5pt} A block-diagram of the installation is shown in~\refFigure{6_1_4}. A foil made of tin (or another tin-containing compound) serves as an absorber.\hFigure{Block-diagram of installation for studying the M\"{o}ssbauer effect: \textit{E}~is eccentric, \textit{S}~is scintillation crystal $\mathrm{NaI}(\mathrm{Tl})$, \textit{A}~is amplifier, \textit{AA}~is one-channel amplitude analyzer, PC~is  personal computer, \textit{G}~is generator for powering motor, РД-09~is motor with gear, \textit{HVSR}~high voltage stabilized rectifier}6_1_4 {6.8cm}{5.4cm}{pic/L06_1_04.eps} The absorber is fixed in a frame which is being moved by an eccentric sheave. The eccentric shape provides a constant speed of the absorber (under a uniform rotation of the eccentric). 
+
+An experimentally measured dependence of the frame displacement on the eccentric rotation angle is shown in~\refFigure{6_1_5}. One can see that motion at a constant speed occurs in a wide range of angles. The measurement must be done on the intervals of uniform motion. Two teflon cams are used to switch the counter on and off automatically. Closing one of the terminal keys  signals that the uniform motion begins and closing the other one signals that the uniform motion ends. The length of the uniform path $S$ is indicated on the installation. \looseness=1
+
+The absorber speed can be varied from $0{.}1$ to $5{.}0\;\mm/\s$ by varying the angular speed of the eccentric which is rotated by a motor РД-$09$ via a gear (the gear ratio is $1/137$). In order to reduce vibration the eccentric and the motor are mounted on a main wall separately and connected by a belt. The motor is powered by a special generator.
+
+%
+\fFigure{Absorber linear displacement versus rotation angle of eccentric}6_1_5 {4.1cm}{2.5cm}{pic/L06_1_05.eps}
+%
+
+The source of $\gamma\text{-}$quanta in this experiment is a radioactive isotope of tin $^{119m}\mathrm{Sn}$\Footnotemark\Footnotetext{The superscript \textit{m} means an isomer (metastable) state. Isomers are nuclei with the same atomic and mass numbers, \textit{Z} and \textit{A}, e.g. a nucleus in the ground state and a nucleus of the same species in a long-lived excited state.} in the compound $\mathrm{BaSnO}_{3}$. The half-life of an isomer of $^{119m}\mathrm{Sn}$ is $250$ days, then it jumps to a short-lived first excited state by emitting a $\gamma\text{-}$quantum with an energy of $65\;\keV$ (see~\refFigure{6_1_6}\textit{a}). 
+
+The $\gamma$-rays with an energy of $23{.}8\;\keV$ emitted during the transition from the first excited level to the ground state are used to observe the M\"{o}ssbauer effect in this experiment. The radioactive source is produced in a nuclear reactor by exposing a tin sample containing $96\%$ of $^{118}\mathrm{Sn}$ isotope to neutrons. The transition with an energy of $65\;\keV$ is strongly converted which results in emission of characteristic $X$-rays with an energy $E_X=25{.}4\;\keV$. The ensuing <<background>> hinders the measurements. The background can be effectively suppressed by a characteristic palladium filter. The edge of the absorption $K$-band of palladium is at $E_K=24{.}3\;\keV$. Therefore a palladium filter strongly absorbs $X$-rays emitted by tin ($E_X>E_K$) and only weakly the $\gamma\text{-}$quanta under study ($E_0<E_K$). A palladium foil $60\;\mkm$ thick is glued to the source. The source enclosed in a metal container is placed just above the absorber. Usually, a source of $\gamma$-rays contains radioactive contaminants which make a significant contribution to the net radiation.
+%
+\hFigure{Decay of $^{119}\mathrm{Sn}$ \textit{(a)}; radiation spectrum of $\mathrm{BaSnO_3}$ measured by scintillation spectrometer \textit{(b)}}6_1_6 {10.8cm}{4cm}{pic/L06_1_06.eps}
+%
+
+\vspace{6pt}
+\noindent
+A diagram in~\refFigure{6_1_6}\textit{b} shows the spectrum of a $\mathrm{BaSnO}_3$ source measured by means of a calibrated scintillation spectrometer with a <<thick>>  ($40\;\mm$) crystal of $\mathrm{NaI}(\mathrm{Tl})$. The spectral maxima correspond to photoelectric absorption of $\gamma\text{-}$quanta of various energies in the crystal. They are called \textit{photopeaks} (or full energy peaks). In addition to the main (M\"{o}ssbauer) line $\Simeq 24\;\keV$ the source spectrum also contains the quanta with energies ${\Simeq 100\;\keV}$ and $\Simeq 300\;\keV$. To observe the effect, the main line must be separated from the spectrum. This is achieved by setting the <<window>> of the spectrometer amplitude analyzer on the photopeak of $23{.}8\;\keV$.
+
+The scintillation spectrometer used in the experiment is different from the spectrometer described in~5.3. Instead of <<thick>> a thin ($1{.}0\;\mm$) crystal of $\mathrm{NaI} (\mathrm{Tl})$ is implemented here, this crystal well absorbs radiation with an energy of $20\div30\;\keV$ while being almost insensitive to $\gamma$-quanta of higher energies. A specially designed photomultiplier (PMT) has a low internal noise (less than $2\;\keV$).
+
+Both the scintillation crystal and the PMT are mounted in a separate lightproof casing (see~\refFigure{6_1_4}) which is installed on a support under the absorber.
+
+\vspace{-1pt}
+The spectrometer is calibrated with the aid of the standard sources of $\gamma$-radiation (using the same procedure as in~5.3) If the voltage applied to the PMT corresponds to the value indicated on the installation, the full energy peak of $\gamma\text{-}$quanta with the energy of $23{.}8\;\keV$ must be located in the interval between $1$ and $10\;\V$ of the analyzer thresholds. The pulses passed through the analyzer are registered by the PC.
+
+The terminals of the time counting and the pulse counting channels of the PC are connected to a relay controlled by the teflon cams. The terminal keys attached to the cams switch the relay electromagnet on and off. In so doing the circuit is automatically turned on when the absorber is moving at a constant speed and turned off during the speed reversion. The speed is <<positive>> if the absorber is moving toward the source. The opposite speed is <<negative>>. The speed magnitude is displayed during the experiment since the PC records the time for which the absorber passes the region of constant velocity. 
+
+The speed can be changed by varying the frequency of the generator powering the motor; the corresponding motor capacitor must be accordingly changed. The frequency ranges between $0$ and $200\;\Hz$, the capacitance ranges between $0{.}1$ and $0{.}4\;\mkF$. A fast rotation  requires a small capacitance and a high frequency, while a slow rotation requires a small frequency and a large capacitance. To know the precise values of frequency and capacitance is not necessary since the speed is measured independently.
+
+If the experiment is done with the immobile absorber, one should manually rotate the eccentric until the relay switches on, this is indicated by a photodiode near the eccentric.  
+
+\vspace{6pt}
+\textbf{\so{Directions}}\vspace{5pt}
+
+\begin{Enumerate}{tab} 
+
+\Item. Read the description of the scintillation spectrometer (see~5.3). 
+
+\Item. Turn the installation on and let it warm up for three minutes, then set the PMT voltage (the required value is indicated on the installation).
+
+\Item. Read the description of the PC code. 
+
+\Item. Measure the source spectrum and adjust the analyzer to the photopeak of $\gamma\text{-}$quanta with the energy of $23{.}8\;\keV$.
+
+\Item. Measure the resonant absorption spectrum. 
+
+\Item. Plot the experimental points on a graph paper. 
+
+\Item. Using the plot determine the maximum of the resonant absorption amplitude (in percent).
+
+\Item. Determine the chemical shift in millimeters per second and in electron-volts.
+
+\Item. Determine the experimental width of the curve $\Gamma\sub{exp}$ in millimeters per second and in electron-volts and compare it to the theoretical value. Explain the curve widening.
+\end{Enumerate}%
+
+\textbf{\so{Additional Experiment}}
+
+\vspace{1ex}
+Measure the resonant absorption curve with a high statistical accuracy (better than $0{.}5\%$) in the maximal possible velocity range. Using the statistical methods show that the curve is a Lorentz distribution. Using the $\chi^2$-distribution determine how well the curve is approximated by a Lorentz distribution. Can the curve be referred to as Gaussian?
+
+Suppose $E$~is an energy of $\gamma\text{-}$quantum, $\sigma (E)$~is the effective cross-section of resonant absorption, $W_e (E)$~is the energy distribution of the emission spectrum per unit area, $n\sub{А}$~is the number of atoms of the studied isotope per $1\:\cm^2$ of the absorber, $E_0$~is the energy of resonance level, and $\Gamma$~is the total level width. Then using the dimensionless variables,
+$$
+x=\frac{E-E_0}{\Gamma / 2}, \qquad y = \frac{E_0 \,v/c}{\Gamma/2},
+\eqMark{6_1_12}
+$$
+one can write for $\epsilon (y)$ in Eq.~(\refEquation{6_1_11}):
+$$
+\epsilon(y) = \alpha f \int\limits_{-\infty}^{+\infty} [1 - \exp(-\sigma(x) n\sub{А})] W_e (x+y)\, dx.
+\eqMark{6_1_13}
+$$
+Here $f$~is the probability of $\gamma\text{-}$quantum emission without recoil and $\alpha$~is the fraction of resonance quanta in the emission spectrum.
+
+This equation shows that the area bounded the absorption spectrum curve is independent of the emission spectrum and depends only on the absorption spectrum. Integrate the experimental dependence given by Eq.~(\refEquation{6_1_11}) and estimate the probability of the M\"{o}ssbauer effect for $^{119}$Sn nuclei at room temperature.
+
+\begin{center}\so{\textsf{\small ЛИТЕРАТУРА}}\end{center}
+{\small
+
+1. \textit{Сивухин\;Д.\;В.} Общий курс физики.\,---\,М.: Физматлит, $2006$. Т.\,V. \textsection\;$76$.
+
+2. \textit{Широков\;Ю.\;М., Юдин\;Н.\;П.} Ядерная физика.\,---\,М.: Наука, $1980$. Гл.\,VI. \textsection\;$6$.
+
+3. \textit{Ципенюк\;Ю.\;М.} Принципы и методы ядерной физики.\,---\,М.: Энергоатомиздат, $1993$. Гл.\;$7$. }

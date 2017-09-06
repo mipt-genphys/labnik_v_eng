@@ -1,0 +1,268 @@
+%translator Russkov, date 27.04.13
+
+\let\theEquation=\oldTheEquation
+\let\theFigure=\oldTheFigure
+
+\Chapter
+{Spectrometry of nuclear radiation}
+{Spectrometry of nuclear radiation}
+{Spectrometry of nuclear radiation}
+
+\textbf{Problems of spectrometry.}
+Usually spectrometry is understood as an analysis of energy distribution of the radiation studied. Energy distribution of particles is one of the main characteristics of nuclear reaction; it is used not only to investigate the structure of nuclei, the fundamental problem of nuclear physics, but it is of great interest in many applications, including dosimetry, radiometry, and radiation safety.
+
+The study of energy spectrum of nuclear radiation allows one to determine the whole set of important nuclear characteristics, such as the pattern of energy levels of excited nuclear states and the rates of transitions between them, the average density of excited states, the angular correlation of emitted radiation, etc. The knowledge of energy spectrum of $\gamma$-radiation is required in order to solve many problems of applied nuclear physics and beyond: geological exploration, radiation medicine, and astrophysics.
+
+Energy distribution of charged particles can be discrete and continuous. For instance, proton deficient nuclei of low and medium atomic masses usually undergo $\beta$-decay. In this case the electron spectrum turns out to be continuous and it is important to determine the form of $\beta$-spectrum and the boundary energy of $\beta$-electrons. On the other hand a spectrum of $\alpha$-particles emitted by a radioactive nucleus is discrete. Measurement of the energy of $\alpha$-particles allows one to determine the nucleus mass defect, the energy levels of excited states, and other characteristics of the nucleus.
+
+Spectrometry of charged particles is carried out by measuring the particle energy absorbed in the detector material or by analyzing their interaction with external electric and/or magnetic fields. A neutral particle can be detected only via secondary processes, e.g. via the charged particles  emerging due to interaction of the neutral particle and a detector. In the case of neutron the charged particles are the recoil nuclei or the products of nuclear reactions.
+
+Passage of \mbox{$\gamma$-quantum} through matter is accompanied by emission of electrons carrying a partial or the whole energy of the incident \mbox{$\gamma$-quantum}. This problem is studied in the next section.
+\vspace{1ex}
+
+\textbf{Interaction of} $\boldsymbol{\gamma}$\textbf{-quanta with matter.}
+Gamma-rays are high-energy quanta of electromagnetic radiation. Passage of \mbox{$\gamma$-quanta} through matter is accompanied by three processes: the photoelectric effect, the Compton effect, and the production of electron-positron pairs, provided one ignores nuclear reactions taking place when the energy of \mbox{$\gamma$-quanta} exceeds $10\;\MeV$.
+
+Each $i$-th process can be characterized by effective cross-section~$\sigma_i$ and the corresponding attenuation coefficient~$\mu_i=n_i \sigma_i$ ($n_i$~is a concentration of absorbing centers). To determine~$\mu$ one must know the cross-sections of all three specified processes.
+\vspace{1ex}
+
+\textit{Photoelectric effect.}
+The so called <<external photoelectric effect on separate atoms>> is the process in which an atom absorbs \mbox{$\gamma$-quantum} and emits electron. A free electron cannot absorb a quantum due to the laws of energy and momentum conservation. Therefore one expects that the stronger an electron is bounded to a nucleus, the greater is the probability of photoelectric absorption. Therefore, the probability is greater for a heavy nucleus than for a light one and it decreases as the energy of \mbox{$\gamma$-quantum} increases.
+
+The calculation shows that the lowest electron shell ($K$-shell) contributes approximately $80\%$ into the photoelectric effect. Therefore it is sufficient to consider the absorption of quantum by one of two $K$-electrons of atom. In our qualitative analysis we assume that the energy of incident quanta is large compared to the ionization energy of $K$-electron $I_K$ (for hydrogen atom~$I_K=13{.}6\;\eV$, for lead it is~$I_K\sim 80\;\keV$). For an atom with atomic number $Z$ this condition in the non-relativistic approximation can be written as
+$$
+  T=\frac{p^2}{2m}\gg I_K=Z^2\frac{mc^2}{2}\alpha^2,
+  \eqMark{5_1}
+$$
+where $T$~is the kinetic energy of emitted electron ($p$~is its momentum) and $\alpha =e^2/\hbar c=1/137$~is the fine-structure constant.
+
+The wavelength of a \mbox{$\gamma$-quantum} of a relatively small energy $100\;\keV$ equals
+$$
+  \lambda_{\gamma}=\frac{c}{\nu}=\frac{hc}{E_{\gamma}}\simeq10^{-11}\;\cm,
+  \eqMark{5_2}
+$$
+which is much less than the radius $a_K$ of atomic $K$-shell (it is $5\cdot 10^{-9}\;\cm$ for hydrogen atom and $6\cdot 10^{-11}\;\cm$ for lead). As it has already been mentioned, the photoelectric effect involves only bounded electrons, therefore it is natural to assume that the probability of the photoelectric effect is proportional to the electron binding energy. Besides one should take into account that the wavelength of incident photon is less than the radius of $K$-shell. It is natural to treat the interaction process as delocalized. Then the probability $w\sub{ph}$ of photoelectric absorption is proportional to the binding energy $I_K$ of $K$-electron multiplied by the ratio of the <<volume>> of incident \mbox{$\gamma$-quantum} to the <<volume>> of $K$-shell electron:
+$$
+  w\sub{ph}\propto I_K\left(\frac{\lambda_{\gamma}}{a_K}\right)^3.
+  \eqMark{5_3}
+$$
+
+The radius of $K$-shell is 
+$$
+  a_K=r\sub{B}/Z,
+  \eqMark{5_4}
+$$
+where $r\sub{B}$~is the radius of the first Bohr orbital. The binding energy of $K$-electron equals
+$$
+  I_K=Z^2 R_{\mathrm H}.
+  \eqMark{5_5}
+$$
+Here $R_{\mathrm H}$ is the electron binding energy in hydrogen atom (the Rydberg constant).
+
+Substituting Eqs.~(\refEquation{5_4}) and~(\refEquation{5_5}) into Eq.~(\refEquation{5_3}) we finally obtain the following estimate of the photoeffect cross-section per one nucleus:
+$$
+  \sigma\sub{ph}\propto \frac{Z^5}{E_{\gamma}^3}.
+  \eqMark{5_6}
+$$
+
+This formula correctly reflects the basic principles of the photoelectric effect: its probability rapidly decreases as the energy of $\gamma$-quanta increases ($\propto 1/E_\gamma^3$) and it strongly depends on the atomic number ($\propto Z^5$).
+
+The rigorous quantum-mechanical calculation gives
+$$
+  \sigma\sub{ph}=\const \frac{Z^5}{E_\gamma^\epsilon},
+$$ 
+where $\epsilon$ varies from $3{.}5$ for $E_\gamma> I_K$ to $1$ for $E_\gamma\gg I_K$.
+\vspace{1ex}
+
+\textit{The Compton effect.}
+The Compton effect is a scattering of photon by a free electron. In this process the photon behaves as a classical particle. The energy of scattered photon is determined by a well known formula
+$$
+  \hbar\omega'=\frac{\hbar\omega}{1+\frac{\hbar \omega}{(mc^2)}(1-\cos\theta)},
+  \eqMark{5_7}
+$$
+where $\omega$ and $\omega'$ are the frequencies of incident and scattered radiation (see~1.2). The frequency shift of scattered radiation is a purely quantum-mechanical phenomenon which is due to quantization of electromagnetic field. As it follows from Eq.~(\refEquation{5_7}) the energy shift is determined by parameter $\hbar\omega/(mc^2)$, i.e. a low energy of incident quanta ($\hbar\omega\ll mc^2=511\;\keV$) remains practically the same and we can calculate the cross-section of this process using the classical picture of electromagnetic wave scattering.
+
+Radiation of electromagnetic waves occurs when a charged particle <<loses>> its field,  <<leaves>> it behind during deceleration or acceleration. For this reason this radiation is called \textit{bremstrahlung} (braking radiation). Neither a static charge nor a moving at a constant speed one radiates. Since the radiation power is a scalar quantity, it must be proportional to acceleration $w$ squared:
+$$
+  W=\frac{2}{3}\frac{e^2|w|^2}{c^3}.
+  \eqMark{5_8}
+$$
+
+Factors $e^2$ and $c^3$ are included on the dimensional grounds while the numerical coefficient $2/3$ is obtained by the exact calculation.
+
+A free electron in a monochromatic electric field $\EDS=\EDS_0\cos\omega t$ is accelerated:
+$$
+  w =-(e/m)\EDS_0\cos\omega t,
+  \eqMark{5_9}
+$$
+and radiates like any oscillating dipole. According to Eq.~(\refEquation{5_8}) the radiation power is 
+$$
+  W_{\mathrm d}(t)=\frac{2}{3}\frac{e^2w^2}{c^3}f=\frac {2}{3} \frac{e^4}{m^2c^3}\EDS_0^2\cos^2\omega t.
+  \eqMark{5_10}
+$$
+
+The average power equals
+$$
+  \overline{W}_{\mathrm d}=\frac{1}{3}\frac{e^4}{m^2c^3}\EDS_0^2.
+  \eqMark{5_11}
+$$
+
+Interaction of~\mbox{$\gamma$-quantum} with a heavy atomic nucleus can be neglected since it is suppressed by the square of nuclear mass in the denominator of Eq.~(\refEquation{5_11}).
+
+The electromagnetic energy flux is numerically equal to the Poynting vector
+$$
+  S=\frac{c}{4\pi}EH=\frac{c}{4\pi}\EDS_0^2\cos^2\omega t.
+  \eqMark{5_12}
+$$
+
+Its time average equals $\overline{S}=\EDS_0^2c/(8\pi)$.
+
+The total scattering cross-section is the average scattered energy divided by the average incident flux:
+$$
+  \sigma_0=\frac{8\pi}{3}\frac{e^4}{m^2c^4}=\frac{8\pi}{3} r_0^2=0{.}66\cdot 10^{-24}\;\cm^2,
+  \eqMark{5_13}
+$$
+where $r_0=e^2/(mc^2)=2{.}8\cdot 10^{-13}\;\cm$ is called the electron classical radius and $\sigma_0$~is the (classical) Thomson scattering cross-section.
+
+Notice that the cross-section is frequency independent. However, it is well known that scattering of optical photons both on atoms and molecules and on any small particles (dust, water droplets, density fluctuations, etc), with a size $a$ smaller than the wavelength $\lambda$, is proportional to the fourth power of frequency (such scattering is called the Rayleigh scattering). This sharp  distinction is due to the fact that electron acceleration in X-rays is determined by the radiation electric field, while optical photons with $\lambda\gg a$ induce a dipole moment in the medium. The radiation power is proportional to the second time derivative of the dipole, i.e. to the fourth power of frequency. It should be stressed that the Rayleigh scattering proceeds on bound electrons when $E_{\gamma} \leqslant I_K$.
+
+Now let us estimate the cross-section of Compton scattering using quantum theory. Consider the following model. The initial photon $\gamma_0$ produces a virtual electron-positron pair ($e^-e^+$) then the positron and the initial electron annihilate and produce a photon $\gamma'$. Thus the photon $\gamma'$ and the electron $e^-$ arise from the virtual pair as it is shown in~\refFigure{5_1}.
+
+%
+\fFigure{Diagram of interaction of photon and free electron}5_1
+{4.9cm}{1.5cm}{pic/L05_01.eps}
+%
+
+To an external observer this process appears as a scattering of photon by electron. Such interaction is possible only when the pair emerges at a distance not greater than $\Lambda_{\mathrm K}$ (the Compton wavelength) from the initial electron. This follows from the uncertainty relation: the energy $\Delta E=2mc^2$ is necessary to produce the pair, therefore it <<exists>> just during time $t\sim \hbar/\Delta E$ and can travel a distance $l$ which does not exceed $ct\simeq \hbar/(mc)$, i.e. the Compton wavelength $\Lambdabar_{\mathrm K}=\Lambda_{\mathrm K}/(2\pi)$.
+
+Since all processes in the considered chain of events are independent, the probability of the net process equals the product of the probabilities of the processes:
+
+1)\;the photon approaches the electron closely enough (at a distance~${\sim\Lambdabar_{\mathrm K}}$);
+
+2)\; the pair arises;
+
+3)\; the pair annihilates by producing the photon.
+
+The effective cross-section of the first process is easily estimated:
+$$
+  \sigma_1\sim \pi\Lambdabar_{\mathrm K}^2.
+  \eqMark{5_14}
+$$
+
+The second and the third processes are electromagnetic, so their probabilities are proportional to the fine-structure constant:
+$$
+  P_1\sim P_2\sim\alpha.
+  \eqMark{5_15}
+$$
+
+This estimate can be justified as follows. To quantitatively describe an interaction between particles  one introduces the interaction constant $g^2$ which is proportional to the probability of a process initiated by the interaction and is equal to the ratio of interaction energy per the elementary length to the characteristic energy. For the electromagnetic interaction these quantities are the interaction energy per the Compton wavelength $e^2/[\hbar/(mc)]$, and the electron rest energy $mc^2$, i.e.
+$$
+  g\sub{em}^2=\frac{e^2}{\hbar/(mc)}\frac{1}{mc^2}=\frac{e^2}{\hbar c}=\alpha\simeq \frac{1}{137}.
+  \eqMark{5_16}
+$$
+
+For the effective cross-section of the Compton effect at low energy of incident photon we finally obtain
+$$
+  \sigma_{\mathrm K}=\pi\alpha^2\Lambdabar_{\mathrm K}^2=\pi\left(\frac{e^2}{\hbar c}\frac{\hbar}{mc}\right)^2=\pi\left(\frac{e^2}{mc^2}\right)^2=\pi r_0^2,
+  \eqMark{5_17}
+$$
+which agrees with the exact formula (\refEquation{5_13}) up to the factor of $8/3$.
+
+The result of the above calculation validates the model of the Compton scattering as a process mediated by the virtual pair production. How does the cross-section depends on the energy of incident photon? This energy dependence can be obtained by applying the general principles of nuclear reactions. The probability of interaction and therefore the cross-section of a nuclear reaction are proportional to the period of time a particle stays in the interaction area. In the above interaction model only the probability of positron annihilation with an atomic electron depends on the energy of \mbox{$\gamma$-quantum}.
+%
+\hFigure{Diagram of interaction process of slow \textit{(a)} and fast \textit{(b)} positron with free electron}5_2
+{8.7cm}{1.5cm}{pic/L05_02.eps}
+%
+Due to conservation of momentum the positron (and the electron) produced from the initial \mbox{$\gamma$-quantum} has energy $E_+\sim\hbar\omega$ and momentum $\hbar \omega/(2c)$ in the direction of initial photon. We are interested in the energy range of $E_{\gamma}\sim 1\;\MeV$, i.e. the positron is relativistic and due to Lorentz contraction its electric field in the direction of motion decreases by the factor of $1/\gamma =mc^2/E_+ \simeq mc^2/(\hbar\omega)$ (see~\refFigure{5_2}).
+
+Therefore the interaction period which determines the probability of positron annihilation (the Compton scattering cross-section) turns out to be inversely proportional to the energy $\hbar\omega$ of initial \mbox{$\gamma$-quantum}.
+
+The quantum electrodynamic calculation of the Compton scattering cross-section gives the Klein--Nishina--Tamm formula:
+$$
+  \sigma_{\mathrm K}=\frac{\pi e^4}{mc^2}\frac{1}{\hbar\omega}\left[\frac{1}{2}+\ln\left(\frac{2\hbar\omega}{mc^2}\right)\right].
+  \eqMark{5_18}
+$$
+
+If one neglects the logarithmic term Eq.~(\refEquation{5_18}) becomes
+$$
+  \sigma_{\mathrm K}\simeq \pi\frac{e^4}{m^2c^4}\frac{mc^2}{2\hbar\omega}=\pi r_0^2\frac{mc^2}{2\hbar\omega},
+  \eqMark{5_19}
+$$
+where $r_0=e^2/(mc^2)\simeq2{.}8\cdot 10^{-13}\;\cm$.
+
+One can see that the Compton scattering cross-section is equal to the classical Thomson cross-section reduced by the factor $\sim\hbar\omega/(mc^2)=2/\gamma$, which is in accordance with the above discussion.
+
+The cross-section $\sigma_{\mathrm K}$ is evidently independent of the atomic number. The attenuation coefficient $\mu_{\mathrm K}$ related to the Compton scattering is by definition equal to the product of $\sigma_{\mathrm K}$ and the electron density:
+$$
+  \mu_{\mathrm K}=NZ\sigma_{\mathrm K},
+  \eqMark{5_20}
+$$
+where $N$ is the number of atoms per unit volume and $Z$ is the atomic number.
+\vspace{1ex}
+
+\textit{Production of electron-positron pairs.}
+The production of electron-positron pairs in the electrostatic field of nucleus and/or atomic electrons consists in absorbtion of $\gamma$-quantum and creation of electron and positron. In the process the nucleus receives a certain recoil momentum. It should be emphasized that unlike in the process of virtual pair production discussed above a third body is necessary to produce a real pair. This can be easily understood. The process $\gamma \rightarrow e^{+} +e^{-}$ can occur only in the presence of a third body, otherwise the law of momentum conservation is violated. Indeed, in the center-of-mass frame of the produced pair its momentum is zero, whereas the momentum of the parent \mbox{$\gamma$-quantum} is not. In the presence of atomic nucleus the momentum of \mbox{$\gamma$-quantum} is partially absorbed by the nucleus. Thus, in arbitrary frame of reference the momentum of the absorbed quantum is shared between three particles: the atomic nucleus, the electron, and the positron.
+
+Since photon is massless, it can transform into a pair only if its energy is greater than the sum of rest energies of electron and positron, $2mc^2=1{.}02\;\MeV$. Therefore the cross-section $\sigma\sub{p}$ of pair production vanishes for $E_{\gamma}<2mc^2$.
+
+Let us digress a little bit. The total energy and momentum of electron are restricted by a usual relation
+$$
+  E^2=p^2c^2+m^2c^4,
+  \eqMark{5_21}
+$$
+i.e.$E=\pm\sqrt{p^2c^2+m^2c^4}$ and two energy ranges divided by $2mc^2$ are possible (see \refFigure{5_3}). 
+%
+\hFigure{Possible energy of free particle of mass $m$ according to Eq.~(\refEquation{5_21}). Positive energies are separated from negative energies by interval $2mc^2$. Braking radiation and pair production are shown.}5_3
+{6cm}{3.7cm}{pic/L05_03.eps}
+%
+Dirac showed that the negative energy range can be interpreted as follows: all negative levels are occupied by electrons forming a uniform and therefore unobservable background. However, if one of these electrons receives an energy greater than $2mc^2$ its energy becomes positive and it behaves as an ordinary electron; at the same time a hole is created in the background of negative energy electrons which behaves as a positively charged electron, i.e. positron. We call this process pair production and the reverse process is pair annihilation.
+
+The pair production cross-section can be obtained using this description if one considers this process as inverse to bremstrahlung. Indeed, consider the diagram shown in~\refFigure{5_3}. Bremstrahlung corresponds to electron transition from state $E_1$ with positive energy to state $E_2$ with a lower energy. This transition is accompanied by emission of photon with energy $E'=E_2-E_1$. The process of pair production can be represented as absorbtion of photon with energy $E'\gg2mc^2$ and electron transition from a state of negative energy to a state of positive energy. Hence mathematical expressions describing processes of braking radiation and pair production turn out to be very similar.
+
+We are interested in the dependence of pair production cross-section on the atomic number of the material and the $\gamma$-quantum energy. Consider an electron moving in the Coulomb potential $U=Ze/r$ of a nucleus with charge $Ze$ at the distance $r$ from the nucleus, the electron acceleration $w$ is
+$$
+  w=-\frac{e}{m}\frac{d U}{d r} = \frac{Ze^2}{mr^2}\propto Z,
+  \eqMark{5_22}
+$$
+and therefore according to Eq.~(\refEquation{5_8}) the bremstrahlung power, and so the pair production cross-section, are proportional to the atomic number squared.
+
+The exact expression for the energy losses due to pair production derived by W.\,Heitler is rather complicated, but in energy range of $\gamma$-quanta $5mc^2<E_{\gamma}<50mc^2$ it can be approximated by
+$$
+  \sigma\sub{p}\propto Z^2\ln E_{\gamma}.
+  \eqMark{5_23}
+$$
+
+For very large (about $1000mc^2$) energy the pair production cross-section tends to the constant
+$$
+  \sigma\sub{p}\simeq0{.}08Z^2r_0^2.
+  \eqMark{5_24}
+$$
+
+Thus, pair production is significant for heavy elements and large energy of $\gamma$-quanta.
+
+The net attenuation coefficient of \mbox{$\gamma$-radiation} $\mu$ equals the sum of attenuation coefficients due to all possible channels. Therefore, taking into account the three basic channels considered, we obtain
+$$
+  \mu=\mu\sub{ph}+\mu_{\mathrm K}+\mu\sub{p}.
+  \eqMark{5_25}
+$$
+
+When substituting the cross-sections one should remember that atoms are the scattering centers both for the photoelectric effect and the pair production, whereas electrons are the ones for the Compton scattering. Therefore
+$$
+  \mu=N\sigma\sub{ph}+NZ\sigma_{\mathrm K}+N\sigma\sub{p},
+  \eqMark{5_26}
+$$
+where $N$~is the number of atoms per unit volume of the material.
+
+The plot in~\refFigure{5_4} shows the attenuation coefficients $\mu\sub{ph}$, $\mu_{\mathrm K}$, and $\mu\sub{pair}$ due to the photoelectric effect, the Compton scattering, and the pair production as functions of $\gamma$-quantum energy (dashed curves) and the net attenuation coefficient $\mu$ in lead. For comparison the net attenuation coefficients for copper and aluminum are plotted on the same diagram. All attenuation coefficients are given in units of ${\cm^2\cdot\g^{-1}}$. Flux attenuation of $\gamma$-quanta as it passes through a given material is determined by an obvious formula
+$$
+  I=I_0e^{-\mu x},
+  \eqMark{5_27}
+$$
+where $I_0$ is the initial flux and $x$ is the distance passed.
+
+One can see from~\refFigure{5_4} that the attenuation coefficient for lead has the minimum in the energy range $3\div4\;\MeV$. For an absorber with a lower $Z$ this minimum is displaced to higher energies and is less prominent.
+
+%
+\hFigure{Attenuation coefficient of $\gamma$-quanta vs energy in lead, copper, and aluminum }5_4
+{10.3cm}{6.5cm}{pic/L05_04.eps}
+%

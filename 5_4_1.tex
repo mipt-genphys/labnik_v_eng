@@ -1,0 +1,249 @@
+%translator Mironchuk, date 27.12.12
+
+\let\oldTheEquation=\theEquation \def\theEquation{\arabic{Equation}} \let\oldTheFigure=\theFigure \def\theFigure{\arabic{Figure}}
+
+\setcounter{Equation}{0}
+\setcounter{Figure}{0}
+\Work
+{Determination of energy of $\boldsymbol\alpha$-particles by measuring their range\\ in air}
+{Determination of energy of $\alpha\text{-}$particles by measuring their range \\in air}
+{The range of $\alpha\text{-}$particles in air is measured by three methods, namely, by means of an end-window Geiger counter, a scintillation counter, and an ionization chamber. The result is used to determine the energy of particles.}
+
+In $\alpha\text{-}$decay, the original parent nucleus emits a helium nucleus \mbox{(an $\alpha\text{-}$particle)} and becomes a daughter nucleus in which the number of protons and the number of neutrons decreases by two units. Half-lives of $\alpha\text{-}$radioactive nuclei vary in a wide range. For example, the half-life of $_{~84}^{212}\mathrm{Po}$ equals $3\cdot 10^{-7}\;\s$, and for $_{~82}^{204}\mathrm {Pb}$ it is $1.4\cdot 10^{17}\;\text{years}$. The energy range of the emitted $\alpha\text{-}$particles is much less, from $4$ to $9 \;\MeV$, and the smaller the energy, the larger is a half-life. The relationship between the energy of $\alpha\text{-}$particle $E$ and the half-life of a parent nucleus $T_{1/2}$ is well approximated by the expression
+$$
+\lg T_{1/2}=\frac{a}{\sqrt{E}}+b   \eqMark{4_1_1}
+$$
+which was derived by H.\,Geiger and\linebreak J.\,Nuttall in $1911$ based on experimental results. A theoretical explanation of the Geiger–Nuttall law was given only after quantum mechanics was established; in $1928$ G.\,Gamov and, independently, R.\,Gurney and E.\,Condon showed that the probability of $\alpha\text{-}$particle emission is determined by the probability of this particle to penetrate a potential barrier (see Eq.~(\refEquation{4_4}) in the introduction to this chapter). The exponential behaviour of this process is due to exponential decay of the particle wavefunction under the barrier where its total energy is less than the potential energy.
+
+\vspace{-0.5pt}
+It is convenient to determine the energy of $\alpha\text{-}$particles by measuring their range (penetration depth) in matter. Let us consider the interaction of charged particles with matter in some detail. A heavy particle with small charge ($Z=1,\;2$, i.e. proton and $\alpha\text{-}$particle) which travels through a substance loses its energy mainly in inelastic collisions with the atoms. These inelastic collisions cause ionization and excitation of atoms, that is why such losses are called \textit{ionization energy losses}. They can be considered as an almost continuous process of slowdown of a charged particle, because only a small amount of energy is lost in an individual collision. The energy which can be transferred to atomic electron does not exceed $4mE/M$, where $m$~is the electron mass, $M$~is the mass of the charged particle, and $E$~is its kinetic energy (e.g. for $\alpha\text{-}$particle this fraction is approximately $1/2000$ of the particle energy), therefore the particle scatters at a very small angle in a single collision (the maximum is $m/M$), so its path in matter is almost straight.
+
+\vspace{-0.5pt}
+Here we consider the processes involving $\alpha\text{-}$particles with energies of up to $10\;\MeV$, because particles with such energies are emitted by radioactive nuclei.
+
+Calculations show that the energy losses of protons with energy of $10\;\MeV$ in \textit{elastic collisions} make $0{.}09\%$ of ionization losses in aluminium and $0{.}17\%$ in lead. Alpha-particles with energy of $10\;\MeV$ lose $0{.}08\%$ of their energy in elastic collisions in aluminium and $0{.}1\%$ in lead. Energy losses of charged particles due to \textit{nuclear interactions} become significant at rather high energies exceeding the Coulomb barrier. The kinetic energy of an $\alpha\text{-}$particle emitted by nucleus is essentially lower than the Coulomb barrier, so the probability of initiating a nuclear reaction is negligible. Therefore, the energy losses of nonrelativistic heavy charged particles are mainly due to inelastic Coulomb interactions with atoms of matter.
+
+N.\,Bohr was the first to calculate the specific energy losses of a charged particle due to its interaction with electrons. In the classical approximation this calculation is rather straightforward. Suppose a particle with a charge $z$ moving in $x$ direction passes by a free electron located at a distance $y$ (an impact parameter). Atomic electrons can be regarded as free providing the energy of the incident particle substantially exceeds the binding energy of electrons in atom. In this case a momentum transferred to an electron is perpendicular to the particle path and is of the order of magnitude of the product of electrostatic force ($ze^2/y^2$) and the collision time. Therefore, the \mbox{energy $E_{e}$} gained by the electron during the collision is
+$$   
+E_{e}=\frac{p^2}{2m}=\frac{1}{2m}\left(\frac{ze^2}{y^2}\cdot\frac{2y}{v}\right)^2=\frac{2e^4z^2}{mv^2y^2}.   \eqMark{4_1_2}
+$$
+
+Let the electron density be $n_e=nZ$ ($n$~is the density of atoms in the substance and $Z$~is their charge). Then the energy lost by the charged particle per unit length due to interaction with the electrons in the layer $2\pi y\,dy$ equals
+$$
+dE(y)=\frac{4\pi nZz^2e^4}{mv^2}\frac{dy}{y}.   \eqMark{4_1_3}
+$$
+The total amount of energy lost per unit length due to interaction with electrons at any possible impact parameter $y$ is obtained by integrating Eq.~(\refEquation{4_1_3}):
+$$
+\left(\frac{d E}{d x}\right)\sub{ion}\Simeq4\pi\frac{e^4 z^2}{mv^2}\,nZ\,\ln\frac{y_{\max}}{y_{\min}}.   \eqMark{4_1_4}
+$$
+Integration over the whole plane perpendicular to the particle path, between $0$ and $\infty$, would result in a physically absurd conclusion: the particle stops immediately. That is why we introduce the limits of integration estimated below.
+
+The limits of the impact parameter in Eq.~(\refEquation{4_1_4}) (derived under the assumption that the charged particle interacts with free electrons) can be evaluated as follows. Notice that according to Eq.~(\refEquation{4_1_2}), the energy loss of a charged particle colliding with a free electron is inversely proportional to the impact parameter squared,~i.e.
+$$
+2\,\ln\,\frac{y_{\max}}{y_{\min}}=-\ln\,\frac{E_{\max}}{E_{\min}}.   \eqMark{4_1_5}
+$$
+From the law of energy conservation it follows that
+$$
+E_{\max}=\frac{4mE}{M}=2mv^2.   \eqMark{4_1_6}
+$$
+
+Indeed, in the rest frame of the particle a recoiled electron changes its velocity not more than by $2v$; this corresponds to a recoil from a perfectly elastic wall. The minimal energy transferred to an atomic electron is restricted by excitation process, or the binding energy of this electron, which is different for various atomic shells. A certain type of atoms or molecules is characterized by the smallest amount of energy loss called the \textit{mean ionization potential} $\overline{I}$. Therefore,
+$$
+\ln \frac {E_{\max}} {E_{\min}} = \ln \frac{2mv^2}{\overline{I}},   \eqMark{4_1_7}
+$$
+and the equation describing ionization losses of a heavy charged nonrelativistic particle becomes:
+$$
+\left(\frac{d E}{d x}\right)\sub{ion}\Simeq2\pi\frac{e^4 z^2}{mv^2}\,nZ\,\ln\frac{2mv^2}{\overline{I}}.   \eqMark{4_1_8}
+$$
+The quantity $dE/dx$ is called \textit{the stopping power} of material.
+
+We see that only the charge and velocity of ionizing particle enter Eq.~(\refEquation{4_1_8}).
+
+\fFigure{Bragg curves of $\alpha\text{-}$particles emitted by $_{\:\:\:\:}^{210}\mathrm{Po}$ and $_{\:\:\:\:}^{214}\mathrm{Po}$}4_1_1 {5.2cm}{3.1cm}{pic/L04_1_01.eps}
+
+For a given charge the energy losses are determined solely by the particle speed, with lower losses corresponding to higher speed. Slow particle loses its energy at the fastest rate.
+
+Dependence of $dE/dx$ on the distance traveled by particle in material is called the \textit{Bragg curve}. Two such curves for $\alpha\text{-}$particles emitted by $^{210}\mathrm{Po}$ ($E_{\alpha}=5{.}3\;\MeV$) and $^{214}\mathrm{Po}$ ($E_{\alpha}=7{.}7\;\MeV$) and propagating in air are shown in Fig.~\refFigure{4_1_1}. One can see that the Bragg curve has a characteristic peak just before the range end which is known as the \textit{Bragg peak}.
+
+As it was already mentioned, the path of a heavy charged particle in matter is almost straight and a spread of ranges due to multiple Coulomb scattering on nuclei is small, so it is reasonable to define the range of a charged particle in a material.
+
+Using the known dependence of stopping power of a given substance on the particle energy one can easily derive the expression for the range of the particle slowed down from initial energy $E_0$ to $E_1$. The range of a particle with charge $z$ and mass $M$ in a material with atomic number $Z$ is:
+$$
+R_{zM}=-\int\limits_{E_1}^{E_0}\frac{dE}{(dE/dx)}=\frac{m}{2\pi e^4 z^2 nZ}\int\limits_{E_1}^{E_0}\frac{v^2\,dE}{\ln(2mv^2/\overline{I})}.   \eqMark{4_1_9}
+$$
+
+Taking into account that $dE=Mv\,dv$ one obtains
+$$
+R_{zM}=\frac{mM}{2\pi e^4z^2nZ}\int\limits_{v_1}^{v_0}\frac{v^3\,dv}{\ln(2mv^2/\overline{I})}.   \eqMark{4_1_10}
+$$
+It is important that this function is the same for particles of all types in a given material. Neglecting the weak logarythmic dependence on the particle speed one obtains
+$$
+R\propto\frac{M}{z^2}v_0^4\propto E^2.   \eqMark{4_1_11}
+$$
+However, this formula turns out to be rather inaccurate when compared with experimental data because of the assumptions used. It is impossible to obtain a good quantitative agreement by taking into account only the interaction between the incident particle and electrons. That is why several empirical relations between the energy and the range of $\alpha\text{-}$particle are widely used. In the energy range between $4$ and $9\;\MeV$ the relation is well described by 
+$$
+R=0{.}32E^{3/2}.   \eqMark{4_1_12}
+$$
+
+Here $R$ is the range of $\alpha\text{-}$particle in air (at $15\celsii$ and standard atmospheric pressure) measured in centimeters, and energy $E$~ in megaelectronvolts. Ranges of $\alpha\text{-}$particles in air for all radioactive sources are equal to several centimeters. It is easy to derive the rule of range conversion at another temperature and pressure.
+
+Equation~(\refEquation{4_1_8}) shows that at a given velocity energy losses are proportional to the product of electron density and path length: $\Delta E \propto n_e \Delta x$. In a certain material electron density is proportional to that of atoms:
+$$
+n_e=\rho N_{\mathrm A} Z/A,   \eqMark{4_1_13}
+$$
+where $N_{\mathrm A}$ is the Avogadro constant, $A$ is the atomic weight of material, and $Z$ is atomic number of element. Hence, the energy lost by $\alpha\text{-}$particle in a layer of material depends on the product $\rho x$, where $\rho$ is the material density and $x$ is the layer thickness. In other words, in order to specify the particle energy it is better to use the range multiplied by material density, $R'=\rho R$, rather than the range $R$ expressed in centimeters. The dimension of the quantity $R'$ is $\g/\cm^2$. This quantity is equal to the mass of a cylinder with a base of $1\;\cm^2$ and the length equal to the range of $\alpha\text{-}$particle. $R'$ is also called the range. We conclude that the range can be expressed both in $\cm$ and $\g/\cm^2$.
+
+{Scattering of $\alpha\text{-}$particles in matter and statistical behavior of energy losses result in  dispersion of $\alpha\text{-}$particle ranges even for particles of the same initial energy. This dispersion determines the shape of a curve representing the number of particles versus the distance travelled in a material (see~\refFigure{4_1_2}).
+\parfillskip=0pt
+
+}
+
+\fFigure{Dependence of the number of $\alpha\text{-}$particles on their penetration depth in matter}4_1_2 {4.7cm}{3.3cm}{pic/L04_1_02.eps}
+
+{If the layer thickness is small the number of particles is independent of it. At the range end the number of particles does not terminate abruptly, rather it approaches zero gradually. As demonstrated by the curve $dN/dx$, the majority of \mbox{$\alpha\text{-}$particles} stops in a thin layer near a certain value \mbox{of $x$} called \textit{the mean range} $R\sub{m}$. It is $R\sub{m}$ that enters Eq.~(\refEquation{4_1_12}). Sometimes the \textit{extrapolated range} $R\sub{ex}$ is measured instead. It is obtained by drawing the tangent line to the curve $N(x)$ at $x=R\sub{m}$ to the intercept with $x$-axis.\parfillskip=0pt
+
+}
+
+Despite the presence of a collimator, the beams of particles used in this experiment are of a finite size and a significant angular divergence. This does not prevent from obtaining the correct qualitative dependence of $\alpha\text{-}$particle count rate on the penetration depth (with appearance of the Bragg peak), and therefore gives correct relative ranges of particles with different energies. However, the peak itself is shifted and significantly widened. Because of that, the extrapolated range is a better estimate of the particle range.
+
+During the experiment with $\alpha\text{-}$particles one should keep in mind that a source of these particles can contaminate neighboring surfaces. This is due to recoil of the atoms emitting $\alpha\text{-}$particles. To avoid contamination, an $\alpha\text{-}$radioactive source is usually covered with a thin protective film which slows $\alpha\text{-}$particles down.
+
+In this experiment the range of $\alpha\text{-}$particles in air is determined by means of:
+
+\vspace{2pt}
+I~--- an end-window Geiger counter;
+
+\vspace{2pt}
+II~--- a scintillation counter;
+
+\vspace{2pt}
+III~--- an ionization chamber.
+
+\vspace{2pt}
+A sample of $^{239}{\mathrm{Pu}}$ with a half-life period of $T_{1/2}=2{.}44\cdot 10^4\;\text{years}$ is the source of $\alpha\text{-}$particles. It emits particles of three monoenergetic groups with energies in the range of $50\;\keV$. Within the accuracy of our experiment this energy difference can be neglected and the energy of $\alpha\text{-}$particles can be taken as $5{.}15\;\MeV$.
+
+\vspace{8pt}
+\textbf{I. Measurement of $\boldsymbol\alpha$-particle range \\ \indent by means of Geiger counter}
+
+\vspace{6pt}
+To determine the range of $\alpha\text{-}$particles by means of a Geiger counter the radioactive source is placed at the bottom of a steel cylindrical bomb (see~\refFigure{4_1_3}); the end-window Geiger counter can be moved inside it. A sensitive volume of the counter is separated from the environment by thin mica window transparent for $\alpha\text{-}$particles. The operating voltage of the counter is indicated on the installation.
+%
+Pulses generated by the counter are then amplified and registered by a scaling circuit. A path of a particle in air depends on the distance between the source and the counter. The latter can be moved by rotating a nut on the bomb top. The scale on the counter holder is used to measure the distance between the counter and the sample.
+
+\fFigure{Setup for measurement of $\alpha\text{-}$particle ranges by means of end-window Geiger counter}4_1_3 {3.9cm}{5.2cm}{pic/L04_1_03.eps}
+
+The counter cannot be moved closer than $6\;\mm$ to the radioactive sample because of a collimator installed between them. The collimator is composed of tightly compressed metal tubes letting only those $\alpha\text{-}$particles reach the detector which escape the source almost perpendicular to its surface. \vspace{10pt}
+
+\parbox{6cm}{\so{\textbf{Directions}}\vspace{5pt}}
+
+\begin{Enumerate}{tab} \Item. Turn on the scaling circuit and a high-voltage rectifier. Let them warm up for $5\text{--}10\;\text{minutes}$. During this period verify that the counter responds to $\alpha\text{-}$particles: apply the required voltage to the counter and measure the count rate starting at any distance from the source that exceeds $4\;\cm$ and then at the minimal distance from the source. The count rate in the second case must be much greater than in the first case.
+
+\Item. Do preliminary measurements of the count rate $N$ versus distance $x$ between the source and the counter by moving the counter $5\;\mm$ at a time. Plot a chart of the dependence $N=N(x)$.
+
+\Item. Determine the regions on the chart that have to be determined with a greater accuracy. Do the corresponding measurements.
+
+\Item. Plot the results in $N,x$-coordinates. Determine the mean and the extrapolated ranges in $\cm$ and $\g/\cm^2$. Keep in mind that the true range of $\alpha\text{-}$particles is greater than the measured one, because the energy of the particles is partially lost in the mica entrance window of the counter and the protective film covering the source. \end{Enumerate}
+
+\vspace{12pt}
+\textbf{\textsc{II. Determination of range of $\boldsymbol{\alpha}$-particles\\ \indent using scintillation counter}}
+
+\vspace{8pt}
+The setup consists of a cylindrical tube with a source at the bottom. The tube is air-tight and closed with a glass plate which inner surface is covered with a phosphorous layer. The photocathode of a photomultiplier is pressed against the glass from the outside (see~\refFigure{4_1_4}). The optical contact between them is due to a thin layer of vaseline oil.
+
+A signal from the photomultiplier is amplified and received by a scaling circuit. The operation voltage of the photomultiplier
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fFigure{Setup for measuring ranges of $\alpha\text{-}$particles  by means of scintillation \mbox{counter}}4_1_4 {4.4cm}{6.8cm}{pic/L04_1_04.eps}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+is indicated on the high-voltage rectifier. The distance between the sample and the phosphorous layer is $9\;\cm$, i.e. \mbox{$\alpha\text{-}$particles} cannot reach the layer at atmospheric pressure. Hence, to determine the range one measures the dependence of counting rate on the pressure inside the tube. \vspace{12pt}
+
+\textbf{\so{Directions}}\vspace{6pt}
+
+\begin{Enumerate}{tab} \Item. Turn on the scaling circuit and the high-voltage rectifier. Let them warm up for $5\text{--}10\;$minutes. Meanwhile do the following measurements:
+
+a) supply the photomultiplier with a required voltage (indicated on the setup);
+
+b) measure the counting rate at atmospheric pressure;
+
+c) turn on the vacuum pump and evacuate the tube;
+
+d) measure the counting rate at a small pressure (the rate should be much greater than the one at atmospheric pressure).
+
+\Item.  Do preliminary measurements of the dependence of count rate $N$ on pressure $P$. It is more convenient to carry out the measurements when letting air  enter the tube through the capillary than during evacuation.
+
+Plot the dependence $N=N(P)$. Determine the areas which have to be measured with a greater accuracy.
+
+\Item. Obtain more experimental points on the curve slope.
+
+\Item. Plot the dependence $N=N(P)$ and use it to determine the mean and extrapolated ranges of $\alpha\text{-}$particles. Extrapolate the ranges to $P=760\;\tor$ and $T=15\celsii$. Express them in $\cm$ and in $\g/\cm^2$.
+
+\Item. Compare the ranges obtained by two methods and estimate the errors.
+
+\Item. Using the results of comparison determine the thickness of mica (in $\mg/\cm^2$) covering the window of the end-window counter. Notice that the range of $\alpha\text{-}$particles in mica, if measured in $\g/\cm^2$, is $1{.}2$ times greater than that in the air (in the same units).
+
+\Item. Determine the energy of $\alpha\text{-}$particles $E_{\alpha}$ using Eq.~(\refEquation{4_1_12}). Compare the result with the tabulated value of $5{.}15$\;MeV.
+
+\Item. Assuming the efficiency of $\alpha\text{-}$particle counting to be $100\%$ and using the known half-life, evaluate the amount of radioactive material in the sample. The source subtends the solid  angle of $0{.}04\;\text{sr}$. \end{Enumerate}%
+
+\vspace{8pt}
+\textbf{III. Measurement of $\boldsymbol\alpha$-particle range \\ \indent by means of ionization chamber}\vspace{5pt}
+
+Ionization chamber is a device for measuring the ionization produced by charged particles passing through a gaseous medium. The chamber is a two-electrode cell filled with a gas (it is schematically drawn in~$\refFigure{4_1_5}$). The spherical
+%
+\fFigure{Schematic arrangement of the ionization chamber}4_1_5 {6.0cm}{5.4cm}{pic/ALPHA1.eps}
+%
+wall of the chamber serves as the first electrode and the second one is inserted in the cell through an isolating plug. A power source maintains a DC voltage between the electrodes.
+
+The gas filling the chamber does not conduct electrical current by itself. A current arises when a fast charged particle passes inside the chamber and creates ions along its path.
+
+Let us place a source of ionizing radiation (in our case, $\alpha\text{-}$active isotope $_{~94}^{239}\mathrm{Pu}$) on the butt of the inner electrode, fill the chamber with air, and gradually increase the potential difference between the electrodes. At first the current through the chamber  increases rapidly, but starting with a certain potential difference $V_0$ it levels off as it is shown in~\refFigure{4_1_6}. The maximal current $I_0$ is obviously equal to $I_0=n_0e$, where $n_0$ is the number of ion pairs produced per second and $e$ is the electron charge.
+
+At low voltages the current is significantly smaller than $I_0$. This is due to recombination of some ions, so that they do not reach the electrodes. Only at a rather high voltage (of about hundreds volts) the ions move fast enough to render recombination irrelevant. To detect the ionizing radiation the ionization chamber must operate on the plateau where the current is independent of minor variations of the potential across the chamber electrodes.\looseness=-1
+\begin{cFigures}
+\Figure
+{Current-voltage curve of ionization chamber}4_1_6
+[t]{3.9cm}{2.9cm}{pic/ALPHA2.eps}\qquad
+\Figure
+{A characteristic dependence of current in ionization chamber on pressure. Ionization is caused by $\alpha\text{-}$particles}4_1_7
+[t]{6cm}{2.9cm}{pic/ALPHA3.eps}
+\end{cFigures}
+
+The pulses of current are detected by measuring the potential across the resistor $R$ included in a chamber circuit. The mean ionization energy of atoms of air is around $30\;\eV$, so an $\alpha\text{-}$particle with the energy of $3\;\MeV$ creates about $100\,000$ electrons along its range, this corresponds to the total charge of $1.6\cdot 10^{-14}$\,C. A tiny charge corresponding to one $\alpha\text{-}$particle passing through the cell can be measured only if a capacitance $C$ is small enough.\looseness=-1
+
+Since electron mobility is approximately $1000$ times greater than ion mobility, the parameters of $RC$-circuit can be adjusted to detect the current pulses corresponding only to the electron component. In practice, the electron component of a current pulse is detectable with the $RC$ time constant of several microseconds.
+
+If a sufficiently large amount of $\alpha\text{-}$particles passes through the cell, one can measure the current, instead of detecting charge, which is, of course, proportional to the flux of $\alpha\text{-}$particles. In this (current) mode the $RC$ time constant is several seconds, and the ionization chamber operating in this mode is called a current chamber.
+
+The dependence of ionization current on pressure in the chamber is plotted in~\refFigure{4_1_7}. At small pressures, $\alpha\text{-}$particles transfer part of their energy to the chamber walls. When the pressure reaches $P_0$ all particles stop inside the chamber and the current does not grow further. The most common method of determination of $P_0$ is extrapolation (the corresponding range is the extrapolated range), when tangents to the sloping and horizontal parts of the curve are continued to obtain a point of intersection. The determined range should then be converted to the normal pressure and the temperature of $15\celsii$.
+
+In this experiment the range of $\alpha\text{-}$particles is determined by measuring ionization current in a spherical chamber. A disc $5\;\mm$ in diameter serves as the inner electrode; a thin layer of $_{~94}^{239}\mathrm{Pu}$ on its top is covered with a fine protective film. The second electrode is the chamber spherical surface $100\;\mm$ in diameter. Both electrodes are carefully isolated from each other and from the ground. The potential difference across the electrodes is $300\;\V$. A vacuum assembly includes a valve and a manometer. It enables one to vary the pressure in the chamber from the atmospheric one to $10\;\tor$. The ionization current is measured by an electrometer consisting of several standard microchips; it measures a drop of potential across a resistor $R=100\;\MOm$ ($C=10^{-8}\;$Farad, i.e. $RC=1\;\s$). The ionization current (in picoamperes) is displayed on the digital indicator.
+
+\vspace{8pt} \textbf{\so{Directions}}\vspace{5pt}
+
+\begin{Enumerate}{tab}
+
+\Item. Plug the installation in the mains $220\;\V$. Write down a zero reading of the indicator.
+
+\Item. Turn on the ionization chamber. A current $I$ passing through the chamber is now displayed  in picoamperes ($1\;\text{pA}=10^{-12}\;\A$).
+
+\Item. Do preliminary measurements. Record the current at atmospheric pressure. Then start evacuating the chamber and observe the electrometer readings. Verify that starting from a certain pressure the current decreases. Stop evacuation when the pressure reaches $10\div20\;\tor$. Gradually increase the pressure using the inlet valve and measure the dependence of the current on the pressure.
+
+\Item. Plot the dependence $I(P)$. In this experiment, as it was already mentioned, the extrapolated range is determined by the crossing point of two straight lines shown in~\refFigure{4_1_7}, therefore, the experimental points should be most abundant in the regions used to draw these lines.
+
+\Item. Evacuate the chamber. Vary the pressure by means of the inlet valve and measure the current $I$ at all predetermined points.
+
+\Item. Draw a chart and determine the extrapolated range of $\alpha\text{-}$particles in air under the experimental conditions (do not forget to subtract the "zero" current from the measured values). Extrapolate the range obtained to the normal pressure and the temperature of $15\celsii$ (the tabulated ranges correspond to these conditions). Express the range both in $\cm$ and in $\g/\cm^2$.
+
+\Item. When the measurements are done let air enter the installation by opening both valves.
+
+\Item. Compare the ranges obtained by all three methods and estimate the errors.
+
+\Item. Determine the energy of $\alpha\text{-}$particles using Eq.~(\refEquation{4_1_12}). Compare it with the tabulated value (see Table~V.3). Calculate the thickness of a paper sheet that stops $\alpha\text{-}$particles emitted by $^{239}$Pu.
+ \end{Enumerate}
+ 
+\begin{center}\so{\textsf{\small LITERATURE}}\end{center} {\small
+
+1. \textit{Широков\;Ю.\;М., Юдин\;Н.\;П.} Ядерная физика.\,---\,М.: Наука, $1980$. Гл.\;VI, \textsection\textsection\;$1$--$3$; гл.\;VIII, \textsection\textsection\;$1$, $2$.
+
+2. \textit{Мухин\;К.\;Н.} Экспериментальная ядерная физика. Том 1: Физика атомного ядра.\,---\,СПб: Лань, $2008$. \S\S\,$17$, $23$.
+
+3. \textit{Абрамов\;А.\;И., Казанский\;Ю.\;А., Матусевич\;Е.\;С.} Основы экспериментальных методов ядерной физики.\,---\,М.: Атомиздат, $1977$. Гл.\;$5$, $7$. }

@@ -1,0 +1,179 @@
+%translator Svintsov, date 12.01.13
+
+\let\theEquation=\oldTheEquation \let\theFigure=\oldTheFigure 
+
+\Chapter {Exchange interaction} {Exchange interaction} {Exchange interaction} 
+
+\textbf{Quantum-mechanical origin of exchange interaction.} 
+
+We already mentioned (see section~VIII) that in quantum mechanics the particles of one sort are absolutely identical. Let us explain what it means.
+
+In classical mechanics we can mark particles; for example, when a billiard ball strikes another one, we can definitely tell which of the balls after the collision moves left and which of them moves right. In quantum mechanics this is impossible in principle because the particles do not have certain paths and their wave functions overlap in the area where the collision occurs. In quantum mechanics particles of one sort do not have individuality which is manifested by the so called \emph{particle identity principle}.
+
+The identity principle can be formulated in terms of wave function. The wave function of the state obtained from another state by a permutation of identical particles equals the wave function of the initial state times $e^{I f}$, where $f$ is a real number. Such factor changes neither the probability density $|\Psi |^2$ nor the expectation value of a physical quantity. The repeated permutation results in the wave function multiplied by $e^{2if}$. On the other hand, the repeated permutation restores the initial state, hence $e^{2if}=1$ or $e^{2if}=-1$. Thus, a permutation of identical particles either does not change the wave function or changes only its sign. As a particle state is described not only by the particle position but also by its spin, the wave function in the first case is  \emph{symmetric} function of coordinates and spin projections, while in the second case it is \emph{antisymmetric}.
+
+Experiment shows that symmetry or antisymmetry of the wave functions is determined by the particle spin. Particles with half-integer spin, including electrons, protons, and neutrons, are described by antisymmetric wave functions; they obey Fermi-Dirac statistics and are called \emph{fermions}. The particles with integer spin, including photons, mesons, etc., are described by symmetric wave functions, they obey the Bose-Einstein statistics and are called \emph{bosons}.  W.~Pauli showed that this experimental fact can be explained in terms of quantum field theory.
+
+Antisymmetry of fermionic wave functions results in very simple and illustrative phenomena even in the approximation of non-interacting particles. If an interaction between particles is neglected, each particle of a system can be treated as belonging to a certain quantum state, and the wave function of the system can be presented as the product of wave functions of individual particles. The total energy $\EDS$ equals the sum of energies of the individual particles. Let us consider, for simplicity, a system of two particles. The energy of the system $\EDS=\EDS_1+\EDS_2$, where $\EDS_1$ is the energy of the first particle in the quantum state described by wave function $\psi _{\alpha}(\textbf{r}_1, s_{z1})$ and $\EDS_2$ is the energy of the second particle in the state $\psi_{\beta}(\textbf{r}_2, s_{z2})$. Here $\textbf{r}_1$, $\textbf{r}_2$ are the coordinates of the first and the second particles and $s_{z1}$, $s_{z2}$ are $z$-components of their spins. The solution of the Schrodinger equation of the two-particle system is 
+$$   
+\Psi_{\mathrm{I}}=\psi_{\alpha}(\textbf{r}_1, s_{z1})\psi_{\beta}(\textbf{r}_2, s_{z2}).   \eqMark{9_1} 
+$$
+If the indices $1$ and $2$ stand for all the variables which the wave functions of the first and the second particles depend on, the wave function of the system can be rewritten as
+$$   
+\Psi_{\mathrm I}(1, 2) = \psi_{\alpha}(1)\psi_{\beta}(2).   \eqMark{9_2} 
+$$
+
+However, this wave function has a shortcoming: we mark the particles as if they were classical, i.e. we show explicitly which of the particles is ''number one'' and which is ''number two''. However, for identical particles 
+$$   
+\Psi_{\mathrm{II}}(1, 2) = \psi_{\alpha}(2)\psi_{\beta}(1)  \eqMark{9_3} 
+$$
+is also a solution of the Schrodinger equation with the same energy $\EDS$. In this wave function the second particle is in the state $\psi_{\alpha}$ with energy $\EDS_{1}$ and the first one is in the state $\psi_{\beta}$ with energy $\EDS_{2}$. Hence, there exists a twofold degeneracy of any energy level due to the permutation symmetry.
+
+Now consider the correct form of the system wave function. According to the superposition principle, any linear combination of $\Psi_{\mathrm{I}}$ and $\Psi_{\mathrm{II}}$, e.g.
+$$   
+\Psi =c_{1} \Psi_{\mathrm{I}}+c_2\Psi_{\mathrm{II}},   \eqMark{9_4} 
+$$ 
+(where $c_1$, $c_2$~are arbitrary constants) is a solution of the Schrodinger equation as well. Since the system wave function should be either symmetric or antisymmetric one must set either $c_1=c_2$ or $c_1=-c_2$. The symmetric normalized wavefunction for $\alpha \neq \beta$ (particles in different states) is
+$$   
+\Psi_{\mathrm s} (1, 2) =\frac{1}{\sqrt{2}}[\psi_{\alpha} (1)\psi_{\beta} (2) + \psi_{\alpha}(2)\psi_{\beta} (1) ],   \eqMark{9_5} 
+$$ 
+and the antisymmetric wave function is
+$$  
+ \Psi_{\mathrm a} = \frac{1}{\sqrt {2}}[\psi_{\alpha} (1) \psi_{\beta} (2) - \psi_{\alpha} (2) \psi_{\beta} (1) ],   \eqMark{9_6} 
+ $$
+ where $1/\sqrt{2}$~is the normalization factor. These formulae can be generalized for systems consisting of more than two particles.
+
+There is an interesting and fundamental result describing the behavior of fermions, which follows from Eq.~(\refEquation{9_6}), the wave function of non-interacting fermions. If two fermions are in the same quantum state ($\psi_{\alpha} = \psi_{\beta}$, i.e. at the same place and in the same spin state), the wave function~(\refEquation{9_6}) vanishes. It means that in any system of identical particles two (or more) of them cannot be in the same quantum state. This statement is called the \emph{Pauli exclusion principle}, or simply the \emph{Pauli principle}. In the general case of a system of identical interacting particles with half-integer spin the Pauli principle requires the wave function to be antisymmetric.
+
+The identity of particles of one sort in quantum mechanics leads to a specific interaction between them, called the \emph{exchange interaction}. Let us consider the origin of this interaction using  two electrons as an example.
+
+Neglecting the spin-orbit interaction (it is always weaker than the Coulomb one) one can write a wave function of the system as the product of a coordinate-dependent function $\Phi(\textbf{r}_{1} ,\textbf{r}_{2})$ and a function of spin components $S(s_{z1} , s_{z2})$, i.e.
+$$   
+\psi (1, 2) = \Phi (\textbf{r}_{1},\textbf{r}_{2})S(s_{z1}, s_{z2}).   \eqMark{9_7} 
+$$ 
+
+According to the Pauli principle the total wave function $\psi$ should be antisymmetric, which means that the simultaneous permutation of particle coordinates $\textbf{r}$ and spin variables $s_{z}$ changes its sign. This is possible in two cases: either the spin function $S$ is antisymmetric and the coordinate one is symmetric, or, vice versa, the spin function is symmetric and the coordinate function is antisymmetric. In the first case the electron spins are antiparallel (the so-called singlet state) and in the second case the spins are parallel (triplet state). 
+
+The peculiarities of exchange interaction are especially pronounced when the wave function can be presented as the product of single-particle functions. Let us denote the coordinate-dependent part of wave function of electron in the state $\alpha$ as $\psi_{\alpha}$ and that of the second electron in the state $\beta$ as $\psi_{\beta}$. In accordance with Eqs.~(\refEquation{9_5}) and~(\refEquation{9_6}) the coordinate function of the system must be written as
+$$  
+ \Phi (\textbf{r}_{1} ,\textbf{r}_{2} ) =\frac{1}{\sqrt{2}}[\psi_{\alpha}(\textbf{r}_{1})\psi_{\beta}(\textbf{r}_{2})\pm   \psi_{\alpha}(\textbf{r}_{2})\psi_{\beta}(\textbf{r}_{1})].   \eqMark{9_8} 
+ $$
+The plus sign corresponds to the symmetric function and the minus sign to antisymmetric.
+If both electrons are localized near a center of force (as in the helium atom) Eq.~(\refEquation{9_8}) is valid provided $\alpha \neq \beta$. If the electrons are localized near different centers of force (as in the hydrogen molecule) the equation is also valid for $\alpha = \beta$.
+
+Let us calculate the average potential energy of electrons in the state~(\refEquation{9_8}). The operator of potential energy is $\widehat{U}=e^{2}/r_{12}$, where $r_{12}$ is the distance between electrons. The average value of this energy equals
+$$   
+\langle U \rangle = \int\Phi^{*} \widehat{U} \Phi dv_{1} dv_{2}.   \eqMark{9_9} 
+$$ 
+The integration is performed over the coordinates $\textbf{r}_{1}$ and $\textbf{r}_{2}$: 
+$$   
+dv_{1}=dx_{1}dy_{1}dz_{1},~~~dv_{2}=dx_{2}dy_{2}dz_{2}.   \eqMark{9_10} 
+$$ 
+
+Let us introduce the following notation which, as we will see later, has a clear physical meaning:
+$$   \rho_{\alpha}(\textbf{r}_{1}) =-e| \psi_{\alpha} (\textbf{r}_{1})|^{2}, $$ 
+$$   \rho_{\beta}(\textbf{r}_{2})=-e|\psi_{\beta}(\textbf{r}_{2})|^{2},   \eqMark{9_11} $$ 
+$$   \rho_{\alpha\beta} (\textbf{r}_1)=-e\psi_{\alpha}^*(\textbf{r}_{1})\psi_{\beta}(\textbf{r}_{1}), $$ 
+$$   \rho_{\alpha\beta}^*(\textbf{r}_{2})=-e\psi_{\alpha}(\textbf{r}_{2})\psi_{\beta}^*(\textbf{r}_{2}) $$ 
+and express the average potential energy of electrons via these terms by substituting the wave function~(\refEquation{9_8}) into~(\refEquation{9_9}):
+$$   
+\langle U \rangle= \int\frac{\rho_{\alpha} (\textbf{r}_{1})\rho_{\beta}(\textbf{r}_{2})}{r_{12}}dv_{1}dv_{2}\pm\int\frac{\rho_{\alpha\beta} (\textbf{r}_{1})\rho_{\alpha\beta}^{*}(\textbf{r}_{2})}{r_{12}}dv_{1}dv_{2}=K\pm A.\eqMark{9_12} 
+$$ 
+It is taken into account that the integrals over the expressions 
+$$   
+[\psi_{\alpha}^{*}(\textbf{r}_{1})\psi_{\alpha}(\textbf{r}_{1})][\psi_{\beta}^{*}(\textbf{r}_{2})\psi_{\beta}(\textbf{r}_{2})]   =|\psi_{\alpha}(\textbf{r}_{1})|^{2}|\psi_{\beta}(\textbf{r}_{2})|^{2} $$ è $$   [\psi_{\alpha}^{*}(\textbf{r}_{2})\psi_{\alpha}(\textbf{r}_{2})][\psi_{\beta}^{*}(\textbf{r}_{1})\psi_{\beta}(\textbf{r}_{1})]=   |\psi_{\alpha}(\textbf{r}_{2})|^{2}|\psi_{\beta}(\textbf{r}_{1})|^{2} 
+$$ 
+obtained after substitution of the wave function~(\refEquation{9_8}) are equal because these expressions are different only in the integration variables.
+
+The first term $K$ has a transparent physical meaning:  $\rho_{\alpha} (r_{1})$ and $\rho_{\beta} (r_{2})$ are the charge densities of the first and the second electrons ''smeared'' over position space due to their motion. This term is a well-known classical interaction of two charge distributions. The second term is of a purely quantum origin and is called the \emph{exchange energy}.This energy has no classical analogy; it appears because a state of two identical particles must be described by either symmetric or antisymmetric combinations of the functions $\psi_{\alpha}(\textbf{r}_{1})\psi_{\beta}(\textbf{r}_{2})$ and $\psi_{\alpha}(\textbf{r}_2)\psi_{\beta}(\textbf{r}_{1})$, rather than by the functions themselves. The wave function~(\refEquation{9_8}) describes a certain correlation of electron motion.
+
+The quantities $\rho_{\alpha\beta} (\textbf{r}_{1})$ and $\rho_{\alpha\beta}(\textbf{r}_{2} )$, sometimes referred to as exchange densities, cannot be treated as ordinary densities since they can be complex. The quantity  $|\rho_{\alpha \beta}|^{2}/e^{2}$ is the probability density corresponding to both electrons located at the same point ($\textbf{r}_{1}$ or $\textbf{r}_{2}$), which is easily seen from Eqs.~(\refEquation{9_11}). 
+
+It is worth noting that the exchange energy $A$, just like the Coulomb energy $K$, is due to the Coulomb interaction, it is proportional to the electron charge squared. The existence of exchange energy does not mean the existence of a force of some special origin. The new term along with the Coulomb energy is due to peculiarities of quantum behavior of identical particles.
+
+The exchange energy gives an additional contribution to the total energy of any interaction, not only electromagnetic. The general properties of exchange energy are the following. Firstly, it is nonzero providing the wave functions $\psi_{\alpha}$ and $\psi_{\beta}$ (or, figuratively, the ''electron clouds'') overlap (see~\refFigure{9_1}). This means that the particles ''spend'' a certain time in the same area.
+% 
+\fFigure{Overlap of wave functions $\phi_\alpha$ and $\phi_\beta$ of two electrons giving rise to the exchange energy}9_1 {6.2cm}{1.5cm}{pic/L09_01.eps} 
+%
+If the wave functions do not overlap, $\rho_{\alpha \beta} =0$. The more the wave functions overlap, the stronger is the exchange interaction. Secondly, the exchange energy unlike the Coulomb energy can have any sign depending on the symmetry of the spin wave function. Hence, both the repulsion and attraction forces can appear in the same system due to the exchange interaction.
+
+The existence of half-integer spin itself leads to the quantum states different in the sign of the exchange energy. For instance, energy levels of parahelium (antiparallel electron spins) are significantly different from those of orthohelium (parallel electron spins). It is believed that the exchange energy sign explains the difference between ferromagnets (parallel spins) and antiferromagnets (antiparallel spins).
+
+The exchange energy governs a wide range of phenomena. It significantly affects the energies of stationary states in all atoms, starting with helium. The exchange energy plays the central role in formation of covalent chemical bonds in molecules and crystals, e.g. in germanium and silicon. This energy is also important for understanding the nucleonic interaction and so on.
+% 
+\fFigure{Interaction energy of two hydrogen atoms with parallel and antiparallel electron spins}9_2 {4.6cm}{3.3cm}{pic/L09_02.eps} 
+% 
+
+Let us consider qualitatively the role of exchange interaction in formation of a typical homopolar molecule, the hydrogen molecule. The interaction energy of two hydrogen atoms as a function of the distance $R$ between them is plotted in~\refFigure{9_2} for both the symmetric coordinate wave function $U_{\mathrm{s}}$ and the antisymmetric one, $U_{\mathrm{a}}$.
+
+One can see that the molecule formation is impossible if the spins are parallel. If the electron spins are antiparallel the energy $U_{\mathrm{s}}$ has a minimum. Hence, at some distance $R_{0}$ the nuclei are in the state of stable equilibrium and the molecule $\mathrm{H}_{2}$ can exist.
+
+The attraction or repulsion of nuclei depends on the sign of the exchange energy $A$. The attraction of hydrogen nuclei at antiparallel spins and the repulsion at parallel spins can be illustrated as follows.
+%
+\fFigure{Electron wave function for parallel (right) and antiparallel (left) spins at various distances between hydrogen nuclei}9_3 {6.8cm}{3.1cm}{pic/L09_03.eps} 
+% 
+The symmetric (antiparallel spins) and antisymmetric (parallel spins) coordinate wave functions are shown in~\refFigure{9_3}. Both combinations ensure the antisymmetry of the total wave function. When atoms are far apart the electron wave functions do not overlap.
+
+As the hydrogen atoms get closer the coordinate wave functions corresponding to parallel and antiparallel spins begin to diverge. The electron energy consists of two parts: the potential energy due to electrostatic field of two protons and the kinetic energy $\sim |\nabla\psi|^{2}$ (kinetic energy is proportional to momentum squared and momentum operator in quantum mechanics equals $\widehat{p} =-i \hbar \nabla$). When the spins are antiparallel both terms are smaller than in the case of parallel spins. The probability of finding electrons between the nuclei is high; the electrons located in this area attract the nuclei thereby lowering the potential energy. The kinetic energy is smaller because $|\nabla\psi |^{2}\Simeq0$ is small in the area between the nuclei. If the spins are parallel the wave function vanishes between the nuclei, the charge density at this point has a minimum and the nuclei repel each other thereby increasing the potential energy. The kinetic energy of electrons determined by the gradient of wave function is also higher in this case.
+
+Now one can easily explain the empirical Hund's rule which states that the minimum energy of an atom with a partially filled electron shell is achieved when the total spin $S$ is at its maximal possible value (unlike the hydrogen molecule where the total spin is zero). In accord with the previous arguments we can conclude that the maximal spin $S$ corresponds to the minimum of energy since the electrons are separated and the Coulomb energy of their repulsion is lowered. In other words, the maximal spin corresponds to the ''most antisymmetric'' coordinate-dependent wave function. There is a simple mnemonic rule for memorizing the Hund's rule, called the ''suburban train rule'': the passengers first try to occupy the seats facing the train motion thereby lining up along the car, and only then occupy the seats facing backwards.
+
+Let us now discuss the role played by the exchange interaction in magnetism. In classical physics all magnetic properties of micro- and macro systems are governed solely by magnetic interactions between particles. On the other hand, the Curie temperature $T_{\mathrm{C}}$ of many ferromagnetic materials is of the order of $10^{2}\div10^{3}\;\kelvin$, and the corresponding energy ${\kb}T_{\mathrm{C}}\simeq 10^{-14}\div 10^{-13}\;\erg~(0{.}01\div0{.}1\;\eV)$ is tens or even hundreds times greater than the energy of any purely magnetic bond. In addition, Dorfman's experiments (1927) on deflection of $\beta$-electrons in a spontaneously magnetized ferromagnetic unambiguously showed that there was no effective magnetic field inside the ferromagnetic. It is worth recalling the experiments of Einstein and de Haas (1915) in which the relation between magnetic moment and mechanical (angular) momentum was experimentally established. They found that the ratio of the magnetic moment $\mu$ to the mechanical moment $M$ of a ferromagnet equals
+$$  
+ \frac{\mu}{M}=-\frac{e}{mc}.   \eqMark{9_13} 
+ $$
+This result is twice as high as the expected ratio for angular (orbital) motion of electron. Thus, the Einstein--de Haas experiment shows that magnetism is governed not by spatial motion of electrons but rather by their spin.
+
+These facts allows one to suggest that ferromagnetism is not a magnetic effect by its origin, but it is due to the Coulomb interaction of magnetic atoms in solids. The discussion of hydrogen molecule above reveals that the molecule energy significantly depends on its spin state via the sign of the exchange interaction. It seems reasonable to assume that it is the exchange interaction that is responsible for ferromagnetism. The idea that the energy of a magnetized state can be minimized due to the Pauli principle was independently proposed by W. Heisenberg and Ya. Frenkel in 1928.
+
+The simplest model of ferromagnetism is based on the assumption that the energy of magnetization (following from the Pauli principle) is completely due to the exchange energy. This model, in fact, extends the theory of hydrogen molecule to a many-particle system. In other words, we assume that all electrons in a crystal containing $N$ hydrogen-like atoms are in the $S$-state. The exchange energy of a crystal is the sum of exchange energies of atomic pairs and it can be written as:
+$$   
+U\sub{exc}=-2\sum'J_{ij}\textbf{S}_{i}\textbf{S}_{j}.   \eqMark{9_14} 
+$$ 
+In this expression $\textbf{S}_{i}\textbf{S}_{j}$ is the dot product of the spins of $i$-th and $j$-th atoms; the expression is similar to the energy of magnetic dipole interaction. The prime above the sum means that $i<j$ to avoid double counting of the pairs. Since in quantum mechanics a spin projection accepts only discrete values, the scalar product in Eq.~(\refEquation{9_14}) is discrete as well.
+
+Let us apply Eq.~(\refEquation{9_14}) to the hydrogen molecule. For any atom the magnetic quantum number $m_{\mathrm s}=\pm 1/2$. If the exchange integral $J$ for a given electron configuration is negative the energy of the triplet state ($S_{i}=S_{j}=1/2$) equals
+$$   
+U\sub{exc}=-2(-|J|)\cdot \frac{1}{2}\cdot\frac{1}{2} =\frac{1}{2}|J|,   \eqMark{9_15} 
+$$
+while for the singlet state ($S_{i}=1/2$, $S_{j}=-1/2$)
+$$   
+U\sub{exc}=-2 (-|J| ) \cdot\frac{1}{2}\cdot \left(-\frac{1}{2}\right)=-\frac{1}{2}|J|.   \eqMark{9_16} 
+$$
+In Eqs.~(\refEquation{9_15}) and~(\refEquation{9_16}) we use the classical expression for the absolute value of spin (instead of the quantum value $\sqrt{S(S+1)}\;$), it suffices for a qualitative estimate. The energy difference between the singlet and triplet states equals the exchange integral $-|J|/2-|J|/2=-|J|$. It is actually the energy required to flip the spin over. According to the estimate the singlet state of hydrogen molecule actually has a lower energy.
+
+Thus, if the exchange integral is positive, the lowest energy corresponds to the symmetric state (the simplest example is a ferromagnetic state). If it is negative the lowest energy corresponds to the antisymmetric state, this is the case of an antiferromagnet with antiparallel spins.
+
+Finally some remarks are due. The original theory of Heisenberg and Frenkel revealed the quantum-mechanical nature of magnetic ordering. The theory implies two fundamental conclusions:
+
+1) if the exchange integral is positive, the state of spontaneous magnetization can occur; this phenomenon is called ferromagnetism;
+
+2) the energy of exchange interaction is sufficient to explain ferromagnetism of materials with Curie temperature of the order of $10^{3}\;\kelvin$. 
+
+This theory explained a lot of experimental results. The energy of the exchange interaction (due to overlap of electron orbitals) is positive, like the interaction energy of the charges of the same sign, while the energy of interaction between electrons and nuclei is negative. For this reason a positive sign of exchange integral $J$ is more probable for a large ratio of the distance $a$ between ions in crystal to the radius of electron shell $r_n$ (although the absolute value of $J$ in this case decreases). In other words, the atoms of a ferromagnet must be located far from each other, which is indeed the case. All ferromagnetic elements are the transition metals, and ferromagnetic alloys and compounds necessarily contain the transition metals. These are the elements which possess a partially filled $d$--shell, the electron shell with a large orbital quantum number $l$ and a nonzero spin.
+
+The dependence of the exchange integral on the ratio $\nu$ of the lattice constant $a$ to the diameter of partially filled shell $2r_{n}$ is shown in~\refFigure{9_4}. This dependence was calculated by H. Bethe; it is qualitative agreement with experiment.
+
+The ferromagnetic elements $\mathrm{Fe}$, $\mathrm{Co}$, and $\mathrm{Ni}$ have the highest value of the exchange integral; gadolinium and other rare-earth elements have large $\nu$, hence, their exchange integral is small (although positive) and the Curie temperatures are low.
+
+% 
+\fFigure{Dependence of exchange integral on the ratio of lattice constant to diameter of electron ''orbit'' in $d$--state}9_4 {5.2cm}{3.3cm}{pic/L09_04.eps} 
+%
+
+The above theory allows one to <<explain>> not only the ferromagnetism of $\mathrm{Fe}$, $\mathrm{Co}$, and $\mathrm{Ni}$, but also the antiferromagnetism of $\mathrm{Mn}$ and $\mathrm{Cr}$ and the ferromagnetism of the so-called Heusler alloys, the dependence of Curie point on pressure and so on.
+
+For example, the interatomic distance in crystalline manganese is rather small but it is close to the point at which the exchange integral changes its sign ($\nu \Simeq 1{.}5$, ). Thus, a small increase of the manganese lattice constant would turn it into a ferromagnet. Indeed, adding a small amount of nitrogen to manganese one increases its lattice constant and transforms it into a ferromagnet. The same situation occurs in the Heusler alloy $\mathrm{Cu}_{2}\mathrm{MnAl}$ which contains non-ferromagnetic metals but it is ferromagnet itself. The intrusion of additional components ''inflates'' the lattice and the manganese ions become magnetically arranged.
+
+All these examples are, however, surprising. Let us take a closer look at the direct exchange. We are particularly interested in the interaction between spins of different ions, as it is the case for  hydrogen molecule. But in hydrogen molecule the coupled state corresponds to antiparallel spins. Thus it is difficult to explain why many elements are ferromagnetic, they should rather be antiferromagnetic! We can understand why $d$-electrons of every single ion are arranged to maximize their total spin ($5/2$ in the case of $\mathrm{Fe}$ ), but we cannot explain why the interaction between neighboring magnetic ions aligns their spins.
+
+The point is that the exchange interaction in metals is much more complicated. Atoms of metals have $s$-electrons forming the conduction band and these electrons can interact with $d$-electrons. The $d$-electrons of neighboring atoms interacting via an exchange integral also form a band, i.e. $d$-electrons are not localized either. There exists a general theory of ferromagnetism based on this idea, called the Stoner model of collective electrons which also describes many features of ferromagnetic materials. It is not clear which model is most suitable: the model of localized electrons or the model of collective electrons. It seems that both mechanisms of the spin arrangement contribute to ferromagnetism.
+
+So, in many substances there exists a possibility of indirect exchange between remote magnetic ions; if there is almost no overlap between wave functions the interaction occurs due to mediators. These could be non-magnetic ligand ions in dielectrics and semiconductors or conduction electrons in metals.
+%
+\fFigure{Indirect exchange in $\mathrm{MnO}$ compound. If manganese atom A has spin ''$+$'' it can take an electron with spin ''$-$'' from the \emph{p}-shell of oxygen atom; if manganese atom has spin ''$-$'' it can take residual electron from oxygen atom. Thus, interaction between $p$-electrons of oxygen atoms becomes effective interaction between spins of \emph{d}-shells of magnetic ions}9_5 {5cm}{1.7cm}{pic/L09_05.eps} 
+% 
+A typical example of such interaction is provided by antiferromagnetic compound $\mathrm{MnO}$. Its magnetic arrangement is due to the indirect exchange: $d$-electrons of a manganese ion couple to $p$-electrons of oxygen, the latter couple to $d$-electrons of another manganese ion, as it shown in~\refFigure{9_5}. 
+
+In conclusion we repeat that ferromagnetism of elements and compounds is necessarily due to transition elements. On the other hand, a simple calculation of the exchange integral $J$ based on a Heisenberg-Frenkel model (assuming all electrons being in $s$-state) not only underestimates its absolute value but sometimes yields incorrect sign (negative instead of positive). The model of direct exchange is too crude to provide the quantitative agreement with experimental data; in actual calculations the possibility of indirect exchange and even more complicated magnetic interactions must be taken into account.
+
+Now it is clear that the Heisenberg-Frenkel model is inaccurate, however, the underlying idea about the quantum-mechanical origin of ferromagnetism based on the Pauli principle is correct. The role of the exchange interaction in making the magnetized state energetically favorable is also explained by this theory which is still widely used in the study of magnetism.

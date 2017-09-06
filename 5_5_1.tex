@@ -1,0 +1,162 @@
+%translator Russkov, date 27.04.13
+
+\let\oldTheEquation=\theEquation
+\def\theEquation{\arabic{Equation}}
+\let\oldTheFigure=\theFigure
+\def\theFigure{\arabic{Figure}}
+\setcounter{Equation}{0} \setcounter{Figure}{0}
+\Work
+{Measurement of flux attenuation coefficient of $\boldsymbol\gamma$-rays\\ in medium and determination of their energy}
+{Measurement of flux attenuation coefficient of $\boldsymbol\gamma$-rays\\ in medium and determination of their energy}
+{$\gamma$-rays linear attenuation coefficient in lead, iron, and aluminum is measured by means of a scintillation counter; the energy of $\gamma$-quanta is determined via the measured coefficients.}
+
+Gamma-rays are emitted by excited nuclei in their transit from an energy state to a lower one. The energy of $\gamma$-quantum is usually between tens of kiloelectron-volts and several millions of electron-volts. Gamma-quantum does not have electric charge, its mass is zero. A beam of $\gamma$-quanta passing through a medium gradually attenuates. The attenuation is governed by exponential law which can be expressed in two equivalent forms:
+$$
+  I =I_0 e^{- \mu l}
+  \eqMark{5_1_1a}
+$$
+or
+$$
+  I =I_0 e^{- \mu'm_1}.
+  \eqMark{5_1_1b}
+$$
+
+In these formulae $I$ and $I_0$ are the intensities of passed and incident radiation, $l$ is the length of a path traveled by $\gamma$-rays, $m_1$ is the mass of a passed medium per unit area, and $\mu$ and $\mu'$ are constants specifying the medium. The path length $l$ is usually expressed in centimeters, therefore $\mu$ is measured in $\cm^{-1}$; the quantity $m_1$ is measured in $\g/\cm^2$, so $\mu'$ has the dimension of $\cm^2/\g$. Expression~(\refEquation{5_1_1b}) is preferable since $\mu'$ unlike $\mu$ is independent of the medium density. (For instance, assume that $\gamma$-rays pass through a gas; if the gas density doubles, $\mu$ is reduced by half whereas $\mu'$ remains constant.)
+
+Flux attenuation of $\gamma$-rays in their passage through a medium is due to three phenomena: the photoelectric absorption, the Compton scattering, and the electron-positron pair production. Consider these phenomena one by one.
+\vspace{1ex}
+
+\textbf{Photoelectric absorption.}
+When $\gamma$-quanta collide with electrons of inner shells they can be absorbed. The energy of \mbox{$\gamma$-quantum} is transferred to an electron and the momentum is divided between this electron and the ion produced by its escape. A free electron cannot absorb a $\gamma$-quantum since in this process the laws of conservation of energy and momentum cannot be  simultaneously satisfied. Outer electrons do not participate in the photoelectric absorption because they are weakly bound and can be treated as free ones. The probability $dP\sub{ph}$ of photoelectric absorption of $\gamma$-quantum is proportional to the path length $dl$ and the medium electron density (only electrons of inner atomic shells should be taken into account):
+$$
+   dP\sub{ph}=\sigma\sub{ph}n_1dl,   \eqMark{5_1_2}
+$$
+where $n_1$ is the density of inner electrons and $\sigma\sub{ph}$ is the cross-section of photoelectric absorption. The cross-section characterizes the probability of photoelectric effect per one electron.
+
+One can easily find a relation between the attenuation coefficient $\mu\sub{ph}$ due to photoelectric effect in Eq.~(\refEquation{5_1_1a}) and the cross-section $\sigma\sub{ph}$. Comparing Eqs.~(\refEquation{5_1_1a}) and~(\refEquation{5_1_2}) one obtains 
+$$
+  \mu\sub{ph}=\sigma\sub{ph}n_1.
+  \eqMark{5_1_3}
+$$
+
+This formula exhibits the explicit dependence of $\mu\sub{ph}$ on electron density and, hence, on the density of the medium.
+
+Suppose that due to the photoelectric effect the energy of \mbox{$\gamma$-quantum} is transferred to an electron of $i$-th atomic shell. Let $W_i$ be the electron binding energy. Then the kinetic energy of the electron knocked out from atom is 
+$$
+  T_i=\hbar\omega -W_i.
+  \eqMark{5_1_4}
+$$
+
+The free state remained after the electron escapes is then occupied by an electron from a higher shell. During this transition the characteristic X-ray photon\Footnotemark \Footnotetext{The energy  released when the free state is occupied by electron from inner shell is not completely transferred to the photon: it could be taken away by another electron which escapes from the atom. Such electron is called \textit{Auger-electron.}} is emitted.
+
+The dependence of the photoelectric effect probability on the energy of $\gamma$-rays and the atomic number is rather complicated. The following approximation
+$$
+  \sigma\sub{ph}\propto \frac{Z^5}{(\hbar\omega)^{3{.}5}},
+  \eqMark{5_1_5}
+$$
+correctly reflects the basic features of the phenomenon (see Eq.~(\refEquation{5_6})). One can see from Eq.~(\refEquation{5_1_5}) that the probability rapidly increases as the atomic mass grows and sharply decreases as
+%
+\fFigure{Energy dependence of photoelectric effect on energy of $\gamma$-quantum}5_1_1
+{4.6cm}{2.8cm}{pic/L05_1_01.eps}
+%
+the energy of $\gamma$-quanta increases. The energy dependence of the photoelectric cross-section is shown in~\refFigure{5_1_1}.
+
+One can see that the cross-section undergoes abrupt changes for the energies of $\gamma$-quanta in the range of atomic binding energies: as the energy increases the cross-section increases step-wise indicating when electron liberation from the next shell becomes possible. In this range the photoelectric cross-section is very large compared to cross-sections of other processes. Therefore the photoelectric effect is the dominant channel of absorption of $\gamma$-quanta of moderate energy.
+\vspace{1ex}
+
+\textbf{The Compton scattering.}
+The Compton scattering (or the Compton effect) is due to elastic collision of \mbox{$\gamma$-quantum} and electron. In such a collision a $\gamma$-quantum partially transfers its energy to an  electron, the transferred energy is a function of the scattering angle. Unlike the photoelectric effect which occurs only on strongly bound electrons, the Compton scattering takes place on free and weakly bound electrons. A contribution of the Compton scattering becomes significant only when the energy of $\gamma$-quantum is much greater than the electron binding energy in atom (i.e. when the probability of photoelectric effect sharply decreases). In this case atomic electrons can be considered as free.
+
+The probability of the Compton scattering depends on energy of $\gamma$-quanta in a very complicated way (see Eq.~(\refEquation{5_18})). However, when the energy of \mbox{$\gamma$-quantum} is much greater than the electron rest energy, the dependence can be simplified:
+$$
+  \sigma_{\mathrm K}=\pi r^2\frac{mc^2}{\hbar\omega}\left(\ln\frac{2\hbar\omega}{mc^2}+\frac{1}{2}\right),
+  \eqMark{5_1_6}
+$$
+where $r\simeq 2{.}8\cdot 10^{-13}\;\cm$ is the classical radius of electron and $m$ is its mass. It follows from Eq.~(\refEquation{5_1_6}) that in contrast to the photoelectric effect, the Compton scattering cross-section gradually decreases as the photon energy rises.
+
+The cross-section $\sigma_{\mathrm K}$ is defined per one free electron, while the photoelectric cross-section is calculated per one atom. The Compton scattering per one atom must be, of course, multiplied by $Z$.
+
+Compton linear attenuation coefficient $\mu_{\mathrm K}$ is related to the cross-section $\sigma_{\mathrm K}$ by a formula similar to Eq.~(\refEquation{5_1_3}). In this case $n$ should be considered as the density of weakly bound electrons, i.e the total electron density of the material.
+
+Note in conclusion that unlike the photoelectric effect, the Compton scattering does not result in  absorption of $\gamma$-quanta, rather it reduces their energy.
+\vspace{1ex}
+
+\textbf{Pair production.}
+For the energy of $\gamma$-rays exceeding $2mc^2=1{.}02\;\MeV$ the absorption of $\gamma$-rays due to electron-positron pair production becomes possible. The pair production in vacuum is forbidden, it proceeds in the electric field of atomic nucleus. The probability of this process is approximately proportional to $Z^2$ and depends on the photon energy in a complicated way. For an energy exceeding $2mc^2$ the photoelectric effect no longer makes any contribution even for the heaviest nucleus. Therefore the probability of pair production becomes of the same order as the probability of the Compton scattering. For the energy of a typical process used in nuclear studies the pair production is significant only for the heaviest elements. Even in lead the probability of pair production becomes equal to that of the Compton scattering only at the energy about $4{.}7\;\MeV$.
+\vspace{1ex}
+
+\textbf{Total attenuation coefficient of $\boldsymbol\gamma$-rays.}
+The total linear attenuation coefficient $\mu$ of $\gamma$-quanta beam passing through a material equals the sum of the coefficients of all processes considered.
+
+The plots of $\mu$ for different materials are shown in~\refFigure{5_1_2}.
+
+Let us turn again to Eq.~(\refEquation{5_1_1a}). This formula can be easily derived using general arguments. Consider an experiment carried out in a \textit{precise geometry}, i.e. a passage of a narrow parallel beam of $\gamma$-rays through a material. In this case not only the photoelectric absorption and the pair production but also the Compton scattering remove $\gamma$-quanta from the beam.
+
+Therefore only the number of $\gamma$-quanta passing through a material rather than their energy changes, so the coefficient $\mu$ characterizing absorption of $\gamma$-quanta in the material is independent of the path length. Let $-dN$ be the number of $\gamma$-quanta removed from the beam on the path $dl$. This number is proportional to the number $N$ of the quanta remaining in the beam and to the length $dl$ of the traversed path. Thus, we have
+$$
+  -dN=\mu N\,dl.
+  \eqMark{5_1_7}
+$$
+
+Integrating this equation from zero to a given length we obtain:
+$$
+  N=N_0e^{-\mu l}
+$$
+that is Eq.~(\refEquation{5_1_1a}).
+
+In the case of a \textit{coarse geometry} when a $\gamma$-quantum scattered at a small angle remains in a beam, the energy spectrum of the beam varies as it passes through a material, and it seems that Eq.~(\refEquation{5_1_1a}) no longer applies. Nevertheless,
+%
+\fFigure{Total flux attenuation factors of $\gamma$-rays in aluminum, iron, and lead}5_1_2
+{7.3cm}{6cm}{pic/L05_1_03.eps}
+%
+it turns out to be more accurate than one could expect. The reason is that $\gamma$-quanta with energy $1\div2\;\MeV$, which lost their energy in the process of Compton scattering, quickly leave the beam due to a sharp increase of the cross-sections $\sigma\sub{ph}$ and $\sigma_{\mathrm K}$.
+
+In our experiment the attenuation coefficient $\mu$ is measured in a precise geometry. Using Eq.~ (\refEquation{5_1_1a}) we obtain
+$$
+  \mu=\frac{1}{l}\ln\frac{N_0}N.
+  \eqMark{5_1_8}
+$$
+
+Thus to determine the attenuation coefficient one should measure the specimen width $l$, the number of incident particles $N_0$ and the number of particles $N$ passed through the specimen. \vspace{1ex} 
+\newpage 
+
+\textbf{\so{Installation}}\vspace{5pt}
+
+The experimental installation is shown in~\refFigure{5_1_3}. A lead collimator forms a narrow almost parallel
+%
+\hFigure{Block diagram of installation, used for measuring flux attenuation factors of $\gamma$-rays. \textit{Source} is the source of $\gamma$-rays, Pb is lead container with collimating channel, \textit{Absorb} is set of absorbers, \textit{Scint} is scintillator~--- crystal NaI(Tl), \textit{Phormer} is former-rectifier}5_1_3
+{7.3cm}{3.3cm}{pic/L05_1_04.eps}
+%
+beam of $\gamma$-quanta passing through a set of absorbers \textit{Absorb} and detected by a scintillation counter\Footnotemark\Footnotetext{Operation principles of scintillation counter are discussed in Appendix II.}. The signals from the counter are amplified and detected by a scaler \textit{Scaler}. A high-voltage rectifier \textit{Hvr} supplies power to the scintillation counter.
+
+In a coarse geometry experimental results are prone to significant errors. In a real installation the probability that a $\gamma$-quantum undergoes more than one interaction in the absorber before reaching the
+%
+\cFigure{Scheme of scattering of $\gamma$-quanta in absorber}5_1_4
+{7.9cm}{2.3cm}{pic/L05_1_05.eps}
+%
+detector (paths of such quanta are shown in~\refFigure{5_2_4}) is always greater than zero. To reduce the number of these events, the scintillation counter is placed at a large distance from the source of $\gamma$-quanta while the absorbers are relatively small. They should be installed behind the collimator slot at some distance from each other to reduce the probability that a quantum which underwent the Compton scattering returns into the beam. 
+\vspace{1ex}
+
+\textbf{\so{Directions}}\vspace{5pt}
+
+\begin{Enumerate}{tab}
+\Item.
+Turn on the scaler and the high-voltage rectifier. Let them warm up for $5\div10$ minutes.
+
+\Item.
+Make sure that the detector <<feels>> $\gamma$-rays. To this end set the photomultiplier tube voltage specified on the installation. Measure the counting rate for an open collimator and for a collimator closed by a lead cap. The counting rate must fall abruptly. Repeat this procedure $2\div3$ times to verify operation capacity of the installation.
+
+\Item. Study absorption of $\gamma$-rays in lead, iron, and aluminum. To this end measure the number of particles registered by the counter for a fixed period in the absence ($N_0$) and in the presence ($N$) of an absorber. Measure the absorption of $\gamma$-rays for different length of the specimens. The error must not exceed $0{.}3\%$. The attenuation coefficient of $\gamma$-quanta is calculated according to Eq.~(\refEquation{5_1_8}).
+
+When calculating $N_0$ and $N$ one must subtract from the counter readings the background due to a noise of the photomultiplier tube and extraneous particles: cosmic rays, \mbox{$\gamma$-quanta} from nearby sources, the quanta scattered by the walls of room and device, and so on. To determine the background close the collimator by the lead cap. The background count rate is not, of course, due to the beam quanta. The error of the background count rate must be less than $1\%$. Plot the logarithm of the number of counted $\gamma$-quanta on the specimen width for all the materials under study. Indicate the errors on the plots. Determine the attenuation coefficients  graphically. Using the linear attenuation coefficients calculate the mass attenuation coefficients $\mu'$ according to Eq.~(\refEquation{5_1_1a}).
+
+\Item. Using the attenuation coefficients obtained for lead, iron, and aluminum consult the plot (\refFigure{5_1_2}) and Table~V.4 from Appendix~V and determine the mean energy of $\gamma$-rays emitted by the source. 
+\end{Enumerate}
+
+\begin{center}{\textsf{\small LITERATURE}}\end{center}
+
+{\small 1. \textit{Shirokov\;Yu.\;M., Yudin\;N.\;P.} Nuclear physics.\,---\,M.: Science, $1980$. Ch.\;VI, \textsection\; $6$; ch.\;IX,\textsection\; $4$.
+
+2. \textit{Muhin\;K.\;N.} Introduction to nuclear physics.\,---\,M.: Atompress, $1965$. Ch.\;II, \textsection\;$11$.
+
+3. \textit{Tsipenyuk\;Yu.\;M.} Principals and methods of nuclear physics.\,---\,M.: Energyatompress, $1993$. \textsection\;$5{.}6$. }

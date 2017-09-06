@@ -1,0 +1,116 @@
+%translator Savrov, date 05.02.13
+
+\setcounter{Equation}{0} \setcounter{Figure}{0}
+
+\Work
+{Absorption of secondary cosmic rays by various substances}
+{Absorption of secondary cosmic rays by various substances}
+{Using a telescope consisting of two scintillation detectors connected to a coincidence circuit one measures the intensity of cosmic radiation passed through absorbers made of different materials at the sea level (in the laboratory). The results are used to determine the effective absorption length of soft and hard cosmic rays, the absolute values of their vertical intensities, and the electron-positron pair production cross-section in these materials.}
+
+When a primary cosmic proton enters the Earth's atmosphere it collides with air nuclei, mainly with oxygen and nitrogen. The collision produces a split nucleus and numerous unstable elementary particles, the so-called multiple processes. The mean free path of proton in air is approximately equal to $80\;\g/\cm^2$, which is about $1/13$ of the atmosphere layer; therefore, a proton collides with nuclei several times before reaching the sea level and the probability for a primary proton to reach the sea level is very small. Deep in the atmosphere there are almost no primary cosmic rays, all the radiation observed is due to secondary rays.
+
+Splitting air nuclei results in production of numerous $\pi^{\pm}$-mesons with the lifetime of $\tau =2{.}5 \cdot 10^{-8}\;\s$ and $\pi^0$-mesons with $\tau =0{.}8 \cdot 10^{-16}\;\s$. Decay channels of charged pions,
+$$
+\pi^+ \rightarrow \mu^+ +\nu_\mu,~~~\pi^-\rightarrow \mu^- +\widetilde{\nu}_\mu,
+\eqMark{7_4_1}
+$$
+give rise to the hard component of the secondary cosmic rays, while the decay of neutral pions
+$$
+\pi^0 \rightarrow \gamma + \gamma
+\eqMark{7_4_2}
+$$
+is the source of electron-photon (soft) component. The energy distribution of electrons at the sea level is similar to that of muons.
+
+Figure~\refFigure{7_4_1} shows that the average muon energy at the sea level is approximately $3000\;\MeV$, the particles of the soft component have the same energy.
+
+\begin{cFigures}
+\Figure
+{Muon momentum distribution at the sea level}7_4_1
+[t]{4.5cm}{3.9cm}{pic/L07_4_01.eps}~~~~%\quad
+\Figure
+{Ionization losses in various substances versus $p/mc=\beta/\sqrt{1-\beta^2}$}7_4_2
+[t]{6.4cm}{5.35cm}{pic/L07_4_02.eps}
+\end{cFigures}
+
+Muons do not participate in the strong interactions, also they almost do not lose their energy due to bremsstrahlung which is inversely proportional to the square of muon mass (muon is $207$ times greater than electron). Muon energy is lost only on ionization of atoms (see~[1], p.~\:85) via electromagnetic interaction with atomic electrons, the losses are approximately \mbox{$2\;\MeV/(\g\cdot\cm^{-2})$} (see~\refFigure{7_4_2}). Ionization losses of relativistic muons are approximately constant, they weakly depend on absorber material, and they are mainly determined by the absorber mass thickness expressed in $\g/\cm^2$. The energy dependence of ionization losses for electrons is practically the same.
+
+Unlike muons, photons of high energy lose their energy via pair production while electrons lose their energy via bremsstrahlung. The theory describing production of electron-positron pairs by $\gamma$-quanta is closely related to the theory of electromagnetic radiation by electrons. Indeed, an electron radiates a photon during a transition from a positive energy state to another state of positive energy. In pair production process a photon absorption results in electron transition from a state of negative energy to a state of positive energy. For this reason, the cross-section of braking radiation and pair production at high energy is practically the same (see~[1, p.~\:108], for details).
+%
+\cFigure{Contribution of different processes into cross-section of $\gamma$-quantum absorption by lead}7_4_3 {8.1cm}{5.8cm}{pic/L07_4_03.eps}
+%
+
+A quantum electrodynamics calculation (see~[3] p.~\;93) shows that in the high-energy limit, the total cross-section of pair production by photon with energy $\hbar\omega$ becomes
+$$
+\sigma\sub{pair}=\frac{28}{9}Z^2\alpha\left(\frac{e^2}{mc^2}\right)^2\left[\ln\frac{2\hbar\fomega}{mc^2}-\frac{109}{42}-(\alpha Z)^2\right].   \eqMark{7_4_3}
+$$
+For instance, the cross-section of pair production in lead in the ultra-relativistic limit is
+$$
+\sigma\sub{pair}=11\,Z^2\alpha r_0^2.
+\eqMark{7_4_4}
+$$
+Here $Z$~is the nucleus charge, $\alpha =e^2/\hbar c$~is the fine structure constant which always specifies electromagnetic processes, and $r_0 = e^2/mc^2$~is the classical electron radius. Since the cross-section of photoelectric and Compton effects vanishes in the high-energy limit (see~\refFigure{7_4_3}), the pair production becomes the dominant process of $\gamma$-ray absorption.
+
+The cross-section is proportional to~$Z^2$ almost for any energy. One can see this in~\refFigure{7_4_4} which shows the energy dependence of~$\sigma\sub{pair}$ for aluminum and lead; the curve tends to a constant at high energies of $\gamma$-quanta.
+%
+\fFigure{Effective pair production cross-section in aluminum and lead versus energy $E$ of $\gamma$-quanta $(\Phi=Z^2\alpha(e^2/mc^2)^2)$}7_4_4 {4.8cm}{3.75cm}{pic/L07_4_04.eps} 
+%
+
+Thus, although the secondary cosmic radiation consists of various particles with energies in a wide range, it is possible, firstly, to separate the soft and hard components and, secondly, to introduce the single absorption length for the particles of soft component and measure it. This is due to the fact that the cross-section of pair production by $\gamma$-quanta practically coincides with the  electron bremsstrahlung cross-section which becomes constant at high energy.
+
+\vspace{10pt}
+\textbf{\so{Installation}}
+\vspace{6pt}
+
+The main component of the installation is a telescope which selectively detects the particles coming from a certain direction in the solid angle determined by detector geometry. The telescope is directed upward to select the particle coming from the upper atmospheric layer.
+
+The installation (see~\refFigure{7_4_5}) consists of two scintillation counters made of polystyrene doped with scintillating impurities, a set of iron and lead plates, and electronic circuits designed to register and to sort the detector signals. The detectors are slabs $40\times 10 \times 2{.}5\;\cm$ in size separated by a distance of $40\;\cm$. Scintillations are detected by PMTs (ФЭУ-$85$), the PMT voltage ($1000\;\V$) is supplied by a stabilized high-voltage rectifier. The PMT signals are applied to time-to-digital converters and then to a double coincidence circuit. The circuit generates an output signal if the detectors supply two signals within the time resolution of the circuit, $\tau =10^{-7}\;\s$. The number of the detected pulses is registered by a digital counter.
+
+Operation principles of scintillator, PMT, and coincidence circuit are considered in Appendices~II--IV.
+
+The time resolution of the installation is finite, hence, some false detection events are inevitable. The number of false detections is calculated according to 
+$$  
+ I\sub{ran}=2\tau N_1 N_2,   \eqMark{7_4_5} 
+ $$ 
+ where $N_1$ and $N_2$~is the number of pulses registered separately by detectors~\textit{1} and~\textit{2}.
+ 
+By installing lead or iron plates in the space between the detectors one can measure the intensity of passed radiation versus the thickness of a studied material.
+
+One should pay special attention to the following feature of the experiment. Electrons losing their energy via bremsstrahlung and muons losing their energy on ionization not necessarily leave a primary flux.
+%
+\cFigure{Experimental installation}7_4_5 {10.3cm}{5.1cm}{pic/L07_4_5.eps}
+%
+Both processes just decrease the energy of a particle. Ionization losses are characterized by a steady rate, while the spectrum of bremsstrahlung quanta spans the region from zero to the maximal kinetic energy of an electron. (The probability of the complete energy loss is  small, since the energy spectrum of bremsstrahlung quanta is approximately $1/E$). We do not determine the energy of a particle passed through the absorber, so if a particle is registered by the second detector we do not know whether it has already interacted. The same is true for electron-photon showers since the solid angle subtended by the second detector is rather large.
+
+It is natural to ask what decreases the intensity of cosmic rays passing through the absorber.
+
+High energy electrons interact with matter mostly via bremsstrahlung. Since the radiated photons have an energy $E_\gamma\gg mc^2$, the probability of production of electron-proton pairs by these photons is high. The same applies to primary $\gamma$-quanta of high energy (see~\refFigure{7_4_3}). Deceleration of the electrons (positrons) results in radiation of $\gamma$-quanta producing pairs, the process known as air shower formation. The formation proceeds until the energy of $\gamma$-quanta drops below $mc^2$, or, more precisely, until the radiation loses become equal to ionization losses. The corresponding energy is called \textit{critical energy}. Rapid avalanche-like proliferation of the particles leads to distributing the initial energy of a primary particle between $e^\pm$ and $\gamma$, the ionization losses of the particle grow and the particle leaves the primary flux. This is a mechanism of absorption of soft component in a nutshell. The thicker an absorber, the more low energy particles (out of a wide energy spectrum of arriving electrons and photons) leave the primary flux, so the number of particles registered by the telescope decreases. 
+
+The intensity of hard component of cosmic rays (muons) passing through matter decreases according to the same mechanism. However the radiation losses of muons are very small, so the energy of muons is lost only on ionization. Actually, increasing the absorber mass thickness one can verify that muons of low energy leave the total flux of the hard component.
+
+Thus, we detect a change of energy spectrum of cosmic radiation both of the soft and hard component of the secondary cosmic rays. These components have essentially different effective absorption length because the soft component loses its energy via radiation losses and the corresponding air shower formation.
+
+One more remark is due. Cosmic rays enter the laboratory after they passed through the building ceiling. Therefore the detected intensities of the soft and hard components (and their energy spectrum) can differ from the <<standard>> outdoor measurements.
+
+\vspace{10pt}
+\textbf{\so{Directions}}\vspace{5pt}
+
+\begin{Enumerate}{tab} \Item. Familiarize yourself with the telescope operation principle, the data processing, and the control knobs of electronic devices.
+
+\Item. Measure the background count rate of each detector separately (without the absorber between the detectors) and calculate the count rate of accidental coincidences.
+
+\Item. By varying the thickness of lead plates between the detectors measure the intensity of cosmic radiation versus the absorber thickness. First (until the thickness of $3\;\cm$) change the thickness by small steps ($2\;\mm$). Then increase the thickness by $1\;\cm$ at a time, the total thickness must be $10\;\cm$. The statistical accuracy must be better than $3\%$.
+
+\Item. Do the same measurement with the iron absorber. 
+
+\Item. Plot the dependence of radiation intensity (subtract the accidental coincidences) versus the absorber thickness $t$ (in $\g/\cm^2$) and verify that two components, the soft and hard ones, are clearly visible. By extrapolating the hard component intensity to the zero thickness and subtracting it from the net intensity plot the intensity of the soft component versus the absorber thickness. Plot the intensity $I$ of the soft and hard components obtained in coordinates $\ln I$, $t$ and calculate the effective mean free path of the soft and hard components in iron and lead. 
+
+\Item. Calculate the absolute intensity of the soft and hard components of cosmic rays (in $(\cm^2\cdot\s\cdot\text{стер})^{-1}$). To do this evaluate the solid angle subtended by the telescope. If $S$~is the detector area and $l$~is the distance between the detectors, the angle can be estimated as $\Omega =4S/l^2.$ 
+\end{Enumerate}%
+
+\begin{center}\so{\textsf{\small ЛИТЕРАТУРА}}\end{center} {\small
+
+1. \textit{Мурзин\;В.\;С.} Введение в физику космических лучей.\,---\,М.: Изд-во Моск. ун-та, $1988$. Гл.\;$4$.
+
+2. \textit{Ципенюк\;Ю.\;М.} Принципы и методы ядерной физики.\,---\,М.: Энергоатомиздат, $1993$.
+
+3. \textit{Берестецкий\;В.\;Б., Лифшиц\;Е.\;М., Питаевский\;Л.\;П.} Релятивистская квантовая теория. Ч.\;1.\,---\,М.: Наука, $1968$. }

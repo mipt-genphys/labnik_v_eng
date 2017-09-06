@@ -1,0 +1,166 @@
+%translator Scherbakov, date 12.02.13
+
+\setcounter{Equation}{0} \setcounter{Figure}{0}
+
+\Work
+{Measurement of energy spectrum of $\boldsymbol\beta$-particles and their end-point energy by means of\\ magnetic spectrometer} {Measurement of energy spectrum of $\boldsymbol\beta$-particles and their end-point energy by means of\\ magnetic spectrometer} {The energy spectrum and the maximum energy of $\boldsymbol\beta$-particles emitted by $^{137}\mathrm{Cs}$ nuclei are measured by means of a magnetic spectrometer. The spectrometer is calibrated using the energy of internal electron conversion of $^{137}\mathrm{Cs}$.}
+
+\textit{Beta-decay} is a spontaneous transformation of a nucleus, which conserves the nucleus mass number and either increases or decreases the nucleus electric charge by one. Beta-active nuclei are found all over the range of mass numbers $A$ beginning from one (free neutron) up to the most heavy nuclei. Half-life of $\beta\text{-}$active nuclei ranges from a fraction of second to $10^{18}\;\text{years}$. The energy released in a single $\beta\text{-}$decay varies from $18\;\keV$ (decay of tritium, $_1^3\mathrm{H}$) to $13{.}4\;\MeV$ (decay of \mbox{boron isotope $_{~5}^{12}\mathrm{B}$)}.
+
+The decay studied in the experiment is of the type $$_{Z}^{A}\mathrm{X}\rightarrow _{Z+1}^{~~A}\!\mathrm{X}+e^{-}+\widetilde{\nu}$$, in which electron emission is accompanied by a neutrino. The energy released in the decay is shared between the electron, the antineutrino, and the daughter nucleus. However the energy transferred to the daughter nucleus is negligible compared to that of the electron and/or antineutrino which carry practically all the released energy. Thus a $\beta\text{-}$electron can have any energy in the range from zero to the total energy of the $\beta\text{-}$decay.
+
+The probability $dw$ that a $\beta\text{-}$electron has its momentum in a phase space volume $d^3{\textbf{p}}$ and the antineutrino in $d^3{\textbf{k}}$ is obviously proportional to the product of these volumes. Besides, the momenta of electron and antineutrino, $\textbf{p}$\ and $\textbf{k}$,  obey the law of energy conservation:
+$$
+E_{\rm e}-E-ck=0,\eqMark{4_2_1}
+$$
+where $E_{\rm e}$~ is the maximum electron energy. The kinetic energy $E$ of electron  is related to its momentum by the conventional relativistic formula
+$$
+E=c\sqrt{p^2+m^2c^2}-mc^2,\eqMark{4_2_2},
+$$
+and $ck$ is the energy of the antineutrino with momentum $k$. The condition (\refEquation{4_2_1}) can be taken into account by introducing a $\delta$-function in $dw$,
+$$
+\delta(E_{\rm e}-E-ck),\eqMark{4_2_3}
+$$
+which is non-zero only if Eq.~(\refEquation{4_2_1}) holds.
+
+Hence the probability $dw$ is
+$$
+dw=D\delta(E_{\rm e}-E-ck)d^3{\textbf{p}}\,d^3{\textbf{k}}= D\delta(E_{\rm e}-E-ck)p^2\,dp\,k^2dk\,d\Omega_{\rm e}\,d\Omega_{\widetilde\nu},
+\eqMark{4_2_4}
+$$
+where $D$ is a constant and $d\Omega _{\rm e},\,d\Omega_{\widetilde\nu}$ are the solid angle elements in the direction of the electron and the neutrino emission, respectively. The probability $dw$ directly reproduces the $\beta\text{-}$spectrum since for a large number of decays $N_0$ the number $dN$ of decays in which the electron has its momentum in the range from ${\textbf{p}}$ to ${\textbf{p}}+d{\textbf{p}}$ and the antineutrino in the range from ${\textbf{k}}$ to ${\textbf{k}}+d{\textbf{k}}$ is given by
+$$
+dN=N_0\,dw\,.\eqMark{4_2_5}
+$$
+
+For any allowed Fermi transition the factor $D$ in Eq.~(\refEquation{4_2_4}) is practically constant (a transition is called <<allowed>> if both momentum and parity of the nucleus are conserved). In this case one can integrate the probability $dw$ in Eq.~(\refEquation{4_2_5}) over the angle and the absolute value of the neutrino momentum. Integration over the angle gives $4\pi$, and the integration over $dk$ is done using the main property of $\delta$-function:
+
+\vspace{-4pt}
+$$
+\int\limits_{-\infty}^{+\infty}f(x)\delta(x)\,dx=f(0)\,.\eqMark{4_2_6}
+$$
+As a result the $\delta$-function disappears upon integration over $k$ and $ck$ is replaced by $(E_{\rm e}-E)$. Multiplying the intergrated expression by the total number $N_0$ of decays one obtains the number of emitted electrons with momenta between $p$ and $p+dp$:
+$$
+dN={16\pi^2N_0\over c^2}Dp^2(E_{\rm e}-E)^2\,dp.\eqMark{4_2_7}
+$$
+To get the electron energy distribution instead of the momentum distribution one has to change variables in Eq.~(\refEquation{4_2_7}) and replace $dp$ with $dE$ as
+\vspace{-4pt}
+$$
+dE={c^2p\over E+mc^2}\,dp\,,\eqMark{4_2_8}
+$$
+which immediately gives the $\beta\text{-}$spectrum $N(E)=dN/dE$:
+\begin{Multline}
+{dN\over dE}=N_0Bcp(E+mc^2)(E_{\rm e}-E)^2=\\ =N_0B\sqrt{E(E+2mc^2)}\,(E_{\rm e}-E)^2\,(E+mc^2),
+\eqMark{4_2_9}
+\end{Multline}%
+%
+\fFigure{Spectrum of \mbox{$\beta\text{-}$}particles for allowed decays}4_2_1
+{4.3cm}{2.8cm}{pic/L04_2_01.eps}
+%
+where $B=(16\pi^2/c^4)D$. In the non-relativistic limit (which is valid for the decay studied in the experiment) Eq.~(\refEquation{4_2_9}) is simplified, and we obtain
+$$
+{dN\over dE}\approx\sqrt E(E_{\rm e}-E)^2\,.\eqMark{4_2_10}
+$$
+Equation~(\refEquation{4_2_10}) describes a bell-shaped spectrum (see~\refFigure{4_2_1}). The curve smoothly starts at the origin and approaches the maximal electron energy $E_{\rm e}$ as a parabola.
+
+Daughter nucleus in $\beta\text{-}$decay is often excited. An excited nucleus transfers its energy either to emitted $\gamma$-quanta (which energy equals the energy difference between the initial and final levels), or to an electron from an inner shell. The energy of the so called \textit{conversion electron} emitted in the latter process is monochromatic.
+
+The conversion commonly occurs for $K$ or $L$ shells. The diagram in~\refFigure{4_2_1} shows a spectrum with a sharp peak due to conversion electrons. In our case the width of this line is purely instrumental, so it can serve for estimating the spectrometer resolving power.
+\vspace{10pt}
+
+\textbf{\so{Experimental setup}}\vspace{5pt}
+
+\cFigure{Diagram of a short-lens magnetic $\beta\text{-}$spectrometer}4_2_2
+{7.8cm}{3.5cm}{pic/L04_2_02.eps}
+
+Energy of $\beta\text{-}$particles is measured by $\beta\text{-}$spectrometer. The experimental setup includes a <<short-lens>> magnetic spectrometer. Electrons emitted by a radioactive source (see~\refFigure{4_2_2}) are trapped by the magnetic field of a coil which axis is parallel to the spectrometer symmetry axis $OZ$. Electron trajectories in the magnetic field are complicated helices (see the figure) converging behind the coil in a focus on the axis $OZ$. Magnetic field lines are represented in~\refFigure{4_2_2} by thin lines. In the focus there is an electron detector which is either a gas discharge end-window counter with a thin window transparent for electrons with an energy higher than $40\;\keV$, or a scintillation counter. The scintillator is a thin polystyrene crystal. An electron hitting the crystal produces a light flash, or scintillation, registered by a photomultiplier. Operation principles of scintillators and photomultiplier are described in Appendices II and III.
+
+The theoretical analysis shows that for charged particles a thin magnetic coil is equivalent to a lens. Its focal distance depends on electron momentum $p_e$ and the magnetic induction of the lens (which is proportional to the coil current $I$) as
+$$
+\frac{1}{f} \propto \frac{I^2}{p_e^2}.   \eqMark{4_2_11}
+$$
+
+For a given a current the counter window traps electrons with a certain momentum. Electrons with other momenta miss the window (dashed line). Changing the current allows one to focus electrons with different momenta. Since the setup geometry remains the same during the experiment, the electron momentum is proportional to the current strength $I$:
+$$
+p_e=kI.   \eqMark{4_2_12}
+$$
+
+Usually the apparatus constant $k$ is not calculated but determined experimentally using a known conversion line.
+
+A short magnetic lens has significant spherical aberration, i.e. has different focal distance for particles emitted at different angles. Hence, the setup contains circular apertures limiting electron exit angles (see~\refFigure{4_2_2}). A lead filter protects the counter from $\gamma$-rays which accompany the $\beta\text{-}$decay. Due to a finite size of the source, apertures, and the counter window, and due to the aberrations, the counter detects electrons with momeneta in the range from $p_e-\Delta p_e/2$ to $p_e+\Delta p_e/2$. The range $\Delta p_e$ at a given current strength is called the \textit{resolving power} of $\beta\text{-}$spectrometer. The diagram in~\refFigure{4_2_2} shows that the resolving power depends on the angle between the electron velocity and $OZ$ axis. Electrons propagating at small angles with respect to the spectrometer axis are almost not deflected by the magnetic field. If there is no lead filter such electrons would always hit the $\beta\text{-}$counter window regardless of the current strength. Hence, the spectrometer resolving power depends not only on the size of circular aperture but also on the filter diameter.
+
+Now consider the relation between the number of registered particles and the function $W(p_e)=dW/dp_e$ defined by Eq.~(\refEquation{4_2_10}). Obviously,
+$$
+N(p_e)\Simeq W(p_e)\Delta p_e,   \eqMark{4_2_13}
+$$
+where $\Delta p_e$ is the spectrometer resolving power. According to Eq.~(\refEquation{4_2_11}) the focal length of the magnetic lens for a given current depends on the particle momentum. If the focal length varies too much, i.e. $\Delta f$ is too large, such particles miss the counter. By differentiating Eq.~(\refEquation{4_2_11}) one finds
+$$
+\Delta p_e=\frac{1}{2}\frac{\Delta f}{f}p_e.   \eqMark{4_2_14}
+$$
+
+Thus, the interval $\Delta p_e$ registered by the spectrometer is proportional to $p_e$. Substituting Eq.~(\refEquation{4_2_14}) into Eq.~(\refEquation{4_2_13}), and noting that the ratio $\Delta f/2f$ is determined by the setup geometry and therefore constant, we finally obtain
+$$
+N(p_e)=CW(p_e)p_e,   \eqMark{4_2_15}
+$$
+where $C$ is a constant.
+
+\cFigure{Block-diagram of the setup for measuring $\beta\text{-}$spectrum}4_2_3
+{10.4cm}{4.2cm}{pic/L04_2_03.eps}
+Block-diagram of the setup for measuring $\beta\text{-}$spectrum is shown in~\refFigure{4_2_3}. A radioactive source is placed inside an evacuated cavity. Electrons focused by the magnetic lens enter the counter. In a gas discharge counter they initiate a discharge giving rise to electric pulses between the counter electrodes, and these pulses are then registered by an electron circuit. Interaction of electrons with a scintillation counter generates electric pulses at the photomultiplier output, the pulses are stored and displayed by means of a PC. The pressure inside the spectrometer is kept about $0{.}1\;\tor$, it is measured by a thermocouple vacuum gauge. Such vacuum is low ehough to ensure that electron energy loss and electron scattering are negligible. The vacuum is maintained by means of a backing pump. The magnetic lens current is supplied by a rectifier. The current can be as large as $6\;\A$, it is measured by a digital ammeter. The high voltage for the photomultiplier of gas discharge counter is supplied by a regulated rectifier.
+
+ \vspace{10pt} \textbf{\so{Directions}} \vspace{5pt}
+
+\textbf{\textsc{Measurement and treatment of the results}}\vspace{5pt}
+
+\begin{Enumerate}{tab} 
+\Item. Evacuate air from the spectrometer cavity. To do this close an air access valve~\textit{1} (clockwise) of the vacuum pump, turn the pump on (the upper button on a starter under the table), wait for about $3$ minutes, and open a valve~\textit{2} (counterclockwise).
+
+ATTENTION! How to handle the vacuum valves: when closing, a valve should be tightened with a reasonable effort; when opening, a valve should be fully unscrewed with a slight reverse turn at the end. This must be done to make sure that a valve is indeed open and/or closed.
+
+Turn on the vacuum gauge and check its performance. To do this set the switch to the heating current setup mode, set the current indicated on the vacuum gauge, and then set the switch to the residual gas pressure measurement mode.
+
+\Item. During evacuating the spectrometer cavity turn on the PC and wait for a program title to appear on the screen. The PC stores and processes the data.
+
+\Item. Turn on the time-to-digital converter, power the magnetic lens, and set the lens current to zero.
+
+\Item. Start the PC measurement mode, and carry out a preliminary measurement of $\beta\text{-}$spectrum by increasing the magnetic lens current by $0{.}2\;\A$. Notice that digital voltmeter readings should be multiplied either by $10$ or $100$ (as indicated on the voltmeter) in order to obtain the value of current in amperes. The time of a single measurement is $80\text{--}100\;$ seconds. Do not consult the PC reference after starting the experiment, otherwise you may loose all data!
+
+\Item. Start a detailed measurement of the $\beta\text{-}$spectrum, a particular attention should be paid to the conversion peak region (the inner conversion electron energy for $^{137}$Cs equals $634$\:keV). The counter readings should be copied in the lab notebook during the experiment.
+
+\Item. Measure the background.
+
+\Item. Treat the experimental results:
+
+take the background into account;
+
+calibrate the spectrometer (notice that the conversion electron momentum multiplied by the speed of light equals $1013{.}5\;\keV$).
+
+As it follows from Eq.~(\refEquation{4_2_10}) the number of electrons with momenta in the range from $p$ to $p+dp$ is
+$$
+N(p)dp\approx p^2(E_e-E)^2dp. \eqMark{4_2_16}
+$$
+This relation can be rewritten as
+$$
+\frac{\sqrt{N(p)}}{p}\approx E_e-E. \eqMark{4_2_17}
+$$
+The last expression shows, that if $\sqrt{N(p)}/p$ is plotted as a function of energy (the Fermi--Kurie plot) the graph represents a straight line intersecting the horizontal axis at $E=E_e$. Usage of the Fermi--Kurie plot considerably increases the measurement accuracy of the maximal $\beta\text{-}$spectrum energy. Indeed, when using the $\beta\text{-}$spectrum directly one has to deal only with experimental points near the upper spectrum boundary. These points are measeured with the lowest statistical accuracy. On the other hand, the <<straightened>> Fermi--Kurie $\beta\text{-}$spectrum allows one to use the majority of experimental points, in particular, those in the middle of the $\beta\text{-}$spectrum which are measured with the best accuracy.
+
+\Item. Display the Fermi--Kurie plot on the PC screen, and determine the maximal $\beta\text{-}$spectrum energy.
+
+\Item. Display the experimental data on the PC screen, and copy them in your lab report.
+
+\Item. At the end of the experiment turn off the vacuum pump by carrying out the actions of the step $1$ in reverse: close the valve~\textit{2} (clockwise), turn off the vacuum pump (the lower button on the starter under the table), and open the air access valve~\textit{1} (counterclockwise) of the pump.
+\end{Enumerate}%
+
+\begin{center}\so{\textsf{\small REFERENCES}}\end{center}
+
+\vspace{-12pt}
+{\small
+1. \textit{Shirokov\;Yu.\;M., Yudin\;N.\;P.} Nuclear physics.\,---\,M.: Nauka, $1980$. Ch.\;VI, \textsection\;$4$; Ch.\;IX, \textsection\;$4$.
+
+2. \textit{Mukhin\;K.\;N.} Experimental nuclear physics. Vol. 1: Physics of atomic nucleus.\,---\,SPb: Lan', $2008$. \S\,$18$.
+
+3. \textit{Abramov\;A.\;L., Kazanskii\;Yu.\;A., Matusevich\;E.\;S.} Fundamentals of nuclear physics experimental methods.\,---\,M.: Atomizdat, $1977$. Ch.\;$11$, \textsection\;$11.4$. }
+
+
+

@@ -1,0 +1,182 @@
+%translator Svintsov, date 17.02.13
+
+\setcounter{Equation}{0} \setcounter{Figure}{0}
+\Work %11.3
+{Measurement of built-in potential of p-n junction}
+{Measurement of built-in potential of p-n junction}
+{The built-in potential in semiconductor ($p$--$n$)-junction is determined by the measured temperature dependence of its resistance.}
+
+Typical semiconductors are germanium and silicon, the elements of group IV of the periodic table.
+
+An $n$-type semiconductor is a semiconductor doped with donor impurities, atoms of an element of group V, which form additional ''local'' levels. These levels are in the band gap close to the conduction band bottom as it is shown in~\refFigure{11_3_1}\textit{a}.
+%
+\hFigure{Band diagrams of different semiconductors: \emph{a})\:$n$-type; \emph{b})\:$p$-type; \emph{c})\:($p$--$n$)-junction in equilibrium}11_3_1 {10.2cm}{7.2cm}{pic/L11_3_01.eps}
+%
+
+A semiconductor can be doped not only with donor but also with acceptor impurities. The latter can be implemented by adding atoms of group III. They form local levels in the band gap near the upper edge of the valence band (see~\refFigure{11_3_1}\textit{b}), which turns out to be empty at low temperatures. At room temperature these levels are occupied by electrons coming from the valence band. This results in emergence of mobile holes in the valence band. Such semiconductors are called $p$-type semiconductors.
+
+Charge carriers which prevail in the crystal are called the \textit{majority carriers}, and those which are less in number are \textit{minority carriers}. Electrons are majority charge carriers in an $n$-type semiconductor and holes are majority carriers in a semiconductor of $p$-type.
+
+Let us join semiconductors of $n$- and $p$-type. At the junction the majority carriers diffuse through the boundary layer on both sides, which results in recombination of holes and electrons. Positive ions of the donors, which charge is no longer compensated by electrons, form positive bulk charge near the junction in the $n$-region. In the $p$-region negative ions of the acceptors, which charge is not compensated by holes, form negative bulk charge. Thus, a carrier-depleted layer emerges in the ($p$--$n$)-junction region, which gives rise to a potential barrier preventing majority carriers from further diffusion. The barrier is called a \textit{built-in potential}.
+
+An equilibrium is reached when the potential barrier ''matches'' the Fermi levels in both semiconductors, as it is shown in~\refFigure{11_3_1}\textit{c}. To justify this rule consider for simplicity an energy level $E_{1}$ in the conduction band. The level occupation number can be calculated via the Fermi-Dirac distribution in the $n$-region as well as the Fermi-Dirac distribution in the $p$-region. Therefore,
+$$
+\frac{1}{1+ \exp [(E_{1} - \mu_{n})/({\kb}T)]}=\frac{1}{1+\exp[(E_{1}-\mu_{p})/({\kb}T)]},
+$$
+hence
+$$
+\mu_{n}=\mu_p. \eqMark{11_3_1}
+$$
+
+The existence of the depleted layer can be easily understood from~\refFigure{11_3_1}\textit{c}. In the $n$-region the Fermi level is far from the valence band and close to the conduction band. Occupation numbers of the valence band levels are close to unity, and occupation numbers of the conduction band levels are noticeably different from zero. There are a lot of electrons and few holes in this region. In the~$p$-region the proportion is reversed. In the depleted region of ($p$--$n$)-junction the Fermi level is far both from the valence and the conduction bands. So, this region is poor both in electrons and holes (\refFigure{11_3_2}) and has a large electric resistance.
+
+Let us evaluate the built-in potential across the ($p$--$n$) junction in silicon. To be specific we assume that concentration of donors in the $n$-region and acceptors in the $p$-region are the same and equal to $1.7\cdot 10^{13}\;\cm^{-3}$. Intrinsic electron and hole density in pure silicon is $1.7 \cdot 10^{10}\;\cm^{-3}$. For equal concentration of acceptors and donors the distance of Fermi levels from the middle of the band gap in $n$- and $p$-regions is equal. Hence, the potential difference $\Delta V$ across the ($p$--$n$)-junction equals
+$$
+e\Delta V=2\left(\mu-\frac{1}{2}E_{\mathrm c}\right). \eqMark{11_3_2}
+$$
+
+As before, the energy of level in Eq.~(\refEquation{11_3_2}) is counted from the top of valence band and $E_{\mathrm c}/2$ is the original position of the Fermi level.
+
+%
+\cFigure{Concentration of electrons and holes in the ($p$--$n$)-junction}11_3_2 {6.0cm}{3.2cm}{pic/L11_3_02.eps}
+%
+
+At room temperature the density of electrons in the conduction band is determined mostly by the electrons supplied by donor levels:
+$$
+n_{n}=Q_n\exp\left(-\frac{E_{\mathrm c}-\mu}{{\kb}T}\right), \eqMark{11_3_3}
+$$
+and the density of vacancies (holes) in the valence band is equal to the density of electrons transferred from the valence to the conduction band by thermal fluctuations:
+$$
+n_{p}=Q_p\exp\left(-\frac{\mu}{{\kb}T}\right). \eqMark{11_3_4}
+$$
+Dividing Eq.~(\refEquation{11_3_3}) by Eq.~(\refEquation{11_3_4}) we obtain
+$$
+\frac{n_{n}}{n_{p}}=\exp \frac{2\mu -E_{\mathrm c}}{{\kb}T}=\exp\left(\frac{e\Delta V}{{\kb}T}\right). \eqMark{11_3_5}
+$$
+The built-in potential $\Delta V$ equals
+$$
+\Delta V=\frac{{\kb}T}{e}\ln\frac{n_{n}}{n_{p}}. \eqMark{11_3_6}
+$$
+At $T=300\;\kelvin$ the density of electrons in the conduction band of the $n$-type semiconductor $n_{n}$ is exactly equal to the density of donor atoms. Thus, $n_{n}=1.7\cdot 10^{13}\;\cm^{-3}$. The density of holes can be determined from the observation that the product $n_{n}n_{p}$ does not depend on the presence of dopants \\ (see Eq.~(\refEquation{11_38})):
+$$
+n_{n}n_{p}=n_\textrm{i}^{2}=(1.7 \cdot 10^{10}\;\cm^{-3})^{2},
+$$
+hence
+$$
+n_p =\frac{n_\textrm{i}^2}{n_n} = 1.7\cdot10^7\;\cm^{-3}.
+$$
+
+Thus, we have
+$$
+\Delta V=\frac{1}{40}\ln\left(\frac{1.7 \cdot 10^13}{1.7\cdot 10^7}\right)\Simeq0.35\;\V.
+$$
+
+This potential difference is applied across a thin transition layer, about $10^{-3}\div10^{-4}\;\cm$ thick.
+
+Due to formation of the potential barrier there is a certain relationship between concentration of majority and minority charge carriers in the $n$- and $p$-regions. In equilibrium
+$$
+\frac{n_{n}(n\text{-region})}{n_{n}(p\text{- region })}=\frac{n_{p}(p\text{- region })}{n_{p}(n\text{- region })}= \exp\left(\frac{e \Delta V}{{\kb}T}\right). \eqMark{11_3_7}
+$$
+
+This relationship is not difficult to understand. There is a high concentration of electrons in the material of $n$-type but only a small fraction of them \linebreak $\exp [-e \Delta V/( {\kb}T)]$ passes to the $p$-type material going uphill (see~\refFigure{11_3_1}\textit{c}). These electrons flow through the junction from the left.
+%
+\hFigure{Diagram of ($p$--$n$)-junction with a voltage applied: forward bias \textit{(à)}; reverse bias \textit{(b)}}11_3_3 {6.8cm}{6.7cm}{pic/L11_3_03.eps}
+%
+There also exists a flow of electrons approaching the junction from the right. The contact potential difference does not impede this flow since in this case electrons slide downhill. In equilibrium the opposite flows are equal. Denoting their value by $I_{0}$, we find:
+$$
+I_{0}\propto n_{n}(p\text{-region})=n_{n}(n\text{-region})\exp[-e \Delta V/( {\kb}T)]. \eqMark{11_3_8}
+$$
+
+Now let us apply a voltage $V\sub{source}$ from an external source to the ($p$--$n$)-junction, so that the $p$-region has a positive charge relative to the $n$-region (see~\refFigure{11_3_3}\textit{à}). This voltage almost completely drops on the ($p$--$n$)-junction with extremely low conductivity, since the adjacent region is poor in charge carriers (see the discussion above). The potential energy of electrons in the $p$-region is lowered by $eV\sub{source}$ relative to the $n$-region. The Fermi level is lowered correspondingly.
+
+Let us find the current passing through the semiconductor at low $V\sub{source}$, when the  potential barrier decreases but does not completely disappear. The current flowing from the right to left remains unchanged, it is still equal to $I_{0}$; however, the current flowing from the left to right increases by the factor $\exp[e V\sub{source}/({\kb}T)]$ due to lowering the barrier. The total current is equal to the difference of these currents, i.e.
+$$
+I(V\sub{source})=I_{0}\left[\exp\left(\frac{eV\sub{source}}{{\kb}T}\right)-1\right]. \eqMark{11_3_9}
+$$
+
+Everything said above also applies to the hole current. In equilibrium, those few holes in the $n$-region pass easily to the $p$-region and holes from the $p$-region go uphill passing to the $n$-region, which decreases their number by the factor of $\exp[eV\sub{source}/({\kb}T)]$. When external voltage is applied these currents do not compensate each other anymore and we return to Eq.~(\refEquation{11_3_9}). Thus, this equation also correctly describes the net current through the ($p$--$n$)-junction if $I_{0}$ is treated as the net current carried both by electrons and holes in equilibrium. The current $I(V\sub{source})$ grows rapidly (exponentially for an appreciable $V\sub{source}$) as $V\sub{source}$ increases.
+
+Now consider processes taking place at the reverse bias (see~\refFigure{11_3_3}\textit{b}). The potential barrier in this case is even higher, so the current from the $n$-region drops below $I_{0}$. It can be easily seen that in this case Eq.~(\refEquation{11_3_9}) describes correctly the current passing through the ($p$--$n$)-junction. At $V\sub{source}<0$ this current changes its direction. The exponential term becomes negligible, so the negative current never exceeds $I_{0}$ due to the small concentration of minority charge carriers in extrinsic semiconductors.
+
+Let us substitute Eq.~(\refEquation{11_3_8}) into Eq.~(\refEquation{11_3_9}) and take into account that the current measured experimentally equals the sum of electron and hole currents:
+\begin{Multline}
+I(V_\textrm{source})=(I_{0,n}+I_{0,p})\left[\exp\left(\frac{e V_\textrm{ source }}{{\kb}T}\right)-1\right]_{\vphantom{\dfrac{0}{0}}}=\\ = [n_{n}(n\text{-region})+n_{p}(p\text{-region})]\exp\left(-\frac{e \Delta V}{ {\kb}T}\right)\left[\exp\left(\frac{eV_\textrm{ source }}{{\kb}T}\right)-1\right]=\\ =A\exp\left(-\frac{e \Delta V}{ {\kb}T}\right)\left[\exp\left(\frac{e V_\textrm{ source }}{{\kb}T}\right)-1\right]^{\vphantom{\dfrac{0}{0}}}. \eqMark{11_3_10}
+\end{Multline}%
+
+In this equation we assume that $n_n$ and $n_p$ are determined by concentration of acceptor and donor dopants which only slightly depend on temperature. Hence, their sum is replaced by a constant. The diagram in~\refFigure{11_3_4} shows the dependence of current on the voltage across the ($p$--$n$)-junction.
+
+A nonlinear current-voltage characteristic of the ($p$--$n$)-junction makes possible the detection of alternating currents (semiconductor diodes). A semiconductor diode implements semiconductor($p$--$n$)-junction or a metal-semiconductor contact. (In the latter case 
+%
+\fFigure{Current passing through ($p$--$n$)-junction versus voltage across the junction}11_3_4 {4.95cm}{2.75cm}{pic/L11_3_04.eps}
+%
+the depletion region is formed only in semiconductor.) Equation~(\refEquation{11_3_10}) is valid in this case too.
+
+Germanium and silicon are the materials used for rectifier diodes. The diodes are designed for currents ranging from milliamperes to hundreds of amperes.
+
+When current passes through the diode, it generates heat and the junction temperature rises. An increase in temperature results in a higher reverse current, which, in turn, results in a further temperature increase. Intrinsic conductivity of semiconductor rises with temperature and approaches the extrinsic conductivity, which deteriorates the rectifying property of a diode. The less the energy gap of the diode material, the lower is the diode critical temperature.
+
+The critical temperature for germanium ($p$--$n$)-junction is $\simeq75\celsii$ and $\simeq150 \celsii$ for silicon. Equation~(\refEquation{11_3_10}) is simplified for small $V_\textrm{source}$. At room temperature
+$$
+\frac{e V_\textrm{source}}{{\kb}T}\ll1, \eqMark{11_3_11}
+$$
+so expanding the exponent we obtain:
+$$
+I=A\exp\left(-\frac{e \Delta V}{{\kb}T}\right)\frac{eV_\textrm{source}}{{\kb}T}.
+$$
+
+At low $V_\textrm{source}$ (about several millivolts) the current passing through the ($p$--$n$)-junction is proportional to the voltage. Dividing $V_\textrm{source}$ by $I$ we obtain the junction resistance
+$$
+R=\frac{V_\textrm{ source }}{I}=\frac{{\kb}T}{e}\frac{1}{A}\exp\left(\frac{e \Delta V}{{\kb}T}\right)\propto \exp\left(\frac{e\Delta V}{{\kb}T}\right). \eqMark{11_3_12}
+$$
+
+In this equation we neglect a temperature dependence of the pre-exponential factor which is weak compared to the exponential dependence.
+
+The experiment is aimed at determining the potential barrier height $\Delta V$ of the ($p$--$n$)-junction (the built-in potential) in germanium and silicon diodes. Using the measured temperature dependence of the junction resistance and Eq.~(\refEquation{11_3_12}) one can evaluate $\Delta V$. 
+
+Taking the logarithm and then differentiating Eq.~(\refEquation{11_3_12}) we obtain
+$$
+\Delta V=\frac{{\kb}}{e}\frac{\Delta (\ln R)}{\Delta (1/T)}. \eqMark{11_3_13}
+$$
+
+\Experim
+%\textbf{\textso{Experimental installation}}
+
+The diagram in~\refFigure{11_3_5} shows the installation for measuring the temperature dependence of the junction resistance. The installation consists of a Wheatstone bridge and a thermostat. The bridge circuit is connected to a square-wave generator G$5$-$63$.
+The oscilloscope Ñ$1$-$83$ is used as a zero indicator. The bridge arms include resistances $R_{1}=910\;\Om$ and $R_{2}=9100\;\Om$, a resistance box $R\sub{m}$, and a semiconductor diode (germanium or silicon) which resistance $R_{g}$ is being measured.
+
+A signal from the variable bridge diagonal is applied to the independent amplifiers of oscilloscope Ñ$1$-$83$, <<Channel I>> and <<Channel II>>. The difference between these signals is displayed on the oscilloscope screen. The oscilloscope, the generator, and a point of the opposite bridge diagonal have a common ground. Thus, if the bridge is balanced (by means of the box $R\sub{b}$, the signal on the oscilloscope display appears as a straight line (the channel I and channel II signal difference is $0$). Then the diode resistance $R_{g}$ can be found from equation
+$$
+R_{g}=(R_{2}/R_{1}) R\sub{b}=10R\sub{b}.
+$$
+
+Measurements are taken at every $5\celsii$ within the temperature range from about $5$ to $70\celsii$. A test specimen is placed into a massive brass cylinder which is cooled down to $0\celsii$ in a household freezer prior to the measurement. The specimen is then heated by an electric heater.
+%
+\hFigure{Experimental installation for determining built-in of a ($p$--$n$)-junction}11_3_5 {9.4cm}{7.6cm}{pic/L11_3_05.eps}
+%
+The heater current can be adjusted by using a control knob on the front panel. The specimen temperature is measured by means of a copper-constantan thermocouple, one of its junctions is in thermal contact with the diode. The other junction is thermostated at $0\celsii$ in a Dewar vessel filled with melting ice. \vspace{1ex}
+
+\Task
+%\textbf{\textso{Directions}}
+
+\begin{Enumerate}{tab}
+
+ \Item. Connect the generator G$5$-$63$, oscilloscope Ñ$1$-$83$, and digital voltmeter Â$7$-$38$ to the mains of $220\;\V$. Set the heater toggle switch ''Furnace'' to ''Off'' position and the heater power switch ''Furnace current'' to the leftmost position.
+
+\Item. Set the optimal pulse amplitude of the generator G$5$-$63$. Set the convenient frequency and pulse duration to simplify signal observation on the oscilloscope screen. The recommended values are: the amplitude of $25\;\V$ with $2000$ times attenuation, the repetition period of $100 \times 10\;\mks$, the duration of $60 \times 10\;\mks$, and the phase shift of $25\;\mks$.
+
+\Item. Set the same sensitivity \linebreak$0.1\;\mV/$div of the oscilloscope channels $1$ and $2$. To observe the signal difference between the channels pull the <<Pull on>> chromed button in the down left corner of the front panel of oscilloscope. To obtain a stable image on the oscilloscope screen adjust the sweep frequency. 
+
+\Item. Switch on the electric heater of thermostat and measure the temperature dependence of the ($p$--$n$)-junction resistance.
+
+\Item. Plot $\ln (R_{g})$ versus $1/T$. Using Eq.~(\refEquation{11_3_13}) determine the built-in potential of the ($p$--$n$)- junction by the slope of the straight line obtained.
+
+\Item. Evaluate the error of the built-in potential obtained.
+\end{Enumerate}%
+
+\Literat
+\small
+
+1. \emph{ L.L.Goldin, G.I.Novikova.} Introduction to Atomic Physics.\,---\,Ì.: Nauka, 1988. Ch.\:XIII, \S\S\:68--69.
+
+2. \emph{ Ch.Kittel.} Introduction to Solid-State Physics.\,---\,Ì.: Nauka, 1978. Ch.\:11, p.\:407--411.
+\normalsize

@@ -1,0 +1,253 @@
+%translator Savrov, date 07.02.13
+
+\let\theEquation=\oldTheEquation
+\let\theFigure=\oldTheFigure
+
+\Chapter
+{Thermal radiation}
+{Thermal radiation}
+{Thermal radiation}
+
+\textbf{Photons as a gas of bose-particles.}
+Quantum mechanics describes the properties of microparticles which cannot be explained by classical physics. Among such properties there are: wave-particle duality confirmed by numerous experiments, discreteness of various physical quantities, different statistical properties of particles with integer and half-integer spin, etc.
+
+Wave-particle duality is closely to related to the Heisenberg uncertainty principle which states that uncertainties of the particle position and momentum are constrained as:
+$$
+  \Delta x \Delta p_x \geqslant 2 \pi \hbar.
+  \eqMark{8_1}
+$$
+
+A consequence of this relation is that in the six-dimensional (position and momentum) phase space of a particle, the minimal volume per one state equals $(2\pi \hbar )^3$. To find the total number of states in a phase volume $\Gamma$ one should take into account a degeneracy with respect to the total angular momentum $\textbf{J}$. Thus, the number of the allowed particle states $N$ is given by
+$$
+  N=(2J+1) \frac{\Gamma}{(2\fpi \hbar )^3}.
+  \eqMark{8_2}
+$$
+
+Then the number of states $g(E)$ per a unit energy interval is
+$$
+  g(E)\,dE=\frac{d N}{d E}dE.
+  \eqMark{8_3}
+$$
+
+The phase volume occupied by a particle with momentum $\textbf{p}$ in a spatial volume $V$ is
+$$
+  \Gamma = \frac{4}{3}\pi p^{3}V.
+  \eqMark{8_4}
+$$
+
+Combining Eqs.~(\refEquation{8_2}), (\refEquation{8_3}), and (\refEquation{8_4}) one obtains:
+$$
+  g(E)\,dE=\frac{d N}{d E}\,dE=\frac{dN}{d p}\frac{d p}{d E}\,dE=(2J+1)\frac {d}{dp}\left(\frac{4 \fpi p^3V}{3(2\fpi\hbar)^3}\right)\frac{d p}{d E}\,dE.
+$$
+Finally
+$$
+  g(E)\,dE=(2J+1)\frac{4 \fpi p^{3}V}{(2\fpi \hbar )^3}\frac{d p}{d E}\,dE.
+  \eqMark{8_5}
+$$
+
+Electromagnetic field can be considered as a gas of photons, the particles with energy $E=\hbar\omega$ and momentum $p=\hbar k$, i.e. the dispersion relation for a photon is $E=pc$. Spin degeneracy of a photon is determined by two possible polarizations, i.e. it equals $2$. Therefore the number of states per energy interval, aka the statistical weight, is given by
+$$
+  g(E)\,dE=\frac{VE^2}{\fpi^2 c^2\hbar^3}\,dE.
+  \eqMark{8_6}
+$$
+
+There is one more fundamental postulate in quantum mechanics stating that identical particles cannot be experimentally distinguished. In classical mechanics the particles identical by their properties (like mass, charge, etc.), are considered distinguishable in principle. For instance, one can <<label>> electrons of a physical system at the initial time and <<track>> the trajectory of each electron, so any of them can be <<recognized>> at a later time. Quantum mechanics specifies only the probability to detect a particle at a certain place and thereby excludes the possibility to distinguish identical particles by their <<labels>>.
+
+A probability, or the square of wave function modulus, must remain the same under exchange of identical particles, which restricts a wave function be either symmetric or antisymmetric with respect to the exchange. Thus, microobjects can be divided into two groups: fermi-particles, which have a half-integer spin (in units of $\hbar$), are described by antisymmetric wave functions; bose-particles with an integer spin are described by symmetric wave functions. Shortly, particles of these two types are called \textit{fermions} and \textit{bosons}. A particular wave-function symmetry of a system composed of many particles drastically determines the system behavior. Identical fermions cannot be at the same quantum state (the Pauli exclusion principle) while there is no such a restriction for bosons, which can occupy any quantum state in any numbers.
+
+Now, consider electromagnetic field in a cavity as an ideal gas of photons, i.e. as a quantum system composed of bosons (the photon spin equals $1$). Strictly speaking the particle spin is defined as the particle angular momentum in its rest frame, while for a photon, which travels at the speed of light, such a frame does not exist. It would be more appropriate to use the total angular momentum, especially as the prevailing value for optical photons is $1$. We are interested in how many photons of a certain energy are in the cavity which walls are maintained at a temperature $T$. In other words, we are looking for the statistical distribution of our bosonic system over all possible states.
+ 
+Consider a single atom with energy levels $E_1$ and $E_2$, so that $E_2-E_1=\hbar\omega$, where $\omega$~is the photon frequency, residing in the cavity with ideally reflecting walls. Suppose there are $n$ photons in the same quantum state. The dynamical equilibrium of the system is achieved due to reabsorption and reemission of a photon by the atom. When the atom is in the lower state, there are $(n+1)$ photons in the cavity. During a large time interval $t$ the atom goes from the first to the second state and back many times, so the number of transitions $N_{12}$ from the first to the second state is equal to the number of reversed transitions $N_{21}$.
+
+Let $W_{12}^{(1)}$ be the probability of atomic transition into the excited state induced by a single photon and $t_1$~be the time the atom spends in the lower state. Then one can write:
+$$
+  N_{12}=W_{12}^{(1)}(n+1) t_{1}\Simeq N_{21}.
+  \eqMark{8_7}
+$$
+
+We can rewrite this equation in terms of the transition rate from the excited state induced by $n$ photons:
+$$
+  n_{21} = \frac{N_{21}}{t_{1}}=nW_{12}^{(1)}+W_{12}^{(1)} =W\sub{ind}+W\sub{sp}.
+  \eqMark{8_8}
+$$
+
+The first term in Eq.~(\refEquation{8_8}) depends on the number of photons in the system and therefore describes the induced transitions (forced by external radiation); the second term corresponds to spontaneous (random) transitions from the excited state. One can see that spontaneous radiation (a transition from excited to ground state is accompanied by photon emission) is due to transitions induced by single photon,
+$$
+  W\sub{sp}=W\sub{ind}^{(1)}.
+  \eqMark{8_9}
+$$
+
+Now we can consider a case when the system has many such atoms. Suppose $N_{1}$ atoms are in the ground state and $N_{2}$~are in the excited state. In equilibrium the number of transitions from the ground to the excited state must be equal to the number of backward transitions for a given time interval. If the average number of photons of a given energy is $\overline{n}$, the condition of equilibrium can be written as
+$$
+  N_{1}\overline{n}W_{12}^{(1)}t=N_{2}\overline{n}W_{21}^{\text{ind}}t+N_{2} W_{21}^{\text{sp}}t.
+  \eqMark{8_10}
+$$
+
+If the system temperature is so high that $E_2-E_1\ll$ $\ll {\kb}T$, the number of atoms in the excited and ground state is equal ($N_1=N_2$), which implies the following relation between the transition probabilities:
+$$
+  W_{12}^{(1)}=W_{21}^{\text{ind}}=W_{21}^{\text{sp}}.
+  \eqMark{8_11}
+$$
+
+Here we use Eq.~(\refEquation{8_9}) and the fact that $\overline{n}\gg 1$ at high temperature, so the second term in Eq.~(\refEquation{8_10}) is negligible. 
+
+Thus, at any finite temperature
+$$
+  N_1(\overline{n})=N_2(\overline{n}+1),
+  \eqMark{8_12}
+$$
+i.e.
+$$
+  \frac{N_{2}}{N_{1}}=\frac{\overline{n}}{\overline{n}+1}.
+  \eqMark{8_13}
+$$
+
+Now recall that the ratio of the occupation numbers $N_2/N_1$ at a given temperature is determined by the Boltzmann exponent\linebreak ${\exp[-\hbar \omega /({\kb}T)]}$, so we obtain:
+$$
+  \overline{n}\{1-\exp[-\hbar\omega/({\kb}T)]\}=\exp[-\hbar \omega /({\kb}T)].
+  \eqMark{8_14}
+$$
+
+Finally, we obtain that in thermal equilibrium the number of photons with a frequency $\omega$ in a given state equals
+$$
+  \overline{n} =\frac{1}{e^{\hbar\omega/({\kb}T)}-1}.
+  \eqMark{8_15}
+$$
+This equation is also called the Bose-Einstein distribution for the expected number of particles $\overline{n}$.
+
+Now we can determine the specific spectral density of thermal radiation, i.e. the energy per unit volume and frequency. To do this we multiply the photon energy by the mean number of photons with the given energy (see Eq.~(\refEquation{8_6})):
+$$
+  u_{\omega}d\omega = \frac{\fomega^{2}}{\fpi^2c^3}\frac{\fomega}{\exp[\hbar\fomega/({\kb}T)]-1}d\omega.
+  \eqMark{8_16}
+$$
+
+This equation is called the Planck distribution. One can verify that the Bose-Einstein distribution becomes the classical Boltzmann distribution when the number of possible states in the phase space is much greater than the number of particles in a system.
+
+Consider the main features of the thermal radiation.
+
+Radiant emittance $R$ of a body is the radiant power $W$ emitted in all directions by a unit area of the body at all frequencies:
+\vspace{-2pt}
+$$
+  R=\frac{W}{S}.
+  \eqMark{8_17}
+$$
+
+\vspace{0pt}
+\noindent Here $S$~is the radiating surface. The value of $R$ depends on the body structure and its temperature.
+
+Spectral radiance $r_{\lambda , T}$ of a body is a physical quantity equal to the radiant power emitted by the unit area of the body in all directions and in the wavelength interval from $\lambda$ to $\lambda +d \lambda$:
+\vspace{-4pt}
+$$
+  r_{\lambda , T}=\frac{dR}{d\lambda}.
+  \eqMark{8_18}
+$$
+Obviously,
+\vspace{-18pt}
+$$
+  R(T) = \int\limits_{0}^{\infty}r_{\lambda , T}d\lambda.
+  \eqMark{8_19}
+$$
+
+Any body to some extent absorbs the incident radiation.  Absorptivity $a_{\lambda ,  T}$ of a body is the dimensionless quantity equal to fraction of monochromatic radiation flux $\Phi\sub{inc}$  absorbed by the body at a given wavelength:
+\vspace{-4pt}
+$$
+  a_{\lambda , T} =\frac{\Phi_{\lambda\,{\text{abs}}}}{\Phi_{\lambda\,{\text{inc}}}}.
+  \eqMark{8_20}
+$$
+
+\vspace{-4pt}
+The integral absorptivity or absorbance is a quantity
+$$
+  A(T)=\frac{\Phi\sub{abs}}{\Phi\sub{inc}}.
+  \eqMark{8_21}
+$$
+
+\vspace{-4pt}
+A body that completely absorbs the incident radiation of any wavelength is called the black body. For a black body, $a_{\lambda , T} =1$. For any other body, $a_{\lambda ,  T}< 1$.
+
+Strictly speaking, a black body is an abstraction. A soot can be considered as a practical example of a black body in the visible spectrum because it absorbs, radiates, but does not reflect the optical radiation. An enclosed cavity with a rough and well absorbing internal surface can be considered as a model of black body. A hole in the cavity appears completely black for an outside observer. 
+
+The relation between the spectral radiance and the absorptivity of a body is given by Kirchhoff's law:
+$$
+  \frac{r_{\lambda , T}}{a_{\lambda , T}}=f(\lambda , T),
+  \eqMark{8_22}
+$$
+i.e. \textit{the ratio of emissive power to the dimensionless coefficient of absorption of a body is equal to a universal function only of radiative wavelength and temperature}.
+
+For a black body $a_{\lambda , T}=1$, so applying Kirchhoff's law to a black body one obtains:
+$$
+  r_{\lambda , T}=f(\lambda , T)=r_{\lambda, T}^{\text{bb}}.
+  \eqMark{8_23}
+$$
+
+One can see that the universal function $f(\lambda ,  T)$ by Kirchhoff is the spectral radiance $r_{\lambda , T}^{\text{bb}}$ of a black body. Therefore for any (gray) body Kirchhoff law can be written as
+$$
+  r_{\lambda ,T}=a_{\lambda , T}r_{\lambda, T}^{\text{bb}}.
+  \eqMark{8_24}
+$$
+A black body is the best radiator since it has $a_{\lambda , T} =1$. 
+
+This relation allows one to calculate the thermal radiation of any object by a known absorptivity.
+
+We have already found the analytical expression for the spectral energy distribution of a black body at a given temperature using the quantum laws of electromagnetic radiation. This function, known as Planck's law is:
+$$
+  r_{\lambda , ^ T}^{\text{bb}}=\frac{2\fpi c^2h}{\lambda^5}\frac{1}{\exp[hc/(\lambda {\kb}T)]-1}.
+  \eqMark{8_25}
+$$
+
+Integrating this function over all wavelengths one obtains the Stefan-Boltzmann law for a black body:
+$$
+  R_{T}^{\text{bb}}=\int\limits_{0}^{\infty}r_{\lambda , T}^{\text{bb}}d\lambda = \frac{2\fpi^5{\kb}^4}{15c^2h^3}T^4,
+  \eqMark{8_26}
+$$
+or
+$$
+  R_{T}^{\text{bb}}=\sigma T^{4},
+  \eqMark{8_27}
+$$
+where
+$$
+  \sigma = \frac{2\fpi^5{\kb}^4}{15c^2h^3}=5{,}67 \cdot 10^{-12}\;\frac{\Vt}{\cm^2\cdot\kelvin^4}
+  \eqMark{8_28}
+$$
+is called the Stefan-Boltzmann constant.
+
+The Stefan-Boltzmann law states that the total power emitted by a black body per $1\;\cm^2$ is proportional to the forth power of the body absolute temperature.
+
+Using the experimental value of $\sigma$ Planck obtained the constant $h$ from the equation:
+$$
+  h=\sqrt[3]{\frac{2\fpi^5{\kb}^4}{15c^2\fsigma}}.
+  \eqMark{8_29}
+$$
+
+The diagram in~\refFigure{8_1} shows the spectral radiance of the black body surface versus  wavelength, described by Planck's law, for several temperatures.
+%
+\fFigure{Spectral radiance of black body surface at different temperatures}8_1
+{5.5cm}{5.7cm}{pic/L08_01.eps}
+%
+The area bounded by a curve in this diagram determines the radiant power of a black body.
+
+The spectral maxima can be found from the equation
+$$
+  \frac{dr_{\lambda , T}^{\text{ачт}}}{d\flambda} =0,
+  \eqMark{8_30}
+$$
+which for the Planck distribution gives
+$$
+  \lambda_{\mathrm{\max}} T=b=0{.}2897\;\cm\cdot\kelvin.
+  \eqMark{8_31}
+$$
+
+This equation is called Wien's displacement law and the constant $b$~is called Wien's displacement constant. Equation~(\refEquation{8_31}) shows that as the temperature grows the spectral maximum is shifted to a shorter wavelength inversely proportional to the temperature.
+
+A body which is not black is often referred to as non-black. For such a body $a_{\lambda , T}$ is less than $1$. Actually this is true for any real object ranging from soot which absorbance is close to 0.99 and to a well polished metal which absorbance can be as low as few percent. Any non-black object emits less power than a black body at the same temperature.
+
+Usually the function $r_{\lambda , T}$ is different from $r_{\lambda , T}^{\text{bb}}$, therefore the Stefan-Boltzmann law is not applied to a non-black body.
+
+If the body absorptivity (although less than unity) is the same for all wavelengths and is determined only by the material, temperature, and the surface structure of the body, the body is called gray. The spectral power of a gray body can be written similarly to the Planck's distribution at the same temperature although the emitted power is less. The Stefan-Boltzmann law for a gray body can be written as:
+$$
+  R_{T} = \epsilon_{T}\sigma T^{4}.
+  \eqMark{8_32}
+$$
+
+The dimensionless coefficient $\epsilon_{T}$ specifies the ratio of the integral emission of a given material to the black body emission at the same temperature. The spectral emissivity $\epsilon_{\lambda , T}$ specifies the emission in a narrow spectral range. The emissivity $\epsilon_{T}< 1$ depends on the material, temperature, the surface structure, and its oxidation degree.

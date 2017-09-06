@@ -1,0 +1,248 @@
+%translator Savrov, date 08.12.12
+
+\newpage
+
+
+\setcounter{Equation}{0}
+\setcounter{Figure}{0}
+\Work
+{Molecular spectrum of iodine}
+{Molecular spectrum of iodine}
+{The absorption lines of iodine vapor in the visible spectrum are observed; the results are used to estimate the quantum of energy of vibrational excitation of iodine molecule and the energy of its dissociation in the ground and excited states.}
+
+Molecules have a richer spectrum of excitations than isolated atoms. Atomic excitations are basically due to electron transitions to higher energy levels while in molecules certain additional degrees of freedom can be excited, namely, relative vibration of constituent atoms and molecular rotation as a whole. To a first approximation the molecule energy can be written as the sum
+$$   
+E=E\sub{el}+E\sub{vib}+E\sub{rot}.   \eqMark{2_3_1} $$
+
+The approximation is based on the assumption that the excitations can be considered as independent. In other words, one neglects an influence of vibration on rotation, i.e. one does not take into account a change of the moment of inertia of molecule due to its vibration. Such an assumption is justified for small vibration amplitudes. The same assumption is made for electronic excitations: one assumes that the energy of electrons is almost unaffected by molecular vibrations. To put it formally, the molecular wave function is presented as a product of three wave functions corresponding to electronic, vibrational, and rotational degrees of freedom:
+$$   
+\psi=\psi\sub{el}\cdot\psi\sub{vib}\cdot\psi\sub{rot}.   \eqMark{2_3_2} $$
+
+From this equality the molecule energy in the form of Eq.~(\refEquation{2_3_1}) follows: substitution of the wave function into the corresponding time-independent Schrodinger equation separates the latter into three equations which eigenvalues form energy spectra of the corresponding motions, $E\sub{el}$, $E\sub{vib}$, and $E\sub{rot}$.
+
+Let us consider electronic, vibrational, and rotational degrees of freedom one by one.
+
+\vspace{6pt}
+ \textbf{\textsc{I. Electronic terms}}
+
+\vspace{4pt}
+The mass of atomic nucleus is large compared to the electron mass. Because of this difference the velocities of nuclei in molecule are large compared to the velocities of electrons. Thus molecule electrons can be considered as moving between immobile nuclei. Stationary states of such a system determine the molecular electronic terms which in principle are not different from electronic terms of isolated atoms, although the number of molecular electronic terms significantly exceeds the atomic ones. Any atom in a molecule is subjected to electric field of other atoms, such a field is called the <<inner electric field>>. The field splits the atomic electron levels in the same way as any external electric field (the Stark effect). Notice that the filled atomic shells remain almost unaltered. It is only the electron density distribution of the external atomic shells which can be significantly distorted. In the case of interpolar bonds all valence electrons move from one atom to another, so the molecule can be considered as composed of ions with the charges equal (in the units of $e$) to their valences. In the case of the so called homopolar bonds the atoms of a molecule remain neutral.
+
+\vspace{6pt}
+\textbf{\textsc{II. Vibrational terms}}
+
+\vspace{4pt}
+Displacement of atoms of molecule from equilibrium position can result in their oscillation around the equilibrium. The forces ensuring the molecule stability are of electrical origin. At small distance atoms repel each other mostly due to Coulomb repulsion of their nuclei. At large distance atoms attract each other, this can happen 
+%
+\cFigure{Energy levels of diatomic molecule}2_3_1 {8.4cm}{4.2cm}{pic/L02_3_01.eps}
+%
+due to Coulomb attraction of oppositely charged ions (ionic bonding) or due to exchange interaction of quantum-mechnaical origin (atomic bonding). The resulting potential has the minimum shown in~\refFigure{2_3_1}.
+
+Potential energy curve $U(r)$ near the minimum is not very different from parabola, so the lowest energy levels are close to the levels of a harmonic oscillator. As the separation between nuclei grows the potential energy tends to the constant which specifies the energy of molecular dissociation. The left-hand side of~ \refFigure{2_3_1} displays a molecular energy spectrum; the shaded part corresponds to the continuous spectrum above the dissociation energy. The vibrational energy is quantized:
+$$
+E\sub{vib}=\hbar\omega_0\left(n+\frac{1}{2}\right)-\hbar\omega_0x_n\left(n+\frac{1}{2}\right)^2.
+\eqMark{2.3.3}
+$$
+Here the first term is the energy of harmonic oscillator with a frequency $\omega_0$, and $n=0,\;1,\;2,\;\ldots $ is the vibration quantum number. The second term takes into account deviations from the harmonic oscillation law. Usually the coefficient of anharmonicity $x_{n}$ is small ($x_n\ll1$), so the second term becomes significant only for large $n$, i.e. for large amplitude of vibration. Thus, for small $n$ the energy levels are the levels of a harmonic oscillator:
+$$   
+E\sub{vib}=\hbar\omega_0\left(n+\frac{1}{2}\right).   \eqMark{2_3_3} $$
+
+Let us estimate the typical vibration frequency $\omega\sub{vib}$ of a diatomic molecule. Near the minimum (at $r=r_0$) the potential energy can be written as
+$$   
+U(r)\Simeq\frac{(r-r_0)^2}{a_0^2}\mathrm{Ry}+U(r_0),   \eqMark{2_3_4} $$
+where $a_0$ is the Bohr radius and $\mathrm{Ry}$ is the ionization potential of hydrogen atom. This estimate is based on the fact that the molecular size is close to $a_0$ and the dissociation energy to $\mathrm{Ry}$.
+
+The spring constant of a harmonic potential $U={kx^2}/{2}$ is $k={d^2U}/{dx^2}$. For the potential~(\refEquation{2_3_4}) the spring constant is
+$$   
+k=\frac{d^2U}{dr^2}=\frac{2\mathrm{Ry}}{a_0^2}=\frac{\alpha^2mc^2}{a_0^2}.   \eqMark{2_3_5} $$
+
+In this formula $\mathrm{Ry}=\alpha^2\frac{mc^2}{2}$, where $\alpha$ is the fine structure constant. The Bohr radius can also be expressed via $\alpha$:
+$$   
+a_0=\frac{\hbar/mc}{\alpha}. \eqMark{2_3_6a} $$
+If $M$ is the oscillator mass (in molecules $M$ is of the order of the mass of constituent nuclei) then the frequency of oscillations in the potential~(\refEquation{2_3_4}) is
+$$   
+\omega\sub{vib}=\sqrt{\frac{k}{M}}\Simeq\alpha^2\cdot\frac{mc^2}{\hbar}\cdot\sqrt{\frac{m}{M}}.   \eqMark{2_3_6} $$
+
+Let us compare this frequency and the typical frequency of electron levels 
+$$   
+\omega\sub{el}\Simeq\frac{\mathrm{Ry}}{\hbar}\Simeq\frac{mc^2}{\hbar}\cdot\alpha^2.   \eqMark{2_3_7} $$
+
+Comparing Eqs.~(\refEquation{2_3_6}) and (\refEquation{2_3_7}) one obtains
+$$   
+\frac{\fomega_\textrm{колеб}}{\fomega_\textrm{эл}}\approx\sqrt{\frac{m}{M}}.   \eqMark{2_3_8} $$
+
+For medium nuclei with $A\approx 100$ the estimate gives
+$$   
+\frac{\fomega_\textrm{vib}}{\fomega_\textrm{el}}\approx\sqrt{\frac{1}{100\cdot2000}}\approx2\cdot10^{-3}.   \eqMark{2_3_9} $$
+
+One can see how small the quantum of vibrational energy is compared to the energy of electronic excitations.
+
+\vspace{6pt}
+\textbf{\textsc{III. Rotational terms}}
+
+\vspace{4pt}
+Any molecule has a set of discrete states corresponding to its rotation as a whole around some axis. Let us estimate the frequency of rotation of a diatomic molecule which atoms of mass $M$ are separated by a distance $a_0$. Let the axis of rotation pass perpendicular to the molecular axis between the atoms, i.e. the molecule rotates around the center of mass. Then the moment of inertia is
+$$   
+J\approx Ma_0^2.   \eqMark{2_3_10} $$ 
+The rotational energy is quantized and equals to
+$$   
+E\sub{rot}=\frac{\hbar^2}{2J}l(l+1),~~l=0,\;1,\;2,\;\ldots    \eqMark{2_3_11} $$ 
+Thus the typical rotational energy ($E\sub{rot}$ for $l=1$) is
+$$   
+E\sub{rot}\approx\frac{\hbar^2}{J}\approx\frac{\hbar^2}{Ma_0^2}.   \eqMark{2_3_12} $$
+
+Introducing the corresponding frequency $\omega_\textrm{rot}$, one obtains the following estimate:
+$$   
+\frac{\fomega_\textrm{вращ}}{\fomega_\textrm{эл}}\approx\frac{m}{M}.   \eqMark{2_3_13} $$
+
+Combining the estimates (\refEquation{2_3_8}) and (\refEquation{2_3_13}), one finally obtains 
+$$   
+\omega\sub{el}\,:\,\omega\sub{vib}\,:\,\omega\sub{rot}\approx 1\,:\,\sqrt{\frac{m}{M}}\,:\,\frac{m}{M}\approx 1 \,:\, 10^{-3}\,:\,10^{-6}.   \eqMark{2_3_14} $$
+
+\vspace{6pt}
+\textbf{\textsc{IV. Optical transitions in molecules}}
+
+\vspace{4pt}
+Optical transitions (in which photons of visible spectrum with energies of approximately two electron-volts are emitted) correspond to transitions between different electron terms. Usually such a transition also changes the rotational and vibrational states. According to Eq.~(\refEquation{2_3_14}) the rotational energy is $10^6$ less than the energy of electronic term, so it is not possible to observe rotational transitions with the aid of an optical spectrometer. Actually an electron-vibrational molecular spectrum is observed in the visible range. The vibrational spectrum is superimposed on the electron one, so any line corresponding to optical transition splits into a series of vibrational lines forming a band. One can say that the emission spectrum of molecule is observed as spectral bands consisting of a large number of close lines.
+%
+\hFigure{Electron and electron-vibrational energy levels of diatomic molecule}2_3_2 {6.28cm}{4.2cm}{pic/L02_3_02.eps} %
+%
+
+Molecular energy levels are shown in~\refFigure{2_3_2} (the rotational energy is about $1000$ times less than the vibrational quantum, so the rotational structure is not displayed). 
+
+Dashed lines correspond to electron levels $E_1$ and $E_2$ and the solid lines correspond to vibrational modes of these states. Notice that the minimum value of vibrational energy at $n=0$ is non-zero and equals to $h\nu/2$. As the quantum numbers $n_1$ and $n_2$ grow, the corresponding vibrational levels get closer because of anharmonism and merge with the continuous spectrum shown as a shade. Vibration amplitude grows with $n$ until at some maximal amplitude the atomic bond breaks up, i.e. the molecule dissociates.  
+
+The minimum energy required to break up a molecule in the lowest vibrational state ($n = 0$) is called the dissociation energy. Let the energy of dissociation from the states $n_1 = 0$ and $n_2=0$ be~$D_1$ and~$D_2$ (see~\refFigure{2_3_2}). On the diagram, $E_a$ is the energy required to excite the molecule from state $1$ to the continuos spectrum corresponding to state $2$. The energy of the exclusively electron transition $E_2-E_1=h\nu\sub{el}$. The spectrum boundary, i.e. the excitation energy at which the molecule passes to the continuous spectrum is $h\nu\sub{b}$.
+
+Now let us consider the structure of electron-vibrational absorption spectrum of molecular iodine studied in the experiment. All possible absorption lines of transitions between vibrational levels superimposed on the adjacent electron states can be divided into series (Deslandres' series) corresponding to the same initial state as it is shown in~\refFigure{2_3_3}. The transitions indicated by arrows in~\refFigure{2_3_3} are organized into the zeroth, the first, and the second Deslandres' series. \hFigure{Electron-vibrational absorption lines of molecular iodine in visible spectrum}2_3_3 {9.6cm}{6.9cm}{pic/L02_3_03.eps} In order to observe a given series in the absorption spectrum there must be sufficient number of molecules in the initial state ($n=0,\;1,\;2,\;\ldots $). In the state of thermodynamic equilibrium the number of molecules $N$ in a given vibrational state is proportional to $e^{-E/kT}$, where $E$ is the state energy, $k$ is the Boltzmann constant, and $T$ is absolute temperature. The relative intensity of the zeroth, the first, and the second Deslandres' series are proportional to the number of molecules $N_0$, $N_1$, and $N_2$ in the states with $n=0,\;1,\;2$.
+
+Calculation shows that at $T\approx 300\;\kelvin$
+$$   
+N_0\,:\,N_1\,:\,N_2\approx 1\,:\, \frac{1}{3}\,:\,\frac{1}{10}. $$
+
+Thus the most bright is the \mbox{$0$-th} series, the \mbox{$1$-st} series is approximately $3$ times weaker and the rest cannot be observed, so we do not take them into account. The energies of the absorption lines are 
+$$   
+h\nu_{0,\,n_2}=(E_2-E_1)+h\nu_2\left(n_2+\frac{1}{2}\right)-\frac{1}{2}h\nu_1. $$ 
+Here the anharmonicity correction is not included. It is negligible for the first lines of a series , so the  distance between the first lines is
+$$   
+h\nu_{0,\,n_2}-h\nu_{0,\,(n_2-1)}\approx h\nu_2, $$
+i.e. the vibration quantum of the first excited electron state.
+
+Obviously the lines of the $1$-st series are identical to the lines of the $0$-th series, however, the $1$-st series is displaced to lower energies (the red part of spectrum) by $h\nu_1$, the vibration quantum of the ground state. 
+
+\vspace{6pt}
+\textbf{\textsc{V. Absorption spectrum}}
+
+\vspace{4pt}
+Now it should be clear that the absorption spectrum of iodine vapor in the visible range at $T\approx 300\;\kelvin$ consists of two superimposed Deslandres' series  ($1$-st and $0$-th). For clarity both series are shown separately in~\refFigure{2_3_4}\textit{a}. The intensity distribution of absorption lines inside a series is also shown: the line brightness is proportional to its thickness. The line intensity of the $0$-th series grows with $n$, while the line intensity of the $1$-st series decreases (see the Appendix). As a result, the lines of the $1$-st series are visible in the red part of spectrum, while close to the spectrum upper boundary one can observe only the $0$-th series. Superposition of both series in the middle leads to spectrum <<smearing>>. The distance between vibration lines reduces to the <<violet>> end of spectrum until the lines merge with the region of continuous absorption (this region is shaded on the diagram). The spectrum sketch is shown in~\refFigure{2_3_4}\textit{b}.
+
+In order to observe an absorption spectrum the following equipment is required:
+
+1) a continuous spectrum source~--- an incandescent bulb; 
+
+2) an absorbing medium~--- a container with the substance studied; 
+
+3) a spectrometer to observe the absorption spectrum~--- a monochromator УМ-$2$.
+
+\cFigure{Absorption spectrum of iodine vapor}2_3_4 {8.83cm}{7.44cm}{pic/L02_3_04.eps}
+
+\vspace{-12pt}
+\cFigure{Experimental setup}2_3_5 {7.7cm}{4.1cm}{pic/L02_3_05.eps}
+
+According to~\refFigure{2_3_5} in this experiment the absorption spectrum of iodine vapor is observed on the background of the continuous spectrum of incandescent bulb~\textit{1} powered by a source~\textit{5}. A container~\textit{2} with iodine crystals inside is heated by a resistor powered by the same source as the bulb. A lens~\textit{4} is used to focus a beam of light passing through the container on the input slit of the monochromator. (A detailed description of calibration procedure of УМ-$2$ is given in section~\emph{c}) of experiment~11.2 on page~\:\pageref{focus}.) Due to heating the iodine crystals are partially sublimed into a slightly violet vapor. The monochromator~\textit{3} is used as a spectrometer which allows one to observe the absorption lines of iodine molecules superimposed on the continuous emission spectrum of the incandescent bulb in the visible range.
+
+\vspace{6pt}
+\so{\textbf{Directions}}
+
+\vspace{4pt}
+ \begin{Enumerate}{tab} \Item. Familiarize yourself with the experimental installation. 
+
+\Item. Turn the installation on and make necessary adjustments.
+
+\Item. Compare the observed absorption spectrum and the spectrum shown in~\refFigure{2_3_4}\textit{b}.
+
+\Item. Determine the monochromator graduations $n$ corresponding to:
+
+a) the line $h\nu_{1{,}0}$, the longest wavelength of the absorption spectrum ($n_{1{,}0}$),
+
+b) the line $h\nu_{1{,}5}$, the sixth line counted from the longest wavelength ($h\nu_{1{,}5}$),
+
+c) $h\nu\sub{b}$, the boundary of the continuous absorption spectrum ($n\sub{b}$).
+
+Because of poor visibility of the spectral lines the measurements must be done in $1$--$2$ minutes when the observer's eye gets used to darkness.
+
+\Item. Using the calibration curve determine the wavelengths corresponding to graduations $n_{1{,}0}, n_{1{,}5}, n\sub{b}$.\looseness=-1
+
+\Item. Calculate the energy of vibration quantum of iodine molecule in electron-volts: $h\nu_2=(h\nu_{1{,}5}-h\nu_{1{,}0})/5$.
+
+\Item. Using the obtained results (and the information: the energy of vibration quantum in the ground state, $h\nu_1$, is $0{,}027\;\eV$ and the energy of atomic excitation, $E_\mathrm{a}$, is $0{,}94\;\eV$) calculate:
+
+a) the energy of electron transition, $h\nu\sub{el}$,
+
+b) the dissociation energy of molecule in the ground state, $D_1$;
+
+c) the dissociation energy of molecule in the excited state, $D_2$.
+
+The tabulated values are $D_1=1{,}5425\;\eV$ and $D_2=0{,}69\;\eV$. \end{Enumerate}%
+
+\begin{center}\so{\textsf{\small ЛИТЕРАТУРА}}\end{center} {\small
+
+1. \textit{Гольдин\;Л.\;Л., Новикова\;Г.\;И.} Введение в атомную физику.\,---\,М.: Наука, $1988$.
+
+2. \textit{Калитеевский\;Н.\;И.} Волновая оптика.\,---\,СПб.: Лань, $2008$. \textsection\textsection\;$6{.}5,~6{.}7$.
+
+3. \textit{Фриш\;С.\;Э., Тиморева\;А.\;В.} Курс общей физики.\,---\,М.: Гостехиздат, $1953$. Т.\;$3$. С.\;$357$.
+
+4. \textit{Ельяшевич\;М.\;А.} Атомная и молекулярная спектроскопия.\,---\,М.: Эдиториал УРСС, $2007$. Гл.\;$25$. }
+
+\newpage
+\so{\textbf{Appendix}}
+
+\vspace{4pt}
+\textbf{\textsc{The Franck--Condon principle and relative intensities of electron-vibrational bands}}
+
+\vspace{4pt}
+Relative intensities of electron-vibrational bands can be obtained by implementing the Franck-Condon principle which is based on analysis of potential energy curves of electronic states. The original idea was formulated by J.~Franck in classical framework, while E.~Condon has considered the problem using quantum mechanics.
+
+\begin{cFigures}
+\Figure
+{Favored transitions according to the Franck-Condon principle}2_3_6
+[t]{3.8cm}{6cm}{pic/L02_3_P1.eps}\qquad
+\Figure
+{Transitions for similar potential curves located one above the \mbox{other} ($\rho_e$~is  equilibrium distance between nuclei)}2_3_7
+[t]{6.2cm}{6cm}{pic/L02_3_P2.eps}
+\end{cFigures}
+
+This is the main idea of the Franck-Condon principle. An electronic transition consists in rearranging a configuration of electrons which is instantaneous compared to motion of nuclei. Therefore neither the distance between the nuclei, nor their velocities change during the transition. This condition is satisfied at the turning points of potential curves corresponding to the same $\rho$, i.e. the points lying on the same vertical (see~\refFigure{2_3_6}), the relative velocity of nuclei at these points is zero.
+
+Quantum-mechanical analysis shows that the transitions accompanied by changes in nuclear distances and velocities are also possible, however, the more the changes, the less is the transition probability. Therefore the favored transitions correspond to constant distances between nuclei at zero velocities, i.e. to vertical lines on a plot of potential curves. This is the Franck-Condon principle.
+
+Now consider the intensity distribution of vibrational bands predicted by the Franck-Condon principle. If anharmonicity is not taken into account, the energy of vibrational levels is written as
+$$
+E_\textrm{vib}^{\prime} = h \nu_e^{\prime} (v'+ 1/2), \quad E_\textrm{vib}^{\prime\prime} = h \nu_e^{\prime\prime} (v''+ 1/2),
+$$
+where $\nu_e^{\prime}$, $\nu_e^{\prime\prime}$~are vibrational frequencies; two primes correspond to the ground electronic level, and a single prime to an excited one.
+
+If potential curves of electronic states are similar and correspond to the same equilibrium distance $\rho_e$ (see~\refFigure{2_3_7}), then transitions between equal $v''$ and $v'$ are favored. 
+%\fFigure{Transitions for similar potential curves located one below the \mbox{other}}2_3_7 {3.99cm}{6.09cm}{pic/L02_3_P2.eps}
+Indeed, in this case the classical turning points are on the same vertical for $v' = v''$. The probability of a transition decreases as $\Delta v = v' - v''$ grows; the diagram in~\refFigure{2_3_7} illustrates the case when the band $\Delta v = 0$ is the brightest, the bands $\Delta v =+1$ and $\Delta v =-1$ are weaker, and the bands $\Delta v = +2$ and $\Delta v = -2$ are still weaker.
+
+%
+\hFigure{Transitions for potential curves with different equilibrium distance: \textit{a}~absorbtion from the ground electron-vibrational state; \textit{b}~-emission from vibrational states of excited electronic state; \textit{c}~absorption from excited vibrational states of the ground electronic state}2_3_8 {11.34cm}{4.96cm}{pic/L02_3_P3.eps}
+%
+
+However this case is not typical for a diatomic molecule. Usually a potential curve of excited state  is flatter and has the minimum at larger $\rho$. For the curve arrangement shown in~\refFigure{2_3_8}\emph{a}, the most favored transition from the ground electronic state ($v'' = 0$) is the transition to a vibrational level (of excited electronic state) with some $v' = v_1'$. Transitions to levels with other $v'$ are less probable. The intensity distribution of absorption spectrum of the molecules in the ground vibrational state (transversal Deslandres's series with $v''=0$) has the maximum at $v' = v_1'$. \looseness=-1
+
+According to~\refFigure{2_3_8}\emph{b}, emission from vibrational level~$v'$ of excited electronic state, or (see~\refFigure{2_3_8}\emph{c}) absorption from a high vibrational level $v'$ of a lower electronic state (usually the ground state because absorption from vibrational levels of excited electronic states becomes possible at high temperatures when the molecule begins to dissociate) the most favored are the transitions from a given $v'$ or $v''$ to the levels with certain $v'=v_1''$ and $v''= v_2''$ or $v' = v_1'$ and $v'= v_2'$, respectively.
+
+One can see that the larger $v'$, the larger is the difference between $v_1''$ and $v_2''$; similarly, the larger $v_2''$, the larger is the difference between $v_1'$ and $v_2'$.
+%
+\fFigure{Condon parabola}2_3_9 {3.52cm}{4.28cm}{pic/L02_3_P4.eps}
+%
+If the intensity distribution is presented by a diagram similar to the Deslandres's diagram in~\refFigure{2_3_9}, the most favored transitions correspond to the bands lying on the parabola named after E.~Condon. 
+
+There are two values of $v''$ for a given $v'=v'_\textrm{a}$, and for a given $v''=v'_\textrm{b}$ there are two values of $v'$ corresponding to favored transitions.
+
+The intensity distribution corresponding to the Condon parabola is observed in emission spectrum providing there are enough vibrational levels of an excited electronic state with approximately equal occupation numbers. A similar intensity distribution in absorption spectrum can be observed providing a large number of vibrational levels of the ground electronic state are excited, i.e. at a sufficiently high temperature. The less is the relative displacement of the electronic states, the narrower is the Condon parabola. In the case when two curves are located one above the other and they have the same shape, the parabola degenerates into a straight line corresponding to $v' = v''$, or $\Delta v=0$. This was the case which opened the discussion (see~\refFigure{2_3_7}).
+
+ % \cFigure{Condon parabola}1_3_9 {7.4cm}{5.7cm}{pic/FRANK4.eps} %

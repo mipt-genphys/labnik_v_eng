@@ -1,0 +1,255 @@
+%translator Scherbakov, date 14.12.12
+
+\let\oldTheEquation=\theEquation
+\def\theEquation{\arabic{Equation}}
+\let\oldTheFigure=\theFigure
+\def\theFigure{\arabic{Figure}}
+
+\setcounter{Equation}{0}
+\setcounter{Figure}{0}
+
+\Work
+{Zeeman effect}
+{Zeeman effect}
+{In this experiment the simple Zeeman effect in cadmium atoms is studied. One observes the polarization of $\pi$- and $\sigma$-components of radiation across and along the magnetic field and measures angular diameter of interference rings for several values of magnetic field in order to calculate a relative wavelength shift for two $\sigma$-components and the Bohr magneton.}
+
+Magnetic field can split atomic energy levels, and, hence, split the spectral lines due to electron transitions between the levels. This phenomenon is called \textit{Zeeman effect}. Is was discovered in $1896$ by Dutch physicist P.\,Zeeman, and explained by H.\,Lorentz.
+%
+\fFigure{Diagram of transition $^1D_2\rightarrow ^1P_1$. Transitions with $\Delta m_J=0$ are called \mbox{$\pi$-components} (this is the unshifted component of the Zeeman multiplet) and with \mbox{$\Delta m_J=\pm1$} $\sigma$-components (the components are displaced symmetrically relative to the original line)}3_1_1
+{5.8cm}{4.1cm}{pic/L03_1_01.eps}
+%
+This effect provides a pronounced experimental evidence in favor of existence of atomic magnetic moment and its quantum nature.
+
+In the experiment one observes the Zeeman effect for the optical transition between the levels $5^1D_2$ and $5^1P_1$ of cadmium atom. In the absence of magnetic field the electron transition between these levels results in emission of a photon with the energy of $1{.}925\;\eV$, this corresponds to the wavelength of $\lambda_0=6438{.}468\;\Angstrem$.
+
+Before explaining the notation of atomic levels consider first the electron configuration of cadmium atom $\mathrm{Cd}$. Cadmium belongs to the group of elements which have two $s$-electrons added to the $nd^{10}$-shell ($n$ is the principal quantum number, symbol $d$ means that the orbital quantum number $l$ equals $2$, and the exponent $10$ indicates that there are $10$ electrons of this kind). This group also contains zink and mercury. The cadmium electron shell configuration is $1s^22s^22p^63s^23p^63d^{10}4s^24p^64d^{10}5s^2$. Both the electron shell spin and orbital momentum are zero in the ground state, so the ground level is denoted as $^1S_0$. (Recall, that orbital momentum of atomic shell is specified by a letter: $S$ corresponds to zero momentum, $P$~to $1$, $D$~to $2$, etc.) The superscript is the term multiplicity $2S+1$ and the subscript is equal to~$J$.\looseness=-1
+
+The binding energy of $nd$-electrons for the considered elements is considerably higher than that of $(n+1)s$-electrons, so, usually it is one of $s$-electrons which becomes excited. In our case the symbols $5^1D_2$ and $5^1P_1$ have the following meaning. The number $5$ is the principal quantum number of the atomic shell containing the excited electron. Light emission occurs when the electron passes from $^1D_2$ state to $^1P_1$ state within the fifth shell. The meaning of the other literal and numerical notations is the same as for the ground state: letters $D$ and $P$ correspond to orbital momentum of excited atom, and the figures are related to its spin and total angular momentum. Note that for the states with $S=0$ the Land\'{e} g-factor always equals $1$.
+
+Splitting of the studied energy levels of $\mathrm{Cd}$ is shown in~\refFigure{3_1_1}. The upper level splits in five components while the lower one in three components with the same inter-level energy separation of $\mu\sub{\tiny B}B$.
+
+Now consider the splitting of spectral lines. Optical transition lines originate as a result of electron transitions from upper to lower energy states. The radiation frequency is related to the energy $E_2$ and $E_1$ of upper and lower levels via Bohr's formula
+$$
+  \hbar\omega=E_2-E_1.
+  \eqMark{3_1_1}
+$$
+
+However, not all possible optical transitions are allowed. The transitions ought to obey the following conditions (\textit{selection rules}).
+
+\begin{Enumerate}{tab}
+\Item.
+Spin of the atomic shell is not changed, i.e.,
+$$
+  S_1=S_2,~~~\text{or}~~\Delta S=0.
+$$
+
+\Item.
+Orbital momentum changes by one at most:
+$$
+  L_2-L_1=\Delta L=0,\;\pm1.
+$$
+If either initial or final orbital quantum number is $L=0$, only transitions with $\Delta L=\pm1$ are possible.
+
+\Item.
+Total angular momentum changes by one at most:
+$$
+  J_2-J_1=\Delta J=0,\;\pm1.
+$$
+If either initial or final momentum is $L=0$, the rule is modified as
+$$
+  J_2-J_1=\Delta J=\pm1.
+$$
+
+\Item.
+The projection of $\mathbf J$ on any direction (including the direction of the external field) changes not more than by one:
+$$
+  m_{J_2}-m_{J_1}=\Delta m=0,\;\pm1.
+$$
+\end{Enumerate}%
+
+The selection rules can be easily understood using simple qualitative considerations. Emission of electromagnetic waves (photons) is caused by time variations of electric or magnetic moment  of a system (in other words, by changes of electric charges or currents of the system). Of course,   emission and absorbtion of photon must obey the laws of conservation of energy, momentum, angular momentum, and parity. Since a photon propagates at the speed of light it cannot be characterized by spin per se which is defined as the angular momentum of a microparticle in its rest-frame. Nor photon has an orbital momentum $l$ which is replaced by the concept of multipole. An electromagnetic field multipole is defined by angular momentum $L$ and parity $P$. The lowest possible multipole is electric dipole $E1$ with $L=1$ and negative parity $P=-1$. It is produced by redistribution of electrical charge of a system.
+
+If a photon interacting with a physical system has the reduced wavelength $\lambdabar=\lambda/(2\pi)$ which is much smaller than the system size $R$, then only the system dipole moment plays a dominant role in this interaction. The probability of emission of a quadrupole electric photon $E2$ ($L=2$, $P=+1$) or a dipole magnetic photon $M1$ ($L=1$, $P=+1$) is $(\lambda/R)^2$ times less. For atomic emission of optical photons this ratio has the order of magnitude of $10^{-6}$. It is this fact which determines the selection rules stated above. In terms of multipoles the rules can be interpreted as follows: in most cases only $E1$-photons are emitted (absorbed), while emission processes accompanied by a change of spin and leading to emission of $Ì1$- or a higher multipole photon have very low probability.
+
+The first three selection rules do not depend on the existence of an external magnetic field, and, consequently on the level splitting. In the case considered (the transition $^1D_2 \to ^1P_1$) these rules apply. The spin of both upper and lower states is the same and equal to zero. The orbital momentum (and therefore the total angular momentum) is changed by $1$. If one of the rules $1$--$3$ were violated, optical transitions would not be observed regardless of the presence of magnetic field.
+
+The rule $4$ prohibits transitions from a level with $m_{J_2}=-1$ to a level with $m_{J_1}=1$, from $m_{J_2}=1$ to $m_{J_1}=-1$, from $m_{J_2}=-2$ to $m_{J_1}=0,\,1$, and from $m_{J_2}=2$ to  $m_{J_1}=0,\,-1$. Figure~\refFigure{3_1_1} shows $9$ spectral transitions which are called the \textit{Zeeman components}. However, due to equality of the Land\'{e} g-factor for upper and lower states only three lines are observed in the emission spectrum. Such splitting is called the \textit{simple} or \textit{normal Zeeman effect}. The frequency of the line corresponding to spectral components with $\Delta m_J=0$ (this group of lines is sometimes referred to as $\pi$-components) is equal to the unshifted frequency. The components with $\Delta m_J=-1$ have lower frequency, and with $\Delta m_J=1$ higher. These groups are called $\sigma$-components. If the Land\'{e} g-factor is different for lower and upper states, the number of spectral components  exceeds three, and such effect is called the \textit{anomalus} since it cannot be explained in terms of classical physics.
+
+Zeeman spectral lines are polarized. The simplest explanation of the polarization relies upon the classical concept of an oscillating atomic dipole moment in a magnetic field. Let us decompose a harmonic oscillation of an arbitrarily oriented dipole into three components. Let one component be directed along the external magnetic field, while two others lie in the perpendicular plane.
+
+The magnetic field does not affect the oscillation component along the field which frequency remains $\nu_0$ (see~\refFigure{3_1_2}\textit{a}). The radiation caused by this oscillation can be observed only in the direction perpendicular to the magnetic field, since a dipole does not radiate along the oscillation axis (the $\pi$-component).
+
+The magnetic field affects the circular (perpendicular to the field) oscillations by exerting an additional force $\pm evB/c$ on the dipole; the force points either to the circle center or in the opposite direction depending on the direction of rotation of the atomic dipole. Hence, the frequency of circular oscillations is either more or less than $\nu_0$ ($\sigma$-components) by $\Delta\nu$ (depending on whether the external field reduces or increases the force acting on the dipole). Therefore, one observes the $\pi$-component polarized along the field, which corresponds to linear dipole oscillations perpendicular to the field. Also one observes two $\sigma$-components, which are linearly polarized in the direction perpendicular to the field, due to the dipole oscillations along this direction (see~\refFigure{3_1_2}\textit{c}).
+
+Along the external magnetic field one observes two $\sigma$-components of a clockwise and counterclockwise circularly polarized light. This conclusion is in accord with quantum mechanics. The projection of photon angular momentum (spin) on the field can take only two values: $\pm1$.
+%
+\hFigure{The Normal Zeeman effect. Polarization of $\pi$- and $\sigma$-components. Vector $\mathbf E$ is the electric field of electromagnetic wave. External field is zero (\textit{a}); observation along external magnetic field $\mathbf B$ (\textit{b}); observation across external magnetic field $\mathbf B$ (\textit{c}). Wave vector $\mathbf k$ of emitted wave is directed towards the reader}3_1_2
+{7.5cm}{3.7cm}{pic/L03_1_02.eps}
+%
+For this reason a radiation is emitted in this direction only in transitions with $\Delta m_J=-\pm1$ ($\sigma$-components). Their relative wavelength shift is
+$$
+  \frac{\delta\lambda}{\lambda_0}=\frac{\delta\omega}{\omega_0}=\frac{2\mu\sub{\tiny B}B}{\hbar\omega_0}.
+  \eqMark{3_1_2}
+$$
+
+The radiation with a shorter wavelength and the electric vector rotating counterclockwise (when viewed towards the wave) corresponds to the transition with $\Delta m=+1$. The photons corresponding to the transition with $\Delta m=-1$ have negative parity and the vector $\mathbf{E}$ rotating clockwise (see~\refFigure{3_1_2}\textit{b}). By reversing the field one also reverses the rotation of $\mathbf{E}$.
+
+In a strong magnetic field the spectral lines splitting is simplified (Paschen-Back effect). In a strong field $\mathbf{B}$ the additional energy due to spin and orbital momenta, $m_L$ and $m_S$, is much greater than the energy of the spin-orbital coupling. In this case the spin and orbital momenta decouple, so both the quantum number $J$ and the Land\'{e} g-factor become useless. The additional energy of atom in the magnetic field becomes the sum of the <<additional energy of $\mathbf L$>> ($E_L=\mu\sub{\tiny B}m_LB$) and the <<additional energy of $\mathbf S$>> ($E_S=2\mu\sub{\tiny B}m_SB$). In optical transitions the quantum number $S$ is conserved. According to the selection rules, the orbital quantum number can change only by one. This rule also holds for the orbital momentum projection $m_L$ which in a strong field plays the same role as $m_J$ in a weak field. Therefore each spectral line splits into three components only: one $\pi$-component ($m_L=0$) and two $\sigma$-components ($m_L=\pm1$).
+
+Splitting of spectral lines in magnetic field is relatively small and can be detected only with the aid of instruments of high resolving power. Indeed, even in the field of $10^4\;\Gs$, which can be generated by a moderate laboratory-size electromagnet, the splitting is
+$$
+  \Delta \nu=2\mu\sub{\tiny B}B/h\simeq 2{,}8\cdot 10^{10}\;\s^{-1},
+$$
+while $\nu$ in the optical range is of the order of
+$$
+  \nu=c/\lambda\simeq 6\cdot10^{14}\s^{-1}.
+$$
+
+In our experiment the field $B\simeq1{.}5\;\kGs$, hence, to observe the Zeeman effect one needs an instrument with a resolving power of, at least, $10^5$. A Fabry-P\'{e}rot interferometer does the job. It consists of a parallel-sided glass plate about $20\;\mm$ in diameter and thickness of $L\simeq1\;\cm$ (the exact value of the interferometer arms length is written on the mounting). The quality of polishing of the interferometer planes provides the thickness uniformity up to $\lambda_0/40$. The planes are coated with aluminum with the power reflection coefficient $\rho\simeq0{.}9$.
+
+Light passing through the Fabry-P\'{e}rot interferometer undergoes multiple reflections, and the interference between the outgoing beams results in maxima and minima of intensity (see~\refFigure{3_1_3}).
+%
+\hFigure{Beam path in Fabry-P\'{e}rot interferometer (\textit{a}); ring polarization when observed along the field direction (\textit{b})}3_1_3
+{8.5cm}{2.6cm}{pic/L03_1_03.eps}
+%
+By placing a lens or a telescope after the interferometer one observes a set of light and dark concentric rings in the focal plane. According to the Rayleigh criterion the theoretical resolving power of the interferometer is
+$$
+  R=\frac{2Ln\pi\sqrt\rho}{\lambda_0(1-\rho)}.
+  \eqMark{3_1_3}
+$$
+
+The condition of constructive interference is
+$$
+  2Ln\cos\theta_m=m\lambda,
+  \eqMark{3_1_4}
+$$
+where $\theta_m$ is a beam angle of reflection from the plate surfaces; $L$ is the plate thickness; $n$~is its refraction index; and $m$ is the order of interference maximum. For small incident angles the relation $\sin\phi=n\,\sin\theta$ can be written as $\cos\theta\simeq 1-\theta^2/2\simeq 1-\phi^2/(2n^2)$. Now let us enumerate the rings in such a way that a greater $i$ corresponds to a greater angular radius $\phi_i$. Then, the squared angle $\phi_i$ is proportional to the following combination of $L$, $\lambda$, and $n$:
+$$
+  \phi_i^2\propto in\lambda/L.
+  \eqMark{3_1_5}
+$$
+
+Measurement of several ring radii allows one to calculate the interferometer glass refractive index quite accurately using this equation with a given $\lambda$ and $L$.
+
+In an external magnetic field each interference ring splits into three components when viewed perpendicular to the field and into two components when viewed along the field. Note that for a longer wavelength (a smaller frequency) the angular radius of a ring is smaller (see Eq.~(\refEquation{3_1_5})). Figure \refFigure{3_1_3}\textit{b} shows a couple of rings together with the direction of rotation of $\mathbf E$ for two $\sigma$-components when viewed along the field. If the magnetic field is reversed, the direction of rotation of $\mathbf E$ reverses too.
+
+For high interference orders one has $m\simeq 2Ln/\lambda_0$. Therefore, differentiating Eq.~(\refEquation{3_1_4}) one can see that in the external magnetic field the angular distance between the Zeeman rings $\delta\phi_i$ and the relative wavelength shift $\delta\lambda/\lambda_0$ are related as
+$$
+  \phi_i\delta\phi_i=n^2\frac{\delta\lambda}{\lambda_0}.
+  \eqMark{3_1_6}
+$$
+
+Notice that the product $\phi_i\delta\phi_i$ is independent of the ring number. In the experiment one determines the values of $\phi_i$ and $\delta\phi_i$ for four rings in a fixed magnetic field and calculates the relative wavelength shifts $\delta\lambda/\lambda_0$ of two $\sigma$-components using these values. If these measurements are done for different fields, it is possible to calculate the Bohr magneton using Eq.~(\refEquation{3_1_2}).
+\vspace{10pt}
+
+\so{\textbf{Experimental setup}}\vspace{5pt}
+
+A diagram of atomic line splitting in the magnetic field is shown in~\refFigure{3_1_4}.
+
+A light source \textit{S} is located in a homogeneous constant magnetic field \textit{M}. The source spectrum is analyzed with the aid of spectrometers \textit{SP}. Polarization is measured by means of polaroids \textit{P} and a quarter-wave plate. The fast and slow axes of this plate with lower and higher refraction indices, respectively, are indicated on the plate, and the allowed direction of vector $\mathbf{E}$ is indicated on the plate frame.
+
+%
+\cFigure{Experimental setup for observation of the Zeeman effect}3_1_4
+{6.4cm}{3.4cm}{pic/L03_1_04.eps}
+%
+
+The allowed directions for vector $\mathbf{E}$ in the beam passed through a quarter-wave plate are shown in~\refFigure{3_1_5}.
+
+If light propagates along the magnetic field, then $\mathbf{E}$ of the $\sigma$-component with a smaller wavelength rotates counterclockwise, and $\mathbf{E}$ of the $\sigma$-component with a longer wavelength clockwise.
+%
+\hFigure{Polarization of radiation when observed along the field: $\mathbf S_\gamma$~is photon spin and \mbox{$\mathbf P_\gamma$}~is photon momentum}3_1_5
+{8.9cm}{4.7cm}{pic/L03_1_05.eps}
+%
+
+Inversion of the field reverses the rotation of $\mathbf{E}$ of $\sigma$-components.
+
+Block-diagram of the setup is shown in~\refFigure{3_1_6}. The source~\textit{L} (cadmium lamp) is placed between the poles of electromagnet~\textit{EM}. The lamp has a special power source (\textit{SL}). The current of electromagnet is adjusted with an autotransformer handle located on the front panel of a power supply unit (\textit{SE}). The current is measured by a digital ammeter \hbox{B$7$-$22$a}. The ammeter operation range is $I=0{.}5\div1{.}5\;\A$. The supply front panel also contains a switch to reverse the current. Switch positions~I and~II correspond to observation of $\sigma$-components in the direction of the magnetic field and against the field, respectively.
+%
+\cFigure{The experimental setup}3_1_6 {10.8cm}{6.1cm}{pic/L03_1_06.eps}
+%
+The magnetic field induction in the operation range is proportional to current $I$ in the electromagnet windings with a good accuracy: $B=\gamma I$, where $\gamma \simeq 1{,}5\;\kGs/\A$ (the precise value is indicated on the setup). Hence to calculate the Bohr magneton it is more convenient to use
+$$
+  \frac{\delta \lambda}{\lambda_0} = \frac{2\mu\sub{\tiny B}\gamma}{\hbar\omega_0}\,I.
+  \eqMark{3_1_7}
+$$
+instead of Eq.~(\refEquation{3_1_2}).
+
+The emission zone of the cadmium lamp has the size of about $5\;\mm$. In this zone the spatial inhomogenity of the magnetic field does not exceed $5\%$. Notice that this spatial inhomogenity results in a spectral line broadening.
+
+Light goes out of the magnetic circuit of the electromagnet through two apertures with optical filters \textit{F} (they are not shown in~\refFigure{3_1_6}). The filters transmit radiation of red spectrum which contains the studied line and absorb more intensive green, light-blue, and blue lines. One aperture transmits radiation perpendicular to the field, and the other one along the field. The radiation along the field goes out after being reflected by a mirror $\text{\textit{M}}_1$ placed on the axis of electromagnet iron at the angle of $45\degree$ to the axis. A mirror $\text{\textit{Ç}}_2$ directs the light to the Fabry-P\'{e}rot interferometer (\textit{FP}) installed on a turntable (\textit{T}) of a goniometer Ã$5$Ì.
+
+A mirror $\text{\textit{M}}_2$, the quarter-wave plate and the polaroid are mounted on the support (\textit{R}) with four holes. The hole \textit{1} is used to install the mirror $\text{\textit{M}}_2$ to analyze the radiation propagating perpendicular to the field; the hole \textit{2}~is for analysis of the radiation propagating along the field; the hole \textit{3} is used for the quarter-wave plate; and the hole \textit{4}~for the polaroid. The slope angle of the mirror $\text{\textit{M}}_2$ relative to the horizontal axis is adjusted and it is not recommended to change it. However in order to achieve the maximum brightness of the interference pattern it is allowed to rotate the mirror slowly around the vertical axis. Notice that upon one reflection of a circularly polarized light, the direction of rotation of $\mathbf{E}$ is reversed, while two consecutive reflections in the mirrors $\text{\textit{M}}_1$ and $\text{\textit{M}}_2$ do not change the direction of rotation.
+
+The goniometer allows one to measure with high precision ($\sim 5''$) a rotation angle of the turntable with the Fabry-P\'{e}rot interferometer installed. The goniometer telescope axis is precisely aligned with the strip, and should not be altered. Prior to making the measurements one has to check the goniometer adjustment. To do this obtain a clear image of the reference cross by rotating the eyepiece, and then focus the telescope at infinity. By slowly rotationg the turntable obtain interference rings in the field of vision. The goniometer turntable can be rotated manually providing the locking screw is loosened. When the locking screw \textit{2} is fastened the table can still be rotated by means of a micrometer screw \textit{3}. By rotating the screw \textit{1} achieve the maximum sharpness of the interference rings of large radius and small width. Put the center of the rings on the vertical line of the locking screw by rotating the turntable roughly by hand at first and then smoothly. Using the turntable inclination screw \textit{4}, which axis is parallel to the tube axis, merge the centers of the rings and the cross. This goniometer adjustment is complete.
+
+A goniometer turntable angle of rotation is measured by means of the microscope which eyepiece is located below the telescope eyepiece. Obtain clear images of the numbers and the lines by rotating the microscope eyepiece.
+%
+\fFigure{Example of angle readout of $2\degree41\;'17''$ by means of goniometer limb}3_1_7
+{5.8cm}{1.9cm}{pic/L03_1_07.eps}
+%
+The readout is done as follows. Firstly, put the center of the telescope eyepiece cross at the left (right) end of the horizontal diameter of an interference ring by careful rotation of the turntable. In the microscope field of vision one can see the scale with degree graduations above the double marks and a scale for measuring minutes and seconds to the right. By rotating a hand knob \textit{5} align the upper and lower double vertical marks of the limb. These marks are on the limb in pairs. A vertical index is slightly above the marks (see~\refFigure{3_1_7}).
+
+The number of degrees equals the nearest graduation to the index left. The number of tens of minutes equals the number of intervals between the double lines confined between the degree graduation and the graduation below which differs by $180\degree$. Minutes and seconds are shown on the right dial. A readout example is shown in~\refFigure{3_1_7}.
+
+\vspace{10pt}
+\so{\textbf{Directions}}\vspace{5pt}
+%
+In the experiment one determines the polarization of $\pi$- and $\sigma$ components of the radiation along and across the magnetic field, one measures the angular diameter of interference rings in different magnetic fields in order to calculate the interferometer glass refractive index, and then we measure a relative wavelength shift of two $\sigma$-components. The results are used to calculate the Bohr magneton. The measurements are done in the following order.
+\vspace{10pt}
+
+\textbf{\textsc{I. Determination of polarization of $\boldsymbol\pi$- and $\boldsymbol\sigma$-components}}\vspace{5pt}
+
+\begin{Enumerate}{tab}
+\Item.
+Turn on the cadmium lamp and let it warm-up for several minutes. Switch on the goniometer power source. Set the mirror in position \textit{1} and obtain an interference pattern of maximum brightness by rotating the mirror frame around the vertical axis. Adjust the goniometer: set the telescope focus to infinity and aligh the center of interference rings with the telescope axis.
+
+\Item.
+Rotate the current adjustment handle of the electromagnet power supply counterclockwise until it stops. Turn the magnet power supply and the ampermeter Â$7$-$22$À on. Merge the center of the telescope field of vision with the second or the third interference ring. Observe the ring splitting into three components by slowly increasing the current. Determine the polarization of $\pi$- and $\sigma$-components of the light propagating across the field by means of the polaroid (hole \textit{4} of the support). Carry out the experiment for both field directions and then reduce the current to zero.
+
+\Item.
+Install the frame and the mirror into the hole \textit{2} in order to observe the radiation along the field. Obtain an interference pattern of maximum brightness by rotating the mirror around the vertical. Observe the ring splitting into two components by increasing the electromagnet current. Determine the direction of the electric field rotation in $\sigma$-components by means of the quarter-wave plate and the polaroid. Carry out the experiment for both directions of the magnetic field. Then reduce the current to zero and remove the quarter-wave plate and the polaroid from the support.
+
+\Item.
+Compare the experimental data obtained for the polarization of $\pi$- and $\sigma$-components with the theoretical results.
+\end{Enumerate}
+\vspace{1ex}
+
+\textbf{\textsc{II. Measurement of the relative wavelength difference\\
+\indent of $\boldsymbol\sigma$-components}}\vspace{5pt}
+
+\begin{Enumerate}{tab}
+\Item.
+Estimate the random error of the angular coordinate. For this purpose measure the angle of the second or the third ring $4$--$5$ times, the goniometer should be detuned each time by slightly rotating the turntable.
+
+\Item.
+To determine the refractive index of the Fabry-P\'{e}rot interferometer measure the angular diameter of five sequential interference rings. The central ring is too wide, therefore it must be excluded from the measurements. One should start the measurements from the utmost right or left ring (see~\refFigure{3_1_8}\textit{a}) and write down the angular diameter of the neighboring rings one by one.
+%
+\cFigure{Interference rings: wihout the field (\textit{a}) and with the field (\textit{b})}3_1_8
+{10cm}{5cm}{pic/L03_1_08.eps}
+%
+The resulting $10$ readings form an increasing of decreasing sequence $\phi_{-5},\,...,\,\phi_5$ or $\phi_5,\,...,\,\phi_{-5}$. It is this kind of sequence which the computer program takes as an input.
+
+\Item.
+Measure the angular diameter of the rings for four values of the magnetic field. The measurements should be started at the minimum electromagnet current when the splitting can still be observed. Then the current can be increased in steps of $0{.}1\div0{.}15\;\A$. For each current measure four angular diameters of every $\sigma$-component. One should start the measurements from the utmost right or left ring and write down the readings by unidirectionally rotating the turntable (see~\refFigure{3_1_8}\textit{b}).
+
+For a given value of the current one obtains a monotonically decreasing or increasing sequence of $16$ readings $\phi_{-4}''\phi_{-4}',\,...,\,\phi_4'\phi_4''$ or $\phi_{4}''\phi_{4}',\,...,\,\phi_{-4}'\phi_{-4}''$. There should be $4$ sequences of this kind (as many as the number of the field values). The central ring should be excluded from the measurements.
+
+\Item.
+Measure the resolving power of the optical setup. To do this set the minimal current of  electromagnet which allows one to distinguish $\sigma$-components. Carry out the measurement by increasing and decreasing the current. Make the nesessary calculations and compare the result with the theoretical value of the Fabry-P\'{e}rot interferometer resolving power.
+
+At the end of experiment decrease the electromagnet current to zero, turn off the power of the  goniometer and the electromagnet lamp.
+\end{Enumerate}
+\vspace{1ex}
+
+\textbf{\textsc{III. Treatment of experimental data}}\vspace{5pt}
+
+The treatment of experimental data is done with the aid of a computer; the manual describing both the data input and the code is provided at the workplace. The lab report should include: the calculated refractive index of the Fabry-P\'{e}rot interferometer glass, four values of the relative wavelength shift of $\sigma$-components, the Bohr magneton, and the errors together with the chi-squared test statistic $\chi^2$ (see Appendix\;I) calculated by the computer.
+
+\begin{center}\so{\textsf{\small REFERENCES}}\end{center}
+{\small
+
+1. \textit{Sivukhin\;D.\;V.} General Physics Course. Vol.\;$5$. P.\;$1$. Atomic and Nuclear Physics.\,---\,M.: Nauka, $1986$. \textsection\;$41$.
+
+2. \textit{Goldin\;L.\;L., Novikova\;G.\;I.} Introduction to atomic physics.\,---\,M.: Nauka, $1988$. \textsection\;$37$.
+
+}

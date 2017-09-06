@@ -1,0 +1,436 @@
+%translator Svintsov, date 19.04.13
+
+\let\theEquation=\oldTheEquation
+\let\theFigure=\oldTheFigure
+
+\Chapter
+{Physics of semiconductors}
+{Physics of semiconductors}
+{Physics of semiconductors}
+
+\textbf{Band structure of solids.} At low temperatures most substances become solid. The most remarkable property of a solid state is that atoms of solids usually form a spatially ordered periodic structure, which is called crystal lattice.
+
+Attraction of atoms and molecules leading to formation of a solid state can be of different origin: it could be due to van der Waals forces of dipole-dipole interaction (static or dynamic), due to Coulomb interaction of oppositely charged ions, and due to forces of exchange interaction (which are of purely quantum-mechanical origin). Finally, in metals and intermetallic compounds the interaction between ions is due to collectivization of valence electrons.
+
+According to their electrical properties solids can be grouped into metals (which are good conductors), semiconductors, and insulators which almost do not conduct electricity. One of the principal questions of solid state physics concerns the ground and excited states of the electronic subsystem. In other words, we want to know why crystals of some chemical elements are good conductors while others are insulators or semiconductors which electrical properties strongly depend on temperature.
+
+It is quite obvious that energy levels of individual atoms must change when a large number of atoms come into close contact, as it occurs in solids. The energy of electronic subsystem consists of a kinetic energy of electrons with mass $m$ and momenta $\textbf{p}_{i}$, a potential energy of electrons in electrostatic field of ions, and the energy of electron-electron interaction. In the simplest approximation one can drop all terms but the kinetic energy; this is the so-called \textit{model of free electrons}. This model successfully explains some electric and magnetic properties of solids, mostly metals. The model is based on the assumption that a metal contains electrons which can freely move in the sample bulk.
+
+Under this assumption we treat electrons as a gas of free particles to which the kinetic theory of gases can be applied. This model was proposed in 1900 by P.~Drude. The theory is quite intuitive and can be applied to a qualitative consideration of kinetic phenomena not only in metals but in semiconductors as well.
+
+According to the theory of free electrons their motion is interrupted by collisions with thermally vibrating ions and with each other. Between the collisions the electron-ion and electron-electron interactions are neglected. In the Drude model the collisions instantaneously change the velocity of electrons like in the theory of ideal gas. The probability that velocity changes during a small time interval $dt$ equals $dt/\tau$, where $\tau$ is the relaxation time or the electron mean free time. Due to collisions electrons reach a state of thermal equilibrium with environment, so the mean kinetic energy of electron becomes equal to $3\kb T/2$ ($T$~is a local temperature in the region where the electron is localized).
+
+In external electric $\textbf{E}$ and magnetic $\textbf{H}$ fields the motion of electrons is described by classical equations in which the collisions are treated as a friction force proportional to electron velocity $\textbf{v}$:
+$$
+\frac{d\textbf{v}}{d t} + \frac{\textbf{v}}{\tau}=-\frac{e}{m}\left(\textbf{E}+\frac{1}{c}\textbf{v}\times\textbf{H}\right). \eqMark{11_1}
+$$
+
+The solution of this equation with initial condition $\textbf{v}(0)=0$ yields the time dependent  velocity $\textbf{v}(t)$ which allows one to find the current density
+$$
+\textbf{j}(t) =en\textbf{v}(t), \eqMark{11_2}
+$$
+as a function of the external fields.
+
+A constant electric field applied to a sample generates a constant current, hence, there is some average velocity of ordered motion (drift velocity) which according to Eq.~(\refEquation{11_1}) equals $\textbf{v}\sub{d}=e\textbf{E}\tau/{m}$.
+
+Ohm's law states that $\textbf{j}=\sigma \textbf{E}$, where $\sigma$ is the conductivity of the material. Using Eq.~(\refEquation{11_2}) one obtains 
+$$
+\sigma = \frac{ne^{2}\tau}{m}. \eqMark{11_3}
+$$
+
+Using the above equation one can estimate $\tau$ by the conductivity $\sigma$ measured. At room temperature $\tau\simeq10^{-14}\div 10^{-15}\;\s$.
+
+The model of free electrons is quite useful for description of electronic properties of metals, especially alkali, but it cannot explain why some chemical elements in crystal phase are good conductors while others are insulators or semiconductors. Obviously the model does not take into account the properties of crystal lattice at all; actually it deals with electron gas in a continuous medium. It is quite obvious that one should consider the interaction of electrons with lattice ions to understand the behavior of electrons in a crystal in more detail.
+
+Let us first qualitatively consider changes in electronic structure ensued from bringing atoms together. Let $N$ atoms of potassium be located at lattice sites and the lattice be similar to that of crystal potassium but the distances $r$ between atoms be so large that interatomic interactions be negligible. Each atom can be considered free, so its energy level structure is that one of an isolated atom. In the lower panel of~\refFigure{11_1} the energy level diagram of two isolated potassium atoms is shown. The electrons are localized in the potential wells formed by electrostatic field of nuclei. 
+ %
+\cFigure{Energy level diagram of two isolated potassium atoms}11_1 {10.2cm}{7cm}{pic/L11_01.eps}
+%
+Each $1s$ and $2s$ level is occupied by two electrons, $2p$ level by six electrons, and $3s$ level by one electron. Levels above $3s$ are free.
+
+The atoms are separated from each other by potential barriers of width $r$. The barrier height for electrons of different levels is different: it equals the energy of a level. This potential barrier obstructs electron transitions from one atom to another. In the upper panel of~\refFigure{11_1} the diagram of the probability density distribution for $3s$ and $2s$ states is shown. The maxima of these curves approximately correspond to Bohr orbitals of $3s$ and $2s$ states.
+
+Now let us start gradually contracting our potassium lattice without distorting its symmetry. The  interaction between atoms grows and reaches the value typical for this crystal when the interatomic distance $r$ becomes equal to the lattice constant. The diagram in~\refFigure{11_2} shows that the potentials of individual atoms (shown by thin lines) partially overlap. One can see that at close separation the potential barrier between atoms is narrower and lower. 
+%
+\hFigure{Energy level diagram of two potassium atoms separated by the distance equal to crystalline potassium lattice constant}11_2 {9.2cm}{7.9cm}{pic/L11_02.eps}
+%
+At $r=d$ the barrier height is even lower than the level of valence electrons ($3s$ level); for this reason these electrons can freely move from one atom to another across the crystal. On the other hand, the inner shell electrons remain in the same state as in isolated atoms.
+
+The decrease of electron potential energy and interatomic distance leads to a shift of electron energy levels. In \refFigure{11_2} energy levels of isolated atoms are shown by dashed lines and the levels in a crystal are shown by solid lines. It is quite obvious that the top electron levels are shifted the most. These levels are shifted most significantly while the levels of inner shell electrons are not affected since their potential energy remains almost unchanged.
+
+\vspace{-0.5pt}
+An inner shell electron located at a distance of the order of lattice constant from atom has a significant probability of tunneling to a neighboring atom. This leads to formation of two close energy levels above and below of the corresponding level of isolated atom.%
+\fFigure{Ground state wave functions}11_3 {6.1cm}{8.1cm}{pic/L11_03_N.eps}
+%
+To justify this statement consider the lowest energy state of a system containing a single electron in the field of atomic core, i.e. the ion formed by removal of valence electron from an atom.
+
+For simplicity let us replace the field of atom core by a square potential well, this reflects the fact that some energy is required to extract an electron from the core. A wave function $\psi$ of the ground state is schematically shown in~\refFigure{11_3}\textit{a}; it is a sine wave inside the well and a decaying exponent outside the well. The sinusoid wavelength is determined by the size of potential well, specifically, half wavelength approximately equals the well width.
+\vspace{-0.5pt}
+Now consider two potential wells located close to each other. Since there is a significant probability of electron tunneling to the neighboring well, the correct wave function is the superposition of wave functions of the neighboring wells; one should sum up these functions in the area of overlap. Two variants are then possible: the resulting function can be ether symmetric, as shown in~\refFigure{11_3}\textit{b}, or antisymmetric, as shown in~\refFigure{11_3}\textit{c}.
+
+Considering wave functions in~\refFigure{11_3}\textit{b},\,\textit{c} as the ground state functions in a single-well potential one can notice that the well for the symmetric wave function is narrower than the well for the antisymmetric one. Therefore these two states have different energy.
+
+When $N$ atoms are brought together each energy level splits into $N$ levels with not more than two electrons with opposite spin on each. Thus, a band of allowed electron energy levels is formed. The corresponding wave functions are not localized near a particular atom, they belong to the whole crystal.
+
+At the same time, the inner shell electrons remain strongly localized and their levels are as narrow as in isolated atom. The closer electron to the outer shell, the narrower and lower is the potential barrier, hence, the tunneling probability is higher and the energy band is wider.
+%
+\hFigure{Broadening of energy levels due to bringing together potassium atoms; $d$ is interatomic distance in potassium crystal}11_4 {6.6cm}{4.3cm}{pic/L11_04.eps}
+%
+The diagram in~\refFigure{11_4} shows how the energy levels of potassium atoms change when the atoms are getting closer. The levels of isolated potassium atoms are shown on the right-hand side; band formation due to level broadening is on the left.
+
+Band theory of solids allows one to understand why solid-state light emitters do not exhibit the line spectra inherent to the constituent atoms. A hot solid radiates only the continuous blackbody spectrum. This should be quite obvious now since the radiation is due to electrons with a continuous range of energies in the allowed band.
+
+We should note one more important property of solids: the number of electrons which can be placed in the band does not depend on interaction. This number is known exactly, it equals the number of atoms in a crystal multiplied by the degeneracy factor of the level forming the band. If the band is completely occupied its electrons cannot contribute to electric conductivity: electron in electric field must increase its energy, but if all energy levels are occupied the only possibility is to ''jump over'' to the upper band. A completely occupied band is called a valence band while a partially occupied band is called a conduction band.
+%
+\hFigure{Energy band diagram of insulator \textit{(a)}, semiconductor \textit{(b)}, and metal \textit{(c)} illustrating the fundamental difference between them (at $T=0$)}11_5 {11cm}{8.8cm}{pic/L11_05.eps}
+%
+The difference between conductors and insulators is now apparent: it is due to their band structure and occupation of bands by electrons (see~\refFigure{11_5}). In conductors the uppermost allowed band (conduction band) is partially filled while in insulators and semiconductors at $T=0$ there are no electrons in the conduction band.
+
+If the band gap between conduction and valence bands is wide compared to a thermal energy the corresponding material is an insulator. If it is relatively small the material is a semiconductor. The probability of electron transition from a valence to conduction band caused by thermal motion is proportional to the Boltzmann factor $\exp (-\Delta/{\kb}T)$ where $\Delta$ is the gap width. Hence, conductivity of semiconductor, which depends on the number of carriers in the conduction band, exhibits a strong temperature dependence. In fact, all good conductors are made of atoms with one, two, or three valence electrons above the filled shell of a noble gas atom.
+
+Now we proceed to a quantitative description of electronic spectra of crystals. We have shown that the spectrum of electron energy states in crystal is greatly influenced by the interaction between electrons of neighboring atoms of a periodic lattice. For simplicity we consider an infinite one-dimensional chain of atoms separated by a distance $a$. We also replace a real ''chain'' of potential wells (created by ions) by a chain of rectangular wells with the same distance $a$ between them (see~\refFigure{11_3}).
+
+When atoms are far from each other, the wave functions of their valence electrons are those ones of isolated atoms. Let us denote these functions as $\psi_n$; e.g. for potassium this is the wave function of electron in the $3s$ state. Bringing the atoms closer we expect that at some distance the probability of electron transition between the atoms becomes nonzero. If the separation between atoms is still rather large, the transition is possible only between the state $\psi_{n}$ and the same states of neighboring atoms: $\psi_{n-1}$ and $\psi_{n+1}$. This observation implies that an electron wave function can be approximated by a linear combination of states $\psi_{n}$ (the states of individual atoms in a chain), i.e.
+$$
+\Psi = \sum_{n=1}^{N}C_{n}(t)\psi_{n}. \eqMark{11_4}
+$$
+
+Solution of time-dependent Schrodinger equation is quite complicated. For our purpose it is more convenient and physically reasonable to solve an alternative equation that allows one to find the probability $|C_{n}(t)|^{2}$ to find electron in the state $\psi_{n}$ at time $t$. The equation for the coefficients $C_{n}$ reads
+$$
+i\hbar\frac{d C_{n}}{d t}=\sum_{m}E_{mn} C_{m}. \eqMark{11_5}
+$$
+
+This is what we really want: the probability $C_{n}$ to find electron in the $n$-th state expressed via the probabilities $C_{m}$. The coefficients $E_{nm}$ are just the matrix elements of Hamilton operator $\widehat{H}$.
+
+In the case of strong electron localization only the transitions to the neighboring potential wells should be considered. Thus, we have
+$$
+i\hbar \frac{dC_{n}}{d t}=E_{0} C_{n} (t) -AC_{n+1} (t) -AC_{n-1} (t). \eqMark{11_6}
+$$
+
+Here $E_{nn} =E_{0}$ because in the case of complete localization the energy of electron localized in the $n$-th atom is its ground state energy. The coefficient $A$ is an additional electron energy arising due to the possibility of transition to neighboring atoms. Formally, one should write down $N$ equations for all valence electrons. Now we find a stationary electron state; the time-dependence of the wave function is given by an exponent $\exp(-iEt/\hbar)$. The coordinate dependence of the wave function is given by a plane wave:
+$$
+C_{n} (t) = \exp(-ikx_{n}-iEt/\hbar). \eqMark{11_7}
+$$
+Substituting this into Eq.~(\refEquation{11_6}) we obtain
+$$
+i\hbar(-iEt/\hbar)C_{n} =E_{0}C_{n} -AC_{n-1}-AC_{n+1}, \eqMark{11_8}
+$$
+and recalling that $x_{n}=na$,
+$$
+E=E_{0} -Ae^{ika} -Ae^{-ika} =E_{0} -2A\cos ka. \eqMark{11_9}
+$$
+
+We obtained that for any $k$ there is a solution with a certain energy; but unlike the discrete energy spectrum of isolated atoms, there forms a continuous band of allowed energies. The band width depends on the overlap of valence electron wave functions (in other words, on the degree of electron delocalization).
+
+It is reasonable to ask whether the result obtained depends on the assumption that electrons can  pass only to neighboring ions. In other words, how does the solution change if there exists a finite probability of transition to next-to-nearest neighboring atoms? In this case one should introduce the terms $BC_{n \pm 2}$ in Eq.~(\refEquation{11_6}):
+$$
+i\hbar\frac{d C_{n}}{d t}=E_{0}C_{n}(t)-AC_{n+1}(t)-AC_{n-1}(t)-BC_{n+2}(t)-BC_{n-2}(t). \eqMark{11_10}
+$$
+The corresponding solution is
+$$
+E=E_{0}-2A\cos ka-2B\cos 2ka. \eqMark{11_11}
+$$
+
+We see that although the law of dispersion $E=f(k)$ depends on our assumptions the principal conclusion regarding band formation remains unchanged. The delocalization of electrons definitely leads to formation of allowed and forbidden bands which width depends on the degree of delocalization.
+
+The result obtained is easily generalized to a three-dimensional cubic lattice. Allowing only for the electron transition to nearest atoms, we obtain the following dispersion law 
+$$
+E=E_{0} -2A(\cos k_{x}a_{x}+2A\cos k_{y}a_{y}+2A\cos k_{z}a_{z}). \eqMark{11_12}
+$$
+
+When $ka$ is rather small (long wavelength, or small energy) the dispersion law remains parabolic, similar to the model of free electrons. Indeed, for $ka\ll1$ we have
+$$
+\cos ka\Simeq 1-k^{2}a^{2}/2, \eqMark{11_13}
+$$
+and
+$$
+E\Simeq Ak^{2} a^{2}. \eqMark{11_14}
+$$
+
+However, for a larger wave vector the law of dispersion is modified leading to a significant change in the dynamics of electron in a lattice. This means a different response to external force, in particular, to electric field. Considering electron as a wave we can write down the following expression for its group velocity using the de-Broglie relation
+$$
+v=\frac{d \omega}{d k}. \eqMark{11_15}
+$$
+
+The energy $E$ corresponding to the state described by a given wave function is related to the frequency via $E=\hbar \omega$, hence
+$$
+v=\frac{1}{\hbar}\frac{d E}{dk}. \eqMark{11_16}
+$$
+
+An external electric field accelerates a conduction electron; using Eq.~(\refEquation{11_15}) one obtains  for the acceleration $a$:
+$$
+a=\frac{d v}{d t} = \frac{1}{\hbar} \frac{d}{d t}\left(\frac{d E}{d k}\right)= \frac{1}{\hbar}\frac{d}{d k}\left(\frac{d E}{d t}\right). \eqMark{11_17}
+$$
+
+A derivative $dE/dt=Fv$ is the average power of a force $F$, thus
+$$
+a=F\frac{1}{\hbar}\frac{d v}{dk}. \eqMark{11_18}
+$$
+
+Solving Eq.~(\refEquation{11_16}) for $v$ one obtains the average electron acceleration in a crystal:
+$$
+a=F\frac{1}{\hbar^{2}}\frac{d^{2}E}{d k^{2}}. \eqMark{11_19}
+$$
+
+It follows from Eq.~(\refEquation{11_19}) that the average acceleration of electron in a crystal is still proportional to electric force. The proportionality factor is
+$$
+\frac{1}{\hbar^{2}}\frac{d^{2}E}{d k^{2}}.
+$$
+
+Comparing the result obtained with the Newton's second law $a=F/m$ we observe that a quantity
+$$
+m^{*} =\hbar^{2}\left(\frac{d^{2}E}{d k^{2}}\right)^{-1} \eqMark{11_20}
+$$
+plays the role of electron mass in a crystal. The quantity $m^{*}$ is called the \textit{effective mass of electron}. It is numerically equal to the mass of a free electron which receives the same acceleration as an electron in crystal being subjected to the same force.
+
+The effective mass allows us to approximate the complicated electron dynamics in a lattice by simple equations:
+$$
+a=\frac{F}{m^{*}},~~~E=\frac{\hbar^{2}k^{2}}{2m^{*}},~~~p=m^{*}v=\hbar k. \eqMark{11_21}
+$$
+
+One of peculiarities of the electron effective mass is its dependence on the direction of electron motion and on its position in the energy band. The dependence of effective mass on direction is due to crystal anisotropy: the force of electron-lattice interaction depends on crystallographic direction.
+
+According to Eq.~(\refEquation{11_20}) the effective mass is proportional to the second derivative of electron energy $E$ with respect to wave vector $k$, hence, to obtain a qualitative dependence of effective mass on the position in a band we can use the law of dispersion $E=f(k)=E_{0}-2A\cos ka$ derived above. The plot of this function in the first energy zone (the first Brillouin zone) is shown in~\refFigure{11_6}\textit{a}.
+
+The first derivative (see~\refFigure{11_6}\textit{b}) represents the slope of the $E(k)$-curve and equals the electron velocity (see Eq.~(\refEquation{11_16})), the second derivative determines the value of effective mass (see Eq.~(\refEquation{11_20})). An electron with a small wave vector behaves as if it were free: its velocity is proportional to the wave vector and it increases when an external force is applied, its effective mass is constant and of the order of the mass of free electron. When the wave vector increases further the electron velocity increases less than the wave vector. At the point $A$ ($A'$) of the dispersion curve the velocity reaches its maximum. The effective mass also increases as the wave vector increases, at $A$ ($A'$) it tends to infinity. A further increase of the wave vector (due to external electric field) decreases the velocity, i.e. electron acceleration becomes negative (opposite to the external force). In terms of classical mechanics such a motion can be described as motion of a particle with negative mass.
+
+%
+\fFigure{Dispersion law of electron (\textit{a}); the first derivative with respect to wave vector (electron velocity) (\textit{b}); effective mass of electron in crystal defined as a quantity inversely proportional to the second derivative (\textit{c})}11_6 {4.5cm}{4.9cm}{pic/L11_06.eps}
+%
+Taking into account that the electron charge is negative, we can treat its motion in the upper part of energy band as the motion of a positively charged particle with positive mass. Treating the motion of electron in the upper part of energy band it is reasonable to consider holes as free carriers. Hole is a quasiparticle with a positive effective mass and the positive charge opposite to the electron charge.
+
+Electron energy spectrum of metal at zero temperature, i.e. the ground state of electron subsystem, has been already discussed. One of key moments is that electrons are fermions, i.e. they obey the Pauli exclusion principle which implies that a certain quantum state can be occupied by only one electron. This immediately leads us to the following conclusion: the number of occupied states equals the number of electrons with momenta varying from zero to some maximum momentum, which can be obtained from the following relation (we consider an isotropic crystal for simplicity):
+$$
+\frac{N}{V} =2\cdot \frac{4}{3}\pi p_{\mathrm{\max}}^{3}\frac{1}{(2 \pi \hbar)^{3}}= \frac{p_{\mathrm{\max}}^{3}}{4 \pi^{2}\hbar^3}. \eqMark{11_22}
+$$
+The maximum possible momentum is called the Fermi momentum ($p_{\mathrm{F}}$), and the corresponding energy is the Fermi energy ($E_{\mathrm{F}}$):
+$$
+p_\mathrm{F} =(3 \pi^{2}\hbar^{3}n)^{1/3}, \eqMark{11_23}
+$$
+
+$$
+E_{\mathrm{F}}=\frac{p_{\mathrm{F}}^{2}}{2m^\ast}=\frac{\fhbar^{2}}{2m^\ast}(3\pi^{2}n)^{2/3}\Simeq \frac{\fpi^2\fhbar^{2}}{2m^\ast}n^{2/3}.
+$$
+
+The temperature corresponding to the Fermi energy is called the degeneracy temperature:
+$$
+k\sub{{\tiny B}}T_{0} =E_{\mathrm{F}},~~~T_{0} =\frac{\pi^2\hbar^{2}}{2m k\sub{{\tiny B}}}n^{2/3}. \eqMark{11_24}
+$$
+
+At a temperature much lower than $T_{0}$ the system is purely quantum while in the opposite case it is purely classical. We can estimate the Fermi momentum using uncertainty principle. Since the distance between particles is of the order of $n^{-1/3}$, where $n$ is a particle density, a particle is localized in a volume of this size, hence, its momentum (the Fermi momentum) is 
+$$
+p_{\mathrm{F}}^{\vphantom5}\Simeq\hbar/r\Simeq\hbar n^{1/3}, \eqMark{11_25}
+$$
+which coincides with the exact expression (\refEquation{11_23}) within the factor of $\pi$.
+
+Now let us numerically estimate the degeneracy temperature of electrons with a density of $10^{24}\;\cm^{-3}$:
+$$
+T_{0} = \frac{\pi^2\hbar^{2}}{2mk\sub{{\tiny B}}}n^{2/3}\Simeq 10^{5}\;\kelvin. \eqMark{11_26}
+$$
+
+It follows from the above estimate that as long as a crystal remains solid its electron distribution is purely quantum. In other words, electrons in a metal are always degenerate. Due to the Pauli exclusion principle a state with an energy below $E_{\mathrm{F}}$ is occupied while the states above it are free.
+%
+\hFigure{Occupation numbers of quantum states with different energies: solid line corresponds to zero temperature, dashed line stands for $T\neq0$}11_7 {5.7cm}{2.1cm}{pic/L11_07.eps}
+%
+Let the probability that a quantum state with energy $E$ is occupied be $f(E)$, the plot of the function $f(E)$ looks like that one shown in~\refFigure{11_7}. Obviously, at a finite temperature this distribution is smoothed out near the high-energy boundary (dashed line in~\refFigure{11_7}).
+
+The function $f(E)$ is called the Fermi-Dirac distribution (or the Fermi distribution), it is given by
+$$
+f(E) =\frac{1}{1+\exp\left(\frac{E-\mu}{{\kb}T}\right)} \eqMark{11_27}
+$$
+
+It follows from general thermodynamic relations that $\mu$ is the chemical potential of electron gas. Recall that adding one electron to a system at constant temperature we increase the system energy by $\mu$. In general case, chemical potential depends on temperature. For electrons in a metal the chemical potential has a clear physical meaning. At zero temperature the Fermi function is unity at $E <\mu$ and zero at $E >\mu$. Hence, in a metal the chemical potential equals the Fermi energy. There is no such a simple interpretation of chemical potential for dielectric or semiconductor. It should be clear from the Fermi distribution that at finite temperature the upper boundary of the distribution is smoothed out in an energy range $\sim2{\kb}T\ll\mu$.
+
+Now let us consider electronic properties of semiconductor. Semiconductor is a material with a totally occupied valence band and an empty conduction band at $T=0$, the width of the \mbox{band gap $\Delta$ (forbidden band)} is less than $3\;\eV$. At zero temperature all semiconductors are insulators, while at room temperature they exhibit a finite although weak conductivity (the number of carriers in the conduction band is only $10^{-10}$ of the total number of atoms).
+
+Electron transition from the valence to the conduction band is accompanied by creation of a <<vacant position>> in the electron spectrum. Electron on an energy level in the conduction band can freely move under an external electric field which results in electric current. At the same time, one of the valence band electrons can move to the created vacant level thereby creating a new vacant state. This state is in turn occupied by another valence electron, and so on. The motion of electrons in the valence band can be described as a motion of a <<hole>> in the direction opposite to the electrons, i.e. it is equivalent to motion of a positive charge. A hole behaves like a positively charged electron; it is a new quaiparticle in a crystal with a different effective mass. The introduction of holes and hole conductivity does not mean that these particles really exist. Such representation is just a convenient way to describe the electronic subsystem, which under certain conditions drastically changes its behavior due to interaction with the lattice, so its dynamic characteristics resemble those of positively charged particles (holes).
+
+The Fermi level in semiconductor does not have such a simple physical meaning as in metal; it depends on temperature and hence it cannot be considered as a constant parameter of a given material. For this reason it is more appropriate to refer to it as a chemical potential.
+
+First of all let us show that in an intrinsic (undoped) semiconductor the Fermi level is located in the middle of a band gap. It is worth noting that the gap width $\Delta$ in a semiconductor is much greater than a thermal energy ${\kb}T$ at a typical temperature; this has certain consequences. The exponential term in Eq.~(\refEquation{11_27}) yields the average number of electrons in a given quantum state (according to the Pauli principle this term is always less than unity). For semiconductors $\Delta/({\kb}T)\gg1$ and the quantum Fermi distribution becomes the classical Boltzmann distribution because the unity in the denominator is small compared to the exponent. 
+
+The ensuing classical behavior of electrons in a semiconductor can be explained in another way. In a semiconductor the average number of electrons in any conduction band state is much less than unity. Hence, it is not important whether the electrons are distinguishable or not. The prohibition for several electrons to occupy a single state does not influence their behavior since the probability of such an event is very small. 
+
+So, we denote the distance from Fermi level to the conduction band bottom by $\xi$ and the distance to the band gap bottom by $\eta$; obviously, $\xi + \eta = \Delta$. Let us calculate the concentration $N_n$ of electrons in the conduction band. To accomplish this we need to integrate the average number of electrons in a given quantum state (the Fermi distribution) multiplied by the density of states per unit volume of phase space $d\Gamma=d^{3}pd^{3}x$ ($\int d^{3}x=V$ is the volume of crystal) over all possible electron energies $E_{n}$:
+$$
+N_{n} =2\int\frac{d \Gamma}{(2 \pi \hbar)^{3}}e^{-(\xi +E_{n})/({\kb}T)}=\frac{2V}{(2\pi\hbar)^3} \int 4\pi p_{n}^{2}dp_{n}e^{-( \xi +E_{n})/({\kb}T)}. \eqMark{11_28}
+$$
+
+Integration in Eq.~ (\refEquation{11_28}) should be performed from the bottom to the top of conduction band. However, at high energy $E_{n}$ the exponential term in the integrand decays very quickly, hence the upper limit can be shifted to infinity. For an effective mass of electron $m^{*}$ we have $p_{n}^{2}=2m^{*}E_{n}$, $p\,dp=m^{*}dE_{n}$, and the density of electrons is given by
+\begin{Multline} n_{n}=\frac{N_{n}}{V}=\frac{8\pi}{(2\pi\hbar)^{3}}\int\limits_{0}^\infty\sqrt{2m^*E_{n}}m^{*}dE_{n}e^{-(\xi +E_{n})/({\kb}T)}=\\ =\frac{\sqrt{2}(m^{*})^{3/2}}{\pi^{2}\hbar^{3}}e^{-\xi/({\kb}T)}\int\limits_{0}^\infty\sqrt{E}e^{-E/({\kb}T)}dE. \eqMark{11_29} \end{Multline}
+
+\vspace{-6pt}
+After a simple substitution $y=E/({\kb}T)$ this integral becomes
+
+\vspace{-12pt}
+$$
+\left[\frac{\sqrt{2}(m^*)^{3/2}({\kb}T)^{3/2}}{\pi^{2}\hbar^{3}}\int\limits_{0}^{\infty}\sqrt{y}e^{-y}dy\right]e^{-\xi/({\kb}T)}. \eqMark{11_30}
+$$
+
+The remained dimensionless integral equals $\sqrt{\pi}/2$, and the final result is
+
+\vspace{-12pt}
+\begin{Multline}
+n_{n}=\frac{\sqrt{2}(m^*_{n}{\kb}T)^{3/2}}{2\pi^{2}\hbar^{3}}\sqrt{\pi}e^{-\xi/({\kb}T)}=\\=\frac{2}{\hbar^{3}}\left(\frac{m^*{\kb}T}{2\pi}\right) ^{3/2}e^{-\xi/({\kb}T)}=Q_{n}e^{-\xi/({\kb}T)}. \eqMark{11_31}
+\end{Multline}%
+
+\vspace{-12pt}
+The magnitude
+$$
+Q_{n} =\frac{2}{\hbar^{3}}\left(\frac{m^* {\kb}T}{2\pi}\right)^{3/2} \eqMark{11_32}
+$$
+is the \textit{effective density of states in the conduction band}.
+
+Similar calculations can be performed for holes:
+$$
+n_{p}=\frac{2}{\hbar^{3}}\left(\frac{m^*{\kb}T}{2\pi}\right)^{3/2}e^{-\eta/({\kb}T)}=Q_{p}e^{-\eta/( {\kb}T)}. \eqMark{11_33},
+$$
+where the effective hole mass $m^*_p$, in general, differs from the effective mass of electron $m^*_n$.
+
+In an intrinsic semiconductor $n_{n}=n_{p}$ and we finally obtain
+$$
+\eta - \xi = {\kb}T\ln\frac{Q_{p}}{Q_{n}}=\frac{3}{2}{\kb}T\ln\frac{m^*_{p}}{m_{n}^{*}}. \eqMark{11_34}
+$$
+
+Since the effective masses of electrons and holes are of the same order, the difference
+$$
+\eta - \xi\ll\Delta, \eqMark{11_35}
+$$
+which means that $\eta \Simeq\xi$, i.e. the Fermi level is located almost in the middle of the conduction band.
+
+Similarly, the product of electron and hole concentrations equals
+$$
+n_{n}n_{p}=Q_{n}Q_{p}e^{-\Delta/( {\kb}T)}. \eqMark{11_36}
+$$
+
+The conductivity due to thermal excitation of carriers in a pure semiconductor is called the \textit{intrinsic} conductivity because it is determined by the properties of crystal itself. The concentration of carriers $n_{i}$ in the conduction band due to transitions from the valence band is called the intrinsic carrier concenration.
+%
+\fFigure{Impurity atoms of pentavalent arsenic (top) and trivalent indium (bottom) in germanium lattice: \textit{a} substitution of germanium atoms for impurity atoms; \textit{b} energy band diagram of doped germanium (I~is valence band, II~is conduction band, \textit{D}~are donor levels of arsenic, \textit{A}~are acceptor levels of indium, \textit{$E_a$, $E_d$}~are activation energies of acceptor and donor impurities, respectively, $\delta$~is activation energy of intrinsic conductivity in germanium)}11_8 {5.4cm}{6.8cm}{pic/L11_08.eps}
+%
+In an intrinsic semiconductor
+\begin{Multline}
+n_{i}=n_{n}=n_{p}=\\ =\sqrt{Q_{n}Q_{p}}e^{-\Delta/(2{\kb}T)}, \eqMark{11_37}
+\end{Multline}%
+or
+$$
+n_{n}n_{p}=n_{i}^{2}. \eqMark{11_38}
+$$
+
+This remarkable relation is independent of the number of impurities, it implies that an increase in electron concentration results in the corresponding decrease of hole concentration. It is sometimes called the level relation.
+
+Now consider the problem of dopant impurities in semiconductor. Some dopant impurities (and even some defects) can substantially influence the electrical properties of semiconductor. For example, addition of only $10^{-5}$ atom of boron per silicon atom increases the silicon conductivity at room temperature $1000$ times. A semiconductor with impurities added is called a doped semiconductor. Let us consider the influence of impurities on widely used $\mathrm{Ge}$ and $\mathrm{Si}$; atoms of these elements form a diamond-like lattice, so each atom has four covalent bonds and four nearest neighbors. If we introduce a pentavalent impurity atom into this lattice ($\mathrm{P}$, $\mathrm{As}$, or $\mathrm{Sb}$) one valence electron becomes redundant; it belongs not to the impurity atom but to the whole crystal, while the impurity atom itself becomes positively charged. Such dopants (in our case, group-V elements) are called donors (see~\refFigure{11_8}).
+
+Introduction of trivalent impurities (B, Al, Ga, and In) in a semiconductor changes the situation to the opposite. One covalent bond becomes <<empty>> and can be occupied by an electron (see~\refFigure{11_8}). Such impurities are called acceptors.
+
+A redundant electron of a donor atom moves in the Coulomb field of the residual ion; its potential is $e/(\epsilon r)$. The influence of the medium on the interaction potential can be modeled by introducing a dielectric constant $\epsilon$ (which is a macroscopic average) provided the radius of electron orbit is much greater than the interatomic distance. The motion of <<internal>> electrons inside the orbit does not affect the redundant electron because their field is averaged. A further estimate confirms this assumption.
+
+Let us work out the binding energy of the redundant electron and the donor atom. If the above assumptions are valid we can treat the impurity atom as isolated and use the Bohr theory of hydrogen-like atom in which $m$ is replaced by $m^*$ and the dielectric constant of the material is taken into account. In a hydrogen-like atom with charge $Z$ the energy of the lowest level and the orbit radius are:
+$$
+E_{1}=\frac{mc^{2}}{2}\left(\frac{Z\alpha}{\epsilon}\right)^{2}\propto \frac{Z^{2}}{\epsilon^{2}}, ~~~r_{1} =\frac{\Lambda\epsilon}{2 \pi Z \alpha} \propto \frac{\epsilon}{Z}, \eqMark{11_39}
+$$
+where $\alpha=e^2/\hbar c=1/137$~is the fine structure constant.
+
+Let us do numerical estimates for $\mathrm{Ge}$, for which $m^{*}=0{.}12m$, $\epsilon =16$ and the charge of atomic core is $Z=1$:
+$$
+r_{1}=\frac{\hbar}{me^2}\frac{m\epsilon}{m^{*}}\Simeq80\;\Angstrem,
+$$
+
+$$
+E_{1}=\frac{me^{4}}{2\hbar^{2}}\frac{m^{*}}{m \epsilon^{2}}=0{.}006\;\eV. \eqMark{11_40}
+$$
+
+We see that the radius of the first orbit is indeed much greater than the interatomic distance while the binding energy is much smaller than the gap width. In semiconductors the gap is up to $2\div3\;\eV$ (in germanium it equals $0{.}7\;\eV$). Hence, the donor level is located near the bottom of conduction band. Similarly, the acceptor level is close to the bottom of the band gap.
+
+Now consider the Fermi level in a doped semiconductor. Consider, for instance, an $n$-type semiconductor. As it is shown above, the donor level is located near the bottom of conduction band. Therefore electrons can pass to the conduction band mostly from the donor levels; at low temperature, in fact, such a semiconductor behaves as if its gap width equals the energy $E_{\mathrm d}$ of the donor level below the conduction band bottom. Hence, at $T\rightarrow 0$ the Fermi level is located at $\Simeq E_{\mathrm d}/2$. When temperature increases there are no more carriers on the donor levels and the intrinsic conductivity of semiconductor due to transitions from the valence to conduction band starts playing a more significant role. At low impurity concentration and elevated temperature the Fermi level descends to $\Delta/2$, which corresponds to intrinsic semiconductor. Similarly, in a $p$-type semiconductor the Fermi level at zero temperature equals $E_{\mathrm a}/2$, where $E_{\mathrm a}$ is the energy of acceptor level above the valence band bottom. When temperature increases it rises to $\Delta/2$.
+
+Electrons and holes in semiconductors are very similar to electrons and positrons. All these particles have the same (in absolute value) electric charges equal to the charge of free electron. Electrons and holes in semiconductors can be considered as free particles although they move in a periodic field of crystal lattice. An interaction with the lattice is taken into account by introducing  effective masses of electrons and holes which can be significantly different from that of a free particle and can depend on the direction of particle motion. Electron-positron pairs can be created by photons in the fields of a nucleus and they can also annihilate by emitting two or more light quanta. Similarly, a radiation field can create electrons and holes in semiconductor; an electron in the conduction band can recombine (annihilate) with a hole in the valence band, which results in emission of light quanta.
+
+Using these analogies it is quite simple to obtain the temperature dependence of electron $n_n$ and hole $n_p$ densities in semiconductor. Consider an intrinsic semiconductor first. Transition of electron from the valence band is accompanied by hole creation, i.e. electrons and holes appear in pairs. The probability of pair creation is proportional to the Boltzmann factor
+$$
+W\sub{cr}\propto \exp[-\Delta/({\kb}T)] \eqMark{11_41}
+$$
+because the electron must overcome an <<energy barrier>> equal to the band gap width. On the other hand, the probability of pair annihilation (recombination) is proportional to the product of electron and hole densities, i.e.
+$$
+W\sub{rec}\propto n_{n} n_{p}=n_{n}^{2}=n_{p}^{2}. \eqMark{11_42}
+$$
+
+In equilibrium the number of created pairs equals the number of recombined ones, then it follows from Eqs.~(\refEquation{11_41}) and~(\refEquation{11_42}) that the temperature dependence of $n_n$ and $n_p$ is
+$$
+n_{n} =n_{p} =\const\cdot \exp [-\Delta/(2 {\kb}T)]. \eqMark{11_43}
+$$
+
+A similar estimate can be done for a doped semiconductor (to be specific consider a semiconductor with shallow donor levels). At temperature ${\kb}T\leqslant E_{\mathrm d}\ll \Delta$ almost all electrons in the conduction band are due to ionization of donors, hence
+$$
+W\sub{cr}\propto \exp [-E_d/({\kb}T)],\quad W\sub{rec}\propto n^{2}, \quad n\propto \exp[-E_{\mathrm d}/(2{\kb}T)]. \eqMark{11_44}
+$$
+
+At intermediate temperature ${\kb}T\gg E_{\mathrm d}$, ${\kb}T\ll \Delta$ all donors are ionized and $n=N_{\mathrm d}$. At high temperature ${\kb}T \geqslant \Delta$ the carrier concentration is governed by the band gap width.
+
+Now let us consider the contact between metal and semiconductor. A metal can be treated as a potential well from which an electron cannot freely escape. To leave the metal an electron should overcome the confining forces, i.e. some work must be done. This work is called the electron work function. At a distance of the order of several lattice constants the surface field of metal drops almost to zero; the attraction force turns to zero as well and the potential energy of electron becomes a constant, which is often treated as a reference.
+
+Consider a metal sample $M$ with work function $A\sub{m}$ placed in contact with an $n$-type semiconductor $S$ with work function $A\sub{b}$. Two different work functions can be introduced for semiconductors: a \textit{thermodynamic} work function $A\sub{s}$, which is equal to the distance from the Fermi level to the reference level and an \textit{external} work function $A_0$ equal to the distance from the conduction band bottom to the reference level (see~\refFigure{11_9}\textit{a}). The equilibration processes between these two samples are governed by thermodynamic work functions, hence $A_s$ is exactly the thermodynamic work function.
+
+If $A_m>A_s$ electrons from the semiconductor flow into the metal until Fermi levels in both samples align (i.e. until the carriers come to equilibrium). The reason for the lineup of Fermi levels in equilibrium is quite obvious: if they are different electrons pass from the higher energy level to the lower one to reach the minimum of energy. Therefore a built-in voltage between metal and semiconductor $V_{bi}$ emerges. Ionized atoms of donor impurities in the semiconductor layer depleted with electrons form a bulk positive charge. We assume that only the donors contribute electrons to the conduction band and all of them are ionized at room temperature, hence, the concentration of electrons equals the concentration of impurities \mbox{$n=N_{\mathrm d}$}.
+
+A built-in voltage between the metal and semiconductor drops across the barrier layer of length $d$. According to~\refFigure{11_9}\textit{b} in this layer electron energy depends on \mbox{$x$-coordinate} due to the built-in electric field. The field <<pushes>> electrons out of the layer, so  some work must be done to overcome this force. This work is the potential energy of electron.
+%
+\hFigure{Effect of built-in field on energy levels of semiconductor: \textit{a} energy bands of metal and $n$-type semiconductor; \textit{b} bending of bands due to built-in field}11_9 {9.8cm}{5.8cm}{pic/L11_09.eps}
+%
+
+A similar situation occurs when two semiconductors with different types of conductivity are placed in contact; such a system is called ($p$--$n$)-junction. Similar to the metal-semiconductor contact the Fermi levels in electron-doped and hole-doped semiconductors coincide; this corresponds to the thermodynamic equilibrium of the system. In other words, the transition probability from the $n$-type semiconductor to the free levels of $p$-type semiconductor becomes equal to the probability of the reverse transition from $p$-area to $n$-area.
+
+For simplicity we consider a symmetric junction, i.e. the junction with equal concentrations of impurities on both sides of the junction. We also assume that static non-compensated ions of donors and acceptors on both sides of the junction have uniform density over the length $d/2$ in $p$- and $n$-areas. The charge distribution is shown in~\refFigure{11_10}. The total charge density $Q$ in the corresponding areas equals $eN_{\mathrm d}$ and $-eN_{\mathrm a}$. The electrostatic potential is obtained by solving a one-dimensional Poisson equation:
+$$
+\frac{d^{2}U}{dx^{2}}=-\frac{4\fpi\frho}{\fepsilon} \equiv+\frac{4\fpi eN_{\mathrm a}}{\epsilon},\quad \frac{d}{2}\leqslant x \leqslant 0, \eqMark{11_45}
+$$
+\vspace{-6pt}
+$$
+\frac{d^{2}U}{d x^{2}}=-\frac{4\fpi\frho}{\fepsilon} \equiv-\frac {4\fpi eN_{\mathrm a}}{\epsilon},\quad 0\leqslant x \leqslant \frac{d}{2}, \eqMark{11_46}
+$$
+where $\epsilon$~is the dielectric constant of the semiconductor material. The boundary conditions imply that functions $U$ and $dU/dx$ vanish at $x=d/2$.
+%
+\hFigure{Distributions of charge and electric potential in the depleted layer of symmetric (\textit{p--n})-junction in equilibrium:
+\textit{a}~non-compensated ions of donors and acceptors; \textit{b}~the Fermi level ${E}_\textrm{F}$ is the same in both \textit{p}- and \textit{n}-areas; \textit{c}~full-depletion approximation for the barrier layer; \textit{d}~electrostatic potential of electrons; \textit{e}~electric field in the barrier layer created by non-compensated ions of donors and acceptors}11_10 {6.2cm}{11.2cm}{pic/L11_10.eps}
+%
+Solution of the first equation with the given boundary conditions is
+$$
+U=\frac{\mathit{e}}{\fepsilon} N_{\mathrm d} \left( \frac{x^{2}}{2}+\frac{xd}{2}-\frac{d^{2}}{8}\right),\quad -\frac{d}{2} \leqslant x \leqslant 0. \eqMark{11_47}
+$$
+The corresponding curve is shown in~\refFigure{11_10}\textit{d}. The electric field $\EDS=-dU/dx$ is shown in~\refFigure{11_10}\textit{e}.
+
+The total voltage drop $U$ across the junction equals $eN_{\mathrm a}d^{2}/(4\epsilon )$. Hence the work to be done in order to transfer an electron from the conduction band in $n$-area to the conduction band in $p$-area is
+$$
+\frac{e^{2} N_{\mathrm d}d^{2}}{4 \epsilon}=eV_\textrm{ê}, \eqMark{11_47}
+$$
+where $V\sub{bi}$~is the built-in voltage. This relation allows us to find the dependence of barrier layer thickness on the height of potential barrier $eV_{bi}$ and the concentrations of donor and acceptor impurities $N$:
+$$
+d=\sqrt{\frac{4V_\textrm{ê}\epsilon}{eN}}. \eqMark{11_49}
+$$
+
+At low concentrations of dopants ($10^{14}\div10^{17}\;\cm^{-3}$) the corresponding energy levels are located in the band gap, their energy is about $0{.}01\;\eV$. Since the energy of thermal motion at room temperature is $0{.}025\;\eV$ almost all impurity atoms supply their electrons to the conduction band. In this situation the energy distribution of electrons in the conduction band is the Boltzmann distribution like in intrinsic semiconductor. The reason for such distribution is, however, different. The donor atoms can possibly supply not more than $10^{17}\;\cm^{3}$ particles to the conduction band; for electrons with effective mass $m^{*}\Simeq(0{.}03\div0{.}05)m$ this corresponds to the Fermi energy $E_{\mathrm{F}}\Simeq0{.}02\;\eV$ which is less than the thermal energy at room temperature ($0.025\;\eV$). Thus the Fermi distribution with a sharp boundary indeed becomes the Boltzmann distribution.
+
+The average volume per one impurity atom is $1/N_{\mathrm d}$, and the average distance between impurities is $(N_{\mathrm d})^{-1/3}$. When $N_{\mathrm d}$ is so large that $(N_{\mathrm d})^{-1/3}\leqslant a\sub{imp}$ ($a\sub{imp}$~ is the first Bohr radius of impurity atom which is much larger than interatomic distance $a$) the average distance between impurities becomes so small that electrons can tunnel from one impurity atom to another. The impurity levels in this situation are smeared and form a band which can even merge with the original conduction band. It turns out that at rather large concentration of impurities (order of $10^{20}\;\cm^{-3}$) the semiconductor becomes degenerate, i.e. its energy distribution becomes the Fermi distribution with a sharp boundary similarly to metals.
+
+The electron degeneracy at high concentration of impurities is <<assisted>> by small effective masses of carriers. Let us perform some qualitative estimates. The Fermi momentum of electron is
+\vspace{-7pt}
+$$
+p_{_\mathrm{F}}\Simeq(3\pi^{2}N)^{1/3}\hbar\Simeq10^{-20}\;\g\cdot\cm/\s.
+$$
+\vspace{-8pt}
+
+The corresponding Fermi energy is
+
+\vspace{-8pt}
+$$
+E_{\mathrm{F}}=\frac{p_{_\mathrm{F}}^{2}}{2m}\frac{m}{m^{*}}\Simeq1{.}5\cdot 10^{-12}\Simeq1\;\eV. \eqMark{11_50}
+$$
+
+We see that, at least, the Fermi energy is much greater than the thermal energy which is responsible for the smearing of the Fermi distribution, and now the Fermi energy is located in the conduction band as it is shown in~\refFigure{11_11}.
+
+In addition a strong doping sufficiently narrows the barrier layer. It follows from Eq.~(\refEquation{11_49}) that the layer thickness is inversely proportional to the square root of impurity concentration. In a typical ($p$--$n$)-junction it is approximately
+%
+\hFigure{Energy band diagram of strongly doped semiconductor near the Fermi level on both sides of ($p$--$n$)-junction in the absence of external voltage: $f(E)$~is the Fermi function, $g(E)$~is the density of states, $n(E)=g(E)f(E)$~is the density of electrons at these levels, $p(E)$~is the density of holes (or vacant electron levels), $E_n$ and $E_p$~are the Fermi levels}11_11 {7.2cm}{4.1cm}{pic/L11_11.eps}
+%
+$10^{-3}\div10^{-5}\;\cm$, while in strongly doped semiconductors the width of barrier layer can be about $100\;\Angstrem$ and even smaller.
+
+A small width of the potential barrier in a degenerate semiconductor leads to a new mechanism for the transport of carriers. In such a ($p$--$n$)-junction a direct tunneling through the potential barrier is possible when electron passes to a vacant level with the same energy on the other side. Such transitions are allowed even at temperature close to absolute zero, since tunneling requires no energy. A semiconductor diode using this operating principle is called \textit{tunnel diode}.

@@ -1,0 +1,112 @@
+%traanslator Russkov, date 27.04.13
+
+\setcounter{Equation}{0} \setcounter{Figure}{0}
+\Work
+{Determination of {$\boldsymbol\gamma$-quanta} energy by means of\\ scintillation spectrometer}
+{Determination of {$\boldsymbol\gamma$-quanta} energy by means of\\ scintillation spectrometer}
+{The energy of $\gamma$-quanta emitted by a radioactive specimen is determined with the aid of a spectrometer calibrated by $\gamma$-radiation of $^{60}\mathrm{Co}$.}
+
+The block diagram of a scintillation spectrometer used in the experiment is shown in~\refFigure{5_3_1}. The operation principle of the spectrometer is the following. Gamma-rays emitted by the studied source are collimated by a lead collimator directing them to a scintillator~--- a crystal of sodium iodide doped by thallium, $\mathrm{NaI}(\mathrm{Tl})$. In the scintillator $\gamma$-quanta interact with its atoms knocking electrons out of them and producing electron-positron pairs (in our case this process is negligible since the energy is too low). The knocked out electrons (usually considered as conversion ones) are decelerated in the scintillator material by exciting its atoms.
+%
+\hFigure{Block diagram of scintillation spectrometer. Crystal $NaI(Tl)$ is scintillator, \textit{HRR} is high voltage regulated rectifier, \textit{TDC} is time-to-digital converter, \textit{AA} is amplitude analyzer (differential, single-channel one), \textit{LA} is linear amplifier, and \textit{S} is scaler}5_3_1
+{10.3cm}{3.4cm}{pic/L05_3_01.eps}
+%
+
+The excited atoms emit electromagnetic radiation. In scintillators the major part of energy is emitted as visible light or ultraviolet radiation. Some of the produced photons pass through the scintillator, strike the cathode of a photomultiplier tube (PMT) and knock out slow electrons (the photoelectric effect). These electrons are accelerated by electric field of the PMT and knock out secondary electrons from the first dynode, those are in turn accelerated to the second dynode, and so on. Multiple repetition of this process results in a great multiplication of the initial current ($10^6\div 10^7$)\Footnotemark \Footnotetext{The detailed description of scintillators and photomultiplier is given in Appendices~II and~III.}.
+
+Pulses arising on the PMT anode are analyzed and counted. In a certain range of voltages across the PMT dynodes (the spectrometric mode) the amplitude of an output pulse turns out to be proportional to the number of photoelectrons emitted by the photocathode and therefore to the number of photons produced in the scintillator (a crystal of $\mathrm{NaI}(\mathrm{Tl})$). The number of photons is in turn proportional to the energy of conversion electrons.
+
+Now consider how the energy of conversion electrons is related to the energy of $\gamma$-quanta. As it is discussed in section~V the interaction of $\gamma$-quanta with any material proceeds in three independent ways.
+
+In the photoelectric effect a $\gamma$-quantum is entirely absorbed by an atom; a single electron from an inner shell (usually $K$-shell) escapes from the atom carring away the energy transferred by the $\gamma$-quantum. In this case the energy of conversion electron equals $T_e=E_{\gamma}-W_K$, where $W_K$ is the ionization energy of $K$-shell. The excited atom radiates an X-ray quantum which is absorbed in the crystal with a large probability (the photoelectric effect in $L$- and $M$-shells). The period of scintillation is small, so the energy of these quanta is added to the energy of initial photoelectron. Thus the energy released in the crystal due to the photoelectric effect equals the energy of the absorbed \mbox{$\gamma$-quantum}. For this reason the amplitude of light flashes turns out to be proportional to the \textit{total} energy of the primary $\gamma$-quanta. The probability of the photoelectric absorption rapidly decreases as the energy of $\gamma$-quanta increases; it is proportional to the absorber atomic number as $Z^5$. Therefore a $\gamma$-spectrometer utilizes a scintillator crystal containing atoms of heavy elements.
+
+The Compton scattering of $\gamma$-quanta takes place on weakly coupled electrons. In this process an electrons receive only a fraction of the energy of \mbox{$\gamma$-quantum}, and the remaining energy is carried away by the scattered photon. The electron energy is determined by the scattering angle and the energy of \mbox{$\gamma$-quantum}. The minimal energy which can be transferred to electron is zero, while the maximal one is 
+$$
+  (T_e)_{\max}=\hbar\omega\frac{2\alpha}{1+2\alpha},
+$$
+where $\alpha = \hbar\omega/(mc^2)$ and the electron rest energy is $mc^2=0{.}511\;\MeV$.
+
+A scattered $\gamma$-quantum can either escape from the crystal or be absorbed by it (recall that probability of photoelectric absorption rapidly increases as the photon energy decreases). In the first case the energy transferred to the crystal by a primary $\gamma$-quantum can be anywhere from zero to $(T_e)_{\max}$ but in the second case it equals the total energy of \mbox{$\gamma$-quantum}.
+
+If the energy of $\gamma$-quantum exceeds $2mc^2=1{.}02\;\MeV$, the production of an electron-positron pair in the electrostatic field of atomic nucleus becomes possible. Ignoring a negligible nuclear recoil one finds that the sum of kinetic energies of electron and positron equals
+$$
+  T_{e^{-}}+T_{e_{+}}=\hbar\omega -2mc^2.
+$$
+
+A positron stopped in the crystal annihilates with an atomic electron. The energy released in the process equals $2mc^2$ and is shared between two \mbox{$\gamma$-quanta}. These quanta can escape from the crystal or be absorbed in it. It is also possible that one quantum escapes while the second one is absorbed. Therefore the energy remaining in the crystal can be equal to the energy of \mbox{$\gamma$-quantum} or differ from it by $mc^2$ or $2mc^2$. Spectrometry of $\gamma$-quanta of high energy is based on detecting the scintillations due to electron-positron pairs because the pair production cross-section increases with energy\Footnotemark\Footnotetext{For details see the introduction to this section.}.
+
+The dependence of linear attenuation coefficient of $\gamma$-quanta in $\mathrm{NaI}(\mathrm{Tl})$ on their energy is shown in~\refFigure{5_3_2}. One can see from~\refFigure{5_3_2} that the photoelectric absorption dominates at relatively low energy. As the energy of $\gamma$-quanta increases the contribution due to the Compton scattering takes over; at high energy the process of pair production dominates.
+%
+\hFigure{Linear attenuation coefficients of $\gamma$-rays in NaI(Tl) crystal: $\mu\sub{ph}$~is attenuation coefficient for the photoelectric effect, $\mu\sub{C}$~is attenuation coefficient due to Compton scattering, $\mu\sub{p}$~is attenuation coefficient due to pair production, and $\mu=\mu\sub{ph}+\mu\sub{c}+\mu\sub{p}$~is the total attenuation coefficient}5_3_2
+{6cm}{8cm}{pic/L05_3_02.eps}
+%
+
+To summarize notice that to determine the energy of $\gamma$-quanta emitted by a radioactive source one should study the distribution curve of their energy losses in the scintillation crystal, i.e. the distribution amplitude of electrical pulses at the PMT output. Such distributions are studied with the aid of amplitude analyzers measuring the number of pulses belonging to a specified range.
+
+Such measurements yield either an integral or a differential curve. An integral distribution  corresponds to the number of pulses $N(E)$ with an energy (amplitude), equal or greater than $E$. A differential curve corresponds to the energy dependence of $dN/dE$, i.e. the number of pulses per unit energy interval. As a rule one uses a differential curve.
+
+In this experiment an amplitude analyzer is employed to measure the pulse amplitude distribution; the analyzer consists of an analog-to-digital converter (ADC) combined with a computer. The measured spectrum of PMT pulses is displayed on the computer screen.
+%
+\cFigure{Gamma-spectrum of $^{54}\mathrm{Mn}$}5_3_3
+{7.7cm}{5.4cm}{pic/L05_3_04.eps}
+%
+%block diagram of which is shown in \refFigure{5_3_3}. Its basic elements are two discriminators and anticoincidence circuit \Footnotemark\Footnotetext{Is description of anticoincidence circuit given in Appendix??II.}.
+
+%Input signal from photoelectric multiplier is applied to both discriminators at once. Discriminators transmit only pulses with amplitude, exceeding previously set value, called \textit{threshold}. Thresholds of discriminators differ from each other on certain value $\Delta E$, which is called \textit{width of window} or just \textit{window} of differential discriminator. Anticoincidence circuit transmits pulses only when one discriminator responds, exactly first one.
+
+%Let signal with amplitude $E<E_0$ is applied to input of analyzer. In this case no discriminators responds, and signal won't pass through circuit. If amplitude of applied signal is greater, than $E_0$, but less than $E_0+\Delta E$, discriminator \textit{1} will transmit it, but discriminator \textit{2} won't respond; impulse from discriminator \textit{1} via anticoincidence circuit will reach recording unit. In the case, when amplitude of input signal exceeds the value $E_0+\Delta E$, both discriminators will respond, and pulse won't arise in output of the circuit. In other words, anticoincidence circuit, placed behind discriminators transmits only pulses, which already pass through discriminator \textit{1} and doesn't pass through discriminator \textit{2} yet. With the aid of it one measures number of pulses, possessing amplitudes in the range from $E_0$ to $E_0+\Delta E$.
+
+%Special switch lets to change thresholds $E_0$ of both discriminators simultaneously, with value $\Delta E$ remaining constant. Hereby, the installation lets to measure directly differential dependence curve of $\Delta N/\Delta E$ on $E$.
+
+The diagraim in~\refFigure{5_3_3} shows the pulse amplitude distribution obtained from a radioactive source $^{54}\mathrm{Mn}$ emitting $\gamma$-quanta with energy $E_{\gamma}=0{.}83\;\MeV$. The peak at the end of the distribution is the complete absorption peak (it is often called a photopeak).
+
+The continuous distribution of pulses preceding the peak is due to recoil electrons produced by the Compton scattering of $\gamma$-quanta. This scattering has the maximum near $N=60$. In the vicinity of $N\sim20$ there is a wide peak due to the scattering of $\gamma$-quanta on the PMT window, on the protective cover, and on the glass lid of the container of $\mathrm{NaI}(\mathrm{Tl})$ crystal. This peak is conventionally called the \textit{backscattering peak}. In this installation lead is used as a protective material, so the absorption of $\gamma$-rays in lead produces the characteristic X-ray radiation with an energy of $72\;\keV$. The corresponding peak is located  around $N\sim10$.
+
+The observed $\gamma$-lines can be most accurately identified by the complete absorption peak. From a previous discussion one can conclude that this peak must be very narrow, whereas it looks rather wide in~\refFigure{5_3_3}. The width of the complete absorption peak in our case is  instrumental, rather than a real one. All intermediate processes contribute to the peak width. The number of atoms of the crystal excited because of absorption of a \mbox{$\gamma$-quantum} fluctuates due to random causes. The number of photons produced by excited atoms fluctuates as well. Not all photons reach the PMT and not all photons reaching it knock out an electron from the photocathode. The number of photocathode electrons emitted is small and fluctuates very strongly. The process of electron multiplication by the PMT dynodes is also subjected to statistical fluctuations. The width of the complete absorption peak is usually characterized by the energy resolution $R$:
+$$
+  R=\frac{\delta}{E}\cdot 100\%,
+$$
+where $\delta$ is determined as the width of the complete absorption peak measured at the half of its height (in energy units); $E$ is the energy of \mbox{$\gamma$-radiation} to be measured. The energy resolution varies in a wide range from several units to tens of percent depending on the energy of $\gamma$-quanta.
+\vspace{1ex}
+
+\textbf{\so{Experimental installation}}\vspace{5pt}
+
+The crystal of $\mathrm{NaI}(\mathrm{Tl})$ used in the installation has a cylinder shape. Its diameter and height are $40\;\mm$. The crystal is encased in a sealed container which walls are coated with magnesium oxide that scatters light very well. The output window of the container is in optical contact with a PMT photocathode, which operates in the spectrometric mode. A signal from the PMT anode is applied to an amplitude analyzer via an amplifier.
+
+%In cases, when values of electrical signals hits the <<window>> of analyzer, pulses are formed by analyzer circuit, and then counted by scaler. Measuring with the aid of scaler number of pulses per time unit depending on discrimination threshold in fixed width of window, one could obtain differential spectrum of energy release in scintillation crystal $\mathrm{NaI}(\mathrm{Tl})$.
+
+%Single-channel amplitude analyzer, utilized in the lab, is intended to analyze pulses in the range from $0$ to $10\;\V$. However, when crystal $\mathrm{NaI}(\mathrm{Tl})$ is irradiated by \mbox{$\gamma$-quanta} with energy about $\sim1\;\MeV$ maximal amplitude of pulses on output of PEM doesn't exceed tenth parts of volt. Therefore pulses from PEM should be preliminarily amplified by linear amplifier, but their maximal amplitude shouldn't exceed $10\;\V$.
+
+The experiment is carried out in two stages: firstly, the spectrometer is calibrated by the $\gamma$-radiation of $^{60}\mathrm{Co}$ which produces two $\gamma$-lines with energies $E_1=1{.}17\;\MeV$ and $E_2=1{.}33\;\MeV$ (the decay scheme of $^{60}\mathrm{Co}$ is given in~4.3) and, secondly, the energy of $\gamma$-quanta of an unknown specimen is measured.
+\vspace{1ex}
+
+\textbf{\so{Directions}}\vspace{5pt}
+\begin{Enumerate}{tab}
+\Item. Turn on the installation and let it warm up for $5--10$ minutes.
+
+\Item. Set the modes of operation indicated on the installation.
+
+\Item. Make sure that the installation <<feels>> $\gamma$-rays. To this end move the detector unit to the collimating channel of the container with $^{60}\mathrm{Co}$. Set an arbitrary threshold on the amplitude analyzer and turn on the scaler. The counter must start counting incoming pulses. Remove the detector unit from the source and check that the count rate abruptly decreases. When the adjustment is finished proceed to the measurement.
+
+\Item. Measure the pulse amplitude distribution detected from the $^{60}\mathrm{Co}$ source.
+
+\Item. Identify the photopeaks (complete absorption peaks) and establish the correspondence between an analyzer channel number and the energy of \mbox{$\gamma$-quanta} (in megaelectronvolts).
+
+\Item. Move the detector unit to the container with an unknown source of \mbox{$\gamma$-rays}. Measure the pulse amplitude distribution according to~$4$ and~$5$.
+
+\Item. Determine the energy of $\gamma$-quanta of the unknown source. Calculate the location of the upper bound of the Compton distribution using the obtained value and compare it with the experimental one.
+
+\Item. Estimate the energy resolution of the spectrometer.
+
+\Item. At the end of experiment cover the collimating channels of $\gamma$-sources with lead caps and turn off the installation.
+\end{Enumerate}
+
+\begin{center}\so{\textsf{\small LITERATURE}}\end{center}
+{\small
+
+1. \textit{Shirokov\;Yu.\;M., Yudin\;N.\;P.} Nuclear physics.\,---\,M.: Science, $1980$. Ch.\;VI, \textsection\;$6$; ch.\;IX,\textsection\;$4$.
+
+2. \textit{Muhin\;K.\;N.} Introduction to nuclear physics.\,---\,Ì.: Atompress, $1965$. Ch.\;II, \textsection\;$11$.
+
+3. \textit{Tsipenyuk\;Yu.\;M.} Principals and methods of nuclear physics.\,---\,Ì.: Energyatompress, $1993$. \textsection\;$5.6$.
+}

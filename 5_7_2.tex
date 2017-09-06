@@ -1,0 +1,126 @@
+%translator Savrov, date 21.01.13
+
+\setcounter{Equation}{0} \setcounter{Figure}{0}
+
+\Work {Study of cosmic ray showers}
+{Study of cosmic ray showers}
+{The probability of formation of showers of secondary charged particles in lead versus layer depth (cascade curve) is measured. The mean energy of primary electrons and the mean energy of photons in a shower is estimated.}
+
+A typical feature of electromagnetic and nuclear interaction of a high energy particle with matter is the secondary radiation and formation of <<showers>> of secondary particles. The cosmic radiation passed through the atmosphere consists of muons, electrons, and $\gamma\text{-}$quanta, i.e. of particles which do not participate in strong interaction. Therefore cosmic rays provide an excellent opportunity to study electromagnetic processes without interference of other interactions, in particular, to study the process of shower formation. 
+
+Electron-photon showers are formed when a high-energy electron and/or photon passes through a thick layer of matter. A shower arises due to multiple interactions and for this reason it is not an elementary process. 
+%
+\fFigure{Formation of electron-photon shower due to passage of high-energy electron through matter}7_2_1 {3.5cm}{4.6cm}{pic/L07_2_01.eps}
+%
+It is due to combination of the following basic processes:
+
+1) scattering of a fast charged particle in the Coulomb field of atomic nuclei resulting in bremsstrahlung;
+
+2) creation of electron-positron pairs of high energy.
+
+Consider the first process for a high-energy electron moving in matter. In the Coulomb field of a nucleus the electron accelerates and radiates electromagnetic waves. This radiation is called \textit{bremsstrahlung} or braking radiation since the resulting energy loss decelerates the charged particle. The spectrum of braking radiation is continuous and extends to some maximal energy equal to the kinetic energy of the particle. For any impact parameter, the force exerted by a nucleus of charge $Z$ on a charged particle is proportional to $Z$ while the particle acceleration is inversely proportional to its mass $m$; hence, the intensity of braking radiation is proportional to $Z^2/m^2$. Therefore the bremsstrahlung scattering is the most important for light particles, electrons and positrons. For instance, for muons which mass is $200$ times greater than that of electron, the bremsstrahlung losses are $(m_{\mu}/m_e)^2\Simeq4\cdot10^4$ less than for electrons of the same energy.
+
+Some photons will have enough energy to create electron-positron pairs. These particles, in turn, create new photons, thereby producing an avalanche of charged particles (see~\refFigure{7_2_1} for an illustration).
+
+\vspace{-0.5pt}
+As the particles multiply their energy decreases and is mostly lost for ionization rather than for radiation, so the avalanche eventually decays.  
+
+\vspace{-0.5pt}
+One of the main parameters specifying energy losses of a charged particle passing through matter is the radiation length. Radiation and ionization losses of electrons and positrons are the same, to be specific let us consider electron. According to H.~Bete and W.~Heitler the radiation losses of electron can be written as
+$$
+-\left(\frac{d T_e}{d x}\right)\sub{rad}=nT_eZ^2\Phi (T_e),
+\eqMark{7_2_1}
+$$
+where $n$~-is the atomic density, $T_e$~is the electron energy, $Z$~is the nucleus charge in a matter, and $\Phi (T_e)$~is a linear function of $\ln T_e$. It should be obvious from the above discussion that the radiation losses are proportional to $n$, $T_e$, and $Z^2$, while the weak dependence on $\ln T_e$ can be computed using the methods of quantum electrodynamics.
+
+The formula for ionization losses derived in~4.1 for heavy particles looks similar to that one for electrons:
+$$
+-\left(\frac{d T_e}{d x}\right)\sub{ion}=nZ\Phi'(T_e),
+\eqMark{7_2_2}
+$$
+where $\Phi'(T_e)$~is a linear function of $\ln T_e$. Notice that the dependence on the nuclear charge is linear rather than quadratic. The formula for ionization losses of heavy particle cannot be applied to electron for two reasons: firstly, it was assumed that a heavy particle is not deflected by interactions with the particles of matter and, secondly, the exchange effects must be taken into account in collisions of identical particles. Roughly, one cannot say which electron has been scattered after a collision. 
+
+Comparing Eqs.~(\refEquation{7_2_1}) and~(\refEquation{7_2_2}) one obtains
+$$
+\frac{(d T_e/dx)\sub{rad}}{(dT_e/dx)\sub{ion}}\Simeq Z T_e.
+\eqMark{7_2_3}
+$$
+
+If one measures electron energy in $\MeV$, then Eq.~(\refEquation{7_2_3}) becomes
+$$
+\frac{(d T_e/dx)\sub{rad}}{(dT_e/dx)\sub{ion}}\Simeq\frac{Z T_e}{800}.
+\eqMark{7_2_4}
+$$
+
+Therefore radiation losses in water ($Z=8$) become comparable with ionization losses at $T_e\Simeq100\;\MeV$. For lead this already happens at $T_e\Simeq10\;\MeV$. The energy $\EDS\sub{cr}$ for which ionization and radiation losses become equal is called \textit{critical}, and the distance $x_0$ at which electron loses all but $1/e$ of its energy due to radiation losses is called the \textit{radiation length}. For water and air the length is approximately $36\;\g/\cm^2$, for aluminum it is $24\;\g/\cm^2$, and for lead it is about $6\;\g/\cm^2$.
+
+The total probability of electron-positron pair creation in a layer $dx$ (in $\g/\cm^2$) by a high-energy photon does not practically depend on its energy and equals $(7/9)dx/x_0$.
+
+If the layer width is expressed in radiation lengths $t=x/x_0$, the number of $\gamma\text{-}$quanta can be written as:
+$$
+N_{\gamma}(t)=(N_{\gamma})_0e^{-(7/9)t}.
+\eqMark{7_2_5}
+$$
+Thus the number of quanta $N_{\gamma}$ decreases according to exponential law where the mean absorption length equals $(9/7) x_0$. In other words, this process can be characterized by a constant effective cross-section.
+
+We have already discussed that multiple processes of bremsstrahlung and pair creation result in the avalanche of secondary electrons. The electrons keep multiplying until the average electron energy falls below the critical energy $\EDS\sub{cr}$, where the ionization absorption dominates. Since the number of particles doubles over the radiation length the maximum number of  secondary particles is observed at the depth $t_{\max}$ which can be determined from the equation:
+$$
+\frac{E_0}{\EDS\sub{cr}}\Simeq2^{t_{\max}}.
+\eqMark{7_2_6}
+$$
+The maximal number $N_{\max}$ must be proportional to $E_0/\EDS\sub{cr}$.
+
+The rigorous calculation of this process gives for electrons:
+$$
+t_{\max}=k_1\ln\frac{E_0}{\EDS\sub{cr}},\qquad N_{\max}=k_2\frac{E_0/\EDS\sub{cr}}{\sqrt{\ln E_0/\EDS\sub{cr}}}.
+\eqMark{7_2_7}
+$$
+The factors $k_1$ and $k_2$ in Eq.~(\refEquation{7_2_7}) are functions which weakly depend on the initial energy $E_0$. For light elements (air, water) $k_1\Simeq1$, $k_2\Simeq3$; for lead  $k_1\Simeq1{.}35$, $k_2\Simeq0{.}185$.
+
+At large depth, when $t\gg t_{\max}$, particle absorption proceeds according to exponential law.  The diagram in~\refFigure{7_2_2} shows the calculated cascade curves which express the mean number of charged particles $N_0(E_0,t)$ in a shower generated by primary electron versus the depth expressed in radiation lengths.
+
+Now, there are muons at the sea level, these particles can also create electrons when passing through matter. Such electrons arise due to Coulomb interaction of a primary muon with an electron of  matter in which the latter gets enough energy to become the ionizing particle itself, such electrons are called \mbox{$\delta$-electrons}. Muons account for approximately a third of all showers.\looseness=-1
+%
+\hFigure{Average number of charged particles in shower generated by primary electron in lead versus the depth expressed in radiation lengths. Figures near curves indicate initial electron  energy in~\meV\looseness=-1}7_2_2 {6.9cm}{6.6cm}{pic/L07_2_02.eps}
+%
+
+\vspace{1ex}
+\textbf{\so{Experimental installation}}\vspace{5pt}
+
+The installation for detecting cosmic ray showers is shown in~\refFigure{7_2_3}.
+%
+\hFigure{Installation for detecting cosmic ray showers: \textit{C1, C2, C3}~are scintillation counters,  \textit{S}~is lead shield, \textit{TDC}~are time to digital converters, \textit{CC}~is coincidence circuit, \textit{PU}~is power unit of PMT, \textit{PC}~is pulse counter}7_2_3 {7.3cm}{3.4cm}{pic/L07_2_03.eps}
+%
+
+In the experiment one studies the formation of electron-photon showers generated by a soft component of cosmic radiation (electrons) passing through matter (lead). The experiment consists in measuring the cascade curve $N(t)$ and evaluating its main parameters. To do this one measures the number of showers formed in a lead shield versus its thickness that ranges from $0{.}5$ to $10\;\cm$. The time interval of measurement is chosen depending on the count rate. The number of the detected events must give the statistical accuracy of $5\div10\%$ (which requires the time of measurement about $1000\;\s$)
+
+The flux of cosmic rays, which is coming into the solid angle determined by the geometry of counters \textit{C1}--\textit{C3}, passes through a lead shield \textit{S} of variable thickness. The showers are registered by the counters \textit{C2}--\textit{C3}. The event selection is performed so that three counters must register particles at the same time, i.e. a particle passed through~\textit{C1} creates at least two other particles registered by~\textit{C2} and~\textit{C3}\Footnotemark\Footnotetext{Operation principles of scintillation counter, PMT, and nuclear electronics are considered in Applications~II--IV.}.
+
+A scintillation detector is a polystyrene plate of $40\times 10\times 2{.}5\;\cm$ in size. Scintillations are converted by a PMT into electric pulses applied to a time to digital converter (TDC). The TDCs cut off the background noise and form standard digital signals coming to the input of a coincidence circuit~\textit{СС}. A signal from \textit{СС} output is applied to the pulse counter~PC. 
+
+Using the results obtained one determines the maximum of the cascade curve and compares it with  the curves shown in~\refFigure{7_2_2} to estimate the energy of primary electrons. For a thick shield the detected particles can be due to the showers produced inside the laboratory walls. The cascade curve can be corrected for this effect by subtracting the count rate corresponding to the maximal shield thickness from the count rate at a given thickness. 
+ 
+The experimental cascade curve $N(t)$ is the number of showers per one electron versus shield thickness; this number is determined by the count rate of \textit{C1}. The experimental installation registers only the number of showers rather than the average number of charged particles per shower, as it is shown in~\refFigure{7_2_2}. The probability of simultaneous particle detection by~\textit{C2} and~\textit{C3} is proportional to the number of particles in a shower since the counters are of finite size. Therefore the transient curve in this mode of registration is similar.
+\vspace{1ex}
+
+\textbf{\so{Directions}}
+\vspace{2pt}
+
+\begin{Enumerate}{tab}
+ \Item. Measure the intensity of cosmic showers in the solid angle subtended by the installation. To do this measure the count rate per second registered by counters \textit{C1} and \textit{C2}$+$\textit{C3} in the double coincidence mode. One should take into account that the soft component of cosmic radiation comprises approximately $2/3$ of the net flux.
+
+\Item. Measure the count rate of triple coincidence versus the number of lead plates. The measurement is done for $0, 1, 2, 3, 4, 6, 8, 12, 16$, and $20$ plates. 
+
+\Item. Plot the curve of triple coincidence rate versus shield thickness (the number of plates). 
+
+\Item. Estimate the average energy of electrons in the soft component of cosmic rays at the sea level using the transient curve maximum and comparing it with~\refFigure{7_2_2}. 
+
+\Item. Approximate the cascade curve behind the maximum by exponential law, ${\exp(-\mu t)}$, and determine the absorption coefficient $\mu$ (it is mostly due to photon absorption). Using the coefficient determine the average photon energy by comparing the $\mu$ obtained with tabulated values ($\mu$ versus energy). \end{Enumerate}%
+
+\begin{center}\so{\textsf{\small ЛИТЕРАТУРА}}\end{center} {\small
+
+1. \textit{Росси\;Б., Грейзен\;К.} Взаимодействие космических лучей с веществом.\,---\,М.: ИЛ, $1948$. \textsection\;$5.7$.
+
+2. \textit{Мурзин\;В.\;С.} Физика космических лучей.\,---\,М.: Изд-во Моск. ун-та, $1970$. Гл.\;$2$, \textsection\textsection\;$8$, $10$; гл.\;$4$, \textsection\textsection\;$6$, $8$.
+
+3. \textit{Ципенюк\;Ю.\;М.} Принципы и методы ядерной физики.\,---\,М.: Энергоатомиздат, $1993$. Гл.\;$2$, \textsection\;$5.7$. }

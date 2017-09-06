@@ -1,0 +1,159 @@
+%translator Savrov, date 17.03.13
+
+\let\oldTheEquation=\theEquation
+\def\theEquation{\arabic{Equation}}
+\let\oldTheFigure=\theFigure
+\def\theFigure{\arabic{Figure}}
+\setcounter{Equation}{0} \setcounter{Figure}{0}
+
+\Work %10.1
+{Electron paramagnetic resonance}
+{Electron paramagnetic resonance}
+{Electron paramagnetic resonance in DPPH molecules is studied, the electron $g$-factor is determined, the width of EPR line is measured.}
+
+An energy level of electron placed in magnetic field $B$ splits in two levels separated by a gap 
+$$
+\Delta E=E_{2} -E_{1} =2 \mu B.   \eqMark{10_1_1}
+$$
+Here $\mu$~is the magnitude of the component of magnetic moment in the field direction.
+
+Transitions between these levels are possible. The transitions can be induced by external electromagnetic field of high frequency provided the energy of the field quantum equals the energy gap and the field is perpendicular to $B$ or it has a significant component in this direction.
+
+The resonance frequency is determined by an obvious relation:
+$$
+\hbar \omega_{0} = \Delta E=2\mu B.   \eqMark{10_1_2}
+$$
+
+When going from the lower to the upper level an electron absorbs a quantum of electromagnetic energy, the same quantum is emitted during a reverse transition. Excitation of the electron resonant transitions by an electromagnetic field of the frequency given by Eq.~(\refEquation{10_1_2}) is called \emph{electron paramagnetic resonance (EPR)}.
+
+In other words, electron paramagnetic resonance is due to the flip of electron spin induced by electromagnetic field of high frequency. Not all electrons of a substance are able to flip their spin. Electrons of occupied shells cannot change their state~-- either position, or spin. Electrons of most substances are coupled, i.e. bound in pairs with opposite spins. Such electrons cannot flip their spin. An EPR signal is generated only by \emph{uncoupled electrons of a substance}. The presence of such electrons means that the substance is paramagnetic. For this reason EPR is the important method of experimental study of paramagnets.
+
+Let us say a few words about spin-orbit interaction. Atomic electrons of isolated atoms are moving in a central electric field, so the angular momentum of an electron is conserved. In this case an orbital quantum number $L$ can be considered as conserved with a good accuracy, while the total angular momentum $J$ is conserved almost exactly. The situation is different for crystals and radicals. In this case an electric field acting on electrons is not central, so the angular momentum of an electron cannot be regarded as an exact quantum number. Nevertheless, a magnetic field still determines the number of EPR lines, their shape, and position. A \emph{fine structure} of EPR line emerging due to spin-orbit interaction allows one to study molecular and crystal fields.
+
+Now consider the structural formula of a free radical of diphenylpicrylhydrazyl (DPPH) which is studied in this experiment.
+%
+\fFigure{Structural formula of diphenylpicrylhydrazyl (DPPH) which main elements are benzene rings}10_1_2 {3.9cm}{1.63cm}{pic/L10_1_02.eps}
+%
+A molecule in which at least one valence electron is uncoupled (unsaturated chemical bond) is called a \emph{free radical}. Uncoupled electrons are responsible for high chemical activity of radicals. Radicals play the important role in kinetics of chemical reactions and EPR is one of the most important methods of their study. A molecule of DPPH is shown on the diagram in~\refFigure{10_1_2}.
+
+Consider the main processes affecting the width of EPR line. In the absence of high-frequency field the occupation numbers $N \sub{u}$ and $N \sub{d}$ are determined by the Boltzmann distribution
+$$
+\frac{N\sub{u}}{N\sub{d}}=\exp\left(-\frac{\Delta E}{{\kb}T}\right).   \eqMark{10_1_3}
+$$
+The resonant field induces transitions between the levels, so that the population of the upper level increases and the lower one decreases. This process violates the distribution~(\refEquation{10_1_3}). Thermal equilibrium is then restored due to energy transfer to other degrees of freedom.
+
+These degrees of freedom can be divided in two groups: those related to spins of uncoupled electrons and those related to motion of atoms of the substance. Energy is transferred to these degrees of freedom, firstly, due to interaction of the magnetic moment of a given electron and the magnetic moments of other electrons, the so-called \emph{spin-spin interaction}, and, secondly, due to interaction of the electron and constituent atoms called \emph{spin-lattice interaction}. These two interactions are easy to distinguish experimentally by their different temperature dependencies. While the spin-lattice interaction rapidly increases with temperature (together with the number of photons), the spin-spin interaction is almost  temperature independent.
+
+Both interactions contribute to relaxation, i.e. to transitions from the upper level to the lower one, and therefore decrease the time spent by electron on the upper level. The level width is related to the relaxation time by uncertainty relation:
+$$
+\Delta E\Simeq \frac{\fhbar}{\ftau},\qquad \Delta\omega\Simeq \frac{1}{\ftau}.   \eqMark{10_1_4}
+$$
+The less the relaxation time, the greater is the width of absorption line $\Delta \omega$ (see~\refFigure{10_2}). 
+
+In this experiment one obtains the EPR signal using a DPPH crystal and determines the electron $g$-factor. The relation between magnetic moment $\boldsymbol{\mu}$ of electron and its angular momentum $\textbf{M}$ is expressed via a gyromagnetic ratio $\gamma$ as
+$$
+\boldsymbol{\mu} = \gamma \textbf{M}.   \eqMark{10_1_5}
+$$
+
+If the magnetic moment is measured in Bohr magnetons, and angular momentum in units of $\hbar$, the relation is expressed via $g$-factor:
+$$
+\frac{\boldsymbol{\mu}}{\mubor}=\frac{g\textbf{M}}{\fhbar}.   \eqMark{10_1_5}
+$$
+This equation is valid for components of $\boldsymbol{\mu}$ and $\textbf{M}$ in any chosen direction:
+$$
+\frac{\mu}{\mubor}=\frac{gs\fhbar}{\fhbar},   \eqMark{10_1_7}
+$$
+where $s=1/2$~is electron spin. Using Eq.~(\refEquation{10_1_2}) one can express $g$-factor via the measured quantities:
+$$
+g=\frac{\fhbar\fomega_{0}}{\mubor B}.   \eqMark{10_1_8}
+$$
+
+Magnetism of $\mbox{DPPH}$ has a purely spin nature (there is almost no orbital magnetism in this substance), so EPR on the uncoupled electrons proceeds almost like on free ones. Hence the $g$-factor obtained by EPR on DPPH differs from the $g$-factor of free electron by a fraction of percent. \vspace{1ex}
+
+\Experim
+
+Observation of EPR requires a sensitive radiospectroscope. The radiospectroscope used in this experiment has a simple design, although its sensitivity is sufficient to detect EPR signal on DPPH. By cooling a DPPH sample one can study the dependence of the absorption line width on temperature and figure out whether spin-spin or spin lattice relaxation is responsible for line broadening.
+
+To observe EPR one places the studied sample in magnetic field and measures the absorption of electromagnetic radiation which frequency is given by Eq.~(\refEquation{10_1_2}). The absorption caused by EPR is very small. A noticeable effect is achieved by concentrating the energy of electromagnetic field in the sample volume, e.g. by inserting the sample into a coil of electronic oscillator. In this case EPR is detected by monitoring the oscillator quality in the vicinity of the  resonance. One observes passage through the resonance by varying either the frequency $\omega$ of electromagnetic radiation or the field $B$. Varying the field is more practical from the experimental viewpoint because this does not change parameters of the measuring circuit, only the losses due to EPR are affected. Varying the frequency changes the signal amplitude both due to EPR and because the circuit parameters get altered. Detection of EPR in our installation is achieved by varying the magnetic field, like in the majority of radiospectroscopes.
+
+There are several types of experimental installations for studying EPR in the range of radio frequencies. The spectroscope used in the experiment has the working range of $100\div200\;\MHz$. It operates by detecting deterioration of oscillator circuit quality due to EPR losses. The spectroscope block-diagram is shown in~\refFigure{10_1_4}. The main element is an electronic oscillator.
+%
+\hFigure{Block-diagram of installation for studying EPR. Direct and alternating currents through the coils $\emph{N}_2$ are measured by means of a voltmeter РВ7-22А and a resistor $R=10\;\Om$ in the coil circuit.}10_1_4 {8.5cm}{6.2cm}{pic/L10_1_04.eps}
+%
+The oscillator consists of an inductor coil and a capacitor. The oscillator is placed in a brass container coated with silver form inside. The ampule with a sample is inserted in the inductor coil. The main magnetic field in the sample is generated by two coaxial coils fed by a DC power source. The current through the coils is varied by a knob and measured by means of a voltmeter and a resistor $R$ connected in series to the coils. A small modulating field is generated by additional coils. They are fed by an autotransformer plugged to the mains. The common axis of the main and additional coils is perpendicular to the inductor coil axis.
+
+Electromagnetic oscillations are excited by a radio-frequency generator coupled to the oscillator via a loop. The oscillator is connected via a semiconductor diode to the vertical channel of an oscilloscope. The oscillator is connected to the generator and the oscilloscope by a coaxial cable.
+
+The magnitude of $B$, the resonant frequency of oscillator circuit, and the generator frequency $\omega$ are chosen to be close to the values obeying~Eq.~(\refEquation{10_1_2}). Small alternating field of modulating coils varies the main magnetic field, so that it goes through the exact resonance value $B_{0}$ (at a fixed frequency $\omega_{0}$) twice a period. 
+
+When approaching EPR the energy absorption in the sample increases, the oscillator quality deteriorates, and the amplitude of oscillations decreases. The EPR peak on the oscilloscope screen points up or down depending on the diode polarity.  
+
+%
+\hFigure{EPR absorption signals in automatic sweep mode when the main magnetic field is adjusted precisely}10_1_5 {5.7cm}{5.0cm}{pic/L10_1_05.eps}
+%
+
+If the main field $B$ is adjusted precisely the EPR signal on the oscilloscope screen operating in automatic sweep mode appears as a series of evenly spaced peaks (see~\refFigure{10_1_5}).
+%
+\fFigure{EPR absorption signals when sweeps are triggered by voltage across modulating coils}10_1_6 {4cm}{3cm}{pic/L10_1_06.eps}
+%
+
+It is convenient to observe the EPR signal by applying the voltage across the modulating coils to the horizontal channel of oscilloscope. In so doing two EPR signals are simultaneously seen on the screen (see~\refFigure{10_1_6}). Observation of two signals instead of one is due to a phase shift between the current and voltage of the modulating coils. The signals can be superposed by using a phase shift module at the horizontal channel of oscilloscope. \vspace{1ex}
+
+\vspace{6pt}
+\Task
+
+\vspace{2pt}
+\textbf{\textsc{I. Obtaining EPR signal from the free radical DPPH}}
+
+\textbf{and determination of electron \emph{g}-factor}
+\vspace{6pt}
+
+1. Insert an ampule with the substance under study in the inductor coil of radiospectroscope oscillator. Turn on a generator, an oscilloscope, and a voltmeter. Set the attenuation of  vertical channel of oscilloscope at $1 : 100$. Set the generator switch <<Power output>> at the lowest signal attenuation, set the button <<Generator h.~f.>> at <<On>>, and set the output switch at <<$0{.}1\;\V$>>.
+
+2. Adjust the generator to the resonance frequency of oscillator. To do this connect the generator to the oscillator circuit and apply a high-frequency signal modulated by a low frequency. Set the button <<Operation mode>> to <<Ampl.modul.>>, the frequency of internal modulation is $400\;\Hz$. Set the modulation amplitude at about $20\%$ (using the generator indicator). Vary slowly the generator output frequency and observe the amplitude of the modulated signal envelope. The amplitude is maximal when the generator frequency coincides with the oscillator natural frequency. Turn the modulation off. Set the generator to the mode of continuous generation. 
+
+3. Turn on the power source of the main coils and plug the autotransformer feeding the modulating coils to the mains~$220\;\V$. Set the voltage across the modulating coils at about~$50\;\V$.
+
+4. Set the switch of vertical attenuator of oscilloscope at <<$1\;\mathrm{mV}$>> and rotate the sensitivity control knob to the right. Turn on the oscilloscope automatic sweep mode.
+
+5. By slowly varying the current through the main coils obtain the EPR signal. Adjust the current so that the resonance peaks on the oscilloscope screen become equidistant. Check the spectroscope sensitivity with respect to variation of magnetic field by moving a permanent magnet close to the sample. In so doing the EPR peaks on the screen must either come closer or move apart.
+
+6. Determine the electron $g$-factor by measuring the resonant frequency $\omega_{0}$ and induction $B_{0}$. The frequency is read out from the generator limb.
+
+Determine the magnetic induction created by main coils using two methods: a calculation and a measurement\Footnotemark\Footnotetext{One can also use a calibration curve.}. The induction can be calculated by using the coil geometry, the number of coil turns, and the coil current. The coil dimensions are written on their butts. The magnetic induction is measured by means of a test coil and a voltmeter. Measurement of a constant induction with the aid of a test coil is not practical. It is much easier to measure an alternating induction. To this end record the readings of the voltmeter measuring the DC current through the coils and then apply an AC current to them by plugging the coils to the autotransformer output. Set the output voltage so that the voltmeter readings (at the pressed button~<<$\simeq$>>) become equal to the recorded value. In this case the effective AC current  equals the DC current. To measure the amplitude of alternating magnetic induction insert the test coil in the main coils close to the sample and record the readings of a voltmeter~$V$. Determine $B_0$ from the relation
+$$
+V=nB_{0}S\omega_{\simeq},
+$$
+where $\omega_{\simeq}$~is the angular frequency of AC current, $n$ and $S$~is the number of turns and the cross-section of the test coil (these values are indicated on the coil).
+
+Evaluate the electron $g$-factor using Eq.~(\refEquation{10_1_8}). Estimate the error.
+ \vspace{1ex}
+
+\textbf{\textsc{II. Determination of width of EPR line.}}
+
+\vspace{1pt}
+
+The width of EPR line is measured in units of $B$ or in Hz. The width in $B$ units is measured directly on the screen. 
+
+\begin{Enumerate}{tab} 
+\Item. Obtain the EPR signal on DPPH following the procedure described above. Set the oscilloscope sweeps triggering by the voltage across modulating coils. The sweep length corresponds to the doubled amplitude of the modulating field. The amplitude is determined by means of the test coil and voltmeter using the method described above.
+
+\Item. The EPR line width can be expressed in Hz by using Eq.~(\refEquation{10_1_2}). The width of DPPH EPR line at $295\;\kelvin$ is about~$2\;\Gs$. If the measured width is greater, this is most probably due to apparatus error.
+
+\Item. Estimate the error of electron $g$-factor and the EPR line width. 
+\end{Enumerate}%
+
+\vspace{2ex}
+\textbf{\so{Additional task}}
+\vspace{3pt}
+
+Study a dependence of EPR line width on DPPH versus the sample temperature. The sample can be cooled by a jet of dry air passing through a liquid nitrogen. The air is blowing on the sample from a pipe. Observe how the EPR line width varies with temperature and try to deduce the processes which determine the width. Explain why the EPR signal grows when the sample temperature decreases.
+
+\Literat
+
+{\small
+1.\;\emph{Гольдин Л.\,Л., Новикова Г.\,И.} Введение в атомную физику.\,---\,М.: Наука, 1988. Гл.\,V. \S\S\,24--27. Гл.\,VII, \S\,38.
+
+2.\;\emph{Киттель Ч.} Введение в физику твердого тела.\,---\,М.: Наука, 1978. Гл.\,17. C.\,593--608.
+
+}

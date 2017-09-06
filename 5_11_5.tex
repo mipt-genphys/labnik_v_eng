@@ -1,0 +1,187 @@
+%translator Svintsov, date 17.04.13
+
+%@NUMBER OF WORK = WORK %11.5.
+
+\setcounter{Equation}{0} \setcounter{Figure}{0}
+\Work
+{Tunneling in semiconductors}
+{Tunneling in semiconductors }
+{The operating principle of tunnel diode is studied, its current-voltage characteristic and main parameters are measured.}
+
+Tunneling in semiconductors is characterized by a number of interesting features due to the possibility of varying electrical and magnetic properties of semiconductors over a wide range by adding various dopants to them. Besides, the effective mass of electron in a semiconductor is usually much less than the mass of free electron, so tunneling in semiconductor can occur at a larger distance than in vacuum or a dielectric.
+
+The underlying reason here is that electron in a crystal moves in a periodic lattice of ions and interacts with them and other electrons. Therefore, when we speak about free motion of electron which energy is in an allowed band it does not mean that electron is really free. Although it moves easily from one site of crystal lattice to another not all its characteristics coincide with those of a free electron. Its charge remains the same, however the relationship between kinetic energy $E\sub{k}$ and momentum is different. While for electron in vacuum $E\sub{k}=p^{2}/(2m_{0})$, this relationship is, generally, not valid for electron in crystal. But even if the relationship is similar, the proportionality factor between $E\sub{k}$ and $p^2$ is $1/(2m^*)$, with $m^*$ not equal to $m_0$. For example, the effective mass in $\mathrm{GaAs}$ semiconductor is much less than the mass of free electron: $m^*=0{.}066m_{0}$.
+
+Introduction of dopants into semiconductor forms allowed bands in the band gap, and there exists exchange of electrons between these local levels and the crystal bands. Dopants which form energy levels near the bottom of conduction band are called \textit{donors}. Donors for silicon and germanium are group--V elements of periodic table: $\mathrm{P}$, $\mathrm{As}$, and $\mathrm{Sb}$. These elements are pentavalent. When an atom in $\mathrm{Si}$ (or $\mathrm{Ge}$) crystal lattice is replaced by an atom of $\mathrm{As}$ only four out of five valence electrons of this atom turn out to be bound with the lattice atoms, and the fifth electron remains <<redundant>>. The binding energy of this electron in the crystal is small and its level is near the bottom of the conduction band (at a distance of $\Simeq 0{.}01\;\eV$). The probability of electron transition to the conduction band is high even at room temperature, so semiconductors with donor dopants are $n$-type semiconductors.
+
+If local levels of dopants are close to the band gap bottom (close to the valence band), some electrons from the valence band occupy these levels. As a result, holes appear in the valence band thereby giving rise to hole conductivity, i.e. $p$-type conductivity. Dopants which create $p$-type conductivity are called \textit{acceptors}. Acceptors for germanium and silicon are group--III elements--- $\mathrm{B}$, $\mathrm{Al}$, $\mathrm{Ga}$, and $\mathrm{In}$. These atoms lack one electron to form a covalent bond with four adjacent atoms of $\mathrm{Si}$ (or $\mathrm{Ge}$). Thus, when an atom of boron $\mathrm{B}$ replaces one of $\mathrm{Si}$ ($\mathrm{Ge}$) atoms, one covalent bond becomes free and can be occupied by an electron from the valence band which leaves a hole behind. The local levels of this type are separated from the band-gap edge by a distance of $0{.}01\;\eV$, so at room temperature, which corresponds to thermal excitation energy of $0{.}025\;\eV$, the donor levels are completely ionized and the acceptor levels are filled up.
+
+What will happen if $p$- and \linebreak $n$-type areas of semiconductor are placed in contact, i.e. when a sharp ($p$--$n$) junction is formed? As it is shown in the Introduction to this section, the width of ($p$--$n$) junction is determined by the dopant concentration: the more dopants, the narrower is the junction (see Eq. (\refEquation{11_49})). The junction width may be as small as $100\;\Angstrem$ in a heavily doped semiconductor.
+
+At low doping ($10^{14}\div10^{17}\;\cm^{-3}$) a semiconductor is non-degenerate, and the Fermi level is in the band gap. When the dopant concentration exceeds the effective density of states, the Fermi level is shifted in the valence band (acceptor dopants) or in the conduction band (donor dopants). Thus the semiconductor becomes degenerate. For example, in $n$-type germanium and silicon the degeneracy corresponds to a donor concentration of \mbox{$2\cdot 10^{19}\;\cm^{-3}$ and $6\cdot10^{19}\;\cm^{-3}$}, respectively (the intrinsic carrier concentration is $2{.}5 \cdot 10^{13}\;\cm^{-3}$ in pure germanium and $1{.}5 \cdot 10^{10}\;\cm^{-3}$ in silicon). Tunnel diode features a totally different occupation of energy levels compared to non-degenerate semiconductors (see \refFigure{11_5_1}\textit{à}). An $n$-type semiconductor has a whole band occupied by electrons at the bottom of conduction band, while in a $p$-type semiconductor there is a band of free states at the top of valence band. A heavily doped semiconductor becomes a  semimetal. The whole system has a common Fermi level, i.e. the single boundary of free states is formed.
+
+In a heavily doped semiconductor, electrons can tunnel through the narrow ($p$--$n$) junction area, such diodes are called \textit {tunnel diodes} (invented by Japanese physicist L.~Esaki in$1957$).
+
+To conduct a measurable tunnel current at small voltage, the ($p$--$n$) junction must be narrow enough and must have isoenergetic levels on both sides of the junction between which tunnel transitions are possible. To achieve this both $p$- and $n$-type areas of the diode must be degenerate. The necessity of these conditions should be obvious from the energy band diagram of tunnel diode at different bias voltages, which is shown in~\refFigure{11_5_1}.
+
+As it was already mentioned the Fermi level in a degenerate semiconductor is located in the allowed band, in an $n$-type semiconductor it is in the conduction band, and in an $p$-type semiconductor it is in the valence band. Let the distance between the Fermi level and the band edge be $\xi = \mu_{n}-E_{\mathrm c}$ and $\eta = \mu _{p}-E_{\mathrm v}$, respectively. For simplicity we assume that all states below the Fermi level are occupied by electrons (the shaded area on the diagram) and all levels above it are free.
+
+In the absence of external potential across the ($p$--$n$) junction (see~\refFigure{11_5_1}\textit{à}) Fermi levels $\mu_{n}$ and $\mu_{p}$ are on the same horizontal line, free and occupied levels in $p$- and $n$-areas do not overlap, and there is no current through the junction. Indeed, free propagation of electron in the band gap is impossible since electron wave function exponentially decays inside the gap, similarly to motion under a potential barrier. In equilibrium the number of electrons tunneling in both directions is equal, so there is no current flow across the diode.
+
+Let us apply a forward bias to a tunnel diode, i.e. a negative potential to the $n$-area, and positive potential to the $p$-area. In this case the external field is opposite to the internal field in the ($p$--$n$) junction. As the applied voltage increases the band offset decreases (see~\refFigure{11_5_1}\textit{b}) and some of occupied states in the $n$-area overlap with vacant states in the $p$-area. Electrons tunnel from the right to the left and the current increases because it is proportional both to the tunneling probability and to the density of occupied states on the right and vacant states on the left. 
+
+Further increase in the external potential difference increases the overlap of the levels on the right and left, when it reaches its maximum the diode current is maximal (see~\refFigure{11_5_1}\textit{b}). Then occupied states in the $n$-area begin to overlap with the band gap of the $p$-area (see~\refFigure{11_5_1}\textit{c}), direct tunneling of electrons of these levels becomes impossible, the transition rate decreases, and the diode current drops. Finally, the bottom of the conduction band on the right rises so high that it overlaps with the band gap on the left, and 
+ %
+\hFigure{Energy level diagram and current-voltage characteristic of ideal tunnel diode}11_5_1 {10.2cm}{9.4cm}{pic/L11_5_01.eps}
+%
+electrons have no states to transit to (see~\refFigure{11_5_1}\textit{d}). Thus, at the voltage of $U=( \xi + \eta )/e$ the current drops to zero. A further voltage increase makes occupied levels in the $n$-area coincide with levels in the conduction band of the \linebreak $p$-area (see~\refFigure{11_5_1}\textit{e}). Electrons pass from the right to the left without any tunneling (this a diffusion current like in a conventional semiconductor diode) and the current rises sharply.
+
+By applying a reverse voltage across the ($p$--$n$) junction (see~\refFigure{11_5_1}{f}) one shifts the Fermi level $\mu_{p}$ in the $p$-area up relative to $\mu_{n}$ in the $n$-area by the applied voltage. Against occupied states in the $p$-area there appear free states of the same energy in the $n$-area. Electrons from the $p$-type area tunnel to the $n$-type area, i.e. the current associated with minority charge carriers flows through the ($p$--$n$) junction. The current in the diode circuit  flows in the opposite direction under these conditions. The current-voltage characteristic of an ideal tunnel diode is shown in~\refFigure{11_5_1}\textit{g}.
+
+A real current-voltage characteristic differs from that one in~\refFigure{11_5_1}\textit{g}. The experimental I-V curve of a germanium tunnel diode is shown in~\refFigure{11_5_2}.
+%
+\hFigure{Experimental current-voltage characteristics of tunnel diodes at $T=300\kelvin$: solid line is for Ge diode ($\zeta\Simeq\eta\Simeq 7 {\kb}T$, $\Delta=0.7\;\eV$) and dashed line is for GaAs diode ($\zeta\Simeq\eta\Simeq 12{\kb}T$, $\Delta=1.52\;\eV$)}11_5_2 {6.5cm}{5.4cm}{pic/L11_5_02.eps}
+%
+
+It is characterized by the following main parameters:
+
+1)\:the voltage $U_{p}$ corresponding to the maximal (peak) current $I_{p}$;
+
+2)\: the voltage $U_{v}$ corresponding to the minimal current $I_{v}$;
+
+3)\: the voltage $U_{f}$ ($|U_{f}>U_{v}|$) at which the current flowing through the diode equals $I_{p}$.
+
+These parameters are used for choosing the operation mode of a tunnel diode in electric circuit and can be found in reference books.
+
+A real I-V curve corresponds to the current between the tunnel and diffusion branches. A nonzero current $I_{v}$ is mostly due to formation of impurity bands because of a large concentration of donor centers in the $n$-type semiconductor and acceptor centers in the $p$- type semiconductor. Shallow impurity levels can merge with main bands. Due to transitions from the impurity bands the current $I_{v}$ increases and $U_{v}$ rises to $U=(\xi + \eta +E_{\mathrm d}+E_{\mathrm a})/e$, where $E_{\mathrm d}$ and $E_{\mathrm a}$ are the widths of donor and acceptor impurity bands. Another contribution to $I_{v}$ is due to increased concentration of deep impurities which (together with minor levels) result in additional peaks of current in the current-voltage characteristic. The location of these peaks allows one to evaluate the impurity ionization energy.
+
+The current-voltage characteristic is determined by the semiconductor materials the tunnel diode is made of, thus an information about their properties can be extracted from a specific I-V curve. For this purpose one should find a relation between the carrier distribution functions of the bands shifted by the applied voltage, and the points of extremum of the characteristic.
+
+In the qualitative analysis of the current-voltage characteristic (see~\refFigure{11_5_1}) we assumed that there were no electrons above the Fermi level. In fact, at finite temperature the Fermi distribution $f(E)$ is smeared over the thermal energy range $2 {\kb}T$. Besides, the energy-level density $g(E)$ in the region is not constant:  the levels are sparser near the band edge. Therefore, the density of charge carriers in the energy band is given by the distribution 
+$$
+n(E) =f(E) g(E). \eqMark{11_5_1}
+$$
+The plot of this function both for electrons and holes is shown in~\refFigure{11_11}. The diagram illustrates the case when the distance from the Fermi level to the band edge is $E_{\mathrm{F}}\Simeq \mu_{n} \Simeq \mu_{p}\Simeq {\kb}T$. A forward voltage applied across such a ($p$--$n$) junction will shift the bands. When the voltage reaches $U_{v}$ the diode current is minimal meaning that the edges of the conduction $E_{\mathrm c}$ and valence $E_{\mathrm v}$ bands coincide, and the forbidden states (on the left) are opposite the levels occupied by electrons (on the right). Hence the position of Fermi levels is
+$$
+U_{v}\Simeq \frac{\xi + \eta}{e}. \eqMark{11_5_2}
+$$
+
+If both semiconductors are equally degenerate, which is usually the case, then
+$$
+U_{v}\Simeq \frac{2\xi}{e} \Simeq \frac{2 \eta}{e}. \eqMark{11_5_3}
+$$
+
+The voltage $U_{p}$ corresponds to the peak current $I_{p}$, at which the shifts of energy bands are equal, so that the points \textit{a} and \textit{b} on curves $n(E)$ and $p(E)$ lie on the same horizontal line. This allows us to determine (see~\refFigure{11_11}) the energy gap between the Fermi level $E_{n} =E_{\mathrm{F}}$ and the maximum density of electron distribution $n_{\mathrm{\max}}(E)$, which position, as well as $E_{n}$, is determined relative to the edge of conduction band:
+$$
+U_{p}\Simeq \frac{\xi -E_{n\,\mathrm{\max}}}{e}. \eqMark{11_5_4}
+$$
+
+The voltage $U_{f}$ specifying the width of the I-V curve is determined mostly by the width of the energy gap of the diode semiconductor material. This can be clearly seen from the I-V curve in~\refFigure{11_5_2}: the ratios of $U_f$ for different semiconductors equal the ratios of their band gap widths.
+
+What is so remarkable about the current-voltage characteristic of tunnel diode? In the voltage range from $U_{p}$ to $U_{v}$ the current drops while the voltage increases, i.e. the differential resistance $dU/dI$ is negative. If we maintain the voltage drop on the diode between $U_{p}$ and $U_{v}$ the diode operates as active (not passive!) circuit element. Inclusion of a passive element (an element with positive resistance) results in damping oscillations, while an active element leads to rising oscillations. Tunnel diode has a quick response and can be scaled to a very small size, which makes it an ideal element for microwave \linebreak oscillator. 
+%\vspace{1ex}
+
+%\textbf{\textso{Experimental installation}}
+\Experim
+
+To measure main parameters of the tunnel diode one can use a wired-circuit board with three circuits: a circuit to measure the current-voltage characteristic, a circuit to observe the current-voltage characteristic on the oscilloscope screen, and a tunnel diode-based electromagnetic oscillator circuit. 
+
+The current-voltage characteristic and the parameters of the tunnel diode (see~\refFigure{11_5_3}) are measured by means of a milliammeter connected in series with the tunnel diode and a digital voltmeter.
+
+%
+\hFigure{Circuit for measuring the current-voltage characteristic of tunnel diode}11_5_3 {8.5cm}{2.7cm}{pic/L11_5_03.eps}
+%
+
+The circuit is supplied by a source of direct current with a small internal resistance. The diode current is controlled by a variable resistance $R$. Switches $S_{1}$ and $S_{2}$ are used to specify the main parameters of the diode.
+
+The diode I-V curve can be seen directly (although with a lower precision) by means of an oscilloscope and a bridge circuit shown in~\refFigure{11_5_4}.
+
+%
+\hFigure{Circuit used for observation of tunnel diode I-V curve by means of oscilloscope}11_5_4 {9.9cm}{3.2cm}{pic/L11_5_04.eps}
+%
+
+A voltage proportional to the diode current is applied to <<$\mathrm Y$>>-channel of oscilloscope and the diode voltage drop is applied to <<$\mathrm X$>>-channel. One of the bridge legs is supplied with ac voltage from an audio-frequency oscillator through the diode D$223$. This diode is introduced to prevent a high reverse current through the tunnel diode. To evaluate the characteristic observed one needs a relation between the voltage $U_{Y}$ at <<$\mathrm Y$>>-channel and the diode current $I$. Since the resistances of bridge legs are the same the current is
+$$
+I\sub{e}=U_{Y}\frac{R_{1}+2(R_{2}+R_{3})}{(R_{1}+2R_{2})R_{3}}, \eqMark{11_5_5}
+$$
+where $R_1$, $R_2$ and $R_3$~are the resistances of bridge legs. The voltage $U_{Y}$ is determined using the calibration factors of oscilloscope beam deflection.
+
+%
+\cFigure{Circuit of tunnel diode oscillator}11_5_5 {11.0cm}{2.9cm}{pic/L11_5_05.eps}
+%
+
+The electromagnetic oscillator based on tunnel diode is assembled in accordance with the parallel circuit scheme (see~\refFigure{11_5_5}).
+
+Resistor $R$ and capacitor $C_{1}$ are used to decouple the power supply unit from the oscillator ac voltage. Resistor $R_{1}$ is implemented to shift the working point of the tunnel diode to the desirable branch of the current-voltage characteristic. \vspace{1ex}
+
+%\textbf{\textso{Task}} \vspace{1ex}
+\Task
+
+\textbf{\textsc{I. Studying the current-voltage characteristic of tunnel diode by means of oscilloscope}}
+\vspace{2pt}
+
+\begin{Enumerate}{tab} \Item. To observe the current-voltage characteristic on the oscilloscope screen assemble the circuit shown in~\refFigure{11_5_4}. Connect the tunnel diode to the circuit after balancing the circuit bridge.
+
+\Item. Connect audio-frequency oscillator terminals to <<AO>> jacks on the wired-circuit board.
+
+\Item. Connect the terminals of horizontal and vertical amplifiers of the oscilloscope to <<$\mathrm X$>> and <<$\mathrm Y$>> jacks on the wire circuit board.
+
+\Item. Set the optimal operation mode of the installation (the recommendations are given on the work desk) and plug the oscillator and the oscilloscope in the mains. When the devices are warmed up set the voltage of $5\div6\;\V$ at the audio-frequency oscillator using the knob <<Output Control>> to obtain a straight line on the oscilloscope display.
+
+\Item. Balance the bridge. For this purpose make the line on the oscilloscope display horizontal by using the resistor $R_{1}$ on the board.
+
+\Item. Place the holder with the tunnel diode into the appropriate socket on the board.
+
+\Item. Obtain the current-voltage characteristic on the oscilloscope screen and copy it on a sheet of tracing paper. Analyze the characteristic you have obtained. Are there any peculiarities which can be attributed to impurity bands in semiconductor?
+
+\Item. Determine the voltages $U_{p}$, $U_{v}$ and $U_{f}$ using the obtained current-voltage characteristic. Determine the scale on the <<$\mathrm X$>> axis in volts by taking into account the calibration factors of oscilloscope beam deflection along the axis <<$\mathrm X$>>.
+
+\Item. Determine the currents $I_{p}$ and $I_{v}$ from the obtained characteristic using Eq.~(\refEquation{11_5_5}). Determine the scale on the <<$Y$>> axis in volts by taking into account the calibration factors of oscilloscope beam deflection along the axis <<$\mathrm Y$>>. \end{Enumerate} %\vspace{1ex}
+
+\textbf{\textsc{II. Static I-V curve of tunnel diode}}
+\vspace{2pt}
+
+\begin{Enumerate}{tab} \Item. To obtain the static I-V curve of tunnel diode, assemble the circuit shown in~\refFigure{11_5_3}. The tunnel diode must be connected at the very end. Set the minimum voltage by the potentiometer $R$.
+
+\Item. Connect the milliammeter to the circuit observing the polarity.
+
+\Item. Connect the digital voltmeter to the circuit.
+
+\Item. Gradually increase the diode voltage by moving the slider of potentiometer $R$ (the switches $S_{1}$ and $S_{2}$ should be open) and record the readings of the milliammeter and digital voltmeter. The number of experimental points and the voltage interval should be chosen according to the characteristic obtained by means of oscilloscope.
+
+\Item. Plot the curve $I(U)$.
+
+\Item. Specify the values of characteristic currents and voltages by using switches $S_{1}$ and $S_{2}$. Closing the switch $S_{2}$ returns the diode working point to the initial branch of the characteristic ($U<U_{p}$). By closing and opening the switch $K_2$ and gradually moving the slider of $R$ specify the value of $U_{p}$ at which the diode working point passes to the descending branch of the characteristic and the diode current becomes equal to $I_{p}$.
+
+\Item. Specify the values of $I_{v}$ and $U_{v}$ using the switch $S_{1}$. When the switch $S_{1}$ is closed the diode working point moves to the diffusion branch of the characteristic ($U>U_{v}$). By closing and opening the switch $S_{1}$ and gradually changing the diode voltage $U$ by means of potentiometer $R$ specify the values of $U_{v}$ and $I_{v}$
+
+\Item. Estimate the errors of $U_{p}$, $I_{p}$, $U_{v}$, $I_{v}$, $U_{f}$ obtained by means of the oscilloscope and by the static method.
+
+\Item. Estimate the positions of the Fermi level $\mu_{n}$ and the maximum of electron distribution $n_{\mathrm{\max}}(E)$ in the conduction band of semiconductor using Eqs.~(\refEquation{11_5_3}),~(\refEquation{11_5_4}), and the values of $U_{p}$ and $U_{v}$ obtained. \end{Enumerate} %\vspace{1ex}
+
+\textbf{\textso{Additional task}}
+\vspace{4pt}
+
+\textbf{\textsc{Study of tunnel diode-based oscillator}}
+\vspace{4pt}
+
+\begin{Enumerate}{tab}
+\Item. Assemble the oscillator circuit shown in~\refFigure{11_5_5}. The tunnel diode must be connected to the circuit at the end; then connect the circuit to the dc power supply unit.
+
+\Item. Plug the oscilloscope and the power unit in the mains.
+
+\Item. By changing the resistance $R$ and thereby moving the diode working point to the descending branch of the I-V curve obtain the oscillations and observe their pattern on the oscilloscope display 
+
+\Item. Measure the oscillation amplitude and the frequency range at $8$--$10$ points using the oscilloscope. The oscillation frequency is varied by moving the working point over the negative resistance branch of I-V curve with the aid of resistor $R_1$.
+
+\Item. Determine the diode parameters which limit the oscillation amplitude and the maximal frequency. 
+\end{Enumerate}%
+
+\Literat
+\small
+
+1. \emph{L.L.Goldin, G.I.Novikova} Introduction to Quantum Physics.\,---\,Ì.: Nauka, 1986. Ch.\:XII, \S\S\:66--69.
+
+2. \emph{V.L.Bonch-Bruevich, S.G.Kalashnikov} Physics of Semiconductors.\,---\,Ì.: Nauka, 1977. Ch.\:VII, \S\:3.
+
+\normalsize

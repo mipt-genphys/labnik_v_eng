@@ -1,0 +1,70 @@
+%translator Savrov, date 13.04.13
+
+\setcounter{Chapter}{4}
+
+\Addition
+{Methods of event selection}
+{Methods of event selection}
+{Methods of event selection}
+
+An output electric pulse of a detector can be specified by its shape, amplitude, and time of detection. The signal shape is either directly related to a physical quantity with dimension of time (e.g. the decay constant of an excited nuclear state) or it can be indirectly related to particle energy, velocity, etc. 
+%
+\fFigure{Example of time correlation: $\beta$-decay into excited state of daughter nuclide.}PR_4_1
+{3.8cm}{1.37cm}{pic/PR4_01!.eps}
+%
+For instance, particle velocity can be measured via the flight time over a certain distance. 
+
+There are two kinds of information about temporal characteristics of a process: 1) distribution of time intervals between two events; 2) time correlation between two or more events.
+
+As an example consider a measurement of the mean lifetime of an excited nucleus produced in a $\beta$-decay. A $\gamma$-quantum and a $\beta$-particle are detected by two different detectors. The $\beta$-particle signals the beginning of the process and the $\gamma$-quantum its completion. By measuring time distribution of the signal from \mbox{$\gamma$ - quantum} we thereby determine the lifetime $\tau _\gamma $ of the excited state with respect to $\gamma $-decay (see~\refFigure{PR_4_1}).
+
+The same diagram illustrates the method of selection of events correlated in time (coincident events), which is used to measure the activity of a source. Let $N_0$~be a rate of $\beta$-decay (the source activity). The detection rate of $\beta$-particles and $\gamma $-quanta is determined by the detector efficiencies $\varepsilon_\beta$ and $\varepsilon_\gamma $, i.e.
+$$
+N_\beta=\varepsilon_\beta N_0\quad \textrm{è}\quad N_\gamma
+=\varepsilon_\gamma N_0\,.\eqMark{p4_1}
+$$
+The count rate of coincident $(\beta-\gamma)$-pulses is
+$$
+N_\textrm{c}=\varepsilon_\beta\varepsilon_\gamma N_0\,.\eqMark{p4_2}
+$$
+
+Therefore, even if the detector efficiencies are not known, the source activity can be determined:
+$$
+N_0=N_\beta N_\gamma /N_c\,.\eqMark{p4_3}
+$$
+
+A coincidence circuit registers two pulses as coincident if they appear separated by a time interval less than $\tau_\textrm{c}$. The time interval $2\tau_\textrm{c}$ (because of a two pulses overlap) specifies the {\it circuit temporal resolution.} Since the resolution is finite the circuit registers as coincident not only true coincidences $N_c$ but also the random coincidences $N_\textrm{r}$ registered when two different decays occurred during the interval $2\tau_\textrm{c}$. Therefore
+$$
+N_\textrm{r}=2\tau _\textrm{c} N_\gamma N_\beta\,.\eqMark{p4_4}
+$$
+The ratio
+$$
+N_\textrm{r}/N_\textrm{c}=2N_0\tau _c\eqMark{p4_5}
+$$
+is proportional to $\tau _\textrm{c}$, i.e. measurement of high radioactivity requires a high temporal resolution.
+
+At the same time the value of $\tau _\textrm{c}$ is bounded from below. Obviously, emission of a $\beta$-particle and a $\gamma $-quantum must happen simultaneously for the circuit, i.e. the condition $\tau_\textrm{c}\gg \tau _\gamma $ must be met. 
+%
+\hFigure{Measurement of fast-and-slow coincidence: $\textit{De}$~are detectors, $\textit{TDC}$~is time-to-digital converter, $\tau\sub{t}$~is temporal coincidence circuit, $\textit{A}$~is amplifier, $\Delta t$~is delay circuit, $\textit{Di}$~are discriminators, $\tau\sub{sl}$~is triple coincidence unit}PR_4_2
+{5.6cm}{5.5cm}{pic/PR4_02.eps}
+%
+Besides, the detector parameters must be taken into account. The detector signal lags behind the moment of particle entry because of temporal statistical fluctuations such as the time of collection of ions, electrons, or holes, a scintillator decay time, a time of signal propagation in PMT, etc. How these processes influence the resolution depends on operation of a time-to-digital converter (TDC). Another source of temporal uncertainty is the dependence of pulse delay on its amplitude, especially when the pulse undergoes non-linear procedures (restriction, conversion, and discrimination).
+
+Often the pulse amplitude and the time of its detection are related. Time correlation between the pulses of certain amplitude is of most practical interest, so a measurement of amplitude precedes a measurement of time. A modern discriminator allows one to separate a pulse of a given amplitude without distorting it with an accuracy of several nanoseconds. A <<fast-and-slow>> coincidence circuit shown in~\refFigure{PR_4_2} is widely used for measurement of amplitude-temporal correlations. Firstly, a detector signal is applied to a fast TDC which converts it into a standard pulse. The pulse is then applied to a coincidence circuit with temporal resolution $\tau _\textrm{t}$. At the same time <<slow>> signals pass through linear amplifiers and amplitude discriminators and enter a triple coincidence circuit with a temporal resolution $\tau _\textrm{sl}\gg  \tau _\textrm{t}$. An output signal of the triple coincidence circuit is formed if and only if the temporal and amplitude requirements on the studied pulses are met. The resolution $\tau _\textrm{sl}$ must be large enough in order to compensate for different temporal delays in discriminators.
+
+As an example consider the installation for measuring the lifetime of a positron-active nuclide. Such nuclides are often obtained in $(\gamma ,n)$-reactions. Suppose we have a $\beta^+$-active nucleus $^{15}$O which half-life is about $2$\,min. To increase the sensitivity of the measurement it is more convenient to detect the annihilation $\gamma$-quanta rather than a positron itself. 
+%
+\cFigure{Detection of positron decay}PR_4_3
+{7.6cm}{3.8cm}{pic/PR4_03.eps}
+%
+The measurement setup is shown in~\refFigure{PR_4_3}. Since the $\gamma $-quanta appear simultaneously with the energy of $0{.}511$\,MeV, the event selection according to their amplitude and time reduces the background noise to one pulse in 5\,min, i.e. only the decays of $^{15}$O are registered. The fast-and slow coincidence circuit has an advantage of treating independently the amplitude and temporal information, which gives an opportunity to optimize the measurement procedure.
+
+\fFigure{<<AND>> gate and temporal diagram of input and output pulses}PR_4_4
+{5.7cm}{2.2cm}{pic/PR4_04.eps}
+%
+An ideal coincidence circuit is nothing but an <<AND>> gate for the pulse of standard shape and amplitude, as it is shown in~\refFigure{PR_4_4}. One can see that the resolution $2\tau _\textrm{c}=\delta _1+\delta _2$, where $\delta_1,\delta _2$ is the duration of input pulse, respectively. Almost always a standard pulse duration $\delta$ is used, i.e.  $\delta_1=\delta _2=\delta $, $\tau _\textrm{c}=2\delta $. We tacitly assume that the duration of pulse front and temporal characteristics of the  <<AND>> gate are much less than~$\delta$. 
+
+Often simultaneous pulses must be discarded during a measurement. As an example consider detection of cosmic rays (see~\refFigure{PR_4_5}). Suppose a detector $\textit{D}_1$ registers a radiation coming from a source $\textit{I}$, so a signal from detector $\textit{Ä}_2$ signifies the arrival of a cosmic particle. A true signal from the source will be signal~$\textit{È}_1$ which is <<anticoincident>> with signal $\textit{È}_2$. The corresponding operation is performed by an <<OR>> gate. Sometimes it is necessary to register a delayed coincidence, i.e. the pulses separated by a certain time interval $\tau$. In this case one of the branches of a coincidence circuit includes a delay circuit.
+
+Nowadays there is a huge variety of electronic circuits designed for experiments in nuclear physics. These include both specialized and universal circuits which can be assembled into the event selection circuit as required by a particular experiment.
+

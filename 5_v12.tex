@@ -1,0 +1,314 @@
+%translator Savrov, date 30.03.13
+
+\let\theEquation=\oldTheEquation
+\let\theFigure=\oldTheFigure
+
+
+\Chapter
+{Superconductivity}
+{Superconductivity}
+{Superconductivity}
+
+\textbf{Main experimental facts about superconductivity and basics of its theory.}
+Superconductivity is the transition of a substance into the state of zero electric resistance. Superconductivity was discovered by H.~Kamerlingh Onnes in $1911$ in Leiden during his experiments with mercury. He discovered that the electrical resistivity of mercury suddenly dropped at $4{.}3\;\kelvin$ and that below $3\;\kelvin$ the resistivity was consistent with zero. A current experimental bound on the resistivity of a superconductor is below $10^{-23}\;\Om\cdot\cm$ which is $10^{17}$ times less than the resistivity of copper at room temperature.
+
+The transition from a normal to the superconductive state occurs at a certain temperature called the critical temperature $T_{\mathrm c}$. The transition is of the second-order, i.e. it is not related to a restructuring of atomic lattice, rather it is a change of electron dynamics.
+
+Another unusual feature of superconductors is their ability to expel completely a weak magnetic field (the criterion of the weakness will be discussed below).  W.~Meissner and R.~Ochsenfeld in $1933$ discovered that external magnetic field $H$ does not penetrate in the bulk of a superconductor sample regardless of its prehistory, i.e. whether the field existed below or above $T_{\mathrm c}$.
+%
+\hFigure{The Meissner effect in superconductive solid sphere. Below the critical temperature the magnetic field lines are completely expelled from the sphere}12_1
+{5.4cm}{2.8cm}{pic/L12_01.eps}
+%
+This phenomenon is named the Meissner effect (see~\refFigure{12_1}).
+
+Since the field $B$ inside a sample is equal to the sum of an external field $H$ and a magnetization $4\pi I$ a superconductor can be regarded as an ideal diamagnet in which $B=0$ and $I=-H/(4\pi)$ (see~\refFigure{12_2}).
+
+The Meissner effect is due to a weak circular current flowing on the surface of superconductor placed in a magnetic field that precisely balances this field. Launching such a current, which afterwards flows undamped, requires some energy; the greater the external field to be expelled, the higher is the energy. If $B$ is large enough the normal state becomes energetically preferable, the field penetrates into the bulk thereby destroying superconductivity.
+
+Consider a metal in superconductive state in which there is a current $\textbf{j}_{\mathrm s}(\textbf{r})$ and a related magnetic field $\textbf{H}(\textbf{r})$. According to  thermodynamics the superconductive state corresponds to a minimum of Helmholtz free energy. 
+This allows one to determine the relation between the current and the field. 
+%
+\hFigure{Main properties of metal in superconductive state: \textit{a}~zero electrical resistivity at $T\leqslant T_\textrm{c}$; \textit{b}~expulsion of magnetic field from superoconductor at $T\leqslant T_\textrm{c}$}12_2
+{8cm}{3.1cm}{pic/L12_02.eps}
+%
+A free energy per unit volume of superconductor is a sum of magnetic energy $W_{\mathrm m}$ due to the field inside the superconductor, the kinetic energy of electrons $E\sub{k}$ participating in the persistent current, and the energy of electrons in the condensed state $F_{\mathrm s}$:
+$$
+  \mathcal F=F_{\mathrm s}+E\sub{k}+W_{\mathrm m}.
+  \eqMark{12_1}
+$$
+
+Let $\textbf{v}(\textbf{r})$ be a drift velocity of electrons at $\textbf{r}$, the current density $\textbf{j}_{\mathrm s}$ is 
+$$
+  n_{\mathrm s}e\textbf{v}(\textbf{r})=\textbf{j}_{\mathrm s}(\textbf{r}),
+  \eqMark{12_2}
+$$
+where $e$ is the electron charge, $n_{\mathrm s}$ is a specific density of <<superconductive>> electrons per $1\;\cm^3$ (at $T=0$ the density $n_{\mathrm s}$ equals the total electron density).
+The kinetic energy can be written as
+$$
+  E\sub{k}=\frac{1}{2}\int n_{\mathrm s}mv^2d\textbf{r}=\frac{n_{\mathrm s}m}2\int\frac{j^ 2}{n_{\mathrm s}^2e^2}d\textbf{r}=\frac{m}{2 n_{\mathrm s} e^2}\int j^2d\textbf{r},
+  \eqMark{12_3}
+$$
+where the integration is performed over the sample. A magnetic field in the sample $\textbf{B}$ is related to the current density $\textbf{j}_{\mathrm s}$ by the Maxwell equation
+$$
+  \Rot{\textbf B}=\frac{4 \pi}{c}\textbf{j}_{\mathrm s},
+  \eqMark{12_4}
+$$
+and the magnetic field energy is 
+$$
+  W_{\mathrm m}=\int\frac{B^{2}}{8\pi}d\textbf{r}.
+  \eqMark{12_5}
+$$
+Thus the free energy of a superconductor equals
+\begin{Multline}
+\mathcal F=F_{\mathrm s}+\frac{1}{8\pi}\int\left(\textbf B^{2}+\frac{mc^{2}}{4\pi n_{\mathrm s}e^{2}}|\Rot{\textbf B}|^{2}\right)d\textbf{r}=\\
+=F_{\mathrm s}+\frac{1}{8\pi}\int(\textbf{B}^{2}+\lambda_{\mathrm L}^{2}|\Rot{\textbf B}|^{2})d\textbf{r},
+\eqMark{12_6}
+\end{Multline}%
+where $\lambda_{\mathrm L}$ is called the \textit{London penetration depth}, it is defined as
+$$
+  \lambda_{\mathrm L}=\left(\frac{mc^{2}}{4\pi n_{\mathrm s}e^{2}}\right)^{1/2}.
+  \eqMark{12_7}
+$$
+
+Let us find the minimum of the free energy~(\refEquation{12_6}) with respect to variation of the field $\textbf{B}(\textbf{r})$. A small variation $\delta \textbf{B}(\textbf{r})$ changes the energy $\mathcal F$ by $\delta \mathcal F$:
+$$
+  \delta \mathcal F=\frac{1}{4\pi}\int\left(\textbf{B}\delta\textbf{B}+\lambda_{\mathrm L}^{2}\Rot{\textbf B}\Rot \delta \textbf{B}\right)d\textbf{r}.
+  \eqMark{12_8}
+$$
+Let us apply an equation of vector calculus 
+$$
+  \Div\textbf{a}\times\textbf{b} =\textbf{b}\Rot\textbf{a}-\textbf{a}\Rot\textbf{b}.
+  \eqMark{12_9}
+$$
+Then, assuming that $\textbf a = \Rot\textbf{B}$ and $\textbf{b}=\delta\textbf{B}$, we obtain
+$$
+  \int\Div\Rot\textbf B\times\delta \textbf B d\textbf{r}=\int(\Rot\textbf B\Rot\delta\textbf B)d\textbf{r}-\int
+  (\delta\textbf{B}\Rot\Rot\textbf B)d\textbf r.
+  \eqMark{12_10}
+$$
+The integral of the divergence on the left can be transformed to an integral over surface by means of the Gauss theorem, which gives
+$$
+  \int \Div\Rot\textbf B\times\delta\textbf{B}d\textbf{r}=\oint\Rot\textbf{B}\times\delta\textbf{B}d\textbf{S}=0.
+  \eqMark{12_11}
+$$
+
+The integral vanishes because the variation of magnetic field on the boundary surface is set to zero: we are looking for the field in the bulk corresponding to a minimum of free energy providing the field on the boundary is fixed. Therefore 
+$$
+  \int (\Rot\textbf B\Rot\delta\textbf B)d\textbf{r}=\int(\delta\textbf{B}\Rot\Rot\textbf B)d\textbf r,
+  \eqMark{12_12}
+$$
+i.e.
+$$
+  \delta \mathcal F=\frac{1}{4\pi}\int\left((\textbf B+\lambda_{\mathrm L}^2\Rot\Rot\textbf B)\delta\textbf B\right)d\textbf{r}.
+  \eqMark{12_13}
+$$
+%
+\fFigure{Penetration of weak magnetic field in superconductor ($\lambda$~is the penetration depth)}12_3
+{4.77cm}{5.8cm}{pic/L12_03!.eps}
+%
+Therefore the field configuration inside the sample which minimizes the free energy is defined by the equation
+$$
+  \textbf{B}+\lambda_{\mathrm L}^2\Rot\Rot\textbf B= 0.
+  \eqMark{12_14}
+$$
+
+Equation~(\refEquation{12_14}) was first derived by F.~London and H.~London and was named after them. Together with Eq.~(\refEquation{12_5}) it defines distribution of fields and currents
+in a superconductor.  
+
+Let us apply the London equation~(\refEquation{12_14}) to a problem of penetration of magnetic field $\textbf B$ in a superconductor. Assume the simplest geometry: the superconductor surface coincides with a plane $xy$, \mbox{the region $z>0$} is empty (see~\refFigure{12_3}). Then the field $\textbf B$ and the current $\textbf j_{\mathrm s}$ depend only on $z$. To solve the problem one also needs Maxwell's equations 
+$$
+  \Div\textbf B=0
+  \eqMark{12_15}
+$$
+and
+$$
+  \Rot\textbf B=\frac{4\pi}{c}\textbf j_{\mathrm s}.
+  \eqMark{12_16}
+$$
+
+Two cases are possible:
+
+\begin{Enumerate}{tab}
+\Item.
+The field $\textbf{B}$ is parallel to $z$. Then Eq.~(\refEquation{12_14}) simply yields $\partial B/\partial z=0$, i.e. the field $\textbf B$ is homogeneous. Then, using Eq.~(\refEquation{12_16}) one obtains $\Rot\textbf B=0$ and $\textbf j_{\mathrm s}=0$. Substituting it into Eq.~(\refEquation{12_14}) one finds that $\textbf B=0$: the magnetic field cannot be orthogonal to the surface. 
+
+\Item.
+The field $\textbf B$ is tangential and points along $E$. In this case Eq.~(\refEquation{12_15}) become identities and Eq.~(\refEquation{12_16}) yields that the current $\textbf j_{\mathrm s}$ flows along $y$-axis:
+$$
+  \frac{d\textbf{B}}{dz}=\frac{4\pi}{c}\textbf j_{s}.
+  \eqMark{12_17}
+$$
+Finally, using Eq.~(\refEquation{12_14}) one obtains
+$$
+  \frac{d\textbf j_{\mathrm s}}{dz}=\frac{n_{\mathrm s}e^2}{mc}\textbf B,~~~\frac{d^2\textbf B}{dz^2}=\frac{\textbf B}{\lambda_{\scriptscriptstyle L}^2}.
+  \eqMark{12_18}
+$$
+\end{Enumerate}
+
+The solution which remains finite inside the superconductor exponentially decays:
+$$
+  B(z) =B(0) e^{-z/\lambda_{\mathrm L}},
+  \eqMark{12_19}
+$$
+i.e. the field penetrates in the sample only within the London depth $\lambda_{\mathrm L}$. This result obtained for a half-space can be easily generalized for a macroscopic sample of arbitrary shape. 
+
+Let us estimate the London penetration depth for lead, a typical superconductor, which has
+$n_{\mathrm s}=3\cdot 10^{22}\;\cm^{-3}$:
+$$
+  \lambda_{\mathrm L}=\left(\frac{mc^{2}}{4\pi n_{\mathrm s}e^{2}}\right)^{1/2}\Simeq3\cdot 10^{-6}\;\cm.
+$$
+
+Now let us discuss the derived relation between the superconductor current $\textbf j_{\mathrm s}$ and the field $\textbf B$. By substituting Eq.~(\refEquation{12_4}) into Eq.~(\refEquation{12_14}) we obtain
+$$
+  \textbf B+\frac{4\pi\lambda_{\mathrm L}^2}{c}\Rot\textbf{j}_{\mathrm s}=0.
+  \eqMark{12_20}
+$$
+
+It is well known that a magnetic field can be expressed via vector potential $\textbf{A}$, namely, $\textbf{B}=\Rot\textbf A$. Using the gauge $\Div\textbf A=0$ and Eq.~(\refEquation{12_20}) we obtain:
+$$
+  \frac{4\pi\lambda_{\mathrm L}^{2}}{c}\textbf j_{\mathrm s}+\textbf A=0,\quad \text{или}\quad \textbf j_{\mathrm s}=-\frac{c}{4\pi\lambda_{\mathrm L}{2}}\textbf A.
+  \eqMark{12_21}
+$$
+
+Now the essential difference between an ordinary electric current in a normal metal and a superconductor current becomes evident: the normal current is proportional to electric field, $\textbf j=\sigma\textbf E$ (Ohm's law), while the superconductor current is proportional to vector potential.
+
+This result can be differently understood by using the expression for the generalized electron momentum in magnetic field:
+$$
+  \textbf p_{\mathrm s}=m\textbf v_{\mathrm s}+\frac{e}{c}\textbf{A},
+  \eqMark{12_22}
+$$
+where $\textbf{p}_{\mathrm s}$~is the generalized momentum and $\textbf v_{\mathrm s}$~is the velocity of superconductive electrons.
+
+Where does this expression for the generalized momentum come from? There is a theorem of classical mechanics saying that the effect of a Lorentz force ${(q/c)\textbf v\times\textbf B}$ on a charged particle with a charge $q$ can be completely taken into account by replacing the particle momentum with $\textbf p-q\textbf A/c$, where $\textbf A$ is determined from $\textbf B=\Rot\textbf A$. 
+
+Suppose that a particle is moving in a field free region at the speed $\textbf v_{1}$ and a magnetic field is switched on at $t=0$. A field can increase only at a finite speed, and the increase is accompanied by the induced electric field defined by Maxwell's equation $\Rot\textbf E=-(1/c)d\textbf B/dt$. In terms of the vector potential $\textbf A$, the latter becomes $\Rot\textbf E={-}[(1/c)d\Rot\textbf{A}/dt]$, and integration over coordinates gives $\textbf E=-(1/c)d\textbf A/dt$ up to an irrelevant  constant of integration. Therefore the momentum at $t$ is 
+$$
+  m\textbf v_{2}=m\textbf v_{1}+\int\limits_{0}^{t}q\textbf Edt=m\textbf v_1-\frac{q}{c}\int\limits_{0}^{t}\frac{d\textbf A}{d t}dt=m\textbf v_{1}-\frac{q}{c}\textbf A.
+  \eqMark{12_23}
+$$
+
+Thus, $m\textbf v_{2}+q\textbf A/c=m\textbf v_{1}$. Therefore a vector {$\textbf p=m\textbf v+q \textbf A/c$} is conserved in the magnetic field and can be considered as an effective momentum. However, the kinetic energy $E\sub{k}$ depends only on $m\textbf v$; before the field is applied $E\sub{k}=f(m\textbf v)$, so in the presence of the field it must be $E\sub{k}=f(\textbf p-q\textbf A/c)$.
+
+Finally, substituting the velocity in terms of the generalized momentum~(\refEquation{12_22}) into Eq.~(\refEquation{12_22}), we obtain
+$$
+  \textbf{j}_{s}=en_{\mathrm s}\textbf v_{\mathrm s}=\frac{en_{\mathrm s}}{m}\left(\textbf p_{\mathrm s}-\frac{e}{c}\textbf A\right).
+  \eqMark{12_24}
+$$
+
+Now one can see that according to Eq.~(\refEquation{12_21}) the momentum of a superconductor electron remains zero in the whole bulk of superconductor even if the external field is applied. This is possible if there is a distant order of electron momenta, in other words, momenta of separated electrons must be correlated. This observation implies <<infinite spatial extension of wave functions representing the same momentum distribution both with and without a field>> (F.~London). Following this line of thought F.~London suggested a concept of superconductor as a <<macroscopic quantum system>>.
+
+According to the microscopic theory of superconductivity by J.~Bardeen, L.~Cooper, and J.~Schrieffer (aka BCS theory) the superconductive state is due to to the tendency of electrons to form  pairs of a large enough size (the so-called Cooper pairing). The net momentum of such a pair is zero: if there is a state occupied by electron with a definite momentum and spin, there is a high probability that the state with opposite momentum and spin is also occupied. In other words, the distant order exists because (in the absence of a current) all momenta of Cooper pairs forming the superconductive condensate are zero.\looseness=-1
+
+Pairing of electrons below $T_{\mathrm c}$ lowers their energy and results in a gap $\Delta$ in the energy spectrum of electron excitations. Existence of the gap means that electrons do not interact with atomic lattice, i.e. electron wave functions are not perturbed by collisions with atoms and therefore extend over macroscopic distances. The superconductive condensate is highly ordered and its entropy tends to zero. Phases of wave functions of different pairs are highly coherent over the superconductor bulk. The model of electron pairs allows one to explain qualitatively why superconductivity is only possible below the critical temperature: thermal motion destroys the paring at ${\kb}T_{\mathrm c}\Simeq \Delta_{0}$. Here $\Delta_{0}$~is the value of energy gap at zero temperature. According to BCS 
+$$
+  2\Delta_{0}=3{.}52{\kb}T_{\mathrm c}.
+  \eqMark{12_25}
+$$
+The temperature dependence of the energy gap is 
+$$
+  \Delta\Simeq 3{.}1 {\kb}T_{\mathrm c}\left(1-\frac{T}{T_{\mathrm c}}\right)^{1/2}
+  \Simeq\frac{\Delta_{0}}{2}\left(1-\frac{T}{T_{\mathrm c}}\right)^{1/2}.
+  \eqMark{12_26}
+$$
+
+The penetration depth of magnetic field in a superconductor also depends on temperature; e.g. this follows from Eq.~(\refEquation{12_7}) where $n_{\mathrm s}$ is a function of temperature. For this reason the London penetration depth is usually understood as the depth at zero temperature.
+
+According to the BCS theory the density of Cooper pairs $n_{\mathrm c}$ near $T_{\mathrm c}$ is
+$$
+  \frac{n_{\mathrm c}(T)}{n_{\mathrm c}(0)}\propto 1-\frac{T}{T_{\mathrm c}},
+  \eqMark{12_27}
+$$
+whence for $\lambda (T)$,
+$$
+  \frac{\lambda (T)}{\lambda (0)}\propto \left(1-\frac{T}{T_{\mathrm c}}\right)^{-1/2}.
+  \eqMark{12_28}
+$$
+The experimental temperature dependence is well approximated by the expression
+$$
+  \frac{\lambda (T)}{\lambda (0)}=\left[1-\left(\frac{T}{T_{\mathrm c}}\right)^{4}\right]^{-1/2}.
+  \eqMark{12_29}
+$$
+For $T\rightarrow T_{\mathrm c}$ this relation tends to (\refEquation{12_28}).
+
+The microscopic state of a superconductor is also specified by another parameter, the coherence length, $\xi =\hbar v_{\scriptscriptstyle\mathrm F}/\Delta$ ($v_{\scriptscriptstyle\mathrm F}$~is the Fermi velocity) which depends on temperature as $(1-T/T_{\mathrm c})^{-1/2}$; for this reason the coherence length at zero temperature,
+$$
+  \xi_{0}=1{.}4\xi\left(1-\frac{T}{T_{\mathrm c}}\right)^{-1/2},
+  \eqMark{12_30}
+$$
+is usually used as a parameter specifying a superconductor. 
+
+The coherence length defines the scale on which a perturbation of superconductive ordering is <<healed>>. In other words, the coherence length defines the size of Cooper pair. Let us estimate this length. The size of the energy gap must be of the order of an uncertainty in the kinetic energy of electron caused by its pairing:
+$$
+  \Delta\Simeq\delta\left(\frac{p^{2}}{2m}\right)=v_{\scriptscriptstyle\textrm F}\delta p.
+  \eqMark{12_31}
+$$
+Then using the uncertainty relation,
+$$
+  \delta x \delta p \Simeq\hbar,
+  \eqMark{12_32}
+$$
+one obtains the desired estimate of the coherence length
+$$
+  \xi\Simeq\delta x \Simeq\frac{\hbar v_{\scriptscriptstyle\textrm F}}{\Delta}.
+  \eqMark{12_33}
+$$
+
+Cooper pairing in a magnetic field takes place until the energy gain $V(F_{\mathrm n}-F_{\mathrm s})$, ($V$~is the sample volume, $F_{\mathrm n}$ and $F_{\mathrm s}$~are the free energies of normal and superconductive state) exceeds the energy $V\!B^{2}/(8\pi)$ required to expel the magnetic field. If the field is greater than the critical field of superconductor, $H_{\mathrm c}=(8\pi(F_{\mathrm n}-F_{\mathrm s}))^{1/2}$, the superconductive state is not energetically favorable and will be destroyed.  The dependence of the critical field on temperature is described by an empirical formula:
+$$
+  H_{\mathrm c}(T)=H_{\mathrm c}(0)\left[1-\left(\frac{T}{T_{\mathrm c}}\right)^{2}\right].
+  \eqMark{12_34}
+$$
+
+In $1952$ A.~Abrikosov suggested another scenario of superconductivity destruction by magnetic field. It turns out the field can penetrate in the bulk of some superconductors in the form of separate vortices, such a superconductor is called a \emph{Type II superconductor} and the state of superconductor with <<magnetic vortices>> a vortex state.
+%
+\fFigure{Abrikosov vortices in Type II superconductor in magnetic field $H_{c1}<H<H_{c2}$}12_4
+{4.3cm}{5.2cm}{pic/L12_04.eps}
+%
+The vortices derive their name from vortices in liquid. The vortex core is in the normal state, the core size can be estimated as a length in which superconductivity is restored (i.e. it is equal to the coherence length $\xi$), and there is a circular current flowing around the core which is screening the field in the superconductive bulk. The diagram in~\refFigure{12_4} shows the structure of a vortex state. \looseness=-1
+
+Each vortex carries the quantum of magnetic flux 
+$$
+  \Phi_{0}=\pi\hbar c/e=2\cdot10^{-7}\;\Gs\cdot\cm^2.
+  \eqMark{12_35}
+$$
+
+A typical penetration length of magnetic field in a superconductor is determined by $\lambda_{\mathrm L}$. A vortex penetrates in a superconductive state when the magnetic field becomes greater than the first critical field which can be estimated as
+$$
+  H_{\mathrm c1}\Simeq\frac{\Phi_{0}}{\pi\lambda_{\scriptscriptstyle L}^{2}}.
+  \eqMark{12_36}
+$$
+
+At first, when the field is close to $H_{\mathrm c1}$ there are just a few vortices located far apart (at a distance greater than the coherence length). When the magnetic field increases the number of vortices grows and the distance between them decreases. When the distance becomes less than the diameter of the normal core, i.e. the coherence length, the superconductivity vanishes. This field is called the second critical field $H_{\mathrm c2}$. It can be estimated from the above scenario:
+$$
+  H_{\mathrm c2}\Simeq \frac{\Phi_{0}}{\pi \xi^{2}}.
+  \eqMark{12_37}
+$$
+
+The behavior of a superconductor in magnetic field depends on the relation between its coherence length and the London penetration depth. If a superconductive material is such that $\xi>\lambda$, the superconductivity completely disappears at some critical field $H_{\mathrm c}$, this is a \textit{Type I superconductor}. 
+%
+\hFigure{Phase diagram \textit{H---T} and magnetization $I$ versus $H$ illustrating suppression of superconductivity by strong magnetic field for Type I \textit{(a, b)} and Type II \textit{(c, d)} superconductor}12_5
+{9.1cm}{8.9cm}{pic/L12_05.eps}
+%
+The reversed equality ($\xi<\lambda$) means that superconductivity gradually subsides in a magnetic field greater than the first critical field $H_{\mathrm c1}$ when magnetic vortices begin penetrating in the superconductor bulk. The normal state is achieved when the field reaches $H_{\mathrm c2}$ (see~\refFigure{12_5}).
+
+The relation between magnetic induction and magnetic field is 
+$$
+  \textbf B=\textbf H +4 \pi \textbf I,
+  \eqMark{12_38}
+$$
+where $\textbf I$~-is magnetization. In a Meissner phase (magnetic field is less than $H_{\mathrm c}$ for Type I and less than $H_{\mathrm c1}$ for Type II superconductor) a superconductor is an ideal diamagnetic, the induction is zero and therefore $4\pi\textbf I=-\textbf H$. Meissner currents completely screen the external field in the superconductor bulk.
+
+In a Type I superconductor the critical field $H_{\mathrm c}$ destroys the superconductivity at once, so the magnetic moment due to Meissner currents suddenly disappears. In a Type II superconductor the magnetic flux gradually penetrates in the bulk in the form of vortices when the  field exceeds $H_{\mathrm c1}$. The greater $H$, the greater is the number of vortices and the less is the magnetization. Above the second critical field $H_{\mathrm c2}$ the metal is completely in the normal state, so the magnetization vanishes.
+
+Many metals are Type I superconductors ($\mathrm{Al}$, $\mathrm{Be}$, $\mathrm{In}$, $\mathrm{Sn}$, $\mathrm{Pb}$, $\mathrm{Ta}$, $\mathrm{La}$, and $\mathrm{V}$), while Type II superconductors are mostly intermetallic compounds based on Nb ($\mathrm{Nb}_3\mathrm{Sn}$, $\mathrm{Nb}_3\mathrm{Ge}$, $\mathrm{NbZr}$, and $\mathrm{NbTi}$). The champion among these substances with the highest critical temperature is $\mathrm{Nb}_3\mathrm{Ge}$ with $T_{\mathrm c}=23{.}2\;\kelvin$. The above materials are brought into superconductive state by means of liquid helium. 
+
+In $1986$ K.~Muller and J.~Bednorz discovered superconductive materials with a high critical temperature (high-$T_c$ superconductors). Usually $T_c$ of these materials is above the nitrogen boiling point ($77\;\kelvin$). The materials are based on copper oxides; for this reason they are often called cuprates. In~$1987$ a ceramic compound $\mathrm{YBa}_2\mathrm{Cu}_3\mathrm{O}_7$ was discovered with $T_c$ of $92\;\kelvin$, yet later the critical temperature had been risen to $125\;\kelvin$ in a thallium compound. The highest $T_c$ achieved in 10 years of research of high-$T_c$ materials was $\Simeq 145\;\kelvin$ in a compound based on mercury. Currently about twenty high-$T_c$ materials are known. They are all cuprates and derive the names from the main metal of their chemical composition: yttrium (
+$\mathrm{YBa}_2\mathrm{Cu}_3\mathrm{O}_{7-x}$, $T_{\mathrm c}\Simeq 90\;\kelvin$), bismuth ($\mathrm{Bi}_2\mathrm{Sr}_2\mathrm{CaCu}_2\mathrm{O}_8$, $T_{\mathrm c} \Simeq  95\;\kelvin$), thallium ($\mathrm{Tl}_2\mathrm{Ba}_2\mathrm{CaCu}_2\mathrm{O}_8$, $T_{\mathrm c}\Simeq  110\;\kelvin$), and mercury ($\mathrm{HgBa}_2\mathrm{CaCu}_2\mathrm{O}_6$, $T_{\mathrm c}\Simeq  125\;\kelvin$).
+
+\vspace{-0.9pt}
+Usually the chemical formula of an oxide superconductor includes $4$--$5$ different types of atoms, and its elementary cell has up to $20$ atoms. Almost all high-$T_c$ materials have a layered structure with the layers formed by atoms of $\mathrm{Cu}$ and $\mathrm{O}$. The number of intermediate copper layers differs, there are compounds in which there are $5$ layers of $\mathrm{CuO}_2$. Oxygen plays an important role in the superconductivity mechanism. Numerous experiments show that oxygen planes are the main component of atomic lattice which are responsible both for conductivity and high-$T_c$ superconductivity of these oxides.
+
+High-$T_c$ superconductors are typical Type II superconductors with a very large ratio of the London penetration depth to the coherence length -- about several hundreds. Therefore $H_{\mathrm c2}$ of these materials is very high. In particular, $\mathrm{Bi}$ $2212$ has the second critical field as large as $400\;\Tl$, while $H_{\mathrm c1}$ is only several hundred oersted (depending on the field orientation relative to the crystal).
+
+Most high-$T_c$ materials are highly anisotropic, which leads to a peculiar dependence of their magnetic moments on the external magnetic field if the latter is tilted relative to the main crystal axes. At first, the vortices prefer to reside between the layers $\mathrm{CuO}_2$ and only when the field becomes large enough they start to penetrate the planes.
+

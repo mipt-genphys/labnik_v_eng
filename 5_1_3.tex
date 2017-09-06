@@ -1,0 +1,128 @@
+%translator Savrov, date 22.11.12
+
+\setcounter{Equation}{0} \setcounter{Figure}{0}
+
+\Work {Scattering of slow electrons by atoms of noble gas (the Ramsauer-Townsend effect)} 
+{Scattering of slow electrons by atoms of noble gas (the Ramsauer-Townsend effect)} 
+{The energy dependence of the probability of scattering of electrons by atoms of xenon is measured, which allows one to determine the electron energy corresponding to <<transparency>> of xenon and to estimate the size of its external electron shell.}
+
+In $1921$ Carl Ramsauer studied the energy dependence of cross-section of elastic scattering of electrons (with energy up to $10\;\eV$) by atoms of xenon. In his experiments he discovered the phenomenon named later \textit{the Ramsauer-Townsend effect}. 
+
+Let us recall the concept of cross-section. The effective cross-section (cross-section, for short) is the probability of transition of two colliding particles into a certain final state due to a collision (elastic or inelastic). The cross-section $\sigma$ is the ratio of the number of transitions $N$ per second to a flow density $nv$ of the particles incident on a target, i.e. to the number of particles passing each second through a unit area perpendicular to the velocity $v$ ($n$ is the density of the incident particles)
+$$
+\sigma=\frac{N}{nv}.   \eqMark{1_3_1} $$
+
+Thus cross-section has the dimension of area.
+
+The result of Ramsauer experiments is illustrated in \refFigure{1_3_2}. Electrons with energy up to tens of electron-volts are scattered by argon atoms. As the electron energy decreases, the cross-section of elastic scattering grows, \fFigure {Experimental results of elastic scattering of electrons by argon}1_3_2 {4.47cm}{3.4cm}{PIC/l01_3_02.eps}which can be explained by a simple argument. The greater the electron velocity, the faster it passes an atom; so the period of interaction between the atom and the electron and therefore the cross-section is less. However the experiment  tells another story: the cross-section starts decreasing at the energy of $16\;\eV$ and almost vanishes at $E\simeq1\;\eV$, i.e. argon atoms become transparent for electrons. At larger energies the cross-section starts growing again.
+
+Subsequent experiments showed that this amazing behavior of the cross-section was observed for all noble gases. Such a behavior cannot be understood in the classical physics framework.
+
+Explanation of the effect required to take into consideration the wave nature of electron. This was a significant argument in favor of quantum theory when a new physical picture of microscopic world was emerging. The setup of the Ramsauer experiment is shown in~\refFigure{1_3_3}.  \cFigure {Experimental setup for measuring cross-section of electron scattering in gas}1_3_3 {7.45cm}{3.65cm}{PIC/l01_3_03.eps}
+
+An electron beam emitted by a heated cathode \textsl{K} is accelerated by a potential difference $V$ applied across the cathode and electrode \textsl{E}, so the electron energy becomes $E=mv^2/2=eV$. Some electrons are scattered by atoms of the gas, leave the beam and end up on a collector~\textsl{C}, while the undeflected electrons reach the anode~\textsl{A} and contribute to the anode current~$I$. The current is proportional to the number of electrons passed without collision, so it can be taken as a measure of gas transparency versus electron velocity (or accelerating potential). We have already discussed that classical physics predicts that the scattering cross-section decreases as $V$ grows, so the current must steadily grow.
+
+According to quantum theory the pattern of scattering looks different. The potential energy of an incident electron $U$ inside an atom is non-zero, so the electron velocity changes and becomes equal to $v'$ in accord with the law of conservation of energy,
+$$
+E=\frac{mv^2}{2}=\frac{mv'^2}{2}+U.   \eqMark{1_3_2}
+$$
+The electron wavelength changes as well. Therefore the atom can be considered as a refractive medium with respect to the electron wave, and the refractive index is
+$$
+n=\frac{\lambda}{\lambda'}=\sqrt{1-\frac{U}{E}}.   \eqMark{1_3_3}
+$$
+\fFigure {Potential well being traversed by particle with energy~$E$}1_3_4 {3.66cm}{2.48cm}{PIC/l01_3_04.eps}
+
+Solution of the problem of electron scattering by a spherical potential well is quite cumbersome, so in order to get a qualitative understanding we consider a crude model. Let us assume that an electron is scattered by a one-dimensional potential well of finite depth and rectangular shape. The model is a good approximation for atom of a heavy noble gas which has a compact structure and a sharp edge. The problem of a particle of energy $E$ passing over a potential well of width  $l$ and depth $U_0$ (see~\refFigure{1_3_4}) is solved in many textbooks.
+
+Schrodinger equation in this case is 
+$$
+\psi''+k^2\psi=0,~~~\text{where~} k^2=\begin{cases}   k_1^2=\frac{2mE}{\hbar^2},& \text{in regions I and III;}\\   k_2^2=\frac{2m(E+U_0)}{\hbar^2},& \text{in region II.}   \end{cases}   \eqMark{1_3_4} $$
+
+The transmission coefficient equals the ratio of the squares of the amplitudes of passed and incident waves and it is given by the expression
+$$
+D=\frac{16k_1^2k_2^2}{16k_1^2k_2^2+4(k_1^2-k_2^2)^2\sin^2(k_2l)} \;,   \eqMark{1_3_5}
+$$
+or
+$$
+D^{-1}=1+\frac{(k_1^2-k_2^2)^2}{4k_1^2k_2^2}\sin^2(k_2l)=1+\frac{U_0^2}{4E(E+U_0)}\sin^2(k_2l).   \eqMark{1_3_6} $$
+
+One can see that the transmission coefficient has alternating maxima and minima depending on the particle energy. In particular, if $k_2l=\pi$ then $\sin k_2l=0$ and the transmission coefficient equals unity. In other words, there is no reflected wave and electron passes through atom as if through vacuum. This is similar to the effect of anti-reflecting coating in optics.
+
+Thus the transmission coefficient of electron is maximal providing
+$$
+k_2l=\sqrt{\frac{2m(E+U_0)}{\hbar^2}}l=n\pi,~~~n=1,\,2,\,3\ldots   \eqMark{1_3_7} $$
+
+This condition can easily be obtained by considering interference of electron waves in atom.  Electron wavelength equals~\fFigure{Interference pattern of electron wave scattered by atom}1_3_5 {4.2cm}{3.12cm}{PIC/l01_3_05.eps} $\lambda=h/mv$. For non-relativistic electron $E=mv^2/2$ and $\lambda=h/\sqrt{2mE}$. When electron crosses atom its wavelength decreases and becomes $\lambda'=h/\sqrt{2m(E+U_0)}$, where $U_0$ is the depth of atomic potential. The diagram in~\refFigure{1_3_5} shows that the de Broglie wave is reflected by the edges of the atomic potential, i.e. by the atom boundary, and the interference between the transmitted wave~\textit{1} and the wave~\textit{2} reflected by the front and rear boundaries of the atom (these waves are coherent). 
+
+The transmitted wave~\textit{1} is amplified by the wave~\textit{2} if the geometric path difference between the waves is $\Delta = 2l = \lambda'$, which corresponds to the first interference maximum,
+$$
+2l=\frac{h}{\sqrt{2m(E_1+U_0)}}.   \eqMark{1_3_8}
+$$
+Here $E_1$~is the electron energy corresponding to this condition, which coincides with (\refEquation{1_3_7}) following from the Schrodinger equation.
+
+On the other hand, the transmitted wave is weakened if $\Delta = 2l = (3/2) \lambda'$ (the condition of the first interference minimum), i.e. 
+$$
+2l =\frac{3}{2}\frac{h}{\sqrt{2m(E_2+U_0)}}.   \eqMark{1_3_9} $$
+
+Solving Eqs.~ (\refEquation{1_3_8}) and (\refEquation{1_3_9}) one can exclude $U_0$ and find the effective size of atom $l$
+$$
+l=\frac{h\sqrt5}{\sqrt{32m(E_2-E_1)}}.   \eqMark{1_3_10} $$
+
+It is clear that the energies $E_1$ and $E_2$ correspond to the energies of electrons accelerated by the potential difference $V_1$ and $V_2$, i.e. $E_1=eV_1$ and $E_2=eV_2$.
+
+Using Eqs.~(\refEquation{1_3_8}) and (\refEquation{1_3_9}) and the measured energies~$E_1$ and~$E_2$ one can calculate the effective depth of potential well of atom:
+$$
+U_0=\frac{4}{5}E_2-\frac{9}{5}E_1.   \eqMark{1_3_11}
+$$
+
+ \vspace{10pt} \so{\textbf{Experimental setup}} \vspace{5pt}
+
+The main part of the experimental setup used to study the Ramsauer-Townsend effect is a thyratron ТГ3-01/1.3Б filled with a noble gas. The thyratron design is shown in~\refFigure{1_3_6}. 
+
+Electrons emitted by the thyratron cathode are accelerated by the potential difference $V$ between the cathode and the grid closest to the cathode. Then the electrons are scattered by atoms of the noble gas (xenon). All grids~\textit{1}, \textit{2}, and \textit{3} are connected and have the same potential \hFigure {Thyratron scheme (left) and its design (right): \textit{1}, \textit{2}, \textit{3}~are grids,~\textit{4}~is an external metal cylinder, \textit{5}~is a cathode, \textit{6}~is an anode, and~\textit{7}~is a heated filament cathode}1_3_6 {7.28cm}{3.29cm}{PIC/l01_3_06.eps} which is approximately equal to a potential of the anode~\textit{6}. Therefore the field between the first grid~\textit{1} and the anode is negligible. The scattered electrons are deflected and collected by a grid while the rest reach the anode and contribute to anode current~$I_{\textrm a}$. Thus the flow of electrons $N(x)$ at a distance~$x$ from the accelerating grid (i.e. the number of electrons passing through the thyratron cross-section at $x$ per second) decreases from the initial value $N_0$ near the cathode (at $x=0$) to a value $N_{\textrm a}$ near the anode (at $x=L$). 
+
+Let us figure out the thyratron current-voltage characteristic (I-V curve). To this end consider a thin layer with an area $S$ and a width $dx$ at a distance $x$ from the cathode (see \refFigure{1_3_6}). The layer contains $d\nu =n_{\textrm a}Sdx$ atoms ($n_{\textrm a}$ is the concentration of gas atoms in the bulb). The net scattering surface of the atoms (the net effective cross-section) $\Delta = \nu\Delta_{\textrm a}$, where $\Delta_{\textrm a}$ is the atom cross-sectional area. Let $dN$ be the loss of the electron flow in the layer $dx$, then $dN/N(x)$ is the fraction of scattered electrons, i.e. the probability of scattering in the layer. A scattering event consists of two independent events: electron <<encounter>> with an atom and scattering by the atom. Therefore the probability of scattering $dN/N(x)$ is a product of two probabilities, the probability to meet an atom in the layer $dx$ (it is equal to $\Delta/S$, the fraction of the layer cross-sectional area covered by the atoms) and a probability $w(V)$ of scattering by the atom:
+$$
+-\frac{dN}{N(x)} = \frac{\Delta}{S}w(V)=n_{\textrm a} \Delta_{\textrm а}w(V)dx.   \eqMark{1_3_12} $$
+
+Integrating this equation from $0$ to $L$ and substituting the current $I=Ne$ for the electron flow one obtains the current-voltage characteristic:
+$$
+I_{\textrm a}=I_0e^{-Cw(V)},~~~C=Ln_{\textrm a}\Delta_{\textrm a},   \eqMark{1_3_13}
+$$
+where $I_0=eN_0$~is the cathode current and $I_{\textrm a}=eN_{\textrm а}$~is the anode current.
+
+\hFigure {Probability of scattering of electron by atom of noble gas and thyratron I-V curve according to classical (\textit{a}) and quantum (\textit{b}) theory}1_3_7 {8.4cm}{6.25cm}{PIC/l01_3_07.eps}
+
+According to classical theory the cross-section of electron scattering by atom is inversely proportional to the square root of electron energy and must steadily decline as $V$ increases, so the I-V curve is a monotonically increasing function shown in~\refFigure{1_3_7}\textit{a}. The probability of scattering and the corresponding I-V curve predicted by quantum theory are shown in~\refFigure{1_3_7}\textit{b}.
+
+According to Eq.~(\refEquation{1_3_13}) one can determine the dependence of probability of scattering on electron energy using the measured I-V curve as
+$$
+w(V)=-\frac{1}{C}\ln\frac{I_{\textrm а}(V)}{I_0}.   \eqMark{1_3_14} $$
+
+\vspace{10pt} \so{\textbf{Directions}} \vspace{5pt}
+
+The installation used to observe the Ramsauer-Townsend effect is shown in \refFigure{1_3_8}.
+
+It turns out that only the first ($n=1$) minimum and the following maximum in the scattering cross-section can be reliably observed. Even at $n=2$ the electric field intensity is so large that the probability of ionization of the atoms becomes significant thereby resulting in electrical breakdown of the thyratron. Therefore the experiment is done for low heating of the thyratron filament. Besides, the calculation shows that for higher $n$ the minimum is less prominent, so the <<transparency>>  is not so easily detected. \hFigure {Electrical circuit used to study the Ramsauer-Townsend effect, which consists of thyratron (\textit{T}), an AC source of modulating voltage, and oscilloscope (\textit{O}). SHC is a stabilized power source of heated cathode; the digits indicate thyratron electrodes}1_3_8 {7.72cm}{3.6cm}{PIC/l01_3_08.eps}
+
+\begin{Enumerate}{tab} \Item. Turn the electrical circuit to the mains of $220\;\V$ (frequency $50\;\Hz$).
+
+\Item. Set the heating voltage at $2$--$2{.}5\;\V$, the oscilloscope must operate in the mode of external triggering.
+
+\Item. Gradually increase the voltage applied to the thyratron from the generator and observe the current-voltage characteristics of the thyratron. The curve must display maxima and minima due to the Ramsauer-Twonsend effect and the point of electrical breakdown. Make sure that these features are correctly identified.
+
+\Item. Bring a magnet close to the thyratron. A magnetic field <<amplifies>> the Ramsauer-Townsend effect by deflecting any electron that was elastically scattered. Verify that the magnet influence depends on its orientation with respect to the thyratron axis. 
+
+\Item. Observe the I-V curve for $2$--$3$ values of the voltage across the heated cathode. Using Eq.~(\refEquation{1_3_14}) determine the dependence of probability of electron scattering on energy and plot this function.
+
+\Item. The thyratron geometry is such that the breakdown voltage almost coincides with the ionization potential. Hence one can identify the gas in thyratron by using the value of the breakdown voltage (ionization potentials of argon, krypton, and xenon are $15{.}8\;\eV$, $14\;\eV$, and $12{.}1\;\eV$, respectively).
+
+\Item. Estimate the size of the outer atomic shell of the thyratron gas and compare it to the tabulated value. Estimate the depth of the effective potential well of its atom.
+
+\Item. Estimate the voltages corresponding to maxima of the electron transmission coefficient for $n=2,\,3,\,4$ and compare them with the observed features on the I-V curve. \end{Enumerate} \begin{center}\so{\textsf{\small REFERENCES}}\end{center} {\small
+
+1. \textit{Сивухин\;Д.\;В.} Общий курс физики. Т.\;$5$. Ч.\;$1$. Атомная и ядерная физика.\,---\,М.: Физматлит, $2009$, \textsection~$18$.
+
+2. \textit{Гольдин\;Л.\;Л., Новикова\;Г.\;И.} Введение в атомную физику.\,---\,М.: Наука, $1988$, \textsection~$9$.
+
+3. \textit{Белонучкин\;В.\;Е., Заикин\;Д.\;А., Ципенюк\;Ю.\;М.} Основы физики. Т.\;II.\,---\,М.: Физматлит, $2007$. Гл.\;$3$, $4$. }

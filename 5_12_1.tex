@@ -1,0 +1,184 @@
+%translator Savrov, date 02.04.13
+
+\let\oldTheEquation=\theEquation
+\def\theEquation{\arabic{Equation}}
+\let\oldTheFigure=\theFigure
+\def\theFigure{\arabic{Figure}}
+\setcounter{Equation}{0} \setcounter{Figure}{0}
+
+\Work
+{Measurement of critical temperature of high-$T_c$ superconductor (HTS).}
+{Measurement of critical temperature of high-$T_c$ superconductor (HTS)}
+{Main properties of HTS are stuidied: the absence of electrical resistivity, the Meissner effect, non-vanishing electric current, and magnetic levitation. The HTS sample is made of $\mathrm{YBaCuO}$.}
+
+One of the main properties of a superconductive state is the absence of electrical resistivity. A sample becomes superconductive at a temperature below critical temperature $T_{\mathrm c}$ when its resistivity drops to zero.
+
+In $\mathrm{YBaCuO}$ $T_{\mathrm c}$ is high enough ($\Simeq  90\;\kelvin$), so the material becomes superconductive at a temperature below the nitrogen boiling point. The first method of measuring $T_{\mathrm c}$ is based on the fundamental property of superconductor: a complete disappearance of resistivity at $T<T_{\mathrm c}$. The experimental setup is shown in~\refFigure{12_1_1}. The resistance of an electrode-superconductor junction is always finite and usually lies in the range between several tenths to several tens of Ohm. 
+%
+\hFigure{Measurement of superconductor resistivity by four probes: \textit{a}~superconductive sample with electrodes; \textit{b}~measurement circuit.}12_1_1
+{10.4cm}{3.2cm}{pic/L12_1_01.eps}
+%
+The junction resistance often exceeds the resistance of the sample $R_{0}$, so the superconductive state manifests itself only via a small drop of current at $T<T_{\mathrm c}$. Usually this effect is so small that cannot be detected.
+
+For this reason the measurement is usually done by means of the four probes method. Consider the simplest version of this method. One applies a voltage across current electrodes \textit{1} and \textit{2} and measures the current $I_{0}$ flowing through the sample. Potential electrodes~\textit{3} and~\textit{4} follow equipotential lines on the lateral sides of the sample. One measures the voltage across the potential electrodes by means of voltmeter with a high input resistance. In this case there is almost no current through~\textit{3} and~\textit{4}, so the voltmeter measures the true resistivity of this part of the sample,
+$$
+  R_{34}=U_{34}/I_{0}.
+  \eqMark{12_1_1}
+$$
+
+Thus, one can detect the transition to superconductive state by measuring $I_{0}$ and $U_{34}$. The sample temperature (and, hence, $T_{\mathrm c}$) is measured by means of a copper-constantan thermocouple.
+
+The second method of measuring $T_{\mathrm c}$ is based on another property of a superconductor: the expulsion of magnetic field from the superconductor bulk at $T<T_{\mathrm c}$.
+
+Consider two equal coils wound around the measurement cell (see~\refFigure{12_1_2}\textit{a}).
+A mutual inductance $L_{12}^{(N)}$ of this system above $T_{\mathrm c}$, i.e. when the magnetic field penetrates the sample, is
+$$
+  L_{12}^{(N)}=kN_{1}N_{2}S/l,
+  \eqMark{12_1_2}
+$$
+where $S$~is the coil area, $l$~is the coil length, $N_{1}$ and $N_{2}$~is the number of turns in the coils, and $k\Simeq1$~is the coupling coefficient which is equal to the dimensionless fraction of magnetic flux of a coil penetrating the other one. 
+%
+\hFigure{Measurement coil \textit{(a)} and the compensating measurement circuit \textit{(b)}}12_1_2
+{10.4cm}{3.5cm}{pic/L12_1_02.eps}
+%
+Let $S\sub{s}$ be the sample area; since a magnetic field does not penetrate the sample below $T_{\mathrm c}$ 
+$$
+  L_{12}^{(S)} =L_{12}^{(N)}(1-S\sub{s}/S).
+  \eqMark{12_1_3}
+$$
+
+An alternating current $I=I_{0}\sin ( \omega t)$ flowing through a coil induces an emf in the other coil, $U=U_{0}\cos(\omega t)$, where
+$$
+  U_{0} =I_{0} R=L_{12}^{(S)}\omega_{0}I_{0}.
+  \eqMark{12_1_4}
+$$
+This emf can be measured.
+
+Often it turns out that $S\sub{s}<S$ (a small sample, a small fraction of superconductive phase in an inhomogeneous ceramic sample, and so on). In this case it is easier to detect a change in $L_{12}$ by using the compensating circuit shown in~\refFigure{12_1_2}\textit{b}. The principle of compensation is clear from the diagram. The current flowing through the coils~\textit{1} and~\textit{3} is adjusted so that no signal is induced in the coil~\textit{2} (the fields of the coils~\textit{1} and~\textit{3} are opposite at the location of~\textit{2}). A change of magnetic properties of the sample inside~\textit{3} violates the field balance thereby inducing some emf in the coil~\textit{2}. The measured quantities are usually very small, so the signal in this experiment is detected by means of a synchronous detector.
+
+If the sample and the cell dimensions are known, the results can be used to estimate the volume fraction of the superconductive phase.
+
+The third method of $T_{\mathrm c}$ determination is based on measurement of a transition curve by means of a magneto-electric torsion balance (a superconductor is in an inhomogeneous magnetic field).  
+
+A moving coil microammeter with its zero in the middle of the scale is used as the torsion balance. The pointer has a piece of white paper glued to it and there are two photodiodes below connected to the ammeter winding (see~\refFigure{12_1_3}).
+%
+\hFigure{Experimental setup: \emph{1}~are photodiodes; \emph{2}~is magnet; \emph{3}~is sample; and \emph{4}~is liquid nitrogen}12_1_3
+{9.9cm}{6.2cm}{pic/L12_1_03.eps}
+%
+A moving frame of the meter has a piece of wire $10\;\cm$ in length attached to it from the side opposite to the pointer. A small permanent magnet made of a samarium-cobalt alloy is glued to the wire end. An oil damper reduces oscillations of the moving frame.
+
+A superconductive sample close to the magnet repels it. This changes illumination of the photodiodes and induces a current in the meter coil. The torque due to the current is opposite to the torque exerted by the sample (a negative feedback). A magnet displacement from the initial position is small and the current through the coil is proportional to the magnetic moment of the sample.
+
+A voltage across the meter coil is applied to the input <<$\mathrm Y$>> of a recorder. An emf of the copper-constantan thermocouple is applied to the input <<$\mathrm X$>>; the second thermocouple junction is immersed in liquid nitrogen. Thus the thermocouple emf is proportional to the temperature difference between liquid nitrogen and the sample. The thermocouple sensitivity near the nitrogen boiling point is $\Simeq  20\;\mkV/\kelvin$.
+
+The sample is placed in a small plastic cap filled with liquid nitrogen. The cap should be placed so close to the magnet as to obtain a sufficient signal at the recorder input. The interaction of the HTS sample and the magnet is due to inhomogeneity of the magnet field. A Hall sensor is used to estimate the degree of inhomogeneity. The optimal sensor current and its sensitivity are shown on the installation.\vspace{1ex}
+
+\textbf{Levitation of superconductor.} A stable levitation of a superconductor above a permanent magnet (or the other way around) is a dazzling demonstration of quantum properties on a macroscopic scale that intrigued physicists since the superconductivity was discovered. This phenomenon can be demonstrated both with Type I and II superconductor.
+
+In a Type I superconductor the levitation can be explained by its similarity to an ideal diamagnet since at $T<T_{\mathrm c}$ a magnetic field is completely expelled from its bulk. An external magnetic field induces surface currents in a superconductor, the depth of the current layer is about the London penetration depth ($\Simeq  0{.}1\;\mkm$). Expulsion of magnetic field is called the \textit{Meissner effect}, so it is often said that a Type I superconductor at $T<T_{\mathrm c}$ and in a magnetic field less than the critical field is in the Meissner state. A levitating sample of a Type~I superconductor has a single position of stable equilibrium, around which it can either vibrate or rotate virtually indefinitely. 
+
+A Type~II superconductor in a magnetic field behaves differently. The Meissner state exists for $H<H_\mathrm{c1}(T)$, and the normal state is realized for $H>H_\mathrm{c2}(T)$. For a HTS $H_\mathrm{c1}\Simeq100\;\Gs$ and $H_\mathrm{c2}\Simeq10^6\;\Gs$. If magnetic field is in the range $H_\mathrm{c1}<H<H_\mathrm{c2}$ it penetrates into a Type~II superconductor in the form of vortices each of which carries a quantum of magnetic flux $\Phi_0 =2{.}07\;\Gs\cdot\cm^2$, such a state is called a \textit{vortex state}. The more a magnetic field exceeds $H_\mathrm{c1}$, the more vortices penetrate a sample. 
+%
+\fFigure{Magnetization of a Type~II superconductor on external magnetic field. Dashed line corresponds to the same dependence in the absence of flux pinning. If external field varies from   $-H_\textrm{c2}$ to $H_\textrm{c2}$, the curve $I(H)$ is symmetric with respect to zero; hysteresis curve can be asymmetric when the field changes periodically near $H\neq0$}12_1_4
+{5.5cm}{2.2cm}{pic/L12_1_04.eps}
+%
+Vortices repel each other and form a triangular lattice in an ideal crystal. The vortices can be seen by means of a scanning tunneling microscope or by spraying the sample surface with a fine ferrite powder which particles concentrate where the magnetic field lines are condensed, i.e. where the vortices come out to the surface.
+
+In a real material the magnetic vortices are not free to move around, rather they are attached to lattice defects, inhomogeneities, impurities, and boundaries between crystal domains. This phenomenon is called \textit{flux pinning} and it leads to important consequences. An electric current flowing through an ideal superconductor (in which the vortices can freely move) produces the Lorentz force acting on the vortices and they will move. Moving magnetic flux, in turn, generates emf, so the superconductor will exhibit electrical resistance and its crucial feature, zero resistance, disappears. On the other hand, pinned vortices cannot be moved by the Lorentz force, until it is small enough, and the current is not dissipated. 
+
+The second important consequence of the flux pinning is a dependence of superconductor response to external magnetic field on its previous state, i.e. a hysteresis. The diagram in~ \refFigure{12_1_4} shows that the superconductor in an increasing field contains less vortices than in the same but decreasing field. Besides, the sample captures a magnetic flux, so there is a non-zero induction in the absence of external field. A Type~II superconductor behaves like a ferromagnet.
+
+The flux pinning also results in the hysteresis of magnetic force. A force $F$ exerted by magnetic field on a small superconductor of volume $V$ is
+$$
+  F=V(\textbf{I}(\textbf{H}),\nabla \textbf{H}).
+  \eqMark{12_1_5}
+$$
+
+Using this expression one can evaluate the hysteresis of the magnetic force that is due to the hysteresis of $\textbf{I}(\textbf{H})$. 
+
+Another consequence of flux pinning is an internal friction of vortex lattice, i.e. the lattice motion is dissipative. When a superconductor is moving in an inhomogeneous magnetic field or rotating in a homogeneous field, the magnetic flux penetrating the superconductor changes and the vortex lattice changes as well. If the external field changes a bit, e.g. when the sample is oscillating near equilibrium, the vortices bend elastically around the pinning spots and only a small fraction of them (loosely attached) changes location. However, a significant field variation forces the majority of vortices to leap from their old pinning spots to new ones. The leaps result in energy dissipation because the vortex core is in the normal state and the vortex motion is nothing but electric current  in a region with non-zero resistance.
+
+Due to this <<dry friction>> a levitating Type~II superconductor behaves like a plate in a sand: it is in a stable equilibrium regardless of the direction of external field. The same is true for a magnet  levitating above superconductive plate with strong pinning. Demonstration of flux pinning during levitation is quite easy: if one tries to turn a superconductive plate, it resists (the vortex lattice bends elastically) and then suddenly leaps to a new equilibrium position corresponding to a new vortex lattice. 
+
+It is also instructive to observe the change of dissipation versus an oscillation amplitude near  equilibrium position; this can also be understood in the vortex lattice framework described above.
+\vspace{6pt}
+
+\textbf{\textso{Directions}}
+\vspace{4pt}
+
+\textbf{\textsc{I. Measurement of $\textit{T}_{\textbf c}$ by drop of electrical resistivity}}
+\vspace{4pt}
+
+\begin{Enumerate}{tab}
+\Item.
+Set current $I_{0}$ flowing through a sample which does not exceed the critical value for the sample.
+
+\Item.
+Set the recorder gain <<$\mathrm Y$>> corresponding to $U_{34}$ being measured.
+
+\Item.
+Fill a Dewar flask with liquid nitrogen and slowly dip the cell with the sample in nitrogen. Wait until the intense boiling stops (meaning the sample temperature become equal to that of nitrogen). The sample temperature rises during evaporation of nitrogen, so the resistivity can be measured as a function of temperature (according to thermocouple readings) in the range from $77\;\kelvin$ to about $100\;\kelvin$.
+
+\Item.
+Using the plot $U_{34}(U\sub{therm})$ determine the voltage across the thermocouple corresponding to the <<disappearance>> of resistivity and find the corresponding $T_{\mathrm c}$ with the aid of a calibration table.
+
+\Item.
+Evaluate the resistivity drop at $T=T_{\mathrm c}$ by taking into account specifications of the instruments.
+\end{Enumerate}%
+
+\vspace{6pt}
+\textbf{\textsc{II. Measurement of $\textit{T}_{\textbf c}$ by the Meissner effect}}
+
+\vspace{4pt}
+The experimental setup is shown in \refFigure{12_1_2}. A direction of the current in coils~\textit{1} and~\textit{3} is shown in~\refFigure{12_1_2}\textit{b}. The magnetic field induced by the current in the coil~\textit{2} is set to zero by adjusting the current in the coils~\textit{1} and~{3} (by means of potentiometers $R$). The sample is inside the coil~\textit{3}. 
+
+The magnetic field is partially expelled from the coil~\textit{3} below $T_c$, which violates the balance and allows one to detect the emf induced in~\textit{2}. The experiment proceeds as follows.
+
+\begin{Enumerate}{tab}
+
+\Item.
+Apply a voltage on the primary coils \textit{1} and~{3} and set the output signal from the coil~\textit{2} to zero by varying resistances~$R$.
+
+\Item.
+Connect a synchronous detector to the input <<$\mathrm Y$>> of recorder and set an appropriate scale. 
+
+\Item.
+Fill the Dewar flask with liquid nitrogen and dip the cell with the sample in nitrogen. Do the measurements according to item~3 of the previous experiment.
+
+\Item.
+Measure the signal from the coil~\textit{2} versus the sample temperature.
+
+\Item.
+Plot the results and determine the sample $T_{\mathrm c}$ using the plot. 
+\end{Enumerate}%
+
+\vspace{6pt}
+\textbf{\textsc{III. Measurement of $\textit{T}_{\textbf c}$ by means of magneto-electric torsion balance}}
+\vspace{4pt}
+
+Using a torsion balance measure the curve of transition into superconductive state (see~\refFigure{12_1_3}). Determine the critical temperature as the mean value of the temperatures corresponding to $0{.}1$ and $0{.}9$ of the maximal magnetic moment of the sample. Determine the critical temperature uncertainty. Using a Hall sensor measure the magnitude and the gradient of magnetic field at the sample location.
+
+\vspace{6pt}
+\textbf{\textsc{IV. Levitation in magnetic field.}}
+
+\vspace{4pt}
+At the end of experiment you can observe the phenomenon of magnetic levitation. A small magnet can hover above a ceramic sample cooled below $T<T_{\mathrm c}$. (Often a levitating object is called Mohammad's coffin due to the famous legend.) This phenomenon is based on the Meissner effect.
+
+\begin{Enumerate}{tab}
+\Item.
+Fill the dewar with a magnet inside with liquid nitrogen. Cool the magnet and the sample to the temperature of liquid nitrogen.
+
+\Item.
+Try to <<suspend>> the sample above the magnet. Is the sample in a stable position?
+\end{Enumerate}%
+
+\Literat\small
+
+1.\;\emph{Ципенюк
+Ю.\,М.} Физические основы сверхпроводимости.\,---\,М.: Физмат\-книга, 2003.
+
+2.\;\emph{Крылов
+И.\,П.} Основы квантовой физики и строение вещества.\,---\,М.: \mbox{МФТИ}, 1989. Гл.\,IV.
+
+3.\;\emph{Киттель Ч.} Введение в физику твердого тела.\,---\,М.: Наука, 1978. Гл.\,12.
+\normalsize

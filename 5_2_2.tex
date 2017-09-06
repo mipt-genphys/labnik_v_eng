@@ -1,0 +1,246 @@
+%translator Savrov, date 29.11.12
+ 
+\setcounter{Equation}{0}
+\setcounter{Figure}{0}
+\Work
+{Spectra of hydrogen and deuterium}
+{Spectra of hydrogen and deuterium}
+{Optical spectra of hydrogen and deuterium are studied. The results are used to calculate the Rydberg constants and ionization potentials of the isotopes and the isotopic shift of spectral lines.}
+
+Hydrogen atom is the simplest atomic system which Schrodinger equation can be exactly solved. By this reason the hydrogen spectrum is a subject of careful experimental and theoretical research.
+
+To understand the radiation spectrum of an atom one has to determine the atomic energy levels by solving the problem of electron motion in the effective atomic potential. For hydrogen and hydrogen-like atoms the two-body problem of relative quantum-mechanical motion of electron (the charge $-e$ and the mass $m_e$) and the nucleus (the charge $Ze$ and the mass $M$) is reduced to the problem of determination of the motion of a particle with an effective mass $\mu=m_eM/(m_e+M)$ in the Coulomb field $-Ze^2/r$. However the solution even for hydrogen-like atom is not simple.
+
+The wavelengths of spectral lines of a hydrogen-like atom are given by
+$$   
+{\lambda^{-1}_{mn}}=RZ^2\left(\frac{1}{n^2}-\frac{1}{m^2}\right),   \eqMark{2_2_1} $$
+where $R$~is the Rydberg constant and $m$ and $n$~are integers.
+
+Equation~(\refEquation{2_2_1}) has been known in spectroscopy long ago (since $1885$). It was established empirically and called the generalized Balmer's formula. The formula correctly described the spectral lines of hydrogen for $R=109\;677{.}6\;\cm^{-1}$, however its physical meaning at that time was not clear.
+
+To understand the spectrum of hydrogen, in $1913$ Niels Bohr proposed a theory of atom, which was based on three postulates:
+
+1) \textit{not all classical orbits of electron in hydrogen atom are allowed, there are certain stationary orbits on which electron does not lose its energy contrary to classical electrodynamics;}
+
+2) \textit{an allowed orbit is specified by the condition that the corresponding angular momentum is a multiple of the Planck constant $\hbar=h/(2\pi)$, i.e. 
+$$   
+L=n\hbar;   \eqMark{2_2_2} $$}
+
+3) \textit{gain or loss of energy occurs when atom jumps from a stationary state to another one, while the frequency of radiated (absorbed) light is related to the energy difference between the stationary states as
+$$   
+h\nu=E_2-E_1,   \eqMark{2_2_3} $$ 
+where $\nu$~is the spectrum line frequency.}
+
+These postulates combined with the equation of motion of electron in Coulomb potential of the nucleus unambiguously determine the allowed energy levels of a hydrogen-like atom. Assuming~\fFigure{Energy levels of hydrogen atom and spectral lines}2_2_1 {4.9cm}{5.9cm}{pic/L02_2_01.eps} that the nucleus is immobile one obtains 
+$$   
+E_n=-\frac{2\pi^2m_ee^4Z^2}{h^2}\frac{1}{n^2}.   \eqMark{2_2_4} $$
+
+Using the atomic energy levels one can calculate the possible radiation frequencies and explain the observed spectrum (see Eq.~\refEquation{2_2_4} and~\refFigure{2_2_1}). Notice that the quantum-mechanical calculation gives the same result, however, the interpretation of  $n$ in these approaches is different.
+
+The diagram in~\refFigure{2_2_1} shows that spectral lines of hydrogen can be organized in several series; for any line of a series $n$ is the same while $m$ is any integer from ${n+1}$ to $\infty$.\looseness=-1
+
+In the experiment one studies Balmer's series, which lines belong to visible spectrum, and the isotopic shift between lines of hydrogen and deuterium. For Balmer's series $n=2$. First four lines of the series correspond to $m$ equal to $3$, $4$, $5$, and $6$. These lines have special notation: $H_{\alpha}$, $H_{\beta}$, $H_{\gamma}$, and $H_{\delta}$, respectively.
+
+Consider how one can estimate energies of the ground and the first excited state of a hydrogen-like atom. To determine the ground state of a quantum system one must find the minimum of the system total energy allowed by the uncertainty principle. The potential energy of electron in the field of a nucleus with a charge $Ze$ is the Coulomb energy. Since the electron is localized in a region of the size $r$ (the radius of its orbit), its momentum is $p\sim \hbar/r$ according to the uncertainty relation. Therefore, the total energy is 
+$$   
+E=-\frac{Ze^2}{r}+\frac{\hbar^2}{2m_er^2}.   \eqMark{2_2_5} $$
+
+Differentiating this expression with respect to $r$ leads to the following condition for the minimum of energy:
+$$   
+\frac{Ze^2}{r^2}-\frac{\hbar^2}{m_er^3}=0,   \eqMark{2_2_6} $$ 
+or 
+$$   
+r\sub{\tiny B}=\frac{\hbar^2}{Zm_ee^2}.   \eqMark{2_2_7} $$
+
+We obtained the Bohr radius (the radius of the first orbit) of electron in the field of a nucleus with charge $Ze$. The energy of the ground state is obtained by substitution of~(\refEquation{2_2_7}) into Eq.~(\refEquation{2_2_5}): 
+$$   
+E=-\frac{m_ee^4}{2\hbar^2}Z^2=-RZ^2.   \eqMark{2_2_8} $$
+
+The energies of excited states can be found in a similar way. The discrete energies of electron in atom are specified by the requirement that the length of allowed classical orbit is a multiple of a de Broglie wavelength. If the orbit radius is $r$, the $n$-th electron state is determined by the relation: 
+$$   
+2\pi r=\lambda n~~~(n=1,~2,~3,\,...),~~~\text{or}~~~m_ev_n=\frac {nh}{2\pi r}.   \eqMark{2_2_9} $$
+This relation is completely equivalent to the second Bohr's postulate. 
+
+An excited quantum state has $n$ nodes because the corresponding orbit accommodates precisely $n$ de Broglie wavelengths. Therefore the typical wavelength $\lambda$ of this state is $2r/n$. To estimate the corresponding energy let us perform the following procedure. We move one potential wall so that the width of the potential well becomes equal to one half of the wavelength. In so doing we have made the well (with the width $r/n$) which ground state is equal to the $n$-th level of the well of width $r$. The uncertainty of the particle coordinate is $r/n$, so the kinetic energy increases. Indeed, the momentum
+$$   
+p\sim\frac{\hbar}{\lambda}=\frac{n\hbar}{r},   \eqMark{2_2_10} $$
+and the kinetic energy
+$$   
+T\sim\frac{n^2\hbar^2}{2m_er^2}.   \eqMark{2_2_11} $$
+Following the derivation of Eq.~(\refEquation{2_2_7}) one obtains for the Bohr radius of $n$-th state 
+$$   
+r_n=\frac{n^2\hbar^2}{Zm_ee^2},   \eqMark{2_2_11} $$ 
+and the energy 
+$$   
+E_n=-\frac{m_eZ^2e^4}{2\hbar^2}\frac{1}{n^2}=-R\frac{Z^2}{n^2}.   \eqMark{2_2_13} $$
+
+We assumed that the orbit radius $r$ is fixed. However, according to quantum mechanics the orbit radii are <<dispersed>> near the radius of the classically stable orbit corresponding to the minimum of energy $E(r)$. Actually electron can be found with a certain probability at any distance from the nucleus. Therefore, the numerical factor in Eq.~(\refEquation{2_2_13}), although correct, should not be taken literally while the dependence on $n$ is valid in principle.
+
+It should be emphasized that the derived solution can be applied to any <<hydrogen-like>> system, i.e. a system of two particles of opposite charge bound by electrostatic forces only. For instance, it could be a singly ionized helium $\mathrm{He}^+$, doubly ionized lithium $\mathrm{Li}^{++}$, triply ionized $\mathrm{Be}^{+++}$, etc. Another example is positronium, the bound system of $e^+e^-$, and a muonic atom in which one electron is replaced by negative muon $\mu^-$ (muon mass is $\simeq200m_e$).
+
+In the above discussion we implicitly assumed that atomic electron is moving in the Coulomb field of the immobile nucleus. Actually the electron is orbiting around the center-of-mass, so the energy of atomic state depends on the reduced mass $\mu$ of the electron-nucleus system. Therefore the positions of spectral lines of hydrogen and deuterium differ. The difference is known as \textit{isotopic shift}. It is not difficult to verify that the relative shift between the lines of hydrogen and deuterium is given by the formula
+$$  
+\frac{\Delta\lambda}{\lambda}=\frac{m_e}{m_p}\frac{A_{\mathrm D}-A_\mathrm{H}}{A_\mathrm{D} A_\mathrm{H}}\simeq\frac{m_e}{2M_{\mathrm H}},\eqMark{2_2_14} $$ 
+where $m_e$, $m_p$, and $M_{\mathrm H}$~are the masses of electron, proton, and atom of hydrogen, and $A_\mathrm{H}=1$ and $A_\mathrm D =2$~are the mass numbers of hydrogen and deuterium. 
+
+\vspace{8pt}
+\textbf{\textsc{I. Measurement of wavelengths of spectral lines of hydrogen}}
+
+\vspace{4pt}
+\so{\textbf{Experimental installation}}
+
+\vspace{4pt}
+The wavelengths of spectral lines are measured by means of a glass-prism monochromator-spectrometer ”Ã-$2$ with an operation range from $0{.}38$ to $1{.}00\;\mkm$.
+
+\textit{Prism monochromator ”Ã-2}. The monochromator ”Ã-$2$ consists of the following basic parts (\refFigure{2_2_2}):
+
+1.\;An input slit \textit{1} equipped with a micrometer screw~\textit{9} which allows one to control the slit width. Usually the width is $0{.}02$--$0{.}03\;\mm$.
+
+2.\;A collimator objective \textit{2} equipped with a micrometer screw~\textit{8}. The screw is used to displace the objective with respect to the slit when focusing on a chosen spectral line.
+
+3.\;A composite spectral prism~\textit{3} mounted on a turntable~\textit{6}. The prism~\textit{3} consists of three prisms $\mathit{\Pi}_1$, $\mathit{\Pi}_2$, and $\mathit{\Pi}_3$ glued together.  \fFigure{Monochromator ”Ã-$2$}2_2_2 {6.5cm}{5.5cm}{pic/L02_2_02.eps}  The first two prisms with dispersion angles of $30\;\degree$ are made of heavy flint glass which has a large dispersion. The intermediate prism~$\mathit{\Pi}_3$ is made of crown glass. Light is reflected from its hypotenuse side and turn by $90\degree$. Due to this design the dispersions of prisms $\mathit{\Pi}_1$ and $\mathit{\Pi}_2$ add together.
+
+4.\;The turntable \textit{6} can be rotated around a vertical axis with the aid of a micrometer screw~\textit{7} joined to a cylinder with a helix twined around it. There is a sliding pointer indicating to a degree mark on the helix. Rotating the cylinder one rotates the prism and observes different parts of spectrum in the field of vision.
+
+5.\;A telescope which consists of an objective~\textit{4} and an eyepiece~\textit{5}. The objective creates a color image of the input slit~\textit{1} at the focal plane. An indicator~\textit{10} is located at the same plane. The slit image is observed through the eyepiece. The eyepiece can be replaced with an output slit, transmitting a single spectral line, if necessary. In this case the spectrometer operates as a monochromator. The output slit is not used in the experiment.
+
+6.\;A heavy casing~\textit{11} protects the spectrometer parts from possible damage and dust.
+
+7.\;An optical bench on which a light source~\textit{S} and a converging lens \textit{L} (used to focus the light on the input slit) can be shifted along and bolted down. It is recommended to set the source at a distance of $40$--$50\;\cm$ from the slit and place the lens at $10$--$13\;\cm$ from the source. One should make sure that the source and lens elevation above the bench is approximately the same as that of the slit. Then the light beam coming from the source uniformly fills the lens and the prism. For maximum illumination of the input slit one should obtain the light source image (e.g. a heated filament) on the input slit by moving the lens along the bench. The image of the source is most conveniently observed on a white cap with a cross (the cap is used to cover the slit when adjusting the collimator).
+
+8.\;A power supply unit for light sources and the internal lights of spectrometer. The unit has outlet sockets for light sources ($3{.}5\;\V$), a neon bulb, and an incandescent lamp. The switches on the spectrometer lower panel turn on and off the internal illumination of a scale and the indicator of spectral lines. The brightness is regulated by a rheostat. 
+
+When getting ”Ã-$2$ ready for operation one should pay special attention to careful focusing, the images of the indicator~\textit{10} and spectral lines must be sharp and clear-cut. The focusing is done as follows. By moving the eyepiece one obtains a sharp image of the indicator~\textit{10}. Then one illuminates the input slit with a mercury lamp and obtains the image of any spectral line with the aid of micrometer screw~\textit{8}. The focusing should be redone when another part of spectrum is investigated. 
+
+The position of a spectral line is determined by aligning its center with the indicator tip and reading off the corresponding helix markings. The input slit should be made as narrow as possible ($0{.}01$--$0{.}02\;\mm$ according to the micrometer scale) to decrease the error. To see the most faint spectral lines in the deep violet one should increase the width (to $0{.}03$--$0{.}05\;\mm$). Human eye better spots a weak line in motion, so it is useful to rotate the cylinder slightly back and forth near the line position.
+
+The spectrometer requires a preliminary calibration. It is convenient to use a mercury lamp œ– -$4$ in the short-wave region and a neon bulb in the long- and middle-wave regions for calibration. Tables of spectral lines of mercury and neon and their relative intensities (based on visual estimates) can be found in Appendix~V.
+
+The calibration curve should be plotted on a large sheet of graph paper. The degrees are plotted on abscissa and the corresponding wavelengths are plotted on the ordinate. It can happen that a point deviates from the smooth curve. Usually this happens when the corresponding spectral line is incorrectly identified (more often this happens for neon). In this case one should repeat the measurement and correct the calibration curve.
+
+ \textit{Hydrogen lamp.} To measure the wavelengths of spectral lines of Balmer' series in this experiment one uses an $H$-shaped tube filled with hydrogen and powered by an induction coil. The maximum brightness is achieved when the butt end of the horizontal part of the tube (the capillary) is used as the light source.
+ 
+To increase the brightness of lines of atomic hydrogen, a small amount of water vapor is added to the hydrogen filling the tube. Electric sparks split the water molecules and release an additional atomic hydrogen into the tube volume. The tube is filled to a pressure of $5$--$10\;\tor$.
+
+Notice that the spectrum of the hydrogen lamp contains lines of molecular hydrogen in addition to the lines of atomic spectrum. However their intensity is less and it is not difficult to distinguish them from the bright atomic lines. One should start the search of atomic lines from the brightest red line $H_{\alpha}$. The second line $H_{\beta}$~is greenish-blue in hue. Between these two lines there are several relatively faint reddish-yellow and green molecular lines. The third line $H_{\gamma}$ is bluish-violet. The forth line $H_{\delta}$ is violet and faint, it is not easy to find. 
+%
+\vspace{6pt}
+\so{\textbf{Directions}}
+
+\vspace{4pt}
+\begin{Enumerate}{tab} \Item. Calibrate spectrometer ”Ã-$2$ using the spectra of mercury and neon. Plot the calibration curve.
+
+\Item. Measure the positions of lines $H_{\alpha}$, $H_{\beta}$, $H_{\gamma}$, and $H_{\delta}$ (if you can spot it) and determine their wavelengths using the calibration curve.
+
+\Item. Verify that the ratio of the wavelengths satisfies Eq.~(\refEquation{2_2_1}).
+
+\Item. Calculate the Rydberg constant $R_{\mathrm H}$ for every line, find the mean value, and estimate the error. Compare the result with the theoretical value $R_{\mathrm H}$.
+\end{Enumerate}
+
+\vspace{-12pt}
+\textbf{\textsc{II. Measurement of isotopic shift\\ \indent between hydrogen and deuterium lines}}
+
+\vspace{6pt}
+\so{\textbf{Experimental installation}}
+
+\vspace{4pt}
+An isotopic shift between the lines of hydrogen and deuterium is small, the optical resolution and dispersion of spectrometer ”Ã-$2$ are too low to measure it. To this end a reflective diffraction grating is used and the measurement is done by means of a goniometer.
+
+The optical scheme of the installation is shown in~\refFigure{2_2_3}.
+
+A source of light~\textit{1} is a hydrogen-deuterium lamp~\hbox{ƒ¬—-$25$}. The lamp consists of a glass bulb with two electrodes, a cathode and an anode. A small circular opening is cut in the middle of the anode \cFigure{Experimental installation}2_2_3 {8.1cm}{4.4cm}{pic/L02_2_03.eps}  to let the light out of the discharge region. The cathode is heated by an alternating current at $5\;\V$. A direct voltage of~ $300\;\V$ is applied to the anode. Both voltages are supplied by a power source. The current through the lamp is controlled by a rheostat~$R$.
+
+The dispersion curve $\beta(\lambda)$ of the reflective grating is measured with the aid of a neon bulb connected to the AC mains at $220\;\V$.
+
+The angles between spectral lines are measured by means of a goniometer √-$1$,\,$5$ which consists of the following main parts: a telescope~\textit{4}, a collimator~\textit{2}, a base and a turntable~\textit{5}. The diffraction grating is mounted on the turntable. The telescope and the collimator have a similar design. A slit, which width is varied by a micrometer screw, is placed at the collimator focal plane. The width can be varied from $0$ to $2\;\mm$, the interval scale is $0{.}01\;\mm$. The slit is illuminated by a source, i.e. the neon bulb or the lamp ƒ¬—-$25$. A light beam from the source passes through the collimator and then it is reflected by the grating. The obtained spectrum is observed in the telescope which can rotate around a vertical axis. A line position is measured by means of a microscope. 
+
+In order to calibrate the goniometer one should do the following: 1) to focus the telescope at infinity (to this end the cross must be placed at the common focal plane of the eyepiece); to set the optical axis of the tube perpendicular to the axis of rotation; 3) to set the collimator at a parallel beam.
+
+\vspace{6pt}
+ \so{\textbf{Directions}}
+
+\vspace{4pt}
+ \begin{Enumerate}{tab} \Item. Turn the neon bulb on and place it close to the collimator slit. Loose the bolt which fixes the telescope and rotate the telescope until it is directed to the zero order of diffraction (near the leftmost position). Obtain the sharp image of the input slit by adjusting the collimator focus.
+
+\Item. Identify the observed spectral lines of neon with the lines tabulated in Appendix~V. Calibrate the spectrometer using the observed spectrum. One should pay special attention to the lines of $659{.}89$, $653{.}29$, and $650{.}65\;\nm$ which belong to the part of spectrum relevant to the experiment. It should be clear that a wavelength is determined by measuring the angle of deflection of the corresponding line from zero order. The spectral lines observed are actually the images of the collimator slit in the beams of different wavelengths. A thin spectral line is obtained providing the input slit is narrow enough.\looseness=-1
+
+\Item. Replace the neon bulb with the hydrogen-deuterium lamp ƒ¬—-$25$ and turn it on. To do this, turn the power source on and let it warm up for $10$~min. Using the switch initiate discharge in the lamp. Train the telescope on the red lines of hydrogen and deuterium; achieve the maximum brightness by moving the lamp.
+
+\Item. Measure the wavelengths of hydrogen and deuterium lines $H_{\alpha}$ and $D_{\alpha}$ in the first diffraction order. Determine the isotopic shift and compare the obtained result with the theoretical one calculated from Eq.~(\refEquation{2_2_14}).
+
+\Item. Determine the Rydberg constant of deuterium $R_{\mathrm D}$ and compare it to the Rydberg constant of hydrogen $R_{\mathrm H}$. \end{Enumerate}
+
+\vspace{6pt}
+{\vspace{0pt} \so{\textbf{Additional exercise}} \nopagebreak
+
+\vspace{4pt}
+\textbf{\textsc{I. Measurement of wavelengths of spectral lines \\ \indent by interpolation method}}
+
+\nopagebreak
+
+\vspace{4pt}
+Nowadays a measurement of wavelength of spectral line is one of the most precise measurements in physics. Using the calibration curve of a spectrometer one can determine a wavelength with an accuracy of $1\;\Angstrem$, i.e. with a relative accuracy of $0{.}02\%$. However, there are various methods which allow one to calculate the wavelength of a spectral line with an accuracy up to $0{.}001\%$ using the same data.
+
+In particular, to reduce the error one can resort to interpolation. If the observed line is located between two reference lines which are so close that the dispersion curve between them can be approximated by a straight line, the linear interpolation is used. 
+
+Here is the method of linear interpolation. Suppose there are two spectral lines which wavelengths $\lambda_{x1}$ and $\lambda_{x2}$ have to be measured (see \refFigure{2_2_4}\textit{a}).
+
+Using the reference (calibration) spectrum one finds the lines located to both sides of the lines studied. The wavelengths of reference lines are known. \hFigure{Location of reference and studied wavelengths in spectrum for linear (\textit{a}) and quadratic (\textit{b}) interpolation}2_2_4 {7.6cm}{5.1cm}{pic/L02_2_04.eps} Using the cylinder degree scale one determines the distances $d_{x1}$ and $d_{x2}$ of unknown lines $\lambda_{x1}$ and $\lambda_{x2}$ from the reference lines and the distance $d$ between the reference lines $\lambda_{1}$ and $\lambda_{2}$. In the linear interpolation method the wavelength of an unknown line is based on the relation 
+$$   
+\lambda_{x 1 (x 2 )}=\lambda_1-\frac{\lambda_1-\lambda_2}{d}(d-d_{x1(x2)}),   \eqMark{2_2_15} 
+$$
+where the coefficient at $(d-d_{x1(x2)})$ is the average dispersion at the part of spectrum to which $\lambda_1$ and $\lambda_2$ belong. This method of calculating wavelength is useful when working with diffraction gratings. For a prism spectrometer the method can be applied providing $(\lambda_1-\lambda_2)$ does not exceed~$50\;\Angstrem$.\looseness=-1
+
+A more precise determination of wavelength can be achieved by using equations of the second order (interpolation by a parabola segment) and three reference lines $\lambda_0$, $\lambda_1$ and $\lambda_2$ located in a small part of spectrum (see \refFigure{2_2_4}\textit{b}). Usually one employs the relation
+$$   
+\lambda=\lambda_0+Al+Bl^2,   \eqMark{2_2_16} $$ 
+where $A$ and $B$ are constants and $l$ is the distance between a reference line and the line being measured. To determine $\lambda_x$ one measures the positions of reference lines and the  line studied. Let the positions be $N_0$, $N_1$, $N_2$, and $N_x$. Since the wavelengths of the  reference lines are known one can write two equations using the above relation: 
+$$   
+\lambda_1=\lambda_0+A(N_0-N_1)+B(N_0-N_1)^2;   \eqMark{2_2_17} $$ 
+$$   
+\lambda_2=\lambda_0+A(N_0-N_2)+B(N_0-N_2)^2.   \eqMark{2_2_18} $$
+
+These equations allow one to determine the constants $A$ and $B$. Then the wavelengths of the line studied is calculated as
+$$   \lambda_x =\lambda_0+A(N_0-N_x)+B(N_0-N_x)^2.   \eqMark{2_2_19} $$
+
+One should keep in mind that the main source of wavelength error is usually due to the measurement of position $N$.
+
+It is easy to verify that the constant $A$ equals $d\lambda/dn$ and corresponds to the linear dispersion of a spectrometer. This follows from the fact that Eq.~(\refEquation{2_2_19}) is the Taylor series of $\lambda_x=f(N)$ centered at $(N_0,\;\lambda_0)$, i.e. 
+$$   
+\lambda_x-\lambda_0=\frac{d\lambda}{dn}(N_x-N_0)+\frac{1}{2!}\frac{d^2\lambda}{dn^2}(N_x-N_0)^2+ ... $$
+
+Therefore the error is
+$$   
+\Delta\lambda_x=\frac{d\lambda}{d n}\Delta N. $$ 
+The more the linear dispersion of a spectrometer, the higher is the accuracy of measurement of $\lambda_x$.
+
+If reference lines occupy a relatively wide spectral range obtained by a prism spectrometer and a curvature of the dispersion curve must be taken into account one can use Hartmann equations to interpolate the spectrum. The Hartmann dispersion relation is
+$$   
+\lambda = \lambda_0+\frac{C}{d-d_0},   \eqMark{2_2_20} $$ 
+where $\lambda_0$, $C$, and $d_0$~are three constants determined from three reference lines and $\lambda$ and $d$ are wavelength and a position of an unknown line. This equation approximates the dispersion curve of a prism spectrometer fairly well.
+
+In order to determine the constants in the Hartmann relation, $\lambda_0$, $C$, and $d_0$, one measures positions $d_1$, $d_2$, and $d_3$ of three reference lines $\lambda_1$, $\lambda_2$, and $\lambda_3$. The following equations must be solved to find the constants:
+
+$$   \lambda_1=\lambda_0+\frac{C}{d_1-d_0};~~~\lambda_2=\lambda_0+\frac{C}{d_2-d_0};~~~\lambda_3=\lambda_0+\frac{C}{d_3-d_0}. $$
+
+The solution is
+$$   
+d_0=\frac{d_3(\lambda_2-\lambda_3)(d_2-d_1)-d_1(\lambda_1-\lambda_2)(d_3-d_2)}{(\lambda_2-\lambda_3)(d_2-d_1)-(\lambda_1-\lambda_2)(d_3-d_2)}; $$ 
+$$   
+C=\frac{(\lambda_1-\lambda_2)(d_1-d_0)(d_2-d_0)}{d_2-d_1};~~~\lambda_0=\lambda_1-\frac{C}{d_1-d_0}. $$
+
+Now the wavelength of an unknown line can be found from the Hartmann relation using the calculated constants and the line position.
+
+\vspace{6pt}
+\textbf{\so{Directions}}
+\vspace{4pt}
+
+\begin{Enumerate}{tab} \Item. Using linear and quadratic interpolation of reference spectrum and the Hartmann relation calculate the wavelengths of observed lines of hydrogen and deuterium.
+
+\Item. Calculate the Rydberg constant using the obtained results. Compare the accuracy of all three methods. \end{Enumerate}
+
+\begin{center}\so{\textsf{\small À»“≈–¿“”–¿}}\end{center} {\small
+
+1. \textit{√ÓÎ¸‰ËÌ\;À.\;À., ÕÓ‚ËÍÓ‚‡\;√.\;».} ¬‚Â‰ÂÌËÂ ‚ ‡ÚÓÏÌÛ˛ ÙËÁËÍÛ.\,---\,Ã.: Õ‡ÛÍ‡, $1988$, \textsection\;$14$.
+
+2. \textit{ ‡ÎËÚÂÂ‚ÒÍËÈ\;Õ.\;».} ¬ÓÎÌÓ‚‡ˇ ÓÔÚËÍ‡.\,---\,—œ·.: À‡Ì¸, $2008$, \textsection\textsection\;$6{.}5,~6{.}7$. }

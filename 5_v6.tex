@@ -1,0 +1,261 @@
+%translator Savrov, date 30.12.12
+
+\let\theEquation=\oldTheEquation
+\let\theFigure=\oldTheFigure
+
+\Chapter {Resonant absorption of gamma-quanta by nuclei} {Resonant absorption of gamma-quanta by nuclei} {Resonant absorption of gamma-quanta by nuclei}
+
+\textbf{Decay of excited nucleus. The Breit-Wigner formula.} The stationary state of any physical system corresponds to the minimum of energy, that is why any excited state, e.g. a stone atop a hill or an excited atom or nucleus, must eventually end up in the stationary state of minimal energy. Potential energy of a falling stone transforms into heat, atom or nucleus emits photon or $\gamma\text{-}$quantum. Solution of the stationary Schrodinger equation gives the allowed energy levels corresponding to stationary states which wave functions vanish at spatial infinity. Now consider a solution which tends to the outgoing spherical wave\:$\psi \propto e^{ikr}/r$ at spatial infinity. This solution would describe a particle leaving a decaying system. Since the boundary condition is complex one cannot say that the energy eigenvalues are real. Actually, solution of Schrodinger equation gives a set of complex quantities which are conventionally written as\looseness=-1
+\vspace{-6pt}
+$$
+E=E_0-i{\Gamma}/2,
+\eqMark{6_1}
+$$
+where $E_0$ and $\Gamma$~are positive. A time-dependent factor of a quasi-stationary state wave-function is:
+$$
+e^{-i(E/\hbar)t}=e^{-i(E_0/\hbar)t}e^{-[\Gamma/(2\hbar)]t}.
+\eqMark{6_2}
+$$
+Therefore any probability obtained by squaring the wave-function modulus decays in time as $e^{-\Gamma t/\hbar}$. In particular, the probability to detect a particle <<inside the system>> decreases according to this law. The quantity $\Gamma$ is called the \textit{decay width}, the mean lifetime $\tau$ of the decay (the time period at which the system energy decreases by the factor of $e$) is
+$$
+\tau\Simeq \hbar/\Gamma.
+\eqMark{6_3}
+$$
+The decay width $\Gamma$ is measured in energy units ($\eV$). Notice that Eq.~(\refEquation{6_3}) is actually the uncertainty relation between time and energy.
+
+This can be said differently. During the decay an excited system (atom or nucleus) is described by a superposition of wave functions of the initial and final states. The wave function of initial state decreases exponentially while the wave function of final state exponentially grows. The time of <<extinction>> of the initial state (the excited state lifetime) corresponds to the duration of emitted wave train, whence 
+$$
+\Delta E \Delta t=\Gamma \tau =2 \pi \hbar.
+\eqMark{6_4}
+$$
+
+To be specific, consider an excited-to-ground-state transition accompanied by radiation of an electromagnetic wave. What is the shape of the spectral line of emitted radiation? Suppose there is an oscillator which coordinate decreases with time as
+$$
+x(t)=\begin{cases}   ae^{-\Gamma t/2}e^{i\omega_0 t}, & t\geqslant0, \\   0, & t<0,   \end{cases}
+\eqMark{6_5}
+$$
+where $\Gamma$~is the damping coefficient and $\omega_0$~is its natural frequency.
+
+Let us write the oscillator coordinate as the Fourier integral,
+\vspace{-16pt}
+$$
+x(t)=\int\limits_{-\infty}^{\infty}a(\omega)e^{i\omega t}\,d\omega,
+\eqMark{6_6}
+$$
+where
+$$
+a(\omega ) =\frac{1}{2\fpi}\int\limits_{-\infty}^{\infty}x(t) e^{-i\omega t}\,dt.
+\eqMark{6_7}
+$$
+Integrating this equation one obtains for $a(\omega )$:
+
+\vspace{-16pt}
+\begin{Multline}   a(\omega )=\frac{1}{2\fpi}\int\limits_{0}^{\infty}ae^{-\Gamma t/2}e^{i\omega_0t}e^{-i\omega t}\,dt=\frac{a}{2\fpi}   \int\limits_{0}^{\infty}e^{-t[(\Gamma /2)-i(\omega_0-\omega)]}\,dt=\\   =\frac{a}{2\fpi}\frac{1}{(\Gamma/2)-i(\fomega_0-\fomega)}.
+\eqMark{6_8} \end{Multline}
+
+\vspace{-6pt}
+The intensity of radiation with frequency $\omega$ is proportional to the square of particle acceleration and, therefore, to the square of the modulus of the corresponding harmonics:
+\vspace{-12pt}
+$$
+I_{\omega}\propto |a(\omega)|^2.
+\eqMark{6_9}
+$$
+The modulus is
+$$
+\frac{2\fpi}{a}|a_{\omega}|=\left|\frac{1}{(\Gamma/2)^2+(\fomega_0-\fomega)^2}\right|^{1/2}.
+\eqMark{6_10}
+$$
+The square of the modulus can be conveniently written as
+$$
+|a_{\omega}|^2=\left(\frac{a}{2\fpi}\right)^2\frac{1}{(\Gamma/2)^2+(\fomega_0-\fomega)^2}=\left(\frac{a}{2\fpi}\frac{2}{\Gamma}\right )^2\frac{(\Gamma/2)^2}{(\Gamma/2)^2+(\fomega_0-\fomega)^2}.
+\eqMark{6_11}
+$$
+
+If the maximal radiation amplitude at $\omega = \omega_0$ is $I_0$,
+$$
+I_0=I_{\omega =\omega_0}=\left(\frac{a}{\fpi\Gamma}\right)^2,  \eqMark{6_12}
+$$
+then the radiation intensity versus frequency is  
+$$
+I_{\omega}=I_0\frac{(\Gamma/2)^2}{(\Gamma/2)^2+(\fomega_0-\fomega )^2}.
+\eqMark{6_13}
+$$
+
+One can see that the radiation frequency spectrum corresponding to the law of exponential decay is described by the so called Lorentz profile centered at $\omega_0$ with the full width at half maximum equal to $\Gamma$.
+
+The process inverse to emission, the resonant absorption, is described by the same equation. This means that the effective cross-section $\sigma(\omega )$ of resonant absorption  is
+$$
+\sigma ( \omega ) = \sigma_0\frac{(\Gamma/2)^2}{(\fomega - \fomega_0)^2+(\Gamma/2)^2},
+\eqMark{6_14}
+$$
+where $\sigma_0$ is the maximal effective absorption cross-section of the process. In nuclear physics Eq.~(\refEquation{6_14}) is called the Breit-Wigner formula; for a scalar particle entering a reaction in $s$-state of relative motion, the formula becomes
+$$
+\sigma_{ab} = \pi \lambdabar_a^2\frac{\Gamma_a\Gamma_b}{(E-E_0)^2+(\Gamma/2)^2},
+\eqMark{6_15}
+$$
+where $\Gamma_a$~is the decay width of a compound (excited) nucleus emitting the incident particle $a$ (elastic channel); $\Gamma_b$ corresponds to emission of another particle (inelastic scattering); $\Gamma = \Gamma_a+\Gamma_b$ is the total decay width; and $\lambdabar_a$ is the wavelength of incident particle.
+
+At the resonance the elastic scattering cross-section $\sigma_{aa}$ becomes 
+$$
+\sigma_{aa}=4\pi\lambdabar_a^2(\Gamma_a/\Gamma)^2.
+\eqMark{6_16}
+$$
+Therefore, if only the elastic scattering is allowed by the law of the conservation of energy ($\Gamma_b=0$, so $\Gamma \Gamma_a$), the maximum cross-section (at the resonance) is
+$$
+\sigma_{aa}=\sigma_{aa,\mathrm{\max}}=4\pi\lambdabar_a^2.
+\eqMark{6_17}
+$$
+
+Let us determine at what conditions the inelastic cross-section is maximal. To do this we differentiate Eq.~(\refEquation{6_15}) with respect to $\Gamma_b$ provided $E=E_0$ and $\Gamma = \Gamma_{a} + \Gamma_b$:
+$$
+\frac{d}{d\Gamma_b}\left(\frac{\Gamma_a\Gamma_b}{(\Gamma_a+\Gamma_b)^2}\right)=0=\frac{\Gamma_a}{(\Gamma_a+_b)^2}-2\frac{\Gamma_a\Gamma_b}{(\Gamma_a+\Gamma_b)^3}.
+\eqMark{6_18}
+$$
+%
+\fFigure{Relation between elastic and inelastic cross-sections}6_1 {3cm}{3.3cm}{pic/L06_01.eps} 
+%
+Thus, the inelastic cross-section is maximal at $\Gamma_a=\Gamma_b=\Gamma/2$ and equals:
+$$
+\sigma_{ab} =\sigma_{ab,\mathrm{\max}}=\pi\lambdabar_a^2.
+\eqMark{6_19}
+$$
+
+One can see that the allowed values of elastic and inelastic cross-sections are located inside the region determined by Eqs.~(\refEquation{6_17}) and~(\refEquation{6_19}). In addition the total cross-section $\sigma_t$ is constrained as
+$$
+\sigma_t\leqslant 4\pi\lambdabar^2.
+\eqMark{6_20}
+$$
+
+The diagram in~\refFigure{6_1} represents these results; the shaded region corresponds to the allowed values of $\sigma\sub{el}$ and $\sigma\sub{inel}$. From the diagram it is obvious that  completely inelastic cross-section does not exist. This fact is well known in optics: light incident on a black disk always undergoes diffraction. \vspace{1ex}
+
+\textbf{Probability of the M\''{o}ssbauer effect.} Due to conservation of momentum a nucleus emitting or absorbing a $\gamma\text{-}$quantum receives a part of the decay energy (recoil energy). The energy $E_1^*$ of excited nuclear state and the energy $E_{\gamma}$ of emitted $\gamma\text{-}$quantum are related as
+$$
+E_{\gamma} =E_1^*-R,
+\eqMark{6_21}
+$$
+where $R$~is the kinetic energy of recoil.
+
+Similarly, an identical nucleus absorbing a $\gamma\text{-}$quantum with energy $E_{\gamma}$ also receives the kinetic energy of recoil $R$, so the nuclear excitation energy is 
+$$
+E_2^*=E_{\gamma}-R=E_1^*-2R.
+\eqMark{6_22}
+$$
+
+M\''{o}ssbauer discovered that if an excited nucleus is bound in an atomic lattice and certain conditions are met (the energy of emitted quantum is not large and the temperature is low enough), there is a significant probability that emission or absorption of $\gamma$-quanta occurs without a recoil, i.e. the unshifted line appears in the absorption (emission) spectrum,
+$$
+E_{\gamma}=E_1^*=E_2^*.
+\eqMark{6_23}
+$$
+
+Such a phenomenon is called the \textit{nuclear resonant fluorescence} or the \textit{nuclear resonant scattering (absorption)} or simply the \textit{M\''{o}ssbauer effect}.
+
+The central issue of the M\''{o}ssbauer effect is the probability of observation of the unshifted line, the signature of the recoilless emission. A free nucleus emitting a $\gamma\text{-}$quantum with energy $E_{\gamma}$ would receive the momentum $p$ and the recoil energy $R$ according to the following relations
+\vspace{-12pt}
+$$
+p=\frac{E_{\gamma}}{c},~~~R=\frac{p^2}{2M}=\frac{E_{\gamma}^2}{2Mc^2}.
+\eqMark{6_24}
+$$
+
+So, how does the binding of atom in a solid affect its recoil momentum and energy? The answer to the first question is simple: the transfered momentum is the same as for a free nucleus but it must be transferred to the solid sample as a whole. To prove this statement consider two possibilities  initiated by recoil: a free motion of the nucleus and an excitation of lattice vibrations (phonons). 
+
+The recoil momentum cannot set a nucleus in free motion since the energy required to release the nucleus from a lattice is at least $\simeq10\;\eV$, while in most cases the recoil energy does not exceed several tenths of electron-volt. On the other hand the recoil momentum of the nucleus cannot be transferred to lattice vibrations. The latter can be understood as standing waves or a sum of propagating waves (phonons). For any wave there is another wave propagating in the opposite direction, therefore the mean momentum of the lattice is zero. Therefore the recoil momentum must set in motion the whole crystal. If the crystal is attached to another body the momentum is transferred to this body. 
+ 
+Now consider the emission from the energy viewpoint. The energy of nuclear transition can be shared between the $\gamma\text{-}$quantum, the atom, the lattice vibrations, and the solid body as a whole. Two of these possibilities should be excluded right away. Firstly, the atom, which nucleus undergoes the transition, does not leave its lattice site and therefore cannot receive an additional energy. Secondly, the energy transferred to the lattice is negligible.
+
+Thus the energy of nuclear transition is shared between the $\gamma\text{-}$quantum and phonons. The M\"{o}ssbauer transition occurs when the whole crystal recoils rather than a single nucleus and the $\gamma$-quantum receives all energy of the transition.
+
+Assume, for simplicity, that any atom of a solid body is independently vibrating, like a harmonic oscillator, in the potential well originated due to interactions with its neighbors. Such a model is known as the \textit{Einstein solid}. Suppose that the wavelength of atomic oscillations equals $\lambda =2a$, where $a$ is the lattice constant (the shortest length between the neighboring atoms). This is the smallest oscillation wavelength of atom in a lattice. The corresponding oscillation energy is called the \textit{Debye energy}:
+\vspace{-6pt}
+$$
+E_{\raisebox{-0.5pt}{\fontsize{6pt}{6pt}\selectfont\textrm{D}}}=\hbar{\omegadb}=\pi\hbar s/a={\kb}\Theta,
+\eqMark{6_25}
+$$
+
+\vspace{-0pt}
+\noindent where $s$~is the speed of sound and $\Theta$~is the so called \textit{Debye temperature.}
+
+The spectrum of lattice excitations of the Einstein solid is the excitation spectrum of a harmonic oscillator: it consists of equidistant energy levels separated by $\hbar{\omegadb}$. Therefore, the solid can receive only the energy $E_n =n \hbar{\omegadb}$, i.e. $\hbar{\omegadb}$, $2\hbar{\omegadb}$, $3\hbar{\omegadb}$, etc. There is a probability that emission of $\gamma\text{-}$quantum does not excite lattice vibrations at all ($n=0$; it is this process which we are interested in), or the lattice receives a recoil energy of $\hbar {\omegadb}$, $2\hbar{\omegadb}$, $3\hbar{\omegadb}$, etc. 
+
+The probability distribution of these events is the Poisson distribution. Indeed these events are independent and our random quantity (the energy transferred) can accept only positive integer values. According to the Poisson distribution the probability that a given number $n$ of events  occurs during a given time interval is:
+\vspace{-14pt}
+$$
+P(n)=\frac{a^n}{n!}e^{-a},
+\eqMark{6_26}
+$$
+where $a$~is the average number of events occurring during the time interval. In our case $a$ is the average number of oscillation quanta $\hbar {\omegadb}$ excited when a nucleus emits a $\gamma\text{-}$quantum with energy~$E_\gamma$. Let the average energy transferred by $\gamma\text{-}$quantum (recoil energy) be $R$, then the average number of quanta $n$ equals $R/(\hbar{\omegadb} )$. Notice that we do not take into account how temperature affects the 
+M\"{o}ssbauer effect, let us postpone this question until later.
+
+The average energy of recoil can be easily found by taking the limit of weak lattice coupling, i.e. assuming that the nucleus is almost free. In this case $R$ becomes the recoil energy of a free nucleus given by Eq.~(\refEquation{6_24}). For $n=0$ this equation gives the probability $f$ of emission of $\gamma$-quantum in which no energy is transferred to lattice vibrations:  
+\vspace{-12pt}
+$$
+f=P(0)=\exp\left(-\frac{R}{\hbar{\omegadb}}\right)=\exp\left(-\frac{R}{{\kb}\Theta}\right).
+\eqMark{6_27}
+$$
+
+This equation implies that at zero temperature $\gamma\text{-}$quanta are mostly emitted without recoil provided the ratio $R/({\kb}\Theta)$ is small.
+
+The M\"{o}ssbauer effect is usually observed for $\gamma\text{-}$quanta with energies of several tens of keV. For instance, in the widely used iron isotope $^{57}\mathrm{Fe}$ this energy is $14{.}4\;\keV$, which corresponds to the recoil energy $R=0{.}002\;\eV$. The speed of sound in iron is $5960\;\m/\s$ and the lattice constant is $2{.}9\;\Angstrem$, so the Debye temperature is approximately equal to $0.04\;\eV$. Therefore the ratio $R/({\kb}\Theta)=0{.}05$ and the probability of emission without recoil is close to unity. This is a common situation for M\"{o}ssbauer emitters,  i.e. the recoil energy transferred to a crystal turns out to be much less than the minimal energy of lattice excitation (for the Einstein solid).
+
+Equation~(\refEquation{6_27}) can be written in a form more suitable for further discussion. The average potential energy of a particle executing harmonic motion, $M\!\omega^2 \langle u^2 \rangle/2$, where $M$ is the particle mass and $\omega$ is the oscillation frequency, equals one half of its total energy $E$. In this equation $\langle u^2\rangle$ is the mean square particle displacement. On the other hand, the total oscillator energy at zero temperature is $\hbar\omega/2$. Since the average potential energy of harmonic oscillator equals its average kinetic energy,
+\vspace{-8pt}
+$$
+\langle U\rangle=\frac{1}{2}M\!\omega^2\langle u^2\rangle=\frac{1}{4}\hbar\omega,
+$$
+which gives for the lattice atom:
+\vspace{-4pt}
+$$
+\langle u^2 \rangle=\frac{\hbar}{2M{\omegadb}}.
+\eqMark{6_28}
+$$
+
+\vspace{-4pt}
+The wavelength of emitted quantum is $\lambda=2\pi\hbar c/E_{\gamma}$, so the exponent in Eq.~ (\refEquation{6_27}) can be written as:
+\vspace{-6pt}
+$$
+\frac{R}{{\kb}\Theta}=\frac{E_\gamma^2}{2Mc^2\hbar{\omegadb}}=\frac{E_\gamma^2}{\hbar^2 c^2}\frac{\hbar}{2M{\omegadb}}=4\pi^2\frac{\langle u^2\rangle}{\lambda^2}.
+\eqMark{6_29}
+$$
+
+\vspace{-2pt}
+This expression implies that the probability of quantum emission without exciting lattice vibrations (phonons) is large providing the amplitude of atomic vibrations is small compared to the wavelength of $\gamma\text{-}$quantum emitted by the nucleus.
+
+Now we can generalize the result obtained by taking into account the effect of finite temperature and the fact that lattice vibrations are actually specified by a spectrum of frequencies. 
+
+Usually lattice vibrations are described by the Debye model which assumes a linear dependence between the oscillation frequency and wave vector, just as in the case of sonic waves. We have already mentioned that the maximal frequency of oscillations (the Debye frequency) corresponds to the wavelength equal to the lattice constant. In this model the probability $f$ of emission without recoil is determined by the expression similar to Eq.~(\refEquation{6_27}) in which $\Theta$ is replaced by $2\Theta/3$:
+\vspace{-6pt}
+$$
+f=\exp\left(-\frac{3R}{2{\kb}\Theta}\right).
+\eqMark{6_30}
+$$
+
+The factor $3/2$ is due to the following relation of the Debye model at $T=0$
+\vspace{-8pt}
+$$
+\frac{1}{(\hbar\fomega_\textrm{av})_{T=0}}=\frac{3}{2}\frac{1}{\hbar\fomega_{\mathrm \max}}.
+$$
+
+Therefore the probability of the M\"{o}ssbauer effect at \mbox{$T \rightarrow 0$} is determined by
+$$
+f=\exp\left(-\frac{3}{4}\frac{E_{\gamma}^2}{Mc^2{\kb}\Theta}\right).
+\eqMark{6_31}
+$$
+
+The probability of the M\"{o}ssbauer effect decreases as the temperature grows. This is due to the fact that phonons are bosons and their emission can be induced, i.e. stimulated emission occurs. The more phonons of a certain type in a system, the higher is the probability of emitting another phonon of this type. Stimulated emission results in an additional term in the exponent of Eq.~(\refEquation{6_27}). In other words, as the temperature grows the mean square atomic displacement grows as well. The probability of the M\"{o}ssbauer effect  is determined by Eq.~(\refEquation{6_31}) until the amplitude of thermal vibrations is less than the amplitude of zero-point energy. At high temperatures (already at $T >\Theta/2$) thermal vibrations dominate. In this case the mean square atomic displacement $\langle u^2 \rangle \Simeq {\kb} T/(M{\omegadb}^{\!\!\!\!\!2})$ and, substituting this estimate into Eq.~(\refEquation{6_29}) one obtains for the probability of the M\"{o}ssbauer effect:
+$$
+f=\exp\left(-\frac{E^2}{Mc^2}\frac{{\kb} T}{(\hbar\omega)^2}\right).
+\eqMark{6_32}
+$$
+Taking into account that $E_\gamma = \hbar \omega = 2 \pi c / \lambda$ and $\hbar {\omegadb} ={\kb} \Theta$, this expression can be written as
+$$
+f =\exp \left(-\frac{E_\gamma^2}{Mc^2} {\kb} \Theta\frac{T}{\Theta}\right).
+$$
+This classical result is a good approximation at high temperatures. Thus the probability of the M\"{o}ssbaauer effect exponentially decreases as the temperature grows.
+
+Another way to understand the probability decline at high temperature is based on a classical argument: thermal vibrations of lattice atoms result in broadening the frequency line of $\gamma$-radiation because of the Doppler effect. Hence the emission spectrum contains a large number of sidebands. The higher the temperature, the greater is the oscillation amplitude and the line broadening, and therefore the less is the intensity of the carrier frequency (the unshifted line). This argument is in accord with Eq.~(\refEquation{6_29}): the M\"{o}ssbauer peak is prominent if the amplitude of atomic vibrations is small compared to the wavelength of $\gamma$-radiation.
+
+Finally, an important remark is due. The intensity of the M\"{o}ssbauer line decreases as the temperature grows but its width remains practically the same, it is determined only by the lifetime of an excited state (the time of emission of $\gamma$-quantum). It seems that chaotic thermal vibrations of atoms should result in Doppler broadening of the line, however, this does not happen because, as we have already mentioned, a period of lattice oscillations is much less than the lifetime of nuclear level. Therefore the term linear in $v/c$ vanishes upon averaging over vibrations, which leads to unshifted and sharp M\"{o}ssbauer peak (the peak widht turns out to be equal to the natural width). The quadratic term $v^2/(2c^2)$ (due to the transverse Doppler effect) does not vanish upon averaging and produces the energy shift of emitted or absorbed $\gamma$-rays. The relative energy change in this process is
+$$
+\frac{\delta E}{E} = -\frac{3{\kb} T}{2Mc^2}
+\eqMark{6_33}
+$$
+and becomes noticeable for unequal temperatures of a source and an absorber. For instance, a source of $\gamma$-quanta $^{57}\mathrm{Fe}$, widely used for observation of the M\"{o}ssbauer effect, has the relative line displacement $\delta E/E = 2{.}5 \cdot 10^{-15}T$, i.e. it becomes equal to the natural line width $\Gamma/E = 3 \cdot 10^{-13}$ at $100\;\kelvin$. This shift (the temperature redshift) was observed in the experiment by R.\,Pound and his graduate student G.\,A.\.Rebka\,Jr in $1960\;$.

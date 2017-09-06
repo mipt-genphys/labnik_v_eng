@@ -1,0 +1,221 @@
+%translator Svintsov, date 09.02.13
+
+ \let\oldTheEquation=\theEquation 
+\def\theEquation{\arabic{Equation}} 
+\let\oldTheFigure=\theFigure 
+\def\theFigure{\arabic{Figure}} 
+\setcounter{Equation}{0} 
+\setcounter{Figure}{0} 
+\Work {The Curie-Weiss law and exchange interaction in ferromagnets}
+ {The Curie-Weiss law and exchange interaction in ferromagnets} 
+{The temperature dependence of magnetic susceptibility of a ferromagnet above the Curie point (in paramagnetic state) is measured. The energy of exchange interaction is obtained from the Curie temperature. The studied material is metallic gadolinium.}
+
+\textbf{1. Phenomenological theory of ferromagnetism}. 
+A substance consisting of atoms with non-compensated magnetic moments belongs to  paramagnets. A ferromagnet above the temperature of magnetic ordering (the Curie temperature $T_{\mathrm{C}}$) is paramagnetic as well, this is discussed below in detail. Without an external magnetic field the magnetic moments of atoms and electrons are oriented chaotically and the net magnetic moment of the substance vanishes. In an external magnetic field the state with the magnetic moment along the field is energetically preferable, thus the substance is magnetized.  
+
+Recall that magnetization $I$ is the magnetic moment per unit volume induced by field $H$, 
+$$
+I=\varkappa H.\eqMark{9_1_1} 
+$$
+The constant $\varkappa$ is called the magnetic susceptibility of a substance. It is worth noting that in Gaussian units there is no difference between the field strength $\textbf{H}$ and magnetic induction $\textbf{B}$.
+
+Let us calculate the magnetic susceptibility of a substance in which an atomic magnetic moment is due to the spin of single electron. It is known that a projection of spin on any direction (in our case it is the field) equals either $\hbar/2$ or $-\hbar/2$. Thus a projection of the magnetic moment can also take only two values, $\mu_{z} =\mp \mu$, where $\mu$ is the absolute value of magnetic moment.
+
+Recall that a direction of $\boldsymbol{\mu}$ is opposite to the direction of $\textbf{s}$, for this reason the $z$-component of $\boldsymbol{\mu}$ is written as ''minus--plus'' $\mu$. In our case $\mu$ equals the Bohr magneton, $\mu = \mubor$.
+
+In an external field $\textbf{B}$ the atomic magnetic moment $\boldsymbol{{\mu}}$ has additional energy $E=-(\boldsymbol{\mu},\textbf{B})$ which depends on mutual orientation of these vectors. Hence, the atom acquires two energy levels:
+$$
+E_{-} =- \mu B~~\text{and}~~E_+=+\mu B,\eqMark{9_1_2} 
+$$
+where the low-energy state $E_{-}$ corresponds to the magnetic moment directed along the field.
+
+According to the Boltzmann distribution the ratio of the number of electrons $N_{+}$ with energy $E_{+}$ to the number of electrons $N_{-}$ with energy $E_{-}$ is
+$$
+\frac{N_+}{N_-}=\exp \left(-\frac{2 \mu B}{{\kb}T}\right)\Simeq1-\frac{2\mu B}{{\kb}T}.\eqMark{9_1_3} 
+$$
+The exponent can be expanded in Taylor series since in almost any field the magnetic energy is much less than the thermal energy, i.e. $\mu B \ll {\kb}T$. Indeed, even for $B=10^{5}\;\Gs$ (such a  field is very difficult to obtain) and $T=300\;\kelvin$ the ratio $2\mu B/{\kb}T\Simeq 0.05$.
+
+The magnetization is determined by the difference between the number of electrons on the upper and lower energy levels. This difference can be easily obtained from Eq.~(\refEquation{9_1_3}): 
+$$
+\Delta N=N_{-} -N_+ \Simeq N\frac{\mu B}{{\kb}T}\Simeq N\frac{\mu H}{{\kb}T},\eqMark{9_1_4} 
+$$
+where $N=N_-+N_+$ is the number of electrons per unit volume. We do not distinguish between $B$ and $H$ on the right-hand side of Eq.~(\refEquation{9_1_4}) since the disordered electrons yield a very small contribution to the total field. The magnetization is
+$$
+I=\mu\Delta N=N \frac{\mu^{2}}{{\kb}T}H.\eqMark{9_1_5} 
+$$
+Thus the paramagnetic part of susceptibility equals
+$$
+\varkappa = \frac{I}{H} =N\frac{\mu^{2}}{{\kb}T}=N\frac{\mubor^{2}}{{\kb}T}.\eqMark{9_1_6} 
+$$
+
+Equation (\refEquation{9_1_6}) can be rewritten in a more general form. Recall that the magnetic moment $\boldsymbol{\mu}$ of electron is related to its angular moment $\textbf{J}$ as
+$$
+\boldsymbol{\mu} =g \mubor\textbf{J},\eqMark{9_1_7} 
+$$
+where $g$ is the Lande g-factor (for ''free'' electron in vacuum $g=2$, $J = S = 1/2$).
+
+If the atom possesses more than one electron and the total atomic spin is $S$, the spin squared is quantized according to the rule 
+$$
+\langle\textbf{S}^{2}\rangle=S(S+1),\eqMark{9_1_8} 
+$$
+hence, the magnetic moment squared can be presented as
+$$
+\boldsymbol{\mu}^{2}=\mu^{2}=g^{2}\mubor^{2}S(S+1).\eqMark{9_1_9} 
+$$
+There is no preferred direction in a spherically symmetric state, thus
+$$
+\langle \mu^{2}\rangle=\langle \mu_{x}^{2}\rangle+\langle\mu_{y}^{2}\rangle+\langle\mu_{z}^{2}\rangle=3\langle \mu_{z}^{2}\rangle.\eqMark{9_1_10} 
+$$
+We have obtained that the average square of any component of magnetic moment (e.g. $z$--component) equals 
+$$
+\langle \mu_{z}^{2}\rangle=\frac{1}{3}\mu^{2}=\frac{g^{2}\mubor^{2}S(S+1)}{3}.\eqMark{9_1_11} 
+$$
+Substituting this into Eq.~(\refEquation{9_1_6}), which is valid for ${S>1/2}$ as well, we obtain a more general expression for magnetic susceptibility:
+$$
+\varkappa = \frac{N g^{2}\mubor^{2}S(S+1)}{3{\kb}T}.\eqMark{9_1_12} 
+$$
+
+It is easy to check that for $J=S=1/2$ Eq.~(\refEquation{9_1_12}) coincides with Eq.~(\refEquation{9_1_6}). The obtained relation (\refEquation{9_1_12}) is known as \emph{Curie's law}: the magnetic susceptibility of a paramagnet is inversely proportional to temperature.
+
+Let us now consider a ferromagnet. A phenomenological theory of ferromagnetism was proposed by P.\,Weiss in 1907 long before the onset of quantum mechanics. To describe the interaction of neighboring electrons he introduced an effective magnetic field $H\sub{eff}$ (this field is also called the exchange field due to its quantum-mechanical origin). The field magnitude is proportional to the magnetization of the sample, i.e. to the number of electrons with correlated magnetic moments, 
+$$
+H\sub{eff}=\lambda I,\eqMark{9_1_13} 
+$$
+where $\lambda$~is a constant which is positive for ferromagnets and negative for antiferromagnets.
+
+We have already noted that a ferromagnet above the Curie temperature $T_{\mathrm{C}}$ becomes paramagnetic because thermal motion completely disorders the magnetic moments of atoms. To describe the temperature dependence of magnetic susceptibility of a ferromagnet above the Curie point we can apply Eq.~(\refEquation{9_1_12}), however, we should take into account  the additional field $H\sub{eff}$.
+
+Allowing for the field $H\sub{eff}$ one rewrites Eq.~(\refEquation{9_1_5}) as 
+$$
+I=N\frac{\mu^{2}H}{{\kb}(T-\Theta)},\eqMark{9_1_14} 
+$$
+where 
+$$
+\Theta =\frac{N\mu ^{2}\lambda}{{\kb}}=N\frac{g^{2}\mubor^{2}S(S+1)}{3{\kb}}\lambda\eqMark{9_1_15} 
+$$
+is a parameter having the dimension of temperature.
+
+Curie's law (\refEquation{9_1_12}) now reads 
+$$
+\varkappa =\frac{I}{H} =N \frac{g^{2}\mubor^{2}S(S+1)}{3{\kb}(T-\Theta)}\propto \frac{1}{T-\Theta},\eqMark{9_1_16} 
+$$
+and it is referred to as the \emph{Curie--Weiss law}. The above derivation of this law is based on a rather artificial assumption of the existence of the field $H\sub{eff}$. Unlike the rigorous quantum--mechanical approach, this theory is too simple, so the applicability of the Curie--Weiss law is limited. The law correctly predicts the critical point $T=\Theta$ at which the substance switches from a ferromagnetic ($T<\Theta$) to a paramagnetic ($T>\Theta$) state. The law fails to describe the ferromagnetic phase, however, it describes quite well the temperature dependence of the magnetic susceptibility of ferromagnet in the paramagnetic state.\looseness=-1
+
+When the temperature approaches $\Theta$ (which is called the \emph{paramagnetic Curie point}) the susceptibility $\varkappa$ grows indefinitely since thermal motion does not impede the alignment of magnetic moments. Recall that for a paramagnet this is the case only at $T \rightarrow 0$ (see Eq.~(\refEquation{9_1_12})). It is also worth noting that Curie's point $T_{\mathrm{C}}$ is defined as the temperature of phase transition between paramagnetic and ferromagnetic states, i.e. below this temperature a long-range magnetic order exists. In the Curie--Weiss law $\Theta$ is, in fact, a fitting parameter, usually $\Theta>T_{\mathrm{C}}$. \vspace{4pt}
+
+\textbf{2. Relation between the Weiss effective field and the exchange integral.} 
+The quantum--mechanical analysis of the electron exchange interaction given in the introduction to this chapter allows one to understand the origin of the effective field introduced phenomenologically by P.\,Weiss and to estimate the energy of exchange interaction in a ferromagnet by its Curie temperature. As it was shown in the introduction, the energy of exchange interaction $U\sub{exc}$ between $i$-th and $j$-th atoms in the Heisenberg--Frenkel theory is given by \looseness=-1
+\vspace{-8pt} 
+$$
+U\sub{exc}=-2J\textbf{S}_{i}\textbf{S}_{j}.\eqMark{9_1_17} 
+$$
+The energy $U$ is the difference between average Coulomb energies for parallel and antiparallel spins $\textbf{S}_{i}$ and $\textbf{S}_{j}$, and the factor $J$ is the exchange integral. Its numerical value depends on the overlap of charge distributions of the atoms $i$ and $j$ (i.e. on the overlap of electron wave functions).
+
+Now let us find an approximate relation between the exchange integral $J$ and the Weiss constant $\lambda$. Suppose that an atom has $n$ nearest neighbors. The exchange integrals between any of them and the central atom are equal while the exchange integral for a farther neighbor is negligible (the exchange interaction decreases very quickly with distance). Let us find the energy $U_{flip}$ required to flip a given spin in the presence of all other spins. This energy is twice the exchange energy of a system with a given spin orientation, because $U_{\uparrow\uparrow} =-U_{\uparrow\downarrow}$ (see Eqs.~(\refEquation{9_15}) and~(\refEquation{9_16})). Therefore, neglecting the spin components orthogonal to the magnetization axis we can write  
+$$
+U\sub{flip}\Simeq2(2JnS^{2}),\eqMark{9_1_18} 
+$$
+where $S$ is the average spin projection on the magnetization axis.
+
+In the phenomenological description given by Weiss each magnetic atom is subjected to the effective field $H\sub{eff}$ proportional to the sample magnetization $I$, i.e. to the magnetic moment of a unit volume. In other words, the action of the spin system on a given spin is characterized by the average magnetization $I=\mu/V$, and the spin flip energy can be written as
+$$
+U\sub{flip}=2\mu H\sub{eff}=2\mu(\lambda I) =2\mu\frac{\flambda\fmu}{V},\eqMark{9_1_19} 
+$$
+where $V$~is the volume per atom. The average magnetic moment of electron due to its spin is $\mu =gS\mubor$. Hence, we obtain the following relation for the Weiss constant $\lambda$:
+$$
+\lambda = \frac{2nJV}{g^{2}\mubor^{2}}.\eqMark{9_1_20} 
+$$
+
+The volume per one atom is $V=1/N$, where $N$ is the number of atoms in the unit volume. Using Eq.~(\refEquation{9_1_15}) we finally obtain:
+$$
+J=\frac{3{\kb}\Theta}{2nS(S+1)}.\eqMark{9_1_21} 
+$$
+This equation gives us the relation between the exchange integral $J$ and the paramagnetic Curie point $\Theta$. The obtained formula can be used for estimates only because its derivation does not take into account several factors: an exchange interaction between distant atoms, an indirect exchange interaction, and so on. A more rigorous calculation for simple cubic, body-centered cubic (BCC) and face-centered cubic (FCC) lattices with $S=1/2$ yields ${\kb}T_{\mathrm C}/nJ=0.28,~0.325$, and $0.346$, respectively, which is different from ${\kb}T_{\mathrm C}/nJ = 0.5$ following from Eq.~(\refEquation{9_1_21}) for all three structures. \vspace{1ex}
+
+\textbf{3. Electronic structure of gadolinium.} We should say a few words about the electronic and crystal structures of metallic gadolinium, the ferromagnet studied in this experiment. Gadolinium is a rare earth element; its atom has the following structure of orbitals:
+{\footnotesize \vspace{10pt} \noindent \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c|c|c} \hline  $1s$ & $2s$ & $2p$ & $3s$ & $3p$ & $3d$ & $4s$ & $4p$ & $4d$ & $4f$ & $5s$ & $5p$ & $5d$ & $5f$ & $6s$ \\  \hline  2&2&6&2&6&10&2&6&10&7&2&6&1&---&2 \\  \hline \end{tabular}
+
+\vspace{10pt}
+
+} \noindent In metallic state three outer shell electrons of gadolinium (one $5d$ and two $6s$ electrons) are delocalized and form a conductance band, hence, the face-centered crystal structure of metallic gadolinium is formed by ions $\mathrm{Gd}^{3+}$ ($4f^75s^25p^6$). This ion has only one partially filled shell which is $4f$-shell with $2(2l+1)=2\cdot 7=14$ possible quantum states. According to the Hund's rule all seven electron spins point in the same direction. The electrons occupy seven quantum states with angular momentum projection varying from $-3$ to $+3$, thus the net angular momentum of the ion is zero. Hence, the spin of gadolinium ion $S=7/2$, the angular momentum $L=0$, and the total angular momentum $J=L+S=7/2$. Using the common notation the state of gadolinium ion is written as $^{2S+1}\mathrm{S}_{J}=^{8}\mathrm{S}_{7/2}$; its net magnetic moment is equal to 
+$$
+\mu =g\mubor\sqrt{J(J+1)}=g\mubor\sqrt{S(S+1)}.\eqMark{9_1_22} 
+$$
+
+It is known that the spin $g$-factor equals $2$. Then one can easily calculate the magnetic moment of gadolinium ion, $\mu\sub{eff}=7{.}94\mubor$. The experimental value of magnetic moment obtained from measurements of gadolinium magnetic susceptibility is $(7.8 \div 8.0) \mu \sub{B}$. Hence, the magnetism of gadolinium is mostly due to the spin of the ''deep'' $4f$-shell. For this reason, magnetic properties of rare earth metals, particularly of gadolinium, differ from those of transition group metals (iron) for which the magnetic $3d$-shell is the outer atomic shell.
+
+To explain the magnetic properties of gadolinium in detail one should allow for the indirect exchange interaction (the interaction of $4f$-electrons via electrons of the conductance band) and the interaction between non-neighboring atoms. However, to a first approximation, one can take into account only the nearest neighbors; for the face-centered structure of gadolinium their number is $n=12$.
+
+Finally, one can estimate the exchange integral using Eq.~(\refEquation{9_1_21}) and the Curie temperature of gadolinium measured in experiment. 
+
+\vspace{1ex}
+
+\textbf{\so{Experimental installation}}\vspace{5pt}
+
+The experimental installation for measuring magnetic susceptibility is shown i~ \refFigure{9_1_01}. A ferromagnetic sample \emph{1} is placed inside a hollow coil \emph{2} which serves as an inductor of $LC$--oscillator. The oscillator uses a field-effect transistor as an amplifier and it is assembled as an independent block. The oscillator frequency is shown on a digital display. The inductor coil is placed inside a thermostat, a massive copper cylinder~\emph{3} in a styrofoam enclosure~\emph{4}. The studied ferromagnet (gadolinium) is a conductor, and the oscillation frequency is quite high, it reaches hundreds of kilohertz. 
+% 
+\hFigure{Experimental installation: \emph{1}~--- capsule with a sample; \emph{2}~--- inductance coil; \emph{3}~--- copper cylinderc; \emph{4}~--- styrofoam enclosure; \emph{5}~--- shaft; \emph{6}~--- collet clamp; \emph{7}~---measuring thermojunction; \emph{8}~--- electric heater}9_1_01 {7.5cm}{6cm}{pic/L09_1_01.eps} 
+%
+The sample is granulated to suppress the Foucault currents masking the effect being measured; a particle size is less than $0.1 \mm$. The sample is placed in a teflon capsule. The capsule can be moved along the inductance coil axis with the aid of a shaft~\emph{5}. The lower position of the shaft corresponds to the sample inside the coil; in the upper position the sample is taken out.
+
+One can measure the magnetic susceptibility of the sample by inserting it into the coil and measuring a variation of the coil inductance. Let the coil inductance with and without the sample inside be $L$ and $L_0$, respectively, then  
+$$
+L= \mu \frac{4 \fpi n^{2}S}{l},~~~L_{0} =\frac{4 \fpi n^{2}S}{l},\eqMark{9_1_23} 
+$$
+where $\mu$ is the magnetic permeability of the sample, $n$ is the number of coil turns, $l$ is the coil length, and $S$ is its cross section. In this notation 
+$$
+\frac{L-L_{0}}{L_{0}}=\frac{\Delta L}{L_{0}}=\mu -1.\eqMark{9_1_24} 
+$$
+
+Since the sample length is much greater than its diameter the demagnetizing factor can be neglected and Eq.~(\refEquation{9_1_24}) becomes
+$$
+\frac{L-L_{0}}{L_{0}}=\mu -1=4\pi\varkappa.\eqMark{9_1_25} 
+$$
+Noting that the resonant frequency $f$ of $LC$ circuit is $1/f=2 \pi \sqrt{LC}$ we obtain 
+$$
+\frac{f_{0}^{2}-f^{2}}{f^{2}}=4\pi\varkappa,\eqMark{9_1_26} 
+$$
+and, finally,
+$$
+\frac{1}{\varkappa}\propto \frac{f^{2}}{f_{0}^{2}-f^{2}}.\eqMark{9_1_27} 
+$$
+
+The measurements are carried out in the temperature range from $10\celsii$ to $70\celsii$. Sample cooling is performed with the aid of a massive copper cylinder \emph{3} preliminarily cooled in a freezer or by using liquid nitrogen ($77\;\kelvin$). The sample is heated by an electric heater~\emph{8} at the bottom of cylinder~\emph{3}. To save time one should begin the measurement at low temperatures.
+
+The sample temperature is measured by a copper-constantan thermocouple connected to a digital voltmeter. The thermocouple sensitivity is indicated on the setup. One of the couple junctions is in thermal contact with the sample while the other one is held at constant temperature \mbox{$0\celsii$} in a Dewar vessel with melting ice. The power supply unit of the heater is mounted in a separate block. The heater current can be adjusted using a knob on the front panel of the block.
+
+During the experiment the sample is first cooled below the Curie point and then slowly heated. The dependence of the oscillation frequency on the sample temperature is measured during the heating. Using the dependence of $f^{2}/(f_{0}^{2}-f^{2})$ on sample temperature one verifies the Curie-Weiss law and estimates the Curie point. Using Eq.~(\refEquation{9_1_21}) one estimates the exchange integral for the ferromagnet studied. \vspace{1ex}
+
+\textbf{\so{Directions}}\vspace{5pt}
+
+\begin{Enumerate}{tab} 
+\Item. Set the knob ''Furnace'' of the electric heater to ''OFF''--position, set the heating regulator ''Furnace current'' to the leftmost position.
+
+\Item. Connect the generator and the heater to the $220\;\V$ mains.
+
+\Item. Check the experimental setup. Measure oscillator frequency $f$ with the sample inside the coil (shaft downward) and the frequency $f_0$ without the sample (shaft upward). Before moving the shaft loosen the collet clamp and tighten it after the displacement. Is the difference between $f$ and $f_0$ noticeable? Are the frequencies reproduced in successive measurements? Estimate the uncertainty of $(f_{0}^{2}-f^{2})/f^{2}$. Remember that the wavemeter setting time is about 3 seconds.
+
+\Item. Having checked the setup proceed to cooling the sample. First cool the copper cylinder \emph{3} in a freezer or using liquid nitrogen. In the latter case slowly pour liquid nitrogen (about $50\;\mli$) between the cylinder~\emph{3} and the styrofoam enclosure \emph{4}. The gadolinium sample should be cooled down to $10\celsii$.
+
+\Item. Study the dependence of $f$ and $f_{0}$ on temperature by slowly heating the sample. The heating speed can be adjusted by the knob ''Furnace current'' when the ''Furnace'' knob is on. It is recommended to take readings every $2\div5\celsii$.
+
+\Item. Plot $f^{2}/(f_{0}^{2}-f^{2})$ versus the sample temperature. Determine the Curie point $T_{\mathrm{C}}=\Theta$ by extrapolating the obtained curve. Using Eq.~(\refEquation{9_1_21}) estimate the exchange integral $J$ for gadolinium (take $n=12$, $S=7/2$). Express $J$ in electron-volts and in kelvins. \end{Enumerate} \vspace{1ex}
+
+\textbf{\so{Additional task}}
+
+\vspace{4pt} \begin{Enumerate}{tab} 
+\Item. Using least-square method obtain the parameter $\Theta$ of the Curie-Weiss law.
+
+\Item. Using the chi-square test determine whether the experimental results can be described by the Curie-Weiss law.
+
+\Item. Do several serial measurements of the dependence $\varkappa(T)$. What is the main source of experimental errors?
+
+\Item. In the vicinity of the phase transition from the paramagnetic (disordered) state to the  magnetically ordered state the fluctuations grow rapidly. Estimate the temperature range of these fluctuations. Can they be observed in this experiment? \end{Enumerate}%
+
+\begin{center}\so{\textsf{\small LITERATURE}}\end{center} {\small
+
+1. \emph{Ch. Kittel} Introduction to solid-state physics.\,---\,M.: Nauka, $1978$. ?.\,543--548.
+
+2. \emph{L.L. Goldin, G.I. Novikova} Introduction to atomic physics.\,---\,M.: Nauka, $1989$, \S\S\;$52$--$53$.
+
+3. \emph{A.A. Ivanov} Introduction to quantum physics.\,---\,M.: MIPT, $1992$. \textsection\;$8$. } 

@@ -1,0 +1,66 @@
+%translator Savrov, date 27.11.12
+
+\let\theEquation=\oldTheEquation
+\let\theFigure=\oldTheFigure
+
+\Chapter
+{Discreteness of energy spectrum}
+{Discreteness of energy spectrum}
+{Discreteness of energy spectrum}
+
+\textbf{Classical and quantum particles in potential well.}  According to classical physics a particle is moving in a finite region if it resides in a potential well determined by the particle interaction with the environment. In other words, a potential well is a region where the particle is subjected to an attraction force. The term <<potential well>> is a name for the curve representing the dependence of particle potential energy on coordinate; the term is used both in classical and quantum theory. The main function of a potential well is to confine a particle which energy is less than the depth of the well. It is said that the particle inside the well is in a bound state.
+
+A bound state is a state of a system of particles which are moving in a finite region of space for a long period of time (compared to a typical period of their relative motion). Bound systems in nature are abundant at all scales: from clusters of stars and macroscopic objects to microscopic objects like molecules, atoms, and nuclei.
+
+In classical mechanics a particle with energy less than the depth of a potential well is not able to leave the well and is moving inside the well; the bottom of the well corresponds to stable equilibrium in which the kinetic energy vanishes. If the particle energy exceeds the well depth, the particle overcomes the attraction forces and leaves the well. As an example one can consider the motion of a rigid sphere inside a well with solid walls in the gravitational field of Earth (see~(\refFigure{2_1}).
+
+\hFigure {A sphere with mass $m$ and energy $E_1<U$ is not able to leave a potential well  $U=mgH$ (here $g$~is the free fall acceleration and $H$~is the well depth) and keeps going between the points \textit{1} and \textit{2} (friction is negligible); the maximum height reached by the sphere is $h=E_1/mg$. If the sphere energy $E_2>U$, it leaves the well and escapes to infinity at a constant speed $v$ determined by the relation $mv^2/2=E_2-U$}2_1 {7.04cm}{2.4cm}{PIC/l02_01.eps}
+
+Unlike classical mechanics, quantum mechanics predicts that the energy of a particle bounded by a potential well takes a discrete rather than continuous set of values, and the lowest energy level (ground state) is above the well bottom. Indeed, according to the uncertainty relation between coordinate $x$ and momentum $p$, $\Delta p \Delta x \sim \hbar$, if the particle is localized near the potential minimum ($\Delta x\to0$) its average kinetic energy grows due to large dispersion of the particle momentum, $\Delta p \sim \hbar/\Delta x$. On the other hand, spreading the particle over the well ($\Delta x \ne 0$) increases its average potential energy since the particle spends a significant time in the regions where the potential energy exceeds the minimum. The energy of the ground state corresponds to the lowest possible energy of a quantum system that is allowed by the uncertainty relation.   
+
+Using these arguments one can easily estimate the ground state energy of a particle inside a rectangular well of the width $a$ and infinite depth. In this case $\Delta x \simeq a$, so the particle momentum is $p=\Delta p \sim \hbar /a$. If the energy is counted from the well bottom, its minimum is at
+$$   
+E=\frac{p^2}{2m}\simeq\frac{\hbar^2}{2ma^2}.   \eqMark{2_1} $$
+
+This result means that the ground state of the particle does not correspond to the well bottom, $E=0$, as in classical physics. The difference between the energy of the ground state of a quantum system and the energy of the potential minimum is called the \textit{zero-point energy}. Zero-point energy is a common feature of any bound system of (moving in a finite region) microscopic particles. A system cannot lower its energy below the zero-point level without changing its structure.
+
+To determine all possible (allowed) energy levels of a particle in a given potential, one has to solve a time-independent Schrodinger equation (with appropriate boundary conditions) which in one-dimensional case becomes 
+$$   
+-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2}+U(x)\psi=E\psi.   \eqMark{2_2} $$
+Only finite single-valued continuous and smooth solutions of the equations correspond to physical states. The allowed energy levels in the infinite potential well in one-dimension are
+$$   
+E_n=\frac{\pi^2\hbar^2}{2ma^2}n^2,~~~n=1,\,2,\,3,...   \eqMark{2_3} $$
+
+One can see that energy of a particle <<confined>> in a potential well takes only discrete (quantized) values called the particle energy levels in this potential.
+
+If a particle is in a rectangular potential well which wall is of a finite height $U_0$, the minimum (zero-point) energy is
+$$  
+E=\frac{\pi^2\hbar^2}{8ma^2}.   \eqMark{2_4} $$
+
+Stationary states in such a well are possible only if $E<U_0$, i.e. providing 
+$$   
+U_0a^2>\frac{\pi^2\hbar^2}{8m}.   \eqMark{2_5} $$
+
+The left-hand side of the inequality contains the well parameters, the right-hand side contains only the particle mass and fundamental constants. If the above condition is not met (a potential well is too narrow or too shallow) there is no energy level. In other words, there is no bound state despite the attraction nature of the potential. Such a situation is quite common. For instance, there is an attraction between two neutrons but there is no nucleus composed of two neutrons.  
+
+The discussion concerning bound state of particle in a one-dimensional well with one infinite wall (at $x=0$) can be extended to a three-dimensional well since the same equation applies to a finite spherically symmetric well in three dimensions.
+
+However, any one- or two-dimensional potential well (the potential is a function of one or two coordinates) always has a bound state, even though
+$$   
+|U|\ll\frac{\hbar^2}{ma^2}.   \eqMark{2_6} $$
+
+For instance, a shallow one-dimensional potential well of a width $a$ and a depth $U$ has a bound state with an energy  
+$$   
+E=\frac{mU^2a^2}{2\hbar^2}\ll U.   \eqMark{2_7} $$
+
+The problem of energy states in one- and two-dimensional wells should not be regarded as purely academic. For example, particle motion inside a long thin thread can be considered as one-dimensional and inside a thin film as two-dimensional.
+
+One more difference between classical and quantum behavior of a particle in potential well should be mentioned. According to quantum theory a particle inside a potential well with a <<wall>> of finite width (like the volcano caldera) can escape from the well via tunneling even if the particle energy is less then the wall height. One can say that the energy levels in this case are \textit{quasi-stationary} because the particle <<lives>> in such a state for a finite period of time. Such levels are also known as \textit{metastable}. All particle levels in a potential with a wall of finite thickness have a finite width which depends, of course, on the particle energy and the potential shape.
+
+The potential shape and size (depth and width) are determined by a specific interaction between the particles. Two special potential wells are of paramount importance in physics:
+
+1)\;the Coulomb potential ($U\propto1/r$) which describes the attraction force between electron and atomic nucleus;
+
+2)\;the potential of harmonic oscillator ($U=kx^2/2$) which is a model of nuclear potential and which also plays an important role in solid state physics, electromagnetic radiation, and vibrational spectra of molecules.
+
+Discreteness of energy levels of a microparticle residing in potential well can be observed  in radiation and absorption spectra of atoms, molecules, and nuclei. The discreteness of atomic levels was demonstrated in $1913$ by J.~Frank and G.~Hertz in the experiments in which atoms were excited and ionized by a beam of accelerated electrons.

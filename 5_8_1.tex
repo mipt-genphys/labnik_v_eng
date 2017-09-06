@@ -1,0 +1,245 @@
+%translator Savrov, date 14.03.13
+
+%%
+%%@НОМЕР РАБОТЫ = Работа
+%%8.1.
+%%
+
+\let\oldTheEquation=\theEquation
+\def\theEquation{\arabic{Equation}}
+\let\oldTheFigure=\theFigure
+\def\theFigure{\arabic{Figure}}
+\setcounter{Equation}{0} \setcounter{Figure}{0}
+
+\let\oldTheTable=\theTable
+\def\theTable{\arabic{Table}}
+\setcounter{Table}{0} \setcounter{Table}{0}
+
+\Work
+{Measurement of the Stefan-Boltzmann constant and the Planck constant by studying radiation of a hot object}
+{Measurement of the Stefan-Boltzmann constant and the Planck constant by studying radiation of a hot object}
+{Using a model of black body, a vanishing filament pyrometer, and a thermocouple one measures the temperature of radiation emitted by several objects of various emissivity; the results are used to determine the Planck constant and the Stefan-Boltzmann constant.}
+
+Temperature of a hot distant object can be measured by employing methods of optical pyrometry based on temperature dependence of the object emissivity. One can define three temperatures related to the object absolute temperature and its emissivity: a radiation $T\sub{rad}$, a color $T\sub{col}$, and a brightness temperature $T\sub{br}$.
+
+The radiation (energy) temperature is the temperature of a black body which integral emissivity is the same as the integral emissivity of an object under study.
+
+The color temperature of an object is the temperature of a black body that radiates light of a comparable hue to that of the object.
+
+The brightness temperature is the temperature of a black body corresponding to the same spectral emissivity as that of the studied object at the same wavelength. It is this temperature which is measured in the experiment.
+
+The brightness temperature of a hot object is measured by means of a vanishing filament optical pyrometer, the measurement consists in visual comparison of the hot filament brightness to that of the object under study. Equal brightness is achieved when the filament image observed via a monochromatic filter ($\lambda =6500\;\Angstrem$) on the background of the hot object vanishes. The method of brightness temperature measurement is based on the Planck formula which expresses the black body emissivity in terms of temperature and wavelength. 
+
+An optical pyrometer consists of a telescope with a heated filament inside its tube (the filament is in the plane in which the image of a studied object is located) and a dark-red filter ($\lambda =6500\;\Angstrem$). The object and the hot filament are observed through the eyepiece. 
+
+If the filament appears as a dark stripe on the color background of the narrow spectral band transmitted by the filter, its brightness is less than that of the object and vice versa. When the brightness is the same the filament disappears. The filament brightness can be adjusted by varying the electric current through the filament.
+
+The meter measuring the filament current is calibrated using a black body which absolute temperature is measured by a thermocouple. Thus, if an object which temperature is being determined radiates as a black body we can find its temperature by the pyrometer. If the body emissivity differs from that of a black body the temperature measured is the brightness temperature which is always less than the object absolute temperature. This is due to the fact that any gray object radiates less than a black body at the same temperature. The absolute temperature is then determined by taking into account the experimental corrections for a particular material.
+
+In this experiment one uses a factory made black body calibrated vanishing filament pyrometer, its digital display shows the object temperature in degrees Celcius. The first experimental task is verification of the pyrometer calibration with the aid of a black body model, then it is used to study radiation of various materials including a tungsten filament of incandescent bulb. The dependence  of brightness on absolute temperature of tungsten used for treatment of the results is shown in~\refFigure{8_1_1}.
+
+By measuring power radiated by the tungsten filament one can verify the Stefan-Boltzmann law. 
+%
+\cFigure{Dependence $T=f(T\sub{br})$ for tungsten}8_1_1
+{7.3cm}{5.7cm}{pic/L08_1_01.eps}
+%
+To do this one should equate the power dissipated by the filament to the energy it radiates per second. If the filament radiated as a black body the balance between the dissipated and radiated energy would be given by 
+$$
+  W=\sigma S(T^4-T_0^4),
+  \eqMark{8_1_1}
+$$
+where $W$~is the electric power dissipated by the filament, $S$~is the filament area, $T$~is its temperature, and $T_0$~is the ambient temperature. However, the filament does not radiate as a black body. There is a special class of non-black bodies called gray bodies which radiation spectrum is very similar to that of a black body, although their radiation at any wavelength is less  compared to a black body by the factor of $\epsilon_{T}$ for a given temperature $T$.
+
+Assuming that the filament radiates as a gray body one write Eq.~(\refFigure{8_1_1}) as
+$$
+  W=\epsilon_T S\sigma T^4,
+  \eqMark{8_1_2}
+$$
+where the ambient temperature is neglected compared to that of the tungsten filament. The coefficient $\epsilon_T$ at various temperatures is given in~\refTable{8_1_1}.
+
+By measuring the tungsten filament temperature versus the dissipated power one can verify whether the Stefan-Boltzmann law can be applied to a gray body (to the tungsten filament in this case). To this end one should plot the dependence $W(T)$ in a logarithmic scale and using the slope to determine the power exponent $n$ of the temperature dependence obtained.
+\begin{wrapfigure}[20]{o}{5.2cm}
+\vspace{-18pt}
+\begin{Table}{Correction radiation coefficients for tungsten}8_1_1
+{r|c|l}
+\hline
+ $T, \kelvin$ & $\epsilon_{\lambda,T}$ ($\lambda=6500 \Angstrem$) & $\epsilon_{T}$  \\
+\hline
+ 800&0.460&0.067\\
+ 900&0.458&0.081\\
+1000&0.456&0.105\\
+1100&0.454&0.119\\
+1200&0.452&0.133\\
+1300&0.450&0.144\\
+1400&0.448&0.164\\
+1500&0.446&0.179\\
+1600&0.443&0.195\\
+1700&0.441&0.209\\
+1800&0.439&0.223\\
+1900&0.437&0.236\\
+2000&0.435&0.249\\
+\hline
+\end{Table}
+\end{wrapfigure}%
+It is obvious that the coefficient must be equal to four within the experimental error.
+
+Using Eq.~(\refEquation{8_1_2})  one can also determine the Stefan-Boltzmann constant $\sigma$. Some discrepancy between experimental and theoretical values of $n$ and $\sigma$ can be explained by a specific feature of tungsten which exhibits a radiation selectiveness in a short-wave region. The selectiveness becomes noticeable at the filament temperature around $2400\;\kelvin$. 
+It turns out that the radiation in the visible spectrum significantly exceeds that one following from the Planck distribution applied to a gray body. The diagram in~\refFigure{8_1_2} shows the difference between the radiation spectra of a black body and tungsten at $2450\;\kelvin$.
+
+In particular, due to this feature tungsten is used as the filament material for an incandescent bulb. At low temperature the selectivity is less prominent however heat transfer from the filament becomes significant thereby increasing the error of $n$ and $\sigma$.\looseness=-1
+%
+\hFigure{Spectral energy distribution: \emph{1}~a black body; \emph{2}~-tungsten. Temperature is $2450\;\kelvin$}8_1_2
+{4.0cm}{4.3cm}{pic/L08_1_02.eps}
+%
+
+By carrying out the measurements in the temperature range from $800$ to $1500\celsii$ one can determine the interval in which the tungsten filament radiates like a gray body, i.e. where $n$ and $\sigma$ correspond to their theoretical values.
+
+\vspace{2ex}
+\textbf{\so{Experimental installation}}
+\vspace{6pt}
+
+An experimental installation (see~\refFigure{8_1_3}) consists of an optical pyrometer~\textit{9}, a model of black body (BB), three specimens (\textit{18}, \textit{19}, \textit{20}), a power supply unit, and digital voltmeters~\mbox{В$7$-$22$А} and~В$7$-$38$.
+
+\vspace{-0pt}
+\hFigure{Experimental setup: \emph{1}~is a power unit; \emph{2}~is a power switch of pyrometer and specimens; \emph{3}~is a switch of pyrometer heater: up position is~<<Fast>>, down position is~<<Slow>>; \emph{4}~is <<Filament heating>> button; \emph{5}~is <<Filament cooling>> button; \emph{6}~is a specimen switch; \emph{7}~is a specimen heater control; \emph{8}~is a pyrometer eyepiece; \emph{9}~is a pyrometer casing; \emph{10}~is a pyrometer objective; \emph{11}~is a temperature range switch: down position is~$700$--$1200 \celsii$ and up position is~$1200$--$2000 \celsii$; \emph{12}~is a red filter handle; \emph{13}~is an adjusting screw; \emph{14}~is a voltmeter (voltage across incandescent bulb); \emph{15}~is an ammeter (current through specimens); \emph{16}~is a thermocouple voltmeter; \emph{17}~is a model of BB; \emph{18}~is a tube with rings with different emissivity; \emph{19}~is an incandescent bulb; and~\emph{20}~is a neon bulb}8_1_3
+{10.6cm}{8.6cm}{pic/L08-1!03.eps}
+%
+
+\vspace{0pt}
+The vanishing filament pyrometer~\textit{9} includes an objective~\textit{10}, an eyepiece~\textit{8}, and a monochromatic (red) filter~\textit{4} which enables one to observe the pyrometer filament imposed on the image of a hot object in a narrow band of $6500\;\Angstrem$. The filter position can be adjusted by the handle~\emph{12}. The pyrometer can operate in two ranges,$700\div1200\celsii$ and $1200\div2000\celsii$. Switching between the ranges is performed by inserting a gray filter by means of a <<Turning on>> toggle~\emph{11}. The filament temperature control knob is located on the front panel of the power unit.
+
+The model of BB is a ceramic tube $3\;\mm$ in diameter and $50\;\mm$ in length. The tube is closed at one end and placed inside a casing for thermal isolation. The tube is heated by electric current passing through a nichrome helix wound around the tube. The tube cavity, especially its bottom, radiates practically as a block body. The temperature of the BB model is measured by a chromel-alumel thermocouple which junction is attached to the tube bottom. The other junction is at room temperature, it is attached to a terminal of a digital voltmeter~В$7$-$38$ which measures the thermocouple emf.
+
+Three specimens are studied in the experiment. One specimen is a ceramic tube with several rings  with different emissivity. The tube is heated from inside by a nichrome helix connected to a power source~\textit{1} via a switch~\textit{6} (position 2); the tube can be heated to $1100\celsii$. The temperature of the rings is the same and equal to the tube temperature.\looseness=1
+
+Another specimen is the tungsten filament of an incandescent bulb. The bulb is powered by the source~\textit{1} when the switch~\textit{6} is in position~{3}. The current through the bulb is measured by a voltmeter~В$7$-$22$А (\textit{15}). The voltage across the filament is measured by another voltmeter В$7$-$22$А (\textit{14}). This allows one to determine the power supplied to the bulb. 
+
+The power source~\textit{1} is protected from overloading, in this case the source is automatically disconnected from the installation and the bulb <<overload>> flashes on the front panel. If this happens one must disconnect the source from the mains $220\;\V$ and decrease its output voltage, then the source can be turned on again.
+
+\vspace{2ex}
+\textbf{\so{Directions}}
+\vspace{5pt}
+
+\textbf{\textsc{I. Operation of optical pyrometer}}
+\vspace{2pt}
+
+In this part of the experiment one measures the temperature of the BB using the pyrometer and compares it with the temperature measured by a thermocouple thermometer.
+
+To do this:
+\begin{Enumerate}{tab}
+
+\Item.
+Disable both filters (red and gray) using the switches~\textit{11} and~\textit{12}.
+
+\Item.
+Connect the pyrometer and the specimen power sources to the mains using the switch~\textit{2}. The pyrometer indicator will display~<<$700$>>$\celsii$.  
+
+\Item.
+Press the button~\textit{4} and hold it until the pyrometer readings (and therefore the filament temperature) reach $900\div950\celsii$. (To speed up filament heating one should switch the toggle~\textit{3} to <<Fast>>). In so doing the image of hot filament becomes visible through the eyepiece~\textit{8}. Obtain the sharp image of the filament by moving the eyepiece.
+
+Train the pyrometer on the BB. The switch~\textit{6} must be in position~\textit{1} (BB), the BB heater is then powered. Turn the knob~\textit{7} of the heater regulator all the way clockwise.  The bottom of the BB will glow red in $10\text{--}15$ min.
+
+Obtain the sharp image of the bottom by moving the pyrometer objective~\textit{10}.
+
+\Item.
+Insert the red filter by turning the handle~\textit{12}.
+
+\Item.
+Press and hold the button~\textit{4} or~\textit{5} to increase or decrease the current through the filament and make the filament imposed on the image of the BB bottom disapper. Repeat this several times by increasing and decreasing the filament brightness, so it seems brighter or darker than the BB bottom.
+
+To speed up filament heating the switch~\textit{3} must be at~<<Fast>>.  
+
+\Item.
+Determine the brightness temperature of the BB according to the pyrometer (it is equal to its absolute temperature). At the same time measure the BB temperature with the aid of the thermocouple and the digital voltmeter~\textit{16}. The thermocouple constant is~$41 \;\mkV/\degree$C. Remember that the thermocouple measures the difference between the BB temperature and room temperature.  
+
+Check that the temperatures measured by two methods are the same within $5\%$, so the pyrometer is in order.
+\end{Enumerate}%
+
+\vspace{6pt}
+\textbf{\textsc{II. Measurement of brightness of hot distant objects}}
+\vspace{4pt}
+
+This experiment is aimed to show that different objects at the same absolute temperature have different brightness temperatures. 
+
+Train the pyrometer on the ceramic tube with the rings. Set the switch~\textit{6} to position~$2$ <<Rings>>. Set the heater at maximum by the knob~\textit{7}, like in~I, and heat the tube till it glows dark red (to $\Simeq 900\celsii$).  
+
+Measure the brightness temperature of the tube surface and every ring. 
+
+Explain why the brightness temperatures are different although the absolute temperature is the same. 
+
+Set the heater power at minimum by turning the knob~\textit{7} counterclockwise. 
+
+\vspace{6pt}
+\textbf{\textsc{III. Verification of the Stefan-Boltzmann law}}
+\vspace{4pt}
+
+\begin{Enumerate}{tab}
+\Item.
+Train the pyrometer on the incandescent bulb filament. Switch the toggle~\textit{6} to position~\:3 (<<Bulb>>).
+
+\Item.
+Slowly increase the filament heating by turning the knob~<<7>> from a dark red glow ($\Simeq 900\celsii$) up to $1900\celsii$ and measure the brightness temperature every $100\celsii$. Record the filament current and the voltage across it for every temperature.
+
+Temperature higher than $1400\celsii$ must be measured in the operation range $1200\div2000\celsii$, the switch~\emph{11} is up.
+
+\Item.
+Determine the corresponding absolute temperature $T$ for every brightness temperature measured by using the plot $T=f_{1}(T\sub{br})$. Calculate the power supplied to the filament for every value of absolute temperature. Plot the results as a graph~$W=f_2(T)$.
+
+\Item.
+To check the Stefan-Boltzmann law plot the dependence $W=\epsilon_{T} BT^n$ using logarithmic scale, i.e. 
+$$
+  \ln W=\ln(\epsilon_TB)+n\ln T,
+$$
+and determine $n$ as the curve slope in the high temperature region, where the dissipated power is almost entirely radiated by the filament. The obtained value $n$ must be close to 4. The values of $\epsilon_T$ for tungsten are given in~\refTable{8_1_1}.
+
+Obviously, $B = S\cdot \sigma$, where $S$~is the effective area of the filament surface at a temperature above $1500\celsii$ when the filament is uniformly heated, $\sigma$~is the Stefan-Boltzmann constant, and $S=0{.}36\;\cm^2$.
+
+\Item.
+Determine the Stefan-Boltzmann constant according to
+$$
+  \sigma = \frac{W}{\epsilon_T ST^4}
+$$
+for every $T$ exceeding $1700\;\kelvin$.
+
+\Item.
+Determine the Planck constant $h$ using Eq.~(\refEquation{8_29}) and the values of $\sigma$ obtained. Estimate the error of $\sigma$ and $h$.
+\end{Enumerate}%
+
+\vspace{6pt}
+\textbf{\textsc{IV. Measurement of <<brightness temperature>> of neon bulb}}
+\vspace{2pt}
+
+Train the pyrometer on the neon bulb. Set the switch~\textit{6} in position\:4 (<<Neon bulb>>) and measure the <<brightness temperature>> of the bulb. Touch the bulb with your hand to verify that its thermodynamic temperature is different from the brightness temperature. How can you explain this fact?
+\vspace{1ex}
+
+\textbf{\so{Additional task}}
+\vspace{2pt}
+
+\begin{Enumerate}{tab}
+\Item.
+Estimate the power removed from the filament due to heat transfer and the related measurement error of $n$ and $\sigma$. To do this use the experimental results and the filament dimensions.
+
+\Item.
+According to Wien's displacement law, the maximum of radiation spectrum is displaced to shorter wavelengths as the temperature rises. Therefore the ratio of intensity in the blue region of spectrum $r\sub{b}(T)$ to intensity in the red region $r\sub{r}$ grows as the filament temperature rises from $3500\div6000\;\kelvin$,~i.e.
+$$
+  \frac{r\sub{b}(T)}{r\sub{r}(T)}=f(T).
+$$
+
+To see this examine the behavior of the curves shown in~\refFigure{8_1} in the region of visible spectrum.
+
+Wien's displacement law can be verified as follows. Focus the image of the incandescent bulb filament on a photocell and measure the photocurrent using a blue and a red filter in turn. The ratio of the photocurrents must grow with the filament temperature together with  its radiation intensity (for a constant photocell sensitivity).
+
+The plot of $f(T)$ must be an increasing function, that would confirm albeit qualitatively Wien's displacement law.
+
+The photocurrent is measured for every filter by means of a digital voltmeter which measures the voltage across a resistor in the photocell circuit. To save time the filament temperature (at a step of $100\celsii$) can be set using the values of $U$ and $I$ found during the experiment.
+
+\end{Enumerate}%
+
+\begin{center}\so{\textsf{\small ЛИТЕРАТУРА}}\end{center} {\small
+
+1. \emph{Гольдин Л.\,Л., Новикова Г.\,И.} Введение в квантовую физику.\,---\,М.: Наука, 1988. Гл.\,IX, \S\S\,41--44.
+
+2. \emph{Сивухин Д.\,В.} Общий курс физики. Т. IV. Оптика.\,---\,М.: Физматлит, 2008. Гл.\,X.
+
+3. \emph{Ландсберг Г.\,С.} Оптика.\,---\,М.: Наука, 1976. Гл.\,36--37, \S\S\,194--202.
+} 

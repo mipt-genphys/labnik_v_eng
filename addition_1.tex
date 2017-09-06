@@ -1,0 +1,677 @@
+%translator Savrov, date 26.04.13
+
+\let\theEquation=\oldTheEquation
+\let\theFigure=\oldTheFigure
+\setcounter{Chapter}{1}
+\def\theChapter{\Roman{Chapter}}
+\def\theWork{\arabic{Chapter}.\arabic{Work}}
+\def\theEquation{\rm\Roman{Chapter}.\arabic{Equation}}
+\def\theFigure{\Roman{Chapter}.\arabic{Figure}}
+\def\theTable{\Roman{Chapter}.\arabic{Table}}
+
+\Addition
+{Treatment of experimental results}
+{Treatment of experimental results}
+{Treatment of experimental results}
+
+\vspace{-16pt}
+
+\noindent Measurement of a physical quantity is an operation that produces a numerical value of the quantity being measured in terms of another quantity taken as a unit. No measurement can be done with absolute precision because, firstly, we use secondary standards and, secondly, there is a fundamental quantum-mechanical measurement uncertainty. Obviously, the measurement accuracy cannot be less than that of a measuring instrument. On the other hand any measurement is prone to random errors caused by various uncontrollable factors (instability of electronic circuits, interference, fluctuations, etc.) including those inherent to the quantity being measured itself, like in radioactive decay. Therefore any measurement is aimed not only at determination of the value of a physical quantity but also at evaluation of its error.
+\vspace{1ex}
+
+\textbf{\textsc{I. Types of errors. Statistical distributions.}}
+\vspace{4pt}
+
+There are basically three types of errors.
+\vspace{2pt}
+
+\begin{Enumerate}{tab}
+\Item.
+\textit{Systematic} error; its magnitude and sign do not vary during measurement providing 
+the measurement is done using the same method and the same equipment. A systematic error is mostly an instrumental error. Measurement instruments are not perfect: displacement of instrumental zero, malfunction, time variation of parameters, environmental factors affecting readings, inaccurate calibration and adjustment, etc.
+\vspace{2pt}
+
+\Item.
+\textit{Random} error. A magnitude and sign of random error are different even for measurements done in identical conditions. A random error originates due to incontrollable factors which cannot be taken into account. Random errors are divided into two groups: discrete and continuous. A discrete random quantity accepts only certain precise values (e.g. the number of detected particles), while a continuous random quantity accepts any value in the domain of definition. Actually random errors determine the maximal accuracy of a measurement.
+
+It should be emphasized that a random error determines the minimal error of a measurement. However, measurement of a functional dependence can be done with a much less error. Suppose one measures a temperature dependence of the length of a rod using a metal ruler which error is greater than $1\;\mm$ while the maximal rod lengthening is only $0{.}5\;\mm$. Using a magnifying glass (or a microscope with ocular micrometer) one can measure the lengthening with an accuracy of $0{.}1$ or even $0{.}01\;\mm$ although the total length of the rod cannot be measured with this accuracy. 
+
+Not always a dispersion of measurement results is due to a random process. For instance, measuring wire diameter at various spots with a precise instrument one obtains different values. The dispersion of the results does not mean that the diameter varies with time, rather it reflects random processes taking place during wire manufacturing, such as vibrations, production equipment wear, temperature variation, inhomogeneity of the wire material, etc. One should recall the central limit theorem: if the net error is the sum of a large number of small independent random errors, the net error is normally distributed regardless of distribution of the contributing errors. For this reason the observed variation of the wire diameter, which is due to many random factors, can be specified by the mean diameter and the variance.
+\vspace{2pt}
+
+\Item.
+\textit{Mistakes} happen due to human factor or a malfunction of measuring equipment. A crude mistake is typically an experimental point which is numerically distant from a relatively smooth background of the results, it is called an outlier. However it is not wise to consider an experimental point as outlier just because it is far from the rest. Such a measurement should be either repeated or statistically analyzed (see section~V). 
+\end{Enumerate}%
+
+\vspace{6pt}
+When random errors are the main source of errors, the measurement error is also a random quantity. Indeed, a random error is usually due to many small uncontrollable factors each of which contributes to the error. Some are positive, others are negative. The net error can take different numerical values with some probability, so the overall distribution is described by a probability density $\phi(x)$. The interpretation of the probability density is transparent. Suppose there is a continuous random physical quantity. The probability that the quantity is between $x$ and $x+ \Delta x$ equals $\phi (x) \Delta x$. The function $\phi (x)$ must be normalizable:
+$$
+  \int\limits_{-\infty}^{\infty}\phi(x)dx=1,
+$$
+meaning that the quantity is always equal to one of the values from the domain of definition.
+
+Let the unknown precise value of a quantity being measured be \textit{a}, and a measured value be $x$. The error is defined as
+$$
+  \delta = \Delta x = x - a.
+  \eqMark{p1_1}
+$$
+
+If the random error is normally distributed, the probability density is given by
+$$
+  p(\delta ) = \frac{1}{\sqrt{2\fpi}\fsigma}e^{-\delta^2/(2\sigma^2)}.
+  \eqMark{p1_2}
+$$
+
+Therefore the probability density of the random quantity is
+$$
+  \phi (x) = \frac{1}{\sqrt{2\fpi}\fsigma}e^{-(x-a)^2/(2\sigma^2)}.
+  \eqMark{p1_3}
+$$
+
+In this formula $\sigma^2$~is the dispersion of random error also called variance.
+
+The normal distribution of errors (Gaussian law) is derived from the following assumptions.
+
+\begin{Enumerate}{tab}
+\Item.
+Error is a continuous quantity. 
+
+\Item.
+In a large pool of measurement results the errors of the same magnitude and different sign are equiprobable.  
+
+\Item.
+A larger error is less probable than a smaller one.
+\end{Enumerate}%
+
+The probabilistic interpretation of $\sigma$ is known from the theory of normal distribution. Since a random quantity can take any numerical value, the random error must be specified by two numbers: the error itself (or the confidence interval) and the confidence level (how frequently the observed interval contains the quantity). 
+
+In most cases the measurement result is written as
+$$
+  x=\overline{x}\pm s_{\overline{x}},
+$$
+where $\overline{x}$~is the mean value of the measured quantity close to its true value \textit{a} and the variance $\sigma^2$ coincides with the mean squared error $s^2$ of the results (see Eqs.~(\refEquation{p1_9}) and~(\refEquation{p1_21})). We will see below that if $x$ is measured several times and $s^2$ is evaluated, then a single measurement of this quantity produces a result in the interval $\overline{x}\pm s$ with the probability of $70\%$ providing the distribution of errors is normal. Of course, the larger the number of measurements of a random quantity, the less is the uncertainty of its mean.
+
+Not always repeating a measurement can reduce the error. Suppose one measures the length of a desk using a common ruler and does not see any dispersion of the results, hence, no random error. As for random error this conclusion is true. If repeated measurements produce the same result one can ignore a random error. However it does not mean that one can increase the measurement accuracy by measuring the length with the same ruler by engraving additional graduation decimals on it. A ruler is made with a certain error which is equal to the least graduation, i.e. no length can be measured with a greater precision. The error of this kind is called \textit{systematic}. Its magnitude is constant and it can be measured by comparing the ruler readings with those of a more precise instrument. Any instrument has a certain systematic error (the instrument error), it can be found either on the instrument itself or in its manual. Actually the systematic error limits the measurement accuracy.
+
+It should be emphasized that using a finite set of measurement results it is \textit{not possible in principle} to determine the true value $a$ and the variance $\sigma^2$ of a random quantity. The arithmetic mean $\overline{x}$ and the variance $s^2$ are their probabilistic estimates. In the next chapter we will discuss this issue in some detail.
+
+Now consider properties of the normal distribution. Let $\alpha$ be the probability that a measurement result $x$ differs from a true value $a$ which is identified with $\overline{x}$ by not more than $\Delta x$. This is usually written as
+$$
+  P(-\Delta x<x-\overline{x}<\Delta x)=\alpha
+$$
+or
+$$
+  P(\overline{x}-\Delta x<x<\overline{x}+\Delta x)=\alpha.
+  \eqMark{p1_4}
+$$
+
+The probability $\alpha$ is called a confidence level. The interval between $x-\Delta x$ and $x+\Delta x$ is called the tolerance interval. The above expression means that a measurement result lies within the tolerance interval, i.e. between $x-\Delta x$ and $x+\Delta x$, with a probability $\alpha$.
+
+The mean squared error $\sigma$ corresponds to the confidence level of $0{.}68$, the doubled squared error $2\sigma$ to $0{.}95$, and the tripled error $3\sigma$ to~$0{.}997$. Thus, a measurement result lies in the interval $a\pm\sigma$ with a probability of $68\%$; this can be written as
+$$
+  P(| \delta | \leq  \sigma ) \Simeq 0{.}68.
+$$
+Similarly,
+$$
+  P(|\delta | \leq 2 \sigma ) \Simeq0{.}95,~~~P(| \delta | \leq  3\sigma ) \Simeq 0{.}9973.
+  \eqMark{p1_5}
+$$
+
+The outstanding role of the normal distribution in physics is based on the following observation: if the net error is due to several sources contributing a small error each, then the distribution of the net error is normal regardless of the distribution of small errors. This statement is a consequence of the central limit theorem which has already been discussed. The theorem applies providing the contributing errors are more or less equal in magnitude. Sometimes the normal distribution cannot be used and should be replaced by a more appropriate distribution (e.g. by the logarithmic normal distribution). In section~V we consider how one can determine the distribution of the errors observed, i.e. which particular statistics applies.
+
+Now consider the Poisson distribution, one of the most common distributions of discrete random quantity. For definiteness we concentrate on nuclear radiation which is discrete by nature.
+Since the radiation events are independent, the number of pulses registered within a given time interval can be found from the Poisson distribution
+$$
+  P(N) =\frac{\overline{N}^{N}}{N!}e^{-\overline N}.
+$$
+
+The distribution $P(N)$ determines the probability of a random quantity to have a prescribed value. In other words, if $\overline N$~is the average number of pulses detected per a given time interval, then $P(N)$~is a probability that exactly $N$ pulses are detected. The variance of the Poisson distribution is 
+$$
+  \sigma^2 =\overline N,
+  \eqMark{p1_7}
+$$
+i.e. the Poisson law depends on the single parameter unlike the normal distribution. Therefore, the measurement result is usually written as (compare to the normal distribution):
+$$
+  N = \overline N\pm\sqrt {\overline N}.
+$$
+
+The normal (Gaussian) and the Poisson distributions for several variances are shown in~\refFigure{PR_1_1}. There is a fundamental difference of the distributions: the normal law is symmetric, i.e. the probability of an error is independent of its sign, while the Poisson law is not symmetric by definition.
+%
+\hFigure{Normal distribution (on the left) at various $a$ and $\sigma$: \textit{1}~ $a=1$ and $\sigma=2$; \textit{2}~ $a=4$ and $\sigma=1$; \textit{3}~$a=6$ and $\sigma=0.5$. Poisson distribution (on the right) for various $N$; only integer-valued~$N$ matter}PR_1_1
+{11.2cm}{3.9cm}{pic/PR1_01.eps}
+%
+
+The asymmetry of the Poisson law is $1/\sqrt{N}$, so the distribution almost coincides with the normal distribution for $N$ greater than $30$.
+\vspace{1ex}
+
+\textbf{\textsc{II. Determination of distribution parameters and their errors}}
+
+\textbf{\textsc{from experiment}}
+\vspace{1ex}
+
+A distribution describes the hypothetical complete set of all possible values of a random quantity. In a particular experiment we always deal with a finite number of values of the random quantity. Thus it is obvious that doing a finite set of measurements one can determine neither the exact average, nor the variance of a random quantity.  If so, how can one estimate the unknown distribution parameters and their errors which, in turn, are random quantities?
+
+Suppose that one obtained $n$ experimental values of a random quantity $x$. The obtained set is called a sample and if it is correct it is called a representative sample.
+
+For the majority of statistical distributions the most probable estimate of the mean of a random quantity $x$ is the arithmetic mean
+$$
+  \overline{x}=\frac{1}{n}\sum_{i=1}^{n}x_i.
+  \eqMark{p1_8}
+$$
+
+Besides, using the results obtained one can evaluate the mean squared average
+$$
+  s_n^2 =\frac{1}{n}\sum_{i=1}^{n}(x_i - \overline{x})^2.
+  \eqMark{p1_9}
+$$
+
+Are the evaluated parameters equal to those ones which specify the complete set? As it is mentioned above the arithmetic mean is the best estimate of the exact average of the random quantity. However, in the case of the normal distribution the exact variance $\sigma^2$ is obtained only if one takes the value 
+$$
+  s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i -\overline x)^2,
+  \eqMark{p1_10}
+$$
+i.e. the sum of squared errors must be divided by the number of independent errors rather than by the number of all errors $n$. The matter is that according to Eq.~(\refEquation{p1_8}) the errors are related as
+$$
+  \sum n_i (x_i - \overline x)=0,
+  \eqMark{p1_11}
+$$
+so only ($n-1$)~are actually independent. The number $f$ of independent quantities contributing to a parameter is called the number of degrees of freedom of the parameter. It is equal to the total number of quantities contributing to the parameter minus the number of conditions relating these quantities. The variance is calculated by using $n$ errors related by the condition~(\refEquation{p1_11}), so the number of the degrees of freedom of variance is $f=n-1$; the arithmetic mean is calculated using $n$ independent results, therefore the number of degrees of freedom of the mean is $f=n$. Of course, for large $n$ Eqs.~(\refEquation{p1_9}) and~(\refEquation{p1_10}) are equivalent.
+
+The  variance of the Poisson law is $N$. However, since the number of detected events is a positive quantity one cannot simply write a result as $N\pm\sqrt {N}$ (especially for small $N$) because the number of detected events in the intervals $(\overline N+\sqrt{N})$ and ($\overline N-\sqrt{N}$) is different.
+
+Suppose only $4$ events are detected, then writing the result as $\overline N= 4 \pm 2$ and assuming that the exact $\overline N$ lies within $2<\overline N<6$ with a probability of $0{.}68$ is a mistake. Since the Poisson distribution is asymmetric the tolerance interval for this confidence level is actually $2{.}1$ and $7{.}1$, i.e. the exact average lies within this interval with the probability of $0{.}68$. For a confidence level of $p =0{.}99$ the tolerance interval is
+$0{.}67<\overline N<12{.}6$.
+
+Up to this point we tacitly assumed that all measurements are done with the same accuracy. However this is not always the case: the same quantity can be measured by various instruments or the quantity itself varies in time (e.g. radioactive decay) etc. \mbox{If this is so}, the measurement results are said to have different weights $w_i$. The weights are inversely proportional to their asymptotic variances $\sigma_i^2$ (actually $s_i^2$) which is expected: the less the measurement error, the greater is the reliability. For the nonequivalent measurements the average and the mean squared error are  
+$$
+  \overline x_w =\frac{\sum w_i x_i}{\sum w_i},\quad s_w^2=\frac{\sum w_i(x_i -\overline{x}_w)^2}{\sum w_i}. \eqMark{p1_12}
+$$
+
+Now let us address the question of addition of errors. In a real experiment both systematic and random errors are present. Let them have the standard deviations $\sigma \sub{sys}$ è $\sigma\sub{ran}$. The net error is given by
+$$
+  \sigma\sub{net}^2=\sigma\sub{ran}^2 + \sigma\sub{sys}^2.
+  \eqMark{p1_13}
+$$
+
+It is obvious that if a systematic error dominates, i.e. if it is much greater than a random error, a single measurement would suffice. If a random error dominates, the measurement must be done several times. It is recommended to choose the number of measurements so that the random error become less than the systematic one which then determines the net error of the result. If the random and systematic errors are of the same order one should use Eq.~(\refEquation{p1_13}).
+
+A general formula for evaluation of the error of indirect measurement of a quantity $A$ can be derived as follows. Let 
+$$
+  A = f (B,\,C,\,D,\ldots),
+  \eqMark{p1_14}
+$$
+where $f$~is an arbitrary function of quantities $B,\,C,\,D$ etc. Then
+$$
+  A\sub{best}=f(B\sub{best},\,C\sub{best},\,D\sub{best},\ldots).
+  \eqMark{p1_15}
+$$
+
+This equation is valid regardless of whether the quantities $B\sub{best},\,C\sub{best},\,D\sub{best}$ etc. are measured directly or they are determined by other measured quantities. In the first case $B\sub{best},\,C\sub{best},\,D\sub{best}$ are equal to $\overline B$, $\overline C$ etc. The error of $A$ is given by
+$$
+  \sigma_A^2=\left(\frac{\partial f}{\partial B}\right)^2\sigma_B^2+\left(\frac{\partial f}{\partial C}\right)^2\sigma_C^2+\left(\frac{\partial f}{\partial D}\right)^2\sigma_D^2+\ldots
+  \eqMark{p1_16}
+$$
+
+Consider two important special cases. Let a quantity $x$ be a sum (or a difference) of a large number of terms: 
+$$
+  x=A+B+C+\ldots
+  \eqMark{p1_17}
+$$
+
+Then the mean squared error of the sum (or difference) equals the square root of the sum of variances of the summands:
+$$
+  \sigma_x =\sqrt{\sigma_A^2+\sigma_B^2+\sigma_C^2+\ldots}
+  \eqMark{p1_18}
+$$
+
+Using the law of addition of errors it is not difficult to determine the error of the arithmetic mean. Let
+$x_1 ,\,x_2 ,\ldots,\,x_n$~be the results of independent measurements characterized by the same variance $s_2$. According to the definition of the arithmetic mean
+$$
+  \overline x=\frac{1}{n}\sum x_i=\frac{x_1}{n}+\frac{x_2}{n}+\ldots +\frac{x_n}{n}.
+  \eqMark{p1_19}
+$$
+
+The mean squared error of this quantity, according to Eq.~(\refEquation{p1_19}), is
+$$
+  s_{\overline x}^2=\frac{s^2}{n^2}+\frac{s^2}{n^2}+\ldots +\frac{s^2}{n^2}=\frac{ns^2}{n^2}=\frac{s^2}{n},
+  \eqMark{p1_20}
+$$
+which immediately gives the expression for the mean squared error of the arithmetic mean
+$$
+  s_{\overline x}=\frac{\overline s}{\sqrt{n}}.
+  \eqMark{p1_21}
+$$
+
+Thus, the standard deviation of the arithmetic mean equals the standard deviation of a result divided by the square root of the number of measurements. This is the fundamental law of large numbers: the accuracy of measurement increases as the number of measurements grows. Of course the law applies only to a measurement which accuracy is due to random error.
+
+In practice it is important to distinguish between the standard deviation $s$ of a single measurement and the standard deviation of the arithmetic mean $s_{\overline x}$:
+
+$s$ specifies the accuracy of the method used, i.e. the result of a single measurement differs from the exact result not more than by $\pm s$ with a probability of $68\%$,
+
+$s_{\overline x}$~is the error of the arithmetic mean which is the average of the measurement results; the exact result lies within the interval $\overline x\pm s_{\overline x}$ with a probability of $68\%$.
+
+Let the desired quantity be equal to the product of the measured quantities $A,\,B,\,C,\ldots$, so that
+$$
+  x=A^\alpha B^\beta C^\gamma \ldots,
+  \eqMark{p1_22}
+$$
+where $\alpha$, $\beta$, $\gamma$, $\ldots$~are any real numbers.
+
+Then the measurement error is given by 
+$$
+  \frac{\sigma_x}{\overline x}=\sqrt{\alpha^2\frac{\sigma_A^2}{\overline {A}^2}+\beta^2\frac{\sigma_B^2}{\overline{B}^2}+\gamma^2\frac{\sigma_C^2}{\overline{C}^2}+\ldots}
+  \eqMark{p1_23}
+$$
+
+It should be emphasized that too many decimals produced by a calculator or a PC can give false impression of a high accuracy of the measurement result. Any error estimate is statistical by nature! When writing the final result one should retain only the decimals used in the error. 
+
+Thus, there is always a difference between the variances $\sigma^2$ and~$s_n^2$ because the accuracy of a method is usually determined during a measurement, so one can evaluate only the quantity $s_n$ corresponding to a finite and relatively small number of measurements $n$.
+
+To determine the error of $s_n$ with respect to its limit $\sigma$ one can use the approximate formula 
+$$
+  \sigma_{s_n}=\frac{\sigma}{\sqrt{2(n-1)}}.
+  \eqMark{p1_24}
+$$
+
+For instance, for $n=5$ the ratio $\sigma_{s_n}/\sigma=35\%$. For $n=10$~it is $24\%$, and for $n=25$ the standard deviation $\sigma$ is determined with an error of $15\%$. Evidently, for $n<10$ the error estimate given by Eq.~(\refEquation{p1_24}) is rather crude.
+
+Similarly, if we estimate the confidence level $\alpha$ by equating $s_n$ and $\sigma$ we obtain an overestimated $\alpha$.
+
+When the number of measurements is small ($n<10$) it is incorrect to assume that the tolerance interval $\pm\sigma$ corresponds to the confidence level of $0{.}68$. This was shown by Student (W.~Gosset) who obtained the distribution of sampled $\overline x$ for different $n$ provided the samples in the general set were normally distributed. Analysis of Student's t-distribution shows that for small $n$ the probability of a result to belong to a given interval is less than it follows from the normal distribution, i.e. for $n\rightarrow\infty$. Therefore, a tolerance interval for a given confidence level must be wider. This statetement is illustrated in the table below for $n=5$, $10$ and $\infty$. The table lists confidence levels $\alpha$ and Student's coefficients
+$$
+  t=\frac{\Delta x}{\sigma_{\overline x}}=\frac{\Delta x \sqrt n}{s_n},
+  \eqMark{p1_25}
+$$
+specifying a tolerance interval as a fraction of mean squared error.
+
+\begin{Table}{Tolerance interval (as a fraction of mean squared error) versus confidence level and sample size}p1_1
+{c|c|c|c}
+\hline
+$n$ & $\alpha =0{.}68$ & $\alpha =0{.}95$ & $\alpha =0{.}997$ \\
+\hline
+5 & 1.2 & 2.8 & 7 \\
+10 & 1.1 & 2.3 & 3.9 \\
+\;\,~~~~~~~~~$\infty$\,~~~~~~~~~\; & \;~~~~~~~~~~1~~~~~~~~~~\; & \;~~~~~~~~~~2~~~~~~~~~~\; & \;~~~~~~~~3~~~~~~~~\; \\
+\hline
+\end{Table}
+
+One can see that a tolerance interval changes the most for a high confidence level.
+
+Using Student's coefficients we can rewrite Eq.~(\refEquation{p1_2}) as
+$$
+  P(\overline x-t_{\alpha n}\frac{s_n}{\sqrt n}<x<\overline x+t_{\alpha n}\frac{s_n}{\sqrt n})=\alpha
+  \eqMark{p1_26}
+$$
+
+Student's coefficients $t_{\alpha n}$ calculated according to the laws of statistical theory for various $\alpha $ and $n$ are given in Table~\refTable{p1_2}.
+
+Let us consider two examples.
+
+1)\;Suppose that according to $5$ measurements of a quantity $x$ we obtain $\overline x=31{.}2$ and $s_n=0{.}22$. We want to find the probability that the arithmetic mean differs from the exact value not more than by $0{.}2$ (i.e. $2\sigma _{\overline x}=2s_n/\sqrt n=0{.}2$), in other words:
+$$
+  31{.}0<\overline x<31{.}4
+$$
+
+Substituting our parameters into Eq.~(\refEquation{p1_26}) we determine the coefficients $t_{\alpha n}$, so
+$$
+  t_{\alpha n}={0{.}2\cdot\sqrt \frac{5}{0{.}22}}=2
+$$
+
+According to the table the confidence level in this case is $0{.}9$ instead of $0{.}95$ predicted by Eq.~(\refEquation{p1_15}) for the tolerance interval $\pm2\sigma$.
+
+{\tabcolsep=14.3pt
+\begin{Table}{Student's coefficients $t_{\alpha n}$. Null hypothesis is accepted for $t\le t_{05}$ and rejected for $t>t_{01}$ for the numbers of degrees of freedom $f$}p1_2
+{c|c|c|c|c|c|c}
+\hline
+\fontsize{8pt}{9pt}\selectfont$f$ & \multicolumn{6}{c}{Confidence level} \\  \cline{2-7}
+  & $70\%$ & $80\%$ & $90\%$  & $95\%$  & $99\%$  & $99{,}9\%$ \\  \hline
+$1$ & $1{.}96$ & $3{.}08$ & $6{.}31$ & $12{.}71$ & $63{.}66$ &  ---  \\
+$2$ & $1{.}39$ & $1{.}89$ & $2{.}92$ & $4{.}30$ & $9{.}93$ & $31{.}60$ \\
+$3$ & $1{.}25$ & $1{.}64$ & $2{.}35$ & $3{.}18$ & $5{.}84$ & $12{.}94$ \\
+$4$ & $1{.}19$ & $1{.}53$ & $2{.}12$ & $2{.}78$ & $4{.}60$ & $8{.}61$  \\
+$5$ & $1{.}16$ & $1{.}48$ & $2{.}01$ & $2{.}57$ & $4{.}03$ & $6{.}86$  \\
+$6$ & $1{.}13$ & $1{.}44$ & $1{.}94$ & $2{.}45$ & $3{.}71$ & $5{.}96$  \\
+$7$ & $1{.}12$ & $1{.}41$ & $1{.}89$ & $2{.}37$ & $3{.}50$ & $5{.}41$  \\
+$8$ & $1{.}11$ & $1{.}40$ & $1{.}86$ & $2{.}31$ & $3{.}36$ & $5{.}04$  \\
+$9$ & $1{.}10$ & $1{.}38$ & $1{.}83$ & $2{.}26$ & $3{.}25$ & $4{.}78$  \\
+$10$ & $1{.}09$ & $1{.}37$ & $1{.}81$ & $2{.}23$ & $3{.}17$ & $4{.}59$ \\
+$15$ & $1{.}07$ & $1{.}34$ & $1{.}75$ & $2{.}13$ & $2{.}95$ & $4{.}07$ \\
+$20$ & $1{.}06$ & $1{.}33$ & $1{.}72$ & $2{.}09$ & $2{.}85$ & $3{.}85$   \\
+$25$ & $1{.}06$ & $1{.}32$ & $1{.}71$ & $2{.}06$ & $2{.}79$ & $3{.}73$ \\
+$30$ & $1{.}06$ & $1{.}31$ & $1{.}70$ & $2{.}04$ & $2{.}75$ & $3{.}65$ \\
+$\infty$ & $1{.}04$ & $1{.}28$ & $1{.}64$ & $1{.}96$ & $2{.}58$ & $3{.}29$ \\  \hline
+$f$ & \multicolumn{6}{c}{Statistical significance} \\
+ \cline{2-7}
+  & $30\%$ & $20\%$ & $10\%$ & $5\%$ & $1\%$ & $  0{,}1\%$ \\ \hline
+\end{Table}}%
+\normalsize
+
+
+2)\;Suppose that according to $n=10$ measurements $\overline x=5.46$ and $s_{\overline x}=0{.}62$. It is required to find the tolerance interval for $\overline x$ corresponding to the confidence level of $95\%$. Using the table we find $t_{\alpha n}(\alpha=0{.}95, n=10)=2{.}23$. Therefore the tolerance interval for $\overline x$ is $5{.}46-2{.}23\cdot0{.}62\Simeq4{.}1<\overline x< {<5{.}46+2{.}23\cdot0{.}6\Simeq6{.}9}$, i.e. $4.1<\overline x<6.9$.
+
+
+\vspace{8pt}
+\textbf{\textsc{III. Graphical treatment of measurement results.}}
+
+\textbf{\textsc{Experimental design}}
+\vspace{1ex}
+
+Usually an experimental outcome is a discrete set of points (often, a table) and it is required to find a functional dependence corresponding to the points. In further applications it is often required to \textit{interpolate} the function between the points, or to \textit{extrapolate} it beyond the table.\looseness=1
+
+Selection of an appropriate function to describe the experimental results is called a \textit{data fitting}. Actually the more theory is used to fit the function, i.e. the less the function is empirical, the better. A common procedure is to choose a functional dependence and to determine its  parameters using experimental results.
+
+Prior to the selection it is useful to plot the data on a sheet of paper and draw a smooth curve through the points. In so doing one can immediately detect potentially erroneous data. Graphical representation of the results is an important method of data analysis. A plot allows one to represent even a large data sample, to hypothesize a functional dependence between the measured quantities, to detect possible peculiarities, and to find an adequate method of mathematical analysis of the data.
+
+When drawing the experimental curve it is important to make reasonable guesses about the function: its behavior close to zero argument, asymptotic behavior, whether the curve passes through the origin, whether it intersects coordinate axes, etc.
+
+In measuring a functional dependence one should take into account that both the function and its argument are prone to error. The simplest example is a measurement of temperature dependence of electrical resistance  of a wire. Both the resistance and the temperature are measured with a finite error. Therefore the experimental plot must include the errors both on $x$- and $y$-axes. If the error of $x$ is significant it can be transferred to the error of the function itself according to the rule (\refEquation{p1_16}) of error propagation:
+$$
+  \sigma_{\widetilde y}^2=\sigma_y^2+\left(\frac{dy}{dx}\right)^2\sigma_x^2.
+  \eqMark{p1_27}
+$$
+
+Let the quantities $y$ and $x$ be linearly related, i.e. $y=kx+b$. Using a ruler one can draw a straight line through experimental points to which the points are the closest. Recall that the coefficients $k$ and $b$ have a simple geometrical meaning: $b$ is the line intercept with $y$- axis, and $k$ is the line slope.
+
+Graphical representation of the results visualizes them. If the points lie on a straight line, except for some <<stray>> points, the latter are clearly seen, so it is obvious which measurements should be checked. If the points do not belong to a straight line, this is also obvious. In this case the function  relating $x, y$ is nonlinear.
+
+Straight line is of special importance for the graphical method. No other line can be so simply and so reliably drawn through a set of given points. Anyone who ever compared the coefficients $k$ and $b$ determined from a plot and the coefficients obtained by the least square method (see the next section) knows that the difference is always small.
+
+Of course, the functional dependence to be found is not always linear. The general idea of the graphical method is to change variables so that the desired dependence become linear.
+ 
+If the empirical dependence is well chosen, an interpolation gives fair results and seldom produces a large error. Another problem turns out to be more difficult: to find an expected value of $y$ at some $x$ beyond the experimentally studied interval, $x>x_p$. This is extrapolation problem. Its solution requires deep understanding of the phenomenon under study, the extrapolation problem cannot be solved by using a formal algorithm, rather one looks for a solution on case by case basis.
+\looseness=-1
+
+An important question is about planning an experiment. If nothing is known about the phenomenon under study, obviously, nothing can be said in advance about the experimental procedure. Now, assume that the functional dependence governing the phenomenon is known and the problem is to determine the parameters. For simplicity, assume a linear dependence \mbox{$y=kx+b$,} so one should determine the experimental range of $x$. There is a special branch of science called experiment design which in this (and only this!) particular case states that half of the measurements must be done at $x=0$ and half at $x=x_{\mathrm{max}}$. The error is then reduced by $\sqrt3$  compared to a uniform partition. Obviously, a measurement must be done at <<singular>> points, i.e. where the measurement result is the most informative.
+
+Consider an example. Suppose the desired dependence is $y=kx$ and we want to determine $k$. To this end we do the measurements at $x_1, x_2, ..., x_n$ and obtain $y_1, y_2, ..., y_n$. Then we calculate $k_1, k_2, ..., k_n$ and find an average $\langle k\rangle$. This method gives a larger error compared to doing the measurement at $x=x_{\mathrm{max}}$ $n$ times because our measurements have different errors.
+
+It seems the obtained results could be treated as follows: calculate $k_i$ as
+$$
+  k_1=\frac{y_{\scriptscriptstyle 2}-y_{\scriptscriptstyle 1}}{x_{\scriptscriptstyle 2}-x_{\scriptscriptstyle 1}},~~k_2=\frac{y_{\scriptscriptstyle 3}-y_{\scriptscriptstyle 2}}{x_{\scriptscriptstyle 3}-x_{\scriptscriptstyle 2}},~~...,~~k_{n-1}=\frac{y_{\scriptscriptstyle n}-y_{\scriptscriptstyle n-1}}{x_{\scriptscriptstyle n}-x_{\scriptscriptstyle n-1}},
+  \eqMark{p1_28}
+$$
+and then evaluate $\langle k\rangle$. However this method is unacceptable because if the measurements were done at equidistant points, then
+$$
+ \langle k\rangle=\frac{1}{n}(k_1+k_2+...+k_{n-1})=\frac{1}{n}\sum\frac{y_{i+1}-y_i}{\Delta x_i}=\frac{y_n-y_1}{n\Delta x},
+  \eqMark{p1_29}
+$$
+so all intermediate results are excluded.
+
+Of course, if the experiment is aimed at verifying the dependence linearity, the measurements must be done over the whole range of available $x$.
+\vspace{2ex}
+
+\textbf{IV. Method of least squares}
+\vspace{1ex}
+
+Treatment of experimental results often poses the problem of fitting a theoretical function to data. Usually the problem is posed as: what is the best way of drawing the theoretical curve through the experimental points? 
+
+Of course, if all parameters of the function are precisely known one can only compare the estimated values with the observed values. However, more often the theoretical parameters are not known and are determined by fitting the function to data.
+
+As a simple example consider a linear dependence between two quantities $x$ and $y$. Suppose there is a set of experimental points  $(x_1,y_1)$, $(x_2,y_2)$, $\ldots$ shown in Fig.~\,I.2.
+ 
+We assume that the error of $x_1, x_2, \ldots$, is negligible compared to the error of $y_1, y_2, \ldots$ 
+%
+\fFigure{Experimental results approximated by straight line}PR_1_2
+{5.7cm}{3.7cm}{pic/PR1_02.eps}
+%
+We have already discussed how to take into account errors on the abscissa. Suppose we know that the dependence between $y$ and $x$ is linear, i.e. $y=a+bx$. Now we ask how to choose the parameters $a$ è $b$ in order to achieve the best agreement with the experimental results.
+
+If there are only two points $(x_1,y_1)$ and $(x_2,y_2)$ the straight line must pass through these points, there is no choice. When the number of points $n>2$ the straight line must be drawn so that the points are as close to it as possible. Of course, the line must be closer to the points which are measured with a better accuracy (small $\Delta y_i$). If one has to fit a parabola or another known function through a set of experimental points, the problem is essentially the same. It should be emphasized that a function being fitted (providing it is a priori known) should always be converted to the coordinates where it is linear.
+
+The above problem is solved by means of the method of least squares proposed by Legendre. According to the method the unknown (constant) parameters of the function being fitted to a set of experimental points must be chosen so that to minimize the sum of the weighted squares of the point deviations from the curve. 
+
+Suppose we apply the method to the simplest case of several measurements $y_1, y_2, ..., y_n$ of the same quantity $a$, so that we have to fit $y=a$. Then the value $\widetilde y$ obtained by the method of least squares gives the expected result, $\widetilde y=\overline y$.
+
+Indeed, let us write the sum of weighted squares of the deviations
+$$
+  S=\sum w_i(y_i-\widetilde y)^2\,,
+  \eqMark{p1_30}
+$$
+where $\widetilde y$~is a constant to be found; its value must minimize the sum  $S$. Obviously, the unknown constant $\widetilde y$ is determined by the equation
+$$
+  \frac{\partial S}{\partial\widetilde y}=-2\sum w_i(y_i-\widetilde y)=0\,,
+  \eqMark{p1_31}
+$$
+which immediately gives Eq.~(\refEquation{p1_12}), i.e.
+$$
+  \widetilde y=\frac{1}{W}\sum w_iy_i\,,
+$$
+where $W=\sum w_i$.
+
+Let us determine the variance $\widetilde y$:
+$$
+  D(\widetilde y)={\sum w_i^2D(y_i)\over W^2}={D_1\over W},
+  \eqMark{p1_32}
+$$
+because in each numerator term $w_iD(y_i)=D_1$, where $D_1$~is a constant which can be interpreted as the average variance of a measurement with a unit weight. Since
+$$
+  \overline{s_w^2}=(n-1)\frac{D_1}{W}\,,
+  \eqMark{p1_33}
+$$
+we can write
+$$
+  D(\widetilde y)\Simeq\frac{\sum w_i(y_i-\widetilde y)^2}{W(n-1)}\,.
+  \eqMark{p1_34}
+$$
+
+In its simplest form the method of least squares applies to the problem of drawing the straight line $y=a+bx$ through the set of experimental points $(x_i,y_i)$. We should find the constants  $a$
+and $b$ so that to minimize the sum of weighted squares of the deviations
+$$\epsilon_1=a+bx_1-y_1 ,$$
+$$\epsilon_2=a+bx_2-y_2 ,\eqMark{p1_35}$$
+$$.~~.~~.~~.~~.~~.~~.~~.$$
+$$\epsilon_n=a+bx_n-y_n ,$$
+The values of $a$ and $b$ minimizing the sum
+$$
+S=\sum w_i\epsilon_i^2=\sum w_i(a+bx_i-y_i)^2
+$$
+are determined from the equations
+$$
+\begin{array}{c}
+{\partial S\over \partial a}=2\sum w_i(a+bx_i-y_i)=0\,,\\
+\\
+{\partial S\over \partial b}=2\sum w_ix_i(a+bx_i-y_i)=0\,,
+\end{array}
+\eqMark{p1_36}
+$$
+
+When a $y, x$- dependence is parameterized via unknown coefficients as 
+$$
+f(y)=a_1+a_2f_1(x)+a_3f_2(x)+...+a_rf_{r-1}(x),\eqMark{p1_37}
+$$
+the method of least squares also applies. The coefficients are determined by a set of $r$ equations similar to Eqs.~(\refEquation{p1_36}). Consider two examples.
+\vspace{1ex}
+
+1.\;\emph{Parameters of resonance curve.}
+A lot of physical processes are of resonant nature and can be described by the Lorentz distribution:
+$$
+y={A\over (x-B)^2+C^2}\,.\eqMark{p1_38}
+$$
+In nuclear physics this formula is known as Breit-Wigner distribution.
+
+To apply the least squares method for determination of the coefficients let us write it as 
+$$
+{1\over y}={B^2+C^2\over A}-{2B\over A}\,x+{1\over
+A}\,x^2 .\eqMark{p1_39}
+$$
+Now it has the desired form, $z=a_1+a_2x+a_3x^2$, and the coefficients $a_1,a_2,a_3$ can be found by the least squares method. In this case the weights are defined as
+$$
+w(z_i)={D_1\over(\Delta z_i)^2}\approx y_i^4{D_1\over(\Delta
+y_i)^2}=y_i^2{D_1\over\delta_i^2}\,.\eqMark{p1_40}
+$$
+%\vspace{1ex}
+
+2.\:\emph{Parameters of Gaussian function.}
+Logarithm of a Gaussian function  
+$$
+y=Ae^{-h^2(x-x_0)^2}\eqMark{p1_41}
+$$
+casts the function into a suitable form:
+$$
+z=\ln y=a_1+a_2x+a_3x^2\,,\eqMark{p1_42}
+$$
+The coefficients 
+$$
+a_1=\ln A-h^2x_0^2,\quad a_2=2h^2x_0,\quad a_3=-h^2\eqMark{p1_43}
+$$
+are determined by the method of least squares with the weights:
+$$
+w(z_i)={D_1\over(\Delta z_i)^2}\approx y_i^2{D_1\over(\Delta
+y_i)^2}={D_1\over\delta_i^2}\,.\eqMark{p1_44}
+$$
+\vspace{2ex}
+
+{\bf V. Hypothesis testing}
+\vspace{1ex}
+
+Research of any phenomenon, especially a novel one, poses a question of testing agreement between theory and experiment. At various stages one can stumble upon a poor agreement between a theory and an experiment or the other way around if the theory is considered to be more trustworthy. Surely, experiment is the primary source of information about a new phenomenon, however a well developed theory based on a variety of data often allows one to extrapolate results and promote new experiments. One should not belittle hypotheses as well. Therefore analysis of the agreement between theory and experiment is an integral part of any research.
+\vspace{1ex}
+
+{\bf Statistical testing of errors.}
+Usually it is understood that the distribution of random errors is normal. This assumption can be verified for a particular experiment. Suppose approximate values of a given physical quantity $a$ (the arithmetic mean $\overline x$) and a variance $\sigma ^2$ (the mean squared error $s_x^2$) are known to such an accuracy that they can be considered as exact. Using the normal distribution one can evaluate the probability that the error (absolute value) belongs to a given interval: 
+$$
+P(|\delta |<\alpha \sigma )=2\Phi(\alpha )\,,\quad \alpha
+>0\,,\eqMark{p1_45}
+$$
+where $\Phi(z)$ is the error function. For a given $\alpha $ between $0$ and $3$ one calculates 
+the number $\widetilde n_\alpha $ of $\delta$'s belonging to the above interval. The expected number is 
+$$
+n_\alpha =n\cdot 2\Phi(\alpha )\,,\eqMark{p1_46}
+$$
+where $n$ is the number of results. Comparing $n_\alpha $ and $\widetilde n_\alpha$ one can judge whether the normal distribution~(I.3) applies.
+
+There is a simpler way to check whether experimental results are distributed according to the normal law. According to the normal distribution the mean squared error 
+$$
+s_n=\sqrt{{1\over n-1}\,\sum\limits_{i=1}^n\delta_i^2}\eqMark{p1_47}
+$$
+and the average error
+$$
+\eta={\sum|\delta_i|\over n-1/2}\eqMark{p1_48}
+$$
+must be very close.
+
+A similar procedure applies to a functional dependence. In this case $\delta$ is understood as
+$$
+\delta_i=f(x_i)-\widetilde f(x_i)\,,\eqMark{p1_49}
+$$
+where $f(x)$ is a tested function and $\widetilde f(x_i)$ is a measured quantity.
+\vspace{1ex}
+
+{\bf Statistical testing of mistakes.}
+Consider how blunders can be excluded by using the normal distribution of random errors. Suppose the arithmetic mean $\overline x$ and the mean squared error $\sigma$ are obtained for  several measurements of a quantity. Let us determine an approximate error of every measurement:
+$$
+\epsilon_k=x_k-\overline x\Simeq\delta _k\,.\eqMark{p1_50}
+$$
+According to the normal distribution
+$$
+P(|\delta |<3\sigma )=0{.}9973\,.\eqMark{p1_51}
+$$
+Therefore
+$$
+P(|\delta |>3\sigma )=0{.}0027\,.\eqMark{p1_52}
+$$
+Usually an error exceeding $3\sigma$ is considered improbable. Therefore, if there is an $\epsilon_k$ which is greater than $3\sigma$, the corresponding measurement is likely to be a blunder and should be discarded.
+\vspace{1ex}
+
+{\bf Pearson's $\boldsymbol\chi^2$ test.}
+One of the main problems emerging during the treatment of experimental results consists in deciding whether a theoretical dependence or a derived empirical law (e.g. a polynomial function fitting the data) agrees with experimental data. In other words, how close are the experimental points to the hypothesized dependence? Usually the credibility of a hypothesis is verified by means of the <<$\chi^2$ test>>. According to this method the measure of correspondence between theory and experiment is the sum of squared deviations from a hypothesized dependence:
+$$
+\chi^2=\sum\limits_{i=1}^N\left({y\sub{i,\textrm{ex}}-y\sub{i,\textrm{th}}\over
+\sigma _i}\right)^2\,.\eqMark{p1_53}
+$$
+One can see that the deviation of experimental points from the expected values is expressed via the standard error. The obtained $\chi^2$ must be compared with theory. This is done by means of Table~\refTable{p1_3} where values of $\chi^2$ corresponding to different numbers of degrees of freedom are given versus probability $p$ of credibility of a given hypothesis. The number of degrees of freedom equals the number of measurements providing the hypothesized dependence does not contain experimental parameters. For instance, if one compares $n$ experimental points of a quantity with its theoretical values at the same points, the number of degrees of freedom is~$n$. If the verified dependence contains an experimental parameter, the number of degrees of freedom is less by one and so on.
+
+Then we have to answer the question: which values of $\chi^2$ correspond to agreement between theory and experiment, when the agreement is poor, and which $\chi^2$ mean disagreement? Obviously, since the criterion is probabilistic, the agreement between theory and experiment cannot be exactly determined, so it depends on a particular quantity, quality of an experiment and a theory, and to a large extent on a researcher opinion.
+
+Suppose that according to Eq.~(\refEquation{p1_53}) for a given experiment $\chi^2=3{.}5$ and the number of degrees of freedom is $10$. The table shows that this value of $\chi^2$ or less occurs with a probability of $95$\%, therefore the deviation of our data from an expected dependence is inessential. If it were found that $\chi^2=30$, then according to the table, the probability to obtain this value would be only $0{.}1\%$, so the tested hypothesis would be erroneous. Notice, however, that if $\chi^2$ turned out to be too small, i.e. a tested hypothesis had a very high credibility $\chi^2_p$, this would probably mean that either the errors were unreasonably small, or the data were somehow <<adjusted>> to fit the desired theory. 
+
+Consider two examples.
+
+1)\,Let us check if it is sufficient to approximate the data shown in Fig.~.\;I.2 by a straight line. Suppose that the line corresponds to a theoretical dependence and let us calculate $\chi^2$ using Eq.~(\refEquation{p1_53}). We obtain that for $n=8$ (the number of measurements) $\chi^2=2.72$, then from Table~\refTable{p1_3} we see that the linear dependence agrees with the experiment with a probability of $95\%$.
+
+2)\,There are $n=800$ measured values of a random quantity $x$ which can accept the values $x_i=0,1,2,3,\ldots,10$. For instance, it can be the intensity $N_i$ of cosmic rays detected by a Geiger counter. The experimental results and the frequency $p_i=N_i/n$ of detection of $N_i$ particles are summarized in the table below.
+\vspace{1ex}
+
+{\small
+\tabcolsep=3.14pt
+\noindent
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c}\hline
+$x_i$ & $0$ & $1$ & $2$ & $3$ & $4$ & $5$ & $6$ & $7$ & $8$ & $9$ & $10$ \\ \hline
+$N_i$ & $25$ & $81$ & $124$ & $146$ & $175$ & $106$ & $80$ & $35$ & $16$ & $6$ & $6$ \\
+$p_i$ & $0.031$ & $0.101$ & $0.155$ & $0.183$ & $0.219$ & $0.132$ & $0.1$ & $0.044$ &
+$0.02$ & $0.008$ & $0.008$ \\ \hline
+\end{tabular}}
+\vspace{8pt}
+
+\normalsize
+We want to test the hypothesis that $x$ is distributed according to the Poisson law with a parameter $a$ equal to the statistical average of the obtained values of $x$. The statistical average of the particle intensity is
+$$
+a=\overline N=\sum\limits_{i=o}^{10}x_ip_i\Simeq3.716\,.
+$$
+Then using the obtained $a$ we calculate the probabilities $p_i^{(\text{P})}$ corresponding to the Poisson distribution:
+$$
+p_i^{(\text{P})}={a^i\over i!}\,e^{-a}\,.
+$$
+\vspace{1ex}
+
+{\small
+\tabcolsep=1.85pt
+\noindent
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c}\hline
+$x_i$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+$p_i^{(\text{P})}$ & 0.0243 & 0.0904 & 0.168 & 0.208 & 0.193 & 0.144 & 0.089 &
+0.047 & 0.022 & 0.009 & 0.0033 \\ \hline \end{tabular}}\vspace{1ex}
+
+\normalsize
+{Now using Eq.~(\refEquation{p1_53}) we calculate $\chi^2$:
+$$
+\chi^2=\sum\limits_{i=0}^{10}{(N_i-np_i)^2\over np_i}\Simeq 15.2\,.
+$$
+The number of degrees of freedom $n$ in this case equals the number of possible values of $x$  (11) minus one (the condition $\sum p_i^{(\textrm{P})}=1$) and \parfillskip=0pt
+
+}
+
+\vspace{-6pt}
+{\tabcolsep=1.6pt
+\footnotesize
+\begin{Table}{$\chi^2$-distribution. $p$~is probability (in percent) to obtain $\chi^2$ greater than a value in the table, $n$~is the number of degrees of freedom.}p1_3
+{c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
+\hline
+$n$ & $p$=$99$ & $98$ & $95$ & $90$ & $80$ & $70$ & $50$ & $30$ & $20$ & $10$ & $5$ & $2$ & $1$ & $0.1$ \\
+\hline
+$1$ & $0{.}00016$ & $0{.}0006$ & $0{.}004$ & $0{.}016$ & $0{.}0064$ & $0.148$ & $0{.}46$ & $1{.}07 $ & $1{.}64$ & $  2{.}71$ & $3{.}84$ & $5{.}41$ & $6.64$ & -- \\
+$2$ & $0{.}02$ & $0{.}04$ & $0{.}10$ & $0{.}21$ & $0{.}45$ & $0{.}71$ & $1{.}39$ & $2{.}41$ & $3{.}22$ & $4{.}61$ & $5{.}99$ & $7{.}82$ & $9.21$ & -- \\
+$3$ & $0{.}12$ & $0{.}18$ & $0{.}35$ & $0{.}58$ & $1{.}01$ & $1{.}42$ & $2{.}37$ & $3{.}66$ & $4{.}64$ & $6{.}25$ & $7{.}82$ & $9{.}84$ & $11{.}3$ & -- \\
+$4$ & $0{.}3$ & $0{.}4$ & $0{.}7$ & $1{.}1$ & $1{.}6$ & $2{.}2$ & $3{.}4$ & $4{.}9$ & $6{.}0$ & $7{.}8$ & $9{.}5$ & $11{.}7$ & $13{.}3$ & $18{.}5$\\
+$5$ & $0{.}6$ & $0{.}8$ & $1{.}1$ & $1{.}6$ & $2{.}3$ & $3{.}0$ & $4{.}4$ & $6{.}1$ & $7{.}3$ & $9{.}2$ & $11{.}1$ & $13{.}4$ & $15{.}1$ & $20{.}5$\\
+$6$ & $0{.}9$ & $1{.}1$ & $1{.}6$ & $2{.}2$ & $3{.}1$ & $3{.}8$ & $5{.}3$ & $7{.}2$ & $8{.}6$ & $10{.}6$ & $12{.}6$ & $15{.}0$ & $16{.}8$ & $22{.}5$\\
+$7$ & $1{.}2$ & $1{.}6$ & $2{.}2$ & $2{.}8$ & $3{.}8$ & $4{.}7$ & $6{.}3$ & $8{.}4$ & $9{.}8$ & $12{.}0$ & $14{.}1$ & $16{.}6$ & $18{.}5$ & $24{.}3$\\
+$8$ & $1{.}6$ & $2{.}0$ & $2{.}7$ & $3{.}5$ & $4{.}6$ & $5{.}5$ & $7{.}3$ & $9{.}5$ & $11{.}0$ & $13{.}4$ & $15{.}5$ & $18{.}2$ & $20{.}1$ & $26{.}1$\\
+$9$ & $2{.}1$ & $2{.}5$ & $3{.}3$ & $4{.}2$ & $5{.}4$ & $6{.}4$ & $8{.}3$ & $10{.}7$ & $12{.}2$ & $14{.}7$ & $16{.}9$ & $19{.}7$ & $21{.}7$ & $27{.}9$\\
+$10$ & $2.6$ & $3{.}1$ & $3{.}9$ & $4{.}9$ & $6{.}2$ & $7{.}3$ & $9{.}3$ & $11{.}8$ & $13{.}4$ & $16{.}0$ & $18{.}3$ & $21{.}2$ & $23{.}2$ & $29{.}6$\\
+$11$ & $3{.}1$ & $3{.}6$ & $4{.}6$ & $5{.}6$ & $7{.}0$ & $8{.}1$ & $10{.}3$ & $12{.}9$ & $14{.}6$ & $17{.}3$ & $19{.}7$ & $22{.}6$ & $24{.}7$ & $31{.}3$\\
+$12$ & $3{.}6$ & $4{.}2$ & $5{.}2$ & $6{.}3$ & $7{.}8$ & $9{.}0$ & $11{.}3$ & $14{.}0$ & $15{.}8$ & $18{.}5$ & $21{.}0$ & $24{.}1$ & $26{.}2$ & $32{.}9$\\
+$13$ & $4{.}1$ & $4{.}8$ & $5{.}9$ & $7{.}0$ & $8{.}6$ & $9{.}9$ & $12{.}3$ & $15{.}1$ & $17{.}0$ & $19{.}8$ & $22{.}4$ & $25{.}5$ & $27{.}7$ & $34{.}5$\\
+$14$ & $4{.}7$ & $5{.}4$ & $6{.}6$ & $7{.}8$ & $9{.}5$ & $10{.}8$ & $13{.}3$ & $16{.}2$ & $18{.}1$ & $21{.}1$ & $23{.}7$ & $26{.}9$ & $29{.}1$ & $36{.}1$\\
+$15$ & $5{.}2$ & $6{.}0$ & $7{.}3$ & $8{.}5$ & $10{.}3$ & $11{.}7$ & $14{.}3$ & $17{.}3$ & $19{.}3$ & $22{.}3$ & $25{.}0$ & $28{.}3$ & $30{.}6$ & $37{.}7$\\
+$16$ & $5{.}8$ & $6{.}6$ & $8{.}0$ & $9{.}3$ & $11{.}1$ & $12{.}6$ & $15{.}3$ & $18{.}4$ & $20{.}5$ & $23{.}5$ & $26{.}3$ & $29{.}6$ & $32{.}0$ & $39{.}2$\\
+$17$ & $6{.}4$ & $7{.}3$ & $8{.}7$ & $10{.}1$ & $12{.}0$ & $13{.}5$ & $16{.}3$ & $19{.}5$ & $21{.}6$ & $24{.}8$ & $27{.}8$ & $31{.}0$ & $33{.}4$ & $40{.}8$\\
+$18$ & $7{.}0$ & $7{.}9$ & $9{.}4$ & $10{.}9$ & $12{.}9$ & $14{.}4$ & $17{.}3$ & $20{.}6$ & $22{.}8$ & $26{.}0$ & $28{.}9$ & $32{.}3$ & $34{.}8$ & $42{.}3$\\
+$19$ & $7{.}6$ & $8{.}6$ & $10{.}1$ & $11{.}6$ & $13{.}7$ & $15{.}4$ & $18{.}3$ & $21{.}7$ & $23{.}9$ & $27{.}2$ & $30{.}1$ & $33{.}7$ & $36{.}2$ & $43{.}8$\\
+$20$ & $8{.}3$ & $9{.}2$ & $10{.}8$ & $12{.}4$ & $14{.}6$ & $16{.}3$ & $19{.}3$ & $22{.}8$ & $25{.}0$ & $28{.}4$ & $31{.}4$ & $35{.}0$ & $37{.}6$ & $45{.}3$\\
+$21$ & $8{.}9$ & $9{.}9$ & $11{.}6$ & $13{.}2$ & $15{.}4$ & $17{.}2$ & $20{.}3$ & $23{.}9$ & $26{.}2$ & $29{.}6$ & $32{.}7$ & $36{.}3$ & $38{.}9$ & $46{.}8$\\
+$22$ & $9{.}5$ & $10{.}6$ & $12{.}3$ & $14{.}0$ & $16{.}3$ & $18{.}1$ & $21{.}3$ & $24{.}9$ & $27{.}3$ & $30{.}8$ & $33{.}9$ & $37{.}7$ & $40{.}3$ & $48{.}3$\\
+$23$ & $10{.}2$ & $11{}3$ & $13{.}1$ & $14{.}8$ & $17{.}2$ & $19{.}0$ & $22{.}3$ & $26{.}0$ & $28{.}4$ & $32{.}0$ & $35{.}2$ & $39{.}0$ & $41{.}6$ & $49{.}7$\\
+$24$ & $10{.}9$ & $12{.}0$ & $13{.}8$ & $15{.}7$ & $18{.}1$ & $19{.}9$ & $23{.}3$ & $27{.}1$ & $29{.}6$ & $33{.}2$ & $36{.}4$ & $40{.}3$ & $43{.}0$ & $51{.}2$\\
+$25$ & $11{.}5$ & $12{.}7$ & $14{.}6$ & $16{.}5$ & $18{.}9$ & $20{.}9$ & $24{.}3$ & $28{.}2$ & $30{.}7$ & $34{.}4$ & $37{.}7$ & $41{.}6$ & $44{.}3$ & $52{.}6$\\
+$26$ & $12{.}2$ & $13{.}4$ & $15{.}4$ & $17{.}3$ & $19{.}8$ & $21{.}8$ & $25{.}3$ & $29{.}2$ & $31{.}8$ & $35{.}6$ & $38{.}9$ & $42{.}9$ & $45{.}6$ & $54{.}0$\\
+$27$ & $12{.}9$ & $14{.}1$ & $16{.}1$ & $18{.}1$ & $20{.}7$ & $22.7$ & $26{.}3$ & $30{.}3$ & $32{.}9$ & $36{.}7$ & $40{.}1$ & $44{.}1$ & $47{.}0$ & $55{.}5$\\
+$28$ & $13{.}6$ & $14{.}8$ & $16{.}9$ & $18{.}9$ & $21{.}6$ & $23{.}6$ & $27{.}3$ & $31{.}4$ & $34{.}0$ & $37{.}9$ & $41{.}3$ & $45{.}4$ & $48{.}3$ & $56{.}9$\\
+$29$ & $14{.}3$ & $15{.}6$ & $17{.}7$ & $19{.}8$ & $22{.}5$ & $24{.}6$ & $28{.}3$ & $32{.}5$ & $35{.}1$ & $39{.}1$ & $42{.}6$ & $46{.}7$ & $49{.}6$ & $58{.}3$\\
+$30$ & $15{.}0$ & $16{.}3$ & $18{.}5$ & $20{.}6$ & $23{.}4$ & $25{.}5$ & $29{.}3$ & $33{.}5$ & $36{.}2$ & $40{.}3$ & $43{.}8$ & $48{.}0$ & $50{.}9$ & $59{.}7$\\
+\hline
+\end{Table}}
+
+\noindent minus one more (the equivalence of the expected value (the average) and the statistical mean), i.e. $9$. Using Table~\refTable{p1_3} we find $\chi_p^2\Simeq0.1$; thus, the hypothesis of the Poisson distribution disagree with experiment in this case and should be discarded.
+
+\vspace{4pt}
+{\bf Comparison of two empirical distributions.} Finally consider the question whether two empirical distributions correspond to the same distribution. In this case $\chi^2$ must be calculated according to a different procedure compared to the case of experimental and theoretical distributions. The matter is that two samples can deviate differently from the same distribution. Therefore two empirical distributions must be about <<twice>> less close than a theoretical and experimental one. This means that the method of calculating $\chi^2$ for two empirical distributions must produce a smaller $\chi^2$ for the same deviation between the distributions. The quantity $\chi^2$ is calculated according to Eq.~(I.67) but the deviations are evaluated between two different distributions (it is understood that the samples are of the same size; the method is easily generalized to samples of different size). 

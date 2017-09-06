@@ -1,0 +1,143 @@
+%translator Savrov, date 15.03.13
+
+\let\theEquation=\oldTheEquation
+\let\theFigure=\oldTheFigure
+
+\Chapter
+{Magnetic resonance}
+{Magnetic resonance}
+{Magnetic resonance}
+
+\hyphenation{DPPH} \textbf{Magnetic resonance.}  A lot of substances placed in a constant magnetic field become capable of absorbing electromagnetic waves. The absorption is resonant, i.e. it occurs provided a certain relation between the wavelength and the magnetic field holds. This phenomenon is called \emph{magnetic resonance}, it is widely used to study properties of substances. Magnetic resonance is observed in various particle systems with angular momentum and magnetic dipole moment: electron, nucleus, atom, molecule, and chemical compound. 
+
+To understand basic properties of this phenomenon we focus on the simplest case of magnetic resonance, namely, that of a particle with magnetic moment $\boldsymbol \mu$ and angular momentum $\textbf{L}$
+\fFigure{Elementary magnetic resonance}10_1 {2.6cm}{3.6cm}{pic/L10_01.eps}
+which is placed in a constant magnetic field $\textbf{H}_{0}$. The behavior of this particle can be analyzed both in classical and quantum framework. \vspace{1ex}
+
+\textbf{1. Classical analysis.} A magnetic moment $\boldsymbol{\mu}$ precesses around $\textbf{H}_{0}$ (see~ \refFigure{10_1}) with the Larmor frequency
+$$
+\omega_{0} =\frac{\mu H_{0}}{L}=\gamma H_{0},   \eqMark{10_1}
+$$
+where $\gamma = \mu /L$ is the gyromagnetic ratio.
+
+Now let us apply a weak magnetic field $\textbf{H}_{1}$ perpendicular to $\textbf{H}_{0}$ and let it rotate around $\textbf{H}_{0}$ at a frequency $\omega$. If $\omega=\omega_{0}$, the field $\textbf{H}_{1}$ exerts a torque driving $\boldsymbol{\mu}$ to the plane orthogonal to $\textbf{H}_{0}$. This can be easily understood by going to the frame rotating around the constant field at the frequency $\omega_{0}$, in this frame $\textbf{H}_{1}$ is at rest. Thus $\boldsymbol{\mu}$ will change its orientation. If the frequencies $\omega$ and $\omega_{0}$ differ, the net effect due to the field $\textbf{H}_{1}$ will be negligible since the resulting motion of $\boldsymbol{\mu}$ quickly diverges in phase with its precession, so the average torque vanishes.
+
+In practice a sinusoidal field of the same frequency instead of the rotating magnetic field is usually employed because a linearly polarized sinusoidal field can be represented as a superposition of two oppositely rotating circularly polarized fields each of which has one half of the original amplitude. The corresponding resonant interaction between $\textbf{H}$ and $\boldsymbol{\mu}$ is due to the component rotating in the direction of $\boldsymbol{\mu}$ precession. The other component does no effect even for $\omega = \omega_{0}$ since the net action due to this field vanishes upon averaging, similarly to the case of $\omega \neq \omega_{0}$.
+
+The deflection of $\boldsymbol{\mu}$ from the equilibrium position by a high-frequency field $\textbf{H}_{1}$ and the corresponding increase of energy of $\boldsymbol{\mu}$ in the field $\textbf{H}_{0}$ does not completely explain why the particle absorbs the energy of high-frequency field. Indeed, the energy of $\boldsymbol{\mu}$ is minimal when the dipole is parallel to $\textbf{H}_{0}$; the oscillating field $\textbf{H}_{1}$ deflects the dipole until it becomes antiparallel to $\textbf{H}_0$ and its energy maximizes; the required energy is supplied by the high-frequency field. It seems the energy absorption must stop as soon as the magnetic dipole becomes aligned against the field. Actually, the energy absorption takes place all the time (there is an energy dissipation channel) and this is due to the particle interaction with other particles and environment. Before considering this issue let us discuss the quantum description of magnetic resonance.
+\vspace{1ex}
+
+\textbf{2.\;Quantum approach.} A component of angular momentum $\textbf{M}$ on a given axis (usually it is $z$-axis) can take only the discrete values:
+$$
+M_{z}=m\hbar,~~\text{where}~~m=0,\,\pm 1,\,\pm2,\,\ldots,\,\pm l.   \eqMark{10_2}
+$$
+The component cannot be greater than the angular momentum magnitude. Therefore possible values of $m$ for a given magnitude are bounded by a fixed number $l$. For a given $l$ any component can take one of $2l+1$ values.
+
+Quantization of angular momentum component means that the angular momentum vector cannot be arbitrarily oriented with respect to any given direction. This phenomenon is named spatial quantization and it is quite peculiar. Since the direction of $z$-axis is arbitrary the components of angular momentum on two different axes ($z$ and $z'$) are quantized in the same way. Possible values of the $x$ and $y$ components are also determined by Eq.~(\refEquation{10_2}). This does not lead to a contradiction because any pair of components ($M_{z},~M_{x};~M_{z},~M_{y}$ etc.) cannot simultaneously have definite values, which follows from the uncertainty relation. The component operators expressed via linear momentum and position operators do not commute. Thus angular momentum operator does not have a definite orientation. Loosely speaking, if $z$-component is fixed, the angular momentum vector is precessing around $z$-axis, so the components $M_{x}$ and $M_{y}$ do not have certain values.
+
+The magnitude of angular momentum vector is quantized as 
+$$
+M^{2}=\hbar^{2}l(l+1).   \eqMark{10_3}
+$$
+The quantity $l$ determines possible values of $M^{2}$, it equals the maximal value of $m$ and it is called an orbital quantum number. The quantity $m$ which specifies a particular value of a component is called a magnetic quantum number. One more difference between quantum and classical angular momenta should be mentioned: the maximal value $\hbar l$ of an angular momentum component is less than $\hbar\sqrt{l(l+1)}$.
+
+Taking into account that the relation $\boldsymbol{\mu}=\gamma\textbf{L}$ holds both for the components of $\boldsymbol{\mu}$ and $\textbf{L}$ we can write
+$$
+\mu_{mz}=\gamma\hbar m_{J},   \eqMark{10_4}
+$$
+where $J$~is the maximal value of $m$.
+
+A magnetic dipole $\boldsymbol{\mu}_{m}$ in a magnetic field $\textbf{H}_{0}$ has the potential energy 
+$$
+E=-(\boldsymbol{\mu}_{m},\textbf{H}_{0}) =-\mu_{mz}H_{0}=- \gamma\hbar m_{J} H_{0}.   \eqMark{10_5}
+$$
+Therefore, a <<magnetic>> particle characterized by quantum number $J$ in a magnetic field has $2J+1$ energy levels called the Zeeman levels.
+
+Two types of transitions between the Zeeman levels are possible, namely, spontaneous and induced ones. A spontaneous transition proceeds only from an upper level to a lower one. An induced transition is possible only when an external energy source, like electromagnetic field, is available; according to the selection rules, a transition can happen between states with $\Delta m_{J} =0,\,\pm 1$. Obviously, a transition induced by external electromagnetic field can happen providing the quantum of energy equals the difference between the corresponding Zeeman levels: 
+$$
+\hbar\omega_{0}=- \gamma \hbar H_{0}[m_{J} -(m_{J}+1)]=\gamma\hbar H_{0},   \eqMark{10_6}
+$$
+or
+$$
+\omega_{0}=\gamma H_{0}.   \eqMark{10_7}
+$$
+It is not surprising that the frequency $\omega_{0}$ of radiation that induces transitions coincides with the Larmor frequency~(\refEquation{10_1}) of the classical model.
+
+According to the principle of detailed balance the probabilities of direct and reverse transitions are equal, i.e. 
+$$
+W_{m \rightarrow m+1}=W_{m+1 \rightarrow m}=W.   \eqMark{10_8}
+$$
+
+A particle going to an upper level absorbs a quantum of energy $\hbar \omega_{0}$ and radiates it when going to a lower level. The particle--photon system must conserve both energy and angular momentum; 
+%
+\hFigure{When $E=\hbar\omega_0=g{\mubor}H_0$ the energy of high-frequency electromagnetic field can be emitted and absorbed by a magnetized substance ($g$~is the Lande g-factor): 
+\emph{a}~the Zeeman levels of a free particle with $J=1/2$ in the field $H_0$ (transitions corresponding to emission and absorption of photon with energy $E=\hbar\omega_0$ are indicated by arrows);\mbox{ \emph{b}~quasicontinuous} energy bands formed by the Zeeman levels in a sample (photon emission and absorption take place in a frequency interval $\Delta=\omega_2-\omega_1$); \emph{c}~typical resonant photon absorption and emission line (the width is $\delta\omega$)}10_2
+{10cm}{3.6cm}{pic/L10_02.eps}
+%
+for this reason only dipole photons, i.e. photons with angular momentum $J=1$, are emitted and absorbed, the transitions can be induced only by the field $\textbf{H}_{1}$ circularly polarized in the plane perpendicular to~$\textbf{H}_{0}$. 
+
+The diagram in~\refFigure{10_2} shows the Zeeman doublet of a particle with $J=1/2$ (e.g. the levels of proton or a free electron in a magnetic field~$\textbf{H}_{0}$).
+
+It is not difficult to estimate the resonant frequency of electromagnetic field. For a free electron in a constant field $H_{0}=10^3\;\ersted$ it is $2{.}81\;\GHz$, for a proton which magnetic moment is approximately $2000$ times less the frequency is~$4{.}27\;\MHz$.
+
+The power absorbed by an ensemble of particles is proportional to the number of particles on the lowest level. In the state of thermodynamic equilibrium the number of particles $N\sub{d}$ and $N\sub{u}$ on the lower and upper levels separated by an energy gap $\Delta E=\hbar \omega_{0}$ are related by the Boltzmann distribution
+$$
+\frac{N\sub{u}}{N\sub{d}}=e^{-\Delta E/({\kb}T)}.   \eqMark{10_9}
+$$
+
+The power absorbed by particles at resonance is proportional to the probability $W$ of induced transitions, to the difference between occupation numbers $\Delta N=N\sub{d}-N\sub{u}$, and to the quantum of energy $\hbar \omega_{0}$:
+$$
+P=W(N\sub{d}-N\sub{u})\hbar \omega_{0}.   \eqMark{10_10}
+$$
+
+The numerical estimates made above suggest that at room temperature $\hbar \omega_{0}/({\kb}T)\ll 1$. Therefore the occupation numbers are almost equal, so $N\sub{u}\Simeq N/2$, where $N=N\sub{d}+N\sub{u}$ is the total number of particles in the system. Therefore 
+$$
+\frac{N\sub{d}}{N\sub{u}}-1\Simeq \frac{\hbar \omega_{0}}{{\kb  } T},~~~N\sub{d}-N\sub{u}\Simeq N\frac{\hbar \omega_{0}}{2{\kb}T},   \eqMark{10_11}
+$$
+Thus the power absorbed at resonance is 
+$$
+P=W\!N\frac{\hbar^{2}\omega_{0}^{2}}{2{\kb}T}=W\!N\gamma^{2}H_{0}^{2}\frac{\hbar^2}{2{\kb}T}.   \eqMark{10_12}
+$$
+
+One can see that the absorbed power $P$ is proportional to $\omega_{0}$ squared at constant magnetic field $H_{0}$ (or to the field squared at constant frequency), to the total number of particles, and inversely proportional to temperature $T$. These are mostly the factors which determine the intensity of the signal caused by induced transitions. Notice that the probability of induced transitions is proportional to the energy density of electromagnetic field and therefore does not explicitly enter Eq.~(\refEquation{10_12}).
+
+Actually the difference between the occupation numbers decreases when the external radio-frequency field is applied, so eventually the energy levels become equally populated and a power absorption stops. This state is called saturated. The distribution of particles over levels becomes non-equilibrium. This happens because the system of isolated magnetic dipoles is an abstraction, actually the dipoles interact with each other and with atomic lattice. There is always an interaction between a dipole and its environment that forces the dipole to flip and to transfer its extra magnetic energy to other degrees of freedom, i.e. the energy always dissipates. The transition between the Zeeman states without photon radiation is called \emph{spin-lattice relaxation}: in solids the magnetic energy is usually transferred to lattice vibrations. 
+
+The term <<lattice>> is used not only for solids in which relaxation processes are mostly related to vibrations of atomic lattice; in a broader context the term <<lattice>> includes any degree of freedom other than spin. Since spin-lattice relaxation is due to interaction between spins and thermal motion of a <<lattice>>, it takes place for any phase of matter (fluid or solid). It is important that the lattice is in the state of thermal equilibrium; therefore the probabilities of spontaneous transitions to upper and lower levels are not equal. The coupling strength between spins and lattice is characterized by a spin-lattice relaxation time $T_{1}$. It is the time scale of energy transfer to other degrees of freedom, i.e. the typical time period for which the system of spins reaches the state of thermal equilibrium.
+
+Now we are ready to comment on the width and shape of resonant curve. The energy absorption at the magnetic resonance is not a narrow $\delta$-peak. Firstly, there is an apparatus error: some spatial variation of magnetic field $H_{0}$ leading to a line broadening. Secondly, a spin state has a finite lifetime because of relaxation, this also results in the broadening. Broadening of the resonance signal must obey an uncertainty relation $\Delta \omega \Delta t \Simeq 1$. However, spin-lattice relaxation is not the sole process responsible for the line broadening. There are other processes in solids and liquids which alter the relative energy of spin states rather than their lifetime. These processes are characterized by the relaxation time $T_{2}$ which is often called the \emph{spin-spin relaxation} time.
+
+Usually the resonance line is broadened due to dipole-dipole interaction between the magnetic moments of neighboring particles. Let us estimate the contribution of dipole-dipole interaction to the line width. If the distance between particles with magnetic moment $\mu$ is $r$, the magnetic field $H\sub{loc}$ of a dipole at the location of its neighbor is approximately
+
+\vspace{-6pt}
+$$
+H\sub{loc}={\mu}/{r^{3}}.   \eqMark{10_13}
+$$
+Assuming $r=2\;\Angstrem$ and $\mu = 10^{-3} {\mubor}$ one obtains $H\sub{loc}\Simeq 1\;\Gs$. 
+Since this field is randomly oriented with respect to the constant field $H_{0}$ the resonance frequencies are spread in an interval of $1\;\Gs$.
+
+Thus in a real sample the Zeeman levels of an isolated particle (see~\refFigure{10_2}\emph{a}) transform into quasicontinuous energy bands~(\refFigure{10_2}\emph{b}), so the particle ensemble absorbs energy in the frequency interval $\Delta \omega = \omega_{2} - \omega_{1}$. The resulting resonance curve is bell-shaped, as it is shown in~\refFigure{10_2}\emph{c}, which width approximately equals $\delta \omega$.
+
+Experiment shows that the line width decreases if magnetic particles are engaged into rapid relative motion. For instance, the width of proton resonance in water is only $10^{-5}$ of the width measured in ice. The line narrowing is due to rapid motion of neighboring particles, which is not difficult to understand. If the particles experience a rapid relative motion the local field $H\sub{loc}$ acting on a magnetic dipole rapidly fluctuates in time. Let the typical time scale of such a fluctuation $\mbox{be $\tau$}$. If during this time the dipole does not significantly change its phase (it starts spinning at a different non-resonant frequency) relative to the stationary precession, the local field changes and the dipole starts precession at another frequency. In this case the line broadening is determined not by the magnitude of local random field but an average square of <<dephasing>> because the local field leaps randomly both in magnitude and in sign. There is a direct analogy with random walk for which the average square of displacement from initial position after $n$ steps in random directions of length $l$ each equals $\langle r^{2}\rangle= n l^{2}$.
+
+In our case the additional phase acquired during the time $\tau$ in a local field $H_{i}$ is $\delta \phi = \pm \gamma H_{i}\tau$, so the average square of <<dephasing>> after $n$ leaps becomes
+$$
+\langle \phi^{2}\rangle=n( \delta \phi )^{2} =n \gamma^{2} H_{i}^{2}\tau^{2}.   \eqMark{10_14}
+$$
+
+The average number of leaps required for the phase shift  relative to the external rotating field (dephasing) to reach one radian equals $n=1/( \gamma^{2} H_{i}^{2}\tau^{2})$, so the time required for $n$ leaps is 
+\vspace{-4pt}
+$$
+T_{2}=n\tau = \frac{\ftau}{\fgamma^{2}H_{i}^{2}}.   \eqMark{10_15}
+$$
+This is the time of transverse relaxation: if the dephasing angle significantly exceeds one radian, the particle does not participate in absorption. One can see that the transverse relaxation time is inversely proportional to the leap duration, i.e. the faster the neighboring particles move, the narrower is the resonant line. This amazing effect is known as  \emph{line narrowing due to motion}.
+
+A similar drastic line narrowing called~\emph{exchange narrowing} takes place if there is an exchange interaction between two neighboring electron spins. The exchange interaction arises when electron wave functions overlap; then according to the Pauli exclusion principle two electrons must have opposite spins if they are in the same quantum state, which results in an additional Coulomb interaction between the electrons. The energy of exchange interaction $U$ implies the exchange frequency  
+$$
+\omega\sub{ex}\Simeq \frac{U}{\hbar}   \eqMark{10_16}
+$$
+which is interpreted as the leap frequency $1/ \tau$.
+
+Any given dipole interacting via exchange with its neighbors switches its orientation at the frequency about $U/\hbar$, so the local field fluctuates at the same frequency. This field has a lesser effect on the line broadening because (due to gyroscopic properties of spin) only those local fields shift the resonant frequency of any given spin which remain essentially constant during the time of dephasing. In other words, each local field acts only for a short time, so the transverse components of magnetization vector cannot acquire a noticeable phase shift.
+
+To conclude, the magnetic resonance is the selective absorption of electromagnetic waves of a certain frequency by matter that is due to a change in orientation of magnetic dipoles. If the absorption is due to atomic nuclei, the resonance is called \emph{nuclear magnetic resonance (NMR)}. The magnetic resonance due to magnetic momenta of free electrons in paramagnets is called \emph{electron paramagnetic resonance (EPR)}. Electron magnetic resonance in a magnetically ordered substance is called either \emph{antiferromagnetic} or \emph{ferromagnetic} depending on the ordering symmetry. 

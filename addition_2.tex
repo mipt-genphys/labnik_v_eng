@@ -1,0 +1,194 @@
+%translator Scherbakov, date 08.05.13
+
+\setcounter{Chapter}{2}
+
+\Addition
+{Methods of particle detection}
+{Methods of particle detection}
+{Methods of particle detection}
+
+The main difficulty in particle detection is the smallness of impact on a macroscopic detector caused by a single particle. One of the most prominent effects of matter-particle interaction is ionization of matter by a charged particle, so the majority of detectors of charged particles operate using the ionizing effect. A neutral partical can be detected only due to secondary processes, e.g. by detection of a charged particle originated from a nuclear reaction.
+
+Due to the weakness of ionization caused by a single particle, the detection requires high-efficiency amplification, however, an electronic amplifier is not usually applicable at the first amplification stage. Therefore, a common detector is a physical system in unstable state, so a charged particle triggers a dramatic change of the state. Examples include supercooled vapor, superheated liquid, gas in pre-breakdown state, etc.
+\vspace{2ex}
+
+\textbf{I. Gas detectors}
+\vspace{1ex}
+
+Propagation of a charged particle in matter is accompanied by creation of ions. If a gas is placed in the electric field between two electrodes, positive and negative ions move in opposite directions increasing the electrode charges and this process can be detected as a voltage pulse. The ion motion is accompanied by a host of processes (sticking, diffusion, recombination, ionization by collision) and the role of each process depends on the detector geometry, the gas composition and pressure, and the field strength. According to their usage gas detectors are grouped into ionization chambers (current tracers for measuring radiation intensity and pulse detectors for detecting short-range particles), proportional counters (where electric pulse is proportional to the number of primary ion pairs and, hence to the particle energy), and Geiger-M\"{u}ller tubes (a device counting single particles).
+\vspace{1ex}
+
+\textbf{Ionization chamber.}
+Ionization chamber is a device for quantitative measurement of ionization produced by a charged particle passing through a gas. The chamber consists of a gas container with electrodes (see~\refFigure{PR_2_1}). Since the average ionization energy of atom is about $30\;\eV$, a particle with an energy of $1\;\MeV$ creates about $30000$ electrons along its trajectory, which corresponds to a charge of $5\cdot10^{-15}\;\Kl$. Such a small charge can generate a measurable voltage providing an electric capacitance $C$ between the electrodes and the ground is very small. This capacitor together with a resistance $R$, which is connected in series with the electrodes for voltage recovery, constitutes an $RC$-circuit shaping a voltage pulse. Because the electron mobility is about $1000$ times greater than the ion one, a voltage pulse consists of two components (see \refFigure{PR_2_1}): the fast (electron) and the slow (ion). The presence of the $RC$-circuit changes the current pulse shape at the counter output. Usually the $RC$-circuit parameters are chosen to detect only the fast pulse component, i.e., to meet $T\sub{el}\ll RC\ll T\sub{ion}$, where $T\sub{el}$ and $T\sub{ion}$ are electron and ion collection time, respectively.
+
+Let us calculate a voltage drop of the collector electrode due to a particle displacement. Assume that an additional charge in the gas is small compared to the electrode charges which determine the initial potential difference $V_0$. Suppose the moving particle creates $\overline{n}$ ion pairs at a distance $x_0$ from the anode while moving through the sensitive layer of the camera (see \refFigure{PR_2_1}\emph{c}). Some work must be done to displace the charge $\overline ne$ from $x_0$ to $x$, this decreases the chamber electrostatic energy. Let the distance between the electrodes be $l$, the potential difference after the displacement of charge $\overline ne$ be $V$, and the corresponding field strength be $V/l$, then the energy conservation law gives
+$$
+\frac{1}{2}C(V_0^2-V^2)=\int\limits_{x_0}^x\frac{\overline neV_0}{l}\,dx=\overline neV_0\frac{x-x_0}{l}\,.
+\eqMark{p2_1}
+$$
+
+%
+\hFigure{Ionization chamber: \textit{a}~ shape of current pulse caused by particle passage; \textit{b}~$RC$-circuit output pulse; \textit{c}~electrical circuit}PR_2_1
+{9.7cm}{5.0cm}{pic/PR2_01.eps}
+%
+
+Since $\Delta V = V_0 - V \ll V_0$, one easily obtains from Eq.~(\refEquation{p2_1}) that
+$$
+\Delta V=\overline n e\Delta x/Cl,
+\eqMark{p2_2}
+$$
+
+Equation (\refEquation{p2_2}) determines the dependence of pulse amplitude on displacement of charge carriers. The total pulse amplitude, which is given by the sum of electron and ion components, is determined by the total particle energy (the number of created ion pairs) only. However, if there were only the electron component the pulse amplitudes $\Delta V$ would range from $0$ to $\Delta V_\textrm{max} = \overline{n}e/C$ as it follows from Eq.~(\refEquation{p2_2}). This phenomenon is called the {\it inductive effect.}\looseness=1
+
+To obtain a fairly independent electron pulse shape regardless of the point of electron entry one uses a cylindrical camera. In this case the voltage mostly drops in the vicinity of the central string electrode. If a particle track entirely lies inside the camera, the number of created ions and, hence, the pulse amplitude is proportional to the total particle energy. In a spherically symmetric camera the induction effect turns out to be even less prominent but such cameras are quite sophisticated in manufacturing.
+
+Composition of a gas filling an ionization chamber with electron collection must meet certain requirements. The problem is that electrons in the so called electronegative gases (e.g., oxygen or water vapour) are very likely to stick to neutral molecules forming negative heavy ions (Î$^{-}_{2}$ or Í$_{2}$O$^{-}$). These ions drift to anode at a speed comparable to that of a heavy positive ion thereby blocking electron collection. For this reason, a gas mixture in an ionization chamber with electron collection must be thoroughly purified from electronegative components: their concentration as small as $1\%$ can significantly worsen the chamber performance. Obviously, a chamber with full ion collection can be filled with any gas.
+
+The electric current in a camera electric circuit is proportional to the number of particles passing through the chamber if the number is sufficiently large. In this case the ionization chamber is called the current chamber.
+\vspace{1ex}
+
+{\bf Proportional counter.}
+A proportional counter is the ionizing chamber which uses the effect of gas amplification. The name <<proportional>> is derived from the fact that the pulse amplitude in the electric circuit is proportional to the number of ion pairs generated by a passing particle. Usually a proportional counter consists of a metal cylinder with a thin wire along its axis, the wire potential is positive relative to the cylinder. The field strength inside the counter is $E\propto 1/r$ and the corresponding potential difference is $U\propto\ln r/r_0$. Primary electrons originated due to ionization drift towards the wire collector. If these electrons acquire sufficient energy along the mean free path to ionize gas molecules by impact, the primary electrons multiply. In each collision the number of electrons doubles thereby creating an electron avalanche. Since the field strength sharply increases in the vicinity of the wire the secondary ionization process is also localized near the wire. In practice the primary ionization starts outside this region, so all primary electrons cause the same avalanche.
+\looseness=1
+
+Let us analize a temporal behavior of a proportional counter. The potential difference passed by avalanche electrons in the counter with electrode radii $a$ and $b~(a \ll b)$ constitutes a fraction of the total voltage equal to 
+$$
+{\ln \left({a+b\over a}\right)\over\ln\,b/a}\Simeq{\delta a\over\ln\,b/a}
+\eqMark{p2_3}
+$$
+where $\delta$ is a distance between the location of an ionizing collision and the wire. Thus the electron motion towards the wire gives rise to a voltage increment proportional only to a part of the total impulse. Mostly the pulse rapidly grows when positive ions created close to the wire begin their motion from the region of a very strong field. The pulse shape is shown in \refFigure{PR_2_2}. The figure shows a time lag (the time between a particle passage and the onset of electron avalanche, which depends on the track location) followed by a rapid pulse growth due to the positive ions created by electron multiplication. As the ions move closer to the external electrode the ion mobility decreases and the pulse growth slows down. If electron pulse is used the amplitude of output signal is much lower while the signal duration is shorter ($\approx 10^{-7}$\;s). However, in coincidence registration experiments the time lag can be more essential than the pulse diration. Using a proportional counter it is impossible to achieve the energy resolution better than $1\%$ because of fluctuations of the number of primary electrons.
+%
+\hFigure{Pulse shape of proportional counter. In practice the flat part of the pulse is not registered due to the presence of $RC$-circuit or another low-pass filter}PR_2_2
+{4.5cm}{3.4cm}{pic/PR2_02.eps}
+%
+
+\vspace{1ex}
+
+{\bf Geiger–-M\"{u}ller counter.}
+Unless special precautions are taken, the first electron avalanche is followed by secondary avalanches originated due to two different mechanisms:
+
+1.\;At the onset of electron avalanche electrons excite neutral molecules which emit photons while going to their ground state. These photons knock out the cathode electrons which initiate new avalanches. The duration of this process is determined by the time of electron drift from the cathode to the avalanche region, usually the time is about $10^{-6}$\;s.
+
+2.\;Cathode electrons are knocked out by positive ions in the neutralization process which duration is determined by the time of ion drift to the cathode, it is of the order of $10^{-4}$\;s.
+
+As a result of the described processes a primary electron initiates several avalanches forming a self-maintained discharge. After a while this discharge terminates due to formation of a cloud of positive ions surrounding the anode with a positively charged <<shield>>. This smoothes the field in the vicinity of the central string, the gas multiplication factor decreases, and the discharge quenches. The total charge and, hence, the pulse amplitude do not depend on the primary ionization, so only the number of passed particles is registered.
+
+However, when the cloud goes to the cathode and recombinates the string voltage is restored, the knocked out electrons can initiate a new avalanche, and so on. Thus, one needs to take special precautions to quench the self--maintained discharge. This can be done by electronic means, the simplest method is to connect a counter in series with a resistor $R$ to make $RC \gg t\sub{col}~(t\sub{col}$ is the time of positive ion collection) and to decrease the counter voltage below the breakdown potential. Another way is to add a polyatomic gas, e.g. ethanol vapor. Alcohol vapor is opaque enough to absorb the ultraviolet photons, and its molecules colliding with the ions of the working gas neutralize them. Counters with internal damping are referred to as self--quenching.
+\looseness=1
+
+In practice three types of ionization detectors considered differ only by a dependence of the output pulse on the applied voltage. The diagram in~\refFigure{PR_2_3} shows these dependencies and the operation regions of the ionization chamber, the proportional counter, and the Geiger–-M\"{u}ller counter.
+
+%
+
+\hFigure{Logarithm of ouput pulse amplitude $V$ versus gas counter voltage $U$: \textit{1}~$\alpha$-particles ($\Simeq 10^5$ ion pairs); \textit{2}~$\beta$-particles ($\Simeq 10^3$ ion pairs). I~is a region of output pulse growth due to decreasing recombination probability of primary ions; II~is a region of counter operation as ionization chamber; III~is a proportional region; IV~is a region of limited proportionality; V~is the Geiger region; and VI~is a region of continuous discharge}PR_2_3
+{5.4cm}{3.6cm}{pic/PR2_03.eps}
+%
+
+\vspace{2pt}
+
+{\bf II. Inorganic scintillators}
+
+\vspace{4pt}
+A $\gamma\text{-}$quantum interacting with matter generates secondary electrons carrying either the total or a part of the initial $\gamma\text{-}$quantum energy. If this interaction occurs inside a scintillator, a further energy relaxation or recombination of these electrons converts their energy into light pulses, or scintillations, which intensity is proportional to the absorbed energy.
+
+Consider the operation principle of a widely used inorganic crystalline scintillator NaI(Tl). It is well-known that electrons of a pure inorganic dielectric crystal in the ground state occupy the so-called valence band $A$ (see~\refFigure{PR_2_4}\emph{a}). A charged particle penetrating the crystal excites some electrons to the conduction band. During its diffusion in the conduction band an electron can approach a free valence band level, or a <<hole>>. Recombination of electron and hole results in the emission of light quantum which energy is equal to the band gap width $C$. This quantity determines the crystal absorption spectrum. For this reason the light quanta emitted in the recombination are absorbed inside the crystal and do not come out.  The diagram in~\refFigure{PR_2_4}\emph{b} demonstrates spectral intensities $\Phi_0 (\lambda)$ of inorganic crystals NaI(Tl) and CsI(Tl) together with the spectral sensitivity $\gamma(\lambda)$ of a widespread cesium-antimonide photocathode used in photomultiplier tubes to detect scintillation. 
+%
+\hFigure{Energy level diagram of inorganic crystal (\textit{a}); spectral sensitivity of photocathode Sb--Cs and luminescence spectra of crystals {NaI(Tl)} and {CsI(Tl)}~(\textit{b})}PR_2_4
+{11.1cm}{5.6cm}{pic/PR2_04.eps}
+%
+
+A small amount of activator dopant (0.1\%) added to a crystal forms local energy levels which are referred to as luminescence centres (for NaI crystal Tl is used as the activator). If the activator energy levels  $d$ are located in a band gap electrons can jump to these levels from the conduction band. The spectrum of optical quanta emitted in these transitions does not overlap with the absorption spectrum of the pure crystal, so these quanta can be absorbed by the dopant only. Therefore, the majority of these quanta escape from the crystal providing the dopant concentration is small. If the electron excitation energy is less than the bandgap width then the electron and the corresponding hole in the valence band can form a bound state (due to the Coulomb attraction). This excited state (quasiparticle) is called an exciton, it can migrate inside the crystal without charge transfer since it is neutral. A migrating exciton can be captured by a luminescence centre and recombine. A large diffusion time of electrons and holes (or, in other words, exciton migration time) leads to a large scintillation time of crystal scintillator, e.g. it is $0{.}25$\,mks for NaI(Tl).
+
+\vspace{5pt}
+{\bf III. Scintillation mechanism of organic crystals}
+\vspace{3pt}
+
+Organic compounds which are efficient scintillators are usually aromatic hydrocarbons. A plastic scintillator is usually a solution of an organic scintillating compound in polystyrene or polyvinyl toluene. An optimal solution concentration does not usually exceed several percent.
+
+A scintillation process in organic compounds, both liquid and solid, is of molecular nature. For this reason it differs from the scintillation process in a solid inorganic scintillator where the luminescence is due to the band structure of ionic crystal.
+
+\vspace{-0.5pt}
+In organic crystal characterized by weak Van der Waals intermolecular forces the electron energy levels of a molecule are hardly perturbed by other molecules. Hence, an interaction of a charged particle with organic crystal does not depend on its aggregation state; both in liquids and solids this interaction consists in excitation of separate molecules either by the charged particle or by its secondary $\delta $-electrons. Besides a complex molecule excited to a high energy state can dissociate into compound radicals.
+
+\vspace{-0.5pt}
+One can expect that a scintillator molecule excited to a high energy level either due to electron-ion recombination or directly by a charged particle then goes to the first excited state during the process of conversion of electron excitation energy into vibrational energy. This process lasts about $10^{-12}$\,s. There is also another mechanism of energy dissipation. The lifetime of a molecular excited state strongly depends on the excitation energy and for high energies it is very small, so during the time interval $10^{-12}\div 10^{-11}$\,s all excited molecules are likely to go to the ground state by emitting high energy photons. These hard photons are then absorbed by surrounding molecules which in turn emit optical photons. This process repeats several times. At each step a molecule which absorbed a photon goes to a vibrational level by transferring the energy excess to the neighbouring molecules, so the energy of emitted optical quantum is lower than that of the absorbed photon. After several cycles of absorption and emission the photon energy becomes comparable with the energy of the first excited molecular state. At the end the molecular emission must occur from the first excited state. Thus, after a very short period of time about $10^{-12}\div 10^{-11}$\,s the energy lost by the charged particle in the crystal is mostly converted into thermal energy of molecular motion while a small part of the initial energy remains as the energy of the first excited molecular state.
+
+Since intermolecular forces in organic crystals slightly affect the molecular electronic structure the molecular emission from the first excited state is also independent of the scintillator aggregation state. This allows one to consider scintillation using only the luminescence properties of a single molecule.
+
+The potential energy of a single molecule $U$ is a function of the distance between its atoms. For a complex organic molecule like anthracene (C$_{14}$H$_{10}$) the number of parameters which determine the position of its atoms is too large to represent the dependence of potential energy $U$ on these parameters. However, in the first approximation the potential energy curve for a complex molecule can be considered to be similar to the energy of a diatomic molecule, and the processes of excitation and emission can be treated in the same way as for a diatomic molecule.
+
+\vspace{-0.5pt}
+%
+\fFigure{Potential energy of diatomic molecule in the ground (\emph{a}) and the first excited state (\emph{b})}PR_2_5 {4.7cm}{5.7cm}{pic/PR2_05.eps}
+%
+The potential energy $U$ as a function of interatomic distance $r$ for a diatomic molecule in the ground and the first excited state is shown in~\refFigure{PR_2_5} (curves \emph{a} and \emph{b}). The potential well of the excited state is less deep than that of the ground state, so the minimum $r_1$ of the curve \emph{b} is slightly greater than $r_0$. For a given temperature the molecule must be in a certain vibrational state which is shown as a line segment close to the bottoms of potential wells (naturally, a larger temperature corresponds to a large amplitude of atomic vibrations).
+
+\vspace{-0.5pt}
+This simple diagram illustrates the mechanism responsible for the relative displacement of absorption and emission spectra that allows an organic scintillator to flash. Indeed, the energy of a photon which is able to excite the molecule from the ground state is approximately equal to the difference between the vibrational levels of the curves~\emph{a} and~\emph{b}; the photon energies corresponding to absorption band are shown as the left shaded area in~\refFigure{PR_2_5} (the up arrow). A molecule which absorbed a photon with energy larger than the interval between the vibrational levels of the ground and excited states at a given temperature rapidly rids itself of the excess energy in thermal collisions with other molecules, and finds itself on the vibrational level of the excited state.
+
+Then the molecule goes to the ground state by emitting an optical photon. The photon energy is equal to the difference between the vibration level of curve \emph{b} and the potential energy curve \emph{a}; the photon energies corresponding to the emission band are shown as the right shaded area in~\refFigure{PR_2_5} (the down arrow). Thus the emission spectrum is shifted relative to the absorption spectrum to lower photon energies (or greater wavelenghts).
+
+Since the lifetime of a molecular excited state greatly exceeds the period of thermal vibrations, a non-radiative transition from the excited to the ground state can occur in a region where the curves \emph{a} and \emph{b} are close. In this case the excitation energy is completely converted to the energy of thermal motion. This process is called quenching.
+
+\vspace{-6pt}
+%
+\cFigure{Absorption and emission spectra of anthracene}PR_2_6
+{8.0cm}{3.3cm}{pic/PR2_06.eps}
+%
+In a real organic molecule the processes of excitation and relaxation are much more complex. Nevertheless a considerable shift between the emission and absorption spectra is observed in many materials (the anthracene spectra are shown in~\refFigure{PR_2_6}). The shift provides the necessary scintillator transparency with respect to its own radiation. The overlap of emission and absorption spectra in a good scintillator must be minimal.
+
+However the process of emission from the first excited molecular state can be followed by another phenomenon. Since the emission and absorption spectra partially overlap some fraction of emitted photons corresponding to the short wavelength tail of emission spectrum can be absorbed by  scintillator. This process increases the propability of thermal quenching and decreases the flash power, so that the center of the scintillator emission band shifts to longer wavelengths, as it is shown in~\refFigure{PR_2_5} by the dashed line. In addition, the repeated absorption and emission of photons extends the scintillation process. Therefore the crystal scintillation time $\tau$ is always greater than the lifetime $\tau _0$ of excited molecular state, and it depends on the crystal thickness.
+
+The scintillation time $\tau$ can be estimated as follows. Let $k_0$ be the probability of emission of an excited molecule; $k'$ be a probability of photon absorption in the crystal; and $k$ be a probability that a photon leaves the crystal. Then $k=k_0(1-k')$. Since the probability of a process is inversely proportional to its lifetime, then replacing $k$ and $k_0$ by the corresponding $1/\tau $ and $1/\tau _0$ we obtain $\tau =\tau _0/(1-k')$. In a thick crystal where the probability of photon absorption $k'$ is large the scintillation time $\tau$ can be several times greater than the time $\tau _0$ of single molecule emission. The probability $k'$ is less for a thinner crystal and for very thin monocrystals when $k'\rightarrow 0$ $\tau\rightarrow\tau _0$.
+
+\vspace{6pt}
+{\bf IV. Semiconductor scintillation counters of nuclear radiation}
+
+\vspace{3pt}
+Operation principle of a semiconductor scintillation counter (SSC) is similar to that of the ion chamber. A charged particle propagating in a crystal with a low intrinsic conductivity creates pairs of electrons and holes which are then separated by electric field and collected at the counter electrodes. However, a constant voltage applied to the counter electrodes in SSC generates a constant current due to dopants. In order to separate the voltage pulses caused by charged particles from the pulses due to fluctuations of electric current a (\mbox{$p$--$n$})-junction is put into effect.
+
+An equilibrium (\mbox{$p$--$n$})-junction emerges at the boundary between semiconductors with different types of conductivity. Free electrons concentrate in an $n$-type semiconductor, whereas holes concentrate in a $p$-type semiconductor. This creates a concentration gradient of charge carriers in the boundary layer and this gradient drives electric current from the $p$- to $n$-type region. This current exists until the uncompensated positive ion-donors and negative ion-acceptors create a potential barrier (see~\refFigure{PR_2_7}). The absence of free charge carriers in the depleted boundary layer is responsible for a high layer resistance. Thus a (\mbox{$p$--$n$})-junction operates as a diode and acts as a barrier layer for the dopant current.
+
+The sensitive detector layer can be enlarged by applying the reverse bias (see~\refFigure{PR_2_7}) which removes free charge carriers from the region of detection of nuclear particles.
+
+Due to a large (\mbox{$p$--$n$})-junction resistance almost all applied voltage drops across the barrier layer. The width of this layer $x_\textrm{o}$ (in $\mu m$) depends on the voltage:
+$$
+x_\textrm{î}=0{.}32(\rho V)^{1/2}\,,\eqno(\textrm{II}.4)
+$$
+where $\rho$ is the crystal resistivity, $\Omega \cdot \textrm{cm}$; and $V$ is the applied voltage.
+
+\begin{cFigures}
+\Figure
+{Connection circuit of equilibrium (\mbox{$p$--$n$})-junction}PR_2_7
+[t]
+{4.6cm}{6.6cm}{pic/PR2_08.eps}
+\qquad
+\Figure
+{Surface barrier of semiconductor detector; $x_0$~is the thickness of depleted layer}PR_2_8
+[t]
+{4.9cm}{2.5cm}{pic/PR2_09.eps}
+\end{cFigures}
+
+The design of a silicon detector with a surface barrier is shown in~\refFigure{PR_2_8}. The scintillator is made of $n$-type silicon. The bottom surface of the detector is screened by an aluminum layer acting as electrode. As a result of oxidation process the top surface becomes covered with a $p$-type layer. To oxidize the surface of a flatten silicon plate it is sufficient to expose it to air at room temperature for $12$--$36$\;hr. Afterwards the surface is covered in vacuum by a thin gold layer ($20$--$50$\;mkg/cm) to form the second electrode. The detector capacity strongly depends on the applied voltage, so the signal is amplified by means of a special charge-sensitive amplifier (an amplifier with capacity reaction). The output voltage of such an amplifier is proportional to the charge flowing through the detector and is independent both of the detector capacitance and of the amplifier input capacitance.
+
+A semiconductor counter of charged particles has the following important advantages:
+
+1. Deceleration of particles occurs in a solid, which significantly decreases the counter dimensions. For example, the braking capability of a depletion region $300$\:\;$\mu m$ thick is equivalent to one meter distance in a gas.
+
+2. The energy required to create an electron-hole in a semiconductor is about ten times less than the ionization energy of an atom of gas. A new electron-hole pair is created each time when a fast charged particle transfers the energy $E_\textrm{av} = 3{.}6$\,eV, whereas creation of an ion pair in gas requires $32$\,eV. \Footnotemark \Footnotetext{This significant difference is not surprising since ionization in semiconductors is due to electron transition from valence to conduction band rather than to continuous spectrum.} Therefore the energy resolution of a semiconductor detector is significantly better. For example the resolution for $\alpha$-particles of energy $8$\,MeV equals $0{.}3$\%.
+
+3. The mean energy required to create electron-hole pair does not depend on the ionization density created by a registered particle. For this reason semiconductor detectors are good for investigating a strongly ionizing radiation, e.g. for registration of $\alpha$-particles or nuclear debris. To measure the particle energy with a good accuracy (i.e. to use the detector as a spectrometer) one only needs to verify that the thickness of depletion layer exceeds the mean free path of registered particles and that this layer is located as close as possible to the semiconductor surface (that is why the detector is called the surface-barrier).
+
+Many applications (mostly, detection of $\gamma$-rays) require a counter with a large volume of the sensitive (depletion) layer. A real crystal has either a high carrier concentration at room temperature or a high concentration of traps and recombination centers, which increases loss of charge carriers. A common method of manufacturing a large volume Ge or Si  detector consists in compensation of residual impurities by atoms of the opposite conductivity types. When both impurities are entirely ionized they do not contribute to the free carriers concentration. A popular technology of fabrication of a $p$-type germanium crystal consists in diffusing lithium atoms into a crystal which volume amounts to dozens of cubic centimeters. A germanium-lithium detector has to be kept at the temperature of liquid nitrogen; otherwise the low germanium resistance leads to a high electric current through the detector and, besides, lithium diffuses from the germanium bulk towards the surface.
+
+To-date technology of pure germanium fabrication is so advanced that conventional Ge(Li)-detectors of $\gamma$-rays are superseded by detectors made of pure germanium with a volume  up to $200\;\cm^3$. A detector made of pure germanium can be kept at room temperature without deteriorating its spectrometric characteristics.
+
+%
+\hFigure{Gamma-spectrum of $^{60}$Co registered by scintillation NaI(Tl) and semiconductor Ge(Li) detectors}PR_2_9
+{6.9cm}{4.85cm}{pic/PR2_11.eps}
+%
+
+Nowadays the precise $\gamma$-spectrometry is performed primarily by means of high energy resolution semiconductor detectors. The diagram in~\refFigure{PR_2_9} shows the $\gamma$-spectrum of $^{60}$Co registered by scintillation NaI(Tl) and semiconductor Ge(Li) detectors.
+
+One can see that the Compton background of the semiconductor detector is significantly lower and the photopeaks are much higher, whereas the same number of pulses is detected using the less number of channels. Detection selectivity is particularly important if the source analyzed has the large number of $\gamma$-lines.
+

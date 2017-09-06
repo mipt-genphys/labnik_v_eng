@@ -1,0 +1,197 @@
+%translator Savrov, date 24.03.13
+
+%___________________________________________________________
+
+
+\setcounter{Equation}{0} \setcounter{Figure}{0}
+\Work
+{Nuclear magnetic resonance}
+{Nuclear magnetic resonance}
+{Nuclear magnetic resonance (NMR) on protons is studied, the width of absorption line is measured, and a temperature dependence of NMR signal and its saturation are examined.}
+
+Consider splitting of energy levels of an atomic nucleus in a magnetic field. Assume that the nucleus has a magnetic dipole moment $\boldsymbol{\mu}$ which is independent of the external magnetic field. Interaction of the magnetic dipole and the field adds to the nucleus energy the term
+$$
+E=-({\boldsymbol{\mu}},{\textbf{B}}).   \eqMark{10_2_1}
+$$
+Here $\boldsymbol{\mu}$~is the magnetic dipole moment and $\textbf{B}$~is the induction of external magnetic field. The nucleus can be characterized by a single preferred direction, that of its  angular momentum $\textbf{M}$. The vector $\boldsymbol{\mu}$ must be aligned with this direction. Therefore
+$$
+\boldsymbol{\mu}=\gamma\textbf{M}.   \eqMark{10_2_2}
+$$
+A factor $\gamma$ which is equal to the ratio of magnetic moment to the angular momentum is called the \emph{gyromagnetic ratio}.
+
+A natural unit of measurement for nuclear magnetic moment is the nuclear magneton $\mu\sub{n}$:
+$$
+\mu\sub{n}=\frac{e\fhbar}{2m_p}=0{.}5 \cdot 10^{-23}\;\erg \cdot\Gs^{-1}.   \eqMark{10_2_3}
+$$
+
+The constants in Eq.~(\refEquation{10_2_3}) are the proton mass and charge (which is opposite to that of the electron).
+
+A dimensionality of the gyromagnetic ratio $\gamma$ is complicated. That is why a simpler quantity called $g$-factor is usually used. It is also defined as the ratio of magnetic moment to angular momentum but the magnetic moment is measured in nuclear magnetons  and the angular momentum in units of~$\hbar$:
+$$
+g=\frac{\fmu/\fmu\sub{n}}{M/\fhbar}=\frac{\fmu}{\fmu\sub{n}}\frac{\fhbar}{M}=\frac{\fhbar}{\fmu\sub{n}}\gamma.   \eqMark{10_2_4}
+$$
+
+A nuclear $g$-factor is similar to the atomic Lande $g$-factor. Recall that for electron it equals 2, while for proton it is $g=5{.}58$, i.e. $2{.}79$ times greater than would be expected for a spin~$1/2$ particle. The reason for such a strong discrepancy is due to the fact that proton is not an <<elementary particle>> per se, it is composed of three quarks which determine its magnetic moment. The correct evaluation of the proton magnetic moment is based on a quark model.
+
+By replacing $\gamma$ with $g$ in Eq.~(\refEquation{10_2_2}) with the aid of Eq.~(\refEquation{10_2_4}) one obtains:
+$$
+\boldsymbol{\mu}=\frac{\fmu\sub{n}}{\fhbar}g\textbf{M}.   \eqMark{10_2_5}
+$$
+The $g$-factor varies not only for different nuclei but for different levels of the same nucleus as well.  For all components of the same level, however, the $g$-factor is the same (the components are  states with different projections of $\textbf{M}$). The magnitude of angular momentum vector is
+$$
+\textbf{M}^{2}=\hbar^2I(I+1),   \eqMark{10_2_6}
+$$
+where $I$~is an integer of half-integer called the \emph{spin quantum number} or simply the nucleus \emph{spin}.
+
+A component of angular momentum $\textbf{M}$ of any axis is also quantized. The allowed values are
+$$
+M_{z}=m\hbar,   \eqMark{10_2_7}
+$$
+where $m$~is an integer (for integer $I$) or a half-integer (for half-integer $I$). The allowed $m$ are 
+$$
+-I \leqslant m \leqslant +I,
+$$
+where successive $m$ differ by one. By projecting $\textbf{M}$ and $\boldsymbol{\mu}$ on $\textbf{B}$ and using Eqs.~(\refEquation{10_2_6}) and (\refEquation{10_2_7}) one obtains
+$$
+\mu_{{\scriptscriptstyle B}} =\frac{\fmu\sub{я}}{\fhbar}gM_{{\scriptscriptstyle B}}=\frac{\fmu\sub{n}}{\fhbar}gm\hbar =\mu\sub{n}gm.   \eqMark{10_2_8}
+$$
+The maximal value of $\mu_{{\scriptscriptstyle B}}$ equals $\mu\sub{n}gI$. It is this value which is usually called the \emph{magnetic moment of nucleus} and cited in reference books.
+
+The energy difference between two adjacent components can be found from Eqs.~(\refEquation{10_2_2}) and~(\refEquation{10_2_8}):
+$$
+\Delta E=B \Delta \mu_{{\scriptscriptstyle B}} =B\mu\sub{n}g \Delta m=B \mu\sub{n}g.   \eqMark{10_2_9}
+$$
+
+A diagram of energy levels of a nucleus of spin~$3/2$ in external magnetic field is shown in~\refFigure{10_2_1}. The allowed orientations of angular momentum vector $\textbf{M}$ are schematically drawn in~\refFigure{10_2_1}\emph{a}. The magnitude of $\textbf{M}$ squared is $\hbar^2 I(I+1) =(3/2) (1+3/2) \hbar^{2}$.
+
+\hFigure{Levels of nucleus of spin $I=3/2$ in external magnetic field~$\textbf{B}$}10_2_1 {8.8cm}{4.6cm}{pic/L10_2_01.eps}
+
+Magnetic moment $\boldsymbol{\mu}$  differs from $\textbf{M}$ by the factor of $\mu\sub{n}g/\hbar$. Therefore the diagram of $\boldsymbol{\mu}$ reproduces that of $\mbox{вектор $\textbf{M}$}$ as it is shown in \refFigure{10_2_1}\emph{б}. The diagram in~\refFigure{10_2_1}\emph{c} shows the split energy level of nucleus in a field~$\textbf{B}$.
+
+Electromagnetic transitions can occur between these energy levels. A transition from a lower to an upper level costs energy and can be induced only be an external high-frequency field. A transition from an upper to a lower level can be both spontaneous and induced. The energy of electromagnetic quanta inducing the transitions is determined by Eq.~(9). Therefore the transitions are resonant. The corresponding frequency is
+$$
+\omega = \frac{\Delta E}{\fhbar} =\frac{B \fmu _\textrm{n} g}{\fhbar}.   \eqMark{10_2_10}
+$$
+Induction of transitions by HF-field between the components of a split energy level is called \emph{nuclear magnetic resonance}.
+
+It appears that Eq.~(\refEquation{10_2_9}) which determines the distance between the adjacent components of a split energy level determines only the least value of resonance frequency. However this is not so. Electromagnetic transitions between distant components are strongly suppressed (forbidden transitions). Usually electromagnetic transitions proceed via emission of dipole photons with angular momentum equal to unity and negative parity. The probability of emission of a higher multiplicity is significantly less.
+
+Let $N_{+}$ and $N_{-}$ be the occupation numbers of adjacent energy levels of a nucleus in a magnetic field. Without a HF-field the occupation numbers are determined by the Boltzmann distribution
+$$
+N_{-}/N_{+} = \exp\left[ - \frac{\Delta E}{{\kb}T} \right],   \eqMark{10_2_11}
+$$
+where $\Delta E$~is the distance between levels given by Eq.~(\refEquation{10_2_9}). The occupation number of the lowest level $N_{+}$ is higher than that of the upper level~$N_{-}$.
+
+Now let us switch on the electromagnetic radiation of the frequency given by Eq.~(\refEquation{10_2_10}). The transitions induced by the radiation violate the thermodynamic equilibrium. Two opposite processes take place: the radiation tries to equate $N_{+}$ and $N_-$ while internal processes try to restore the Boltzmann distribution. Finally, some dynamic equilibrium is achieved: the occupation numbers become constant and the sample continuously absorbs some part of the incident radiation. The occupation numbers and the power absorbed in the equilibrium depend on the sample properties (on the rate of reverse processes) and on the power of incident radiation. However, if the power is large enough the occupation numbers are nearly equal and the absorbed power becomes independent of the radiation power. In this case NMR is~\emph{saturated}. Switching off the electromagnetic field results in restoring the thermodynamic equilibrium. The process goes on until the initial difference in occupation numbers $\Delta N_{0}$ corresponding to the thermodynamic equilibrium is recovered. Let $\Delta N_{1}$ be the equilibrium difference in the presence of HF field. The difference of occupation numbers at any moment after the HF field is switched off is
+$$
+\Delta N= \Delta N_{0} -( \Delta N_{0} - \Delta N_{1} )\exp\left( -\frac{t}{\ftau_{1}} \right).   \eqMark{10_2_13}
+$$
+
+The constant $\tau_{1}$ in this equation is called the \emph{spin-lattice relaxation time}\Footnotemark\Footnotetext{Sometimes $\tau_1$ is called a <<longitudinal>> relaxation time.}. It determines the rate of restoration of the equilibrium occupation numbers and depends on lattice structure and interaction between a nuclear spin and the lattice (other nuclei). The less the relaxation time, the faster thermal equilibrium is restored and the greater is the power absorbed by the sample from HF field (other things being equal). For metals $\tau_1$ is of the order of $1\div10\;\ms$ and for pure liquids it reaches several seconds (for instance, in pure water $\tau_{1}=3{.}6\;\s$).
+
+It is important to take into account the spin-lattice relaxation time when planning a NMR experiment. In a typical setting the resonant absorption is observed by modulating either the frequency or the magnetic field near the resonance value. The power absorbed from a HF generator increases at the moment of passage through the resonance. Obviously, the NMR signal is large if the time between two successive passages significantly exceeds $\tau_{1}$, so that the Boltzmann distribution has enough time to recover.
+
+The width of absorption line is the important characteristics of NMR. The width is defined as the difference of $\mbox{frequencies $\Delta \nu$}$ measured at two points on both sides of the absorption curve at one half of its maximal height. The width can be also measured at a fixed generator frequency as the difference $\Delta B$ of two values of magnetic induction corresponding to the half of maximal signal (see~\refFigure{10_2_2}).
+%
+\fFigure{Resonance absorption curve of NMR}10_2_2 {4.1cm}{2.8cm}{pic/L10_2_02.eps}
+%
+Conversion of $\Delta B$ to $\Delta \omega =2 \pi \Delta \nu$ can be done with the aid of Eq.~(\refEquation{10_2_10}):
+$$
+\frac{\Delta \fomega}{\fomega} = \frac{\Delta B}{B}.   \eqMark{10_2_14}
+$$
+
+Two factors mostly contribute to the line width. The first one is a small local field $\textbf{B}\sub{loc}$ due to neighboring nuclei acting on the nucleus in addition to the external field $\textbf{B}$. Since the local field changes randomly depending on spin orientation at the lattice sites, the line becomes wider. This is the widening due to a \emph{dipole-dipole} or \emph{spin-spin interaction}.
+
+It is not difficult to estimate $\textbf{B}\sub{loc}$. Let us evaluate the field due to the nearest neighbors and neglect the rest nuclei. Assume that the magnetic moment of a nucleus equals nuclear magneton and the distance is $r\Simeq1\;\Angstrem$. Then
+$$
+{B}\sub{loc}= \frac{\fmu\sub{n}}{r^{3}}\Simeq5\;\Gs.
+$$
+Of course, many nuclei contribute to $\textbf{B}\sub{loc}$ but their fields mostly cancel each other, so it is reasonable to assume that the net field is due to a single nucleus. The width of spin-spin interaction $\Delta \omega_{2}$ is often defined via a reciprocal time constant $\tau_2$ called the  \emph{spin-spin relaxation time}\Footnotemark\Footnotetext{Often $\tau_2$ is called a  <<transverse>> relaxation time.}:
+$$
+\tau_{2} =\frac{1}{\fomega_{2}}.
+$$
+
+The second contribution to the line width is due to a finite lifetime of a given nuclear level. According to the uncertainty relation the line width is related to the lifetime as
+$$
+\delta \omega_{1}=\frac{1}{\fhbar}\delta E\Simeq \frac{1}{\fhbar}\frac{\fhbar}{\ftau_{1}}=\frac{1}{\ftau_{1}}.
+$$
+
+The line broadening caused by the finite lifetime is essential for material with a small spin-spin relaxation time. The width of absorption line strongly varies for different materials. In liquids it is usually small, about $5\;\Hz$, while in solids it reaches $5\;\kHz$. The difference is mostly due to the fact that the net magnetic field of nuclei involved in chaotic motion is averaged much better than the field of nuclei located at regular lattice sites.
+
+The experimentally observed line width can significantly exceed the natural line width discussed above. The main contribution to the <<apparatus>> width is due to inhomogeneity of the magnetic field $\textbf{B}$. Because of that the resonance absorption in different parts of a sample occurs at different although close frequencies. The homogeneity not only widens the NMR line but also diminishes its height. These two phenomena necessarily accompany each other because the difference in resonance frequency decreases the number of nuclei participating in the resonance absorption. For this reason the issue of magnetic field homogeneity is important when planning a NMR experiment.
+
+The resonance absorption is very small. It would suffice to say that a difference in the occupation numbers for protons in the field of $5\cdot 10^{3}\;\Gs$ at room temperature is only one nucleus per $10^{5}$, while the energy difference $\Delta E$ equals $10^{-7}\;\eV\Simeq 10^{-26}\;\Dj\Simeq10^{-19}\;\erg$. Therefore installation for NMR measurement must be very sensitive.\vspace{1ex}
+
+\textbf{\so{Experimental installation}}\vspace{5pt}
+
+There are several types of experimental installations for NMR measurements. In this experiment an indicator installation with a low power frequency generator is used. The installation diagram is shown in~\refFigure{10_2_3}.
+
+The sample under study is marked with~\emph{2}. The sample is placed in the inductor coil included in the generator circuit. The generator is a part of indicator installation~\emph{1}. The magnetic induction in the sample is created by electromagnet~\emph{4}. The main magnetic field is generated by the coils~\emph{5} powered by direct current. The current can be varied by means of a rheostat $R$ and measured by an ammeter $A$. A small modulating field is generated by modulating coils~\emph{6} connected to the mains via transformer~\emph{3}. The voltage across the coil is varied by means of potentiometer~\emph{8}. 
+
+The main part of the installation is a low power frequency generator. An amplifier with positive feedback helps to maintain a continuous generation. The coil with the sample and a variable capacitor in the box~\emph{1} form a grid tuned generator circuit. The capacitance and therefore the generator frequency can be varied by rotating the limb~\emph{7} on the indicator installation front panel. The absorption in the sample increases at NMR, which deteriorates the quality of the grid circuit and the generated amplitude decreases. A HF signal from the generator is amplified and detected. The rectified signal is amplified by a low frequency amplifier. A high frequency amplifier, the detector, and the low frequency amplifier are part of the indicator installation~\emph{1}.  
+%
+\cFigure{Installation for studying NMR.}10_2_3 {8.2cm}{4.1cm}{pic/L10_2_03.eps}
+
+A NMR signal is displayed on the oscilloscope screen. The time dependence of magnetic induction of electromagnet is shown in the upper part of~\refFigure{10_2_4}. It has already been mentioned that the constant field is created by the main coils while the alternating field is due to the modulating coils. 
+%
+\hFigure{Time dependence of magnetic induction and NMR signal}10_2_4 {11.5cm}{4.7cm}{pic/L10_2_04.eps}
+%
+If the installation is properly adjusted the magnetic induction oscillates near the resonance value passing it twice a period of the modulating current. 
+%
+\fFigure{NMR signal on oscilloscope screen}10_2_5 {4.cm}{1.9cm}{pic/L10_2_05.eps}
+%
+The diagram in~\refFigure{10_2_4} shows that the time interval between two consecutive resonances is the same if the constant magnetic induction is equal to the resonance value $B_{0}$ (\refFigure{10_2_4}\emph{a}) and different if the induction is not precisely tuned (\refFigure{10_2_4}\emph{b}).
+
+The signal displayed on the oscilloscope screen looks like that one shown in~\refFigure{10_2_4} only in the automatic sweeps mode. In our installation the <<X>> channel of oscilloscope is fed by a signal from the modulating coils. The signal from an ideal installation must look like that one shown in~\refFigure{10_2_5}\emph{a}: the resonance always occurs at the same $B_{0}$. Any real signal is always of the form shown in~\refFigure{10_2_5}\emph{b}.
+
+An unavoidable interference deforms the straight line, which is observed in the absence of NMR signal, into a highly elongated ellipse. The NMR signal is detected at two somewhat different currents in the modulating coils. The difference is due to the magnet hysteresis and a phase shift between the current and voltage in the measuring circuit. These two values of the current correspond to the same magnetic induction.
+
+\Task
+
+\textbf{\textsc{I. Observation of NMR signal from protons and measurement of the width of absorption line.}}\vspace{5pt}
+
+\begin{Enumerate}{tab}
+
+\Item. Insert a rubber cylinder sample into the coil of indicator installation. Place the coil in the electromagnet air gap with its axis perpendicular to the magnetic field. Turn on the indicator installation, the oscilloscope, and the modulating coils. Set the vertical attenuator at $1:1$. \emph{Remove your watch}: the magnetic induction in the gap is several thousand oersted. 
+
+If the installation is properly operating the oscilloscope screen will exhibit the sweep line which can be adjusted by means of the horizontal channel potentiometer; normally the line is somewhat smeared because of noise.
+
+\Item. Minimize the noise on the screen by adjusting the gain of the vertical amplifier. In so doing the fine adjustment knob must be in the middle position which ensures a sufficient oscilloscope sensitivity. A large noise can be due to interference of a radio station or a generator working nearby. The indicator installation is a regenerative receiver capable of picking up such a noise. In this case change the working frequency of the installation by turning a bit the capacitor limb on the front panel. 
+
+\Item. By slowly varying magnetic induction with the rheostat obtain the NMR signal from protons of the sample. If the signal is not detected, while the circuit is operating normally, the sample should be placed in a region of a more homogeneous magnetic field. Use a steel ball in a glass tube to find such a region. The ball resides in a state of neutral equilibrium in the horizontal tube if the field is uniform.
+
+\Item. Check whether the NMR signal is indeed due to protons. To this end replace the rubber sample with an ampule filled with a weak water solution of ferric chloride (ions of iron decrease the spin-lattice relaxation time and make it possible to obtain NMR signal from protons of water at the modulation frequency of $50\;\Hz$). The resonance induction must remain the same while the signal can be significantly altered. The ampule must be inserted at the former location of the rubber sample.
+
+\Item. Measure the width of absorption line on the oscilloscope screen in units of $B$. To calibrate the horizontal axis use the sweeps of modulating coils: the sweep length corresponds to the doubled amplitude $B\sub{mod}$. The amplitude is determined from the readings of a cathode voltmeter connected to a special coil placed in the air gap of electromagnet. The effective emf measured by the voltmeter is related to the field as
+$$
+\EDS=\frac{1}{\sqrt{2}}n\frac{d \Phi}{d t}=\frac{1}{\sqrt {2}} n\frac{d (B_\textrm{mod}S)}{d t}=\frac{1}{\sqrt{2}} n\omega\sub{mod}SB\sub{mod}.
+$$
+Here $\omega\sub{mod}$~is the angular frequency of the modulating current, $n$~is the number of coil turns, $S$~is the turn area (these quantities are indicated on the coil). The line width is measured using the rubber and water samples.
+
+\Item. Estimate the error. Explain the difference in the observed widths of the lines. 
+
+\Item. Verify that the width of NMR signal depends on homogeneity of the magnetic field. To do this bring the steel ball close to the sample while observing the signal. The peak on the screen must become wider and lower.
+\end{Enumerate}
+
+\textbf{\textsc{II. Temperature dependence and saturation of NMR}}\vspace{5pt}
+
+\begin{Enumerate}{tab}
+
+\Item. Place an ampule with paraffin in hot water and melt the paraffin. Then insert the ampule into the coil of indicator installation and obtain a NMR signal. Watch the signal changing while paraffin is being cooled.
+
+\Item. <<Freeze>> the rubber sample in liquid nitrogen and insert it in the coil of indicator installation. Watch the NMR signal changing while the sample is being heated. Explain the observed phenomenon.
+
+\Item. Insert an ampule with distilled water in the installation coil. Watch the NMR signal in two cases: when magnetic induction quickly and slowly passes through the resonance value. Why is the amplitude large in the first case and why does it drop abruptly in the second?
+
+\Item. Add one percent solution of $\mathrm{FeCl}_{3}$ to the ampule with distilled water drop by drop and watch the NMR signal changing. How can you explain a sharp increase of the signal at the beginning and its further saturation when the concentration keeps growing? 
+
+\Item. Turn off the installation at the end of experiment. Reduce the electromagnet current to minimum before turning it off.
+\end{Enumerate}%
+
+\Literat
+
+{\small
+1.\,\emph{Киттель Ч.} Введение в физику твердого тела.\,---\,М.: Наука, 1978. С.\,595--606.
+
+2.\,\emph{Гольдин Л.\,Л., Новикова Г.\,И.} Введение в квантовую физику.\,---\,М.: Наука, 1989. \S\,38.
+}

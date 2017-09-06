@@ -1,0 +1,290 @@
+%translator Svintsov, date 09.01.13
+
+\let\oldTheEquation=\theEquation
+\def\theEquation{\arabic{Equation}}
+\let\oldTheFigure=\theFigure
+\def\theFigure{\arabic{Figure}}
+\setcounter{Equation}{0}
+\setcounter{Figure}{0}
+
+\vspace{-12pt}
+\Work
+{Measurement of the semiconductor band gap}
+{Measurement of the semiconductor band gap}
+{The temperature dependence of the conductivity of a typical semiconductor, germanium or silicon, is measured. The band gap is determined by three methods, which partially eliminates experimental errors.}
+
+The electric conductivity of a semiconductor is determined by concentration of electrons in the conduction band and holes in the valence band (these concentrations are exactly equal in a pure semiconductor).
+
+The number of electrons in the conduction band is equal to the product of the number of available levels and their occupation numbers. Occupation numbers are determined by the Fermi function which, in this case, differs only slightly from the simple exponential Boltzmann distribution:
+$$
+f(E) = \frac{1}{\exp \left( \frac{E- \mu}{{\kb}T}\right)+1}\Simeq \exp \left( - \frac{E-\mu}{\kb T}\right), \eqMark{11_1_1}
+$$
+because $(E-\mu)\gg {\kb}T$.
+
+In Eq.~(\refEquation{11_1_1}) $E$ is the energy level in the conduction band, $\mu$~ is a constant which depends on temperature and is called the Fermi level or energy. In intrinsic semiconductors Fermi energy is in the middle of the band gap (see~\refFigure{11_1_1}).
+
+When temperature is not very high, the occupied levels are mainly those near the conduction band minimum, so the energy $E_{\mathrm c}$ of the band minumum can be substituted for $E$.
+%
+\hFigure{Energy band diagram illustrating intrinsic conductivity (\textit{a}) and showing the positions of donor and acceptor levels (\textit{b})}11_1_1 {8.3cm}{4.0cm}{pic/L11_1_01.eps}
+%
+In so doing the total number of levels in the band should be replaced by some effective number of levels $Q_{n}$ near the band minimum, then the number of electrons in the conduction band is equal to \Footnotemark\Footnotetext{Strictly speaking, the value of $Q_n$  is chosen so that the equality (\refEquation{11_1_2}) gives the correct number of electrons when the band minimum energy $E_c$ is substituted for $E$.}:
+$$
+n_{n} =Q_{n}\exp \left(-\frac{E_{\mathrm c}-\mu}{{\kb}T}\right). \eqMark{11_1_2}
+$$
+
+The probability of finding a hole in a valence band level equals unity minus the probability of finding an electron at the same level, i.e. $1-f(E)$. Thus the number of holes is 
+$$
+n_{p} =Q_{p}\left[1-\frac{1}{\exp \left(\frac{E_{\mathrm v}-\mu}{{\kb}T}\right)+1}\right]\Simeq Q_{p}\exp\left(-\frac{E_{\mathrm v} - \mu}{{\kb}T}\right). \eqMark{11_1_3}
+$$
+
+It is taken into account here that the energy $E_{\mathrm v}$ at the top of the valence band  is smaller than $\mu$ and the ratio \mbox{$(E_{\mathrm v} - \mu )/( {\kb}T)$} is a large negative number.
+
+Let us multiply Eqs.~(\refEquation{11_1_2}) and~(\refEquation{11_1_3}) and take into account the neutrality condition (concentrations of electrons and holes are equal):
+$$
+n_{n} n_{p} =n^{2} =Q_{n} Q_{p}\exp \left(-\frac{E_{\mathrm c}-E_{\mathrm v}}{{\kb}T}\right). \eqMark{11_1_4}
+$$
+
+The difference $E_{\mathrm c} -E_{\mathrm v}$ equals the band gap width $\Delta$. Introducing the notation
+$$
+Q_{n} Q_{p} =C^{2} \eqMark{11_1_5}
+$$
+and taking the square root of Eq.~(\refEquation{11_1_4}) we obtain 
+$$
+n=C \exp \left( -\frac{\Delta}{2 {\kb}T}\right). \eqMark{11_1_6}
+$$
+
+Now we shall find the conductivity of a semiconductor. In an external electric field the majority of electrons move opposite to the field direction. The average electric current due to electrons is not equal to zero any more and is directed along the field. The following formula is valid up to very strong fields (actually up to the electrical breakdown) 
+$$
+v\sub{av}=\mu_{n}\EDS, \eqMark{11_1_7}
+$$
+where $v\sub{av}$~is an average (drift) velocity of electrons, $\EDS$~is the electric field, $\mu_{n}$~is a constant factor called electron mobility; it defines the average velocity acquired by an electron in the electric field of a unit strength (the tabulated value of mobility is usually given for the field $1\;\V/\cm$).
+
+Applying Eq.~(\refEquation{11_1_7}) to electrons in the conduction band and to holes in the valence band, and using the expression for the electric current density $j=nev\sub{av}$ we obtain 
+$$
+\sigma =j/\EDS =|e| (n_{n}\mu_{n}+n_{p}\mu_{p}). \eqMark{11_1_8}
+$$
+
+Substituting $n_{n} =n_p$ from Eq.~(\refEquation{11_1_6}) into Eq.~(\refEquation{11_1_8}) we obtain
+$$
+\sigma =|e| C( \mu_{n} + \mu_{p} )\exp \left(-\frac{\Delta}{2 {\kb}T}\right)=A\exp \left(-\frac{\Delta}{2 {\kb}T}\right), \eqMark{11_1_9}
+$$
+where the pre-exponential factor is replaced by a constant \Footnotemark\Footnotetext{The accurate calculations show that $A$ depends on temperature too. However this dependence can be neglected compared to the rapidly changing exponent.}.
+
+We shall measure the electric conductivity $\sigma$ as a function of temperature and plot the results using a logarithmic scale:
+$$
+\ln \sigma =f(1/T). \eqMark{11_1_10}
+$$
+
+Equation (\refEquation{11_1_9}) shows that the diagram must be a straight line with the slope $\Delta/(2{\kb})$. {Thus, it is possible to determine the energy gap $\Delta$ from Eq.~(\refEquation{11_1_10})}.
+
+The above considerations are correct as long as the electric conductivity of a semiconductor is due to electrons transferred from the valence band to the conduction band, i.e. if the conductivity is intrinsic. The situation is different when the temperature is not high because a certain amount of dopant impurities is always present in a semiconductor. 
+
+The extrinsic conductivity can contribute to the electric conductivity more or less significantly depending on the concentration of dopants in semiconductor, which distorts the temperature dependence of intrinsic conductivity. {To determine the band gap correctly one should do the measurements in a wide temperature range and select the area where the electric conductivity depends on $1/T$ exponentially.}
+
+The conductivity of a semiconductor can be measured using different methods. The special attention should be paid to the quality of contacts of the specimen and leading-in wires. The contact resistance can be comparable to the resistance of the specimen itself, thereby messing the results severely. The contact may turn out to be non-ohmic (the contact resistance depends on current) and can change with temperature in a sophisticated way. One should be aware of a possible thermal emf at the semiconductor/metal contact which varies with temperature. The variation can reach fractions of a millivolt per kelvin.
+
+The experimental study of the dependence $\sigma(T)$ is carried out by means of one of three methods described below which to some extent eliminate the mentioned sources of errors. 
+\vspace{1ex}
+
+\textbf{\textsc{I.Measurement of the dependence $\boldsymbol{\sigma(\textit{T})}$ by means of the multipurpose digital voltmeter б7-34ю }}
+\medskip
+
+To study $\sigma (T)$ we use the installation shown in~\refFigure{11_1_2}.
+
+Specimens ($S_1$ and $S_2$) under study are mounted in a special holder and placed into an electric furnace~\textit{F}. A specimen resistance is measured with a multipurpose digital voltmeter б$7$-$34$ю which provides
+%
+\hFigure{ Schematic view of installation for measuring the dependence $\sigma(T)$ using \mbox{б7-34ю voltmeter }. The dimensions of the copper specimen are: $l=26,6\;\mm$, $d=0,07\;\mm$, the dimensions of the semiconductor specimen are: $a=5\;\mm$, $b=3\;\mm$, $c=30\;\mm$}11_1_2 {9.9cm}{4.9cm}{pic/L11_1_02.eps}
+%
+high accuracy of measurements. In the ranges of $1\;\kOm$, $10\;\kOm$ and $100\;\kOm$ the measurement error does not exceed 
+$$
+\pm[0{.}015 \pm 0{.}02(R_{k}/R_{x}-1)],
+$$
+where $R_{k}$~is the measurement range and $R_{x}$~is the measured value in $\kOm$.
+
+The specimen current does not exceed $1\;\mA$. The specimens can be connected to the voltmeter by means of the switch~$K$. One of the specimens is a rectangular slab made of crystalline germanium (or silicon), the other one is a thin copper wire about twenty meters long.
+
+The specimen conductivity can be found from the expression
+\vspace{-7pt}
+$$
+\sigma = \frac{l}{RS}, \eqMark{11_1_11}
+$$
+\vspace{-7pt}
+
+\noindent where $R$~ is the specimen resistance, $l$~ is its length, and $S$~ is its cross-section. The specimen dimensions are indicated on the installation.
+
+The electric furnace heating is regulated with the aid of rheostat \textit{R}. The brightness of the lamp~\mbox{$\textit{L}$.} indicates the heating power. The temperature of specimens is measured by a copper-constantan thermocouple. One thermocouple junction is placed in contact with the specimens, the other one is placed in the Dewar vessel $\textit{D}$ filled with melting ice ($0\celsii$). The thermocouple emf is measured by means of voltmeter б$7$-$38$ which input resistance exceeds $10\;\MOm$. The thermocouple constant is $41\cdot 10^{-6}\;\V/\kelvin$.
+
+The specimens should be uniformly heated to ensure that their temperature remains constant along the length, thereby excluding the influence of the contact thermal emf. The heating can be conducted in two ways. The first way is a heating at the maximum furnace power for $5$ minutes followed by a $10$-minute interval without heating, then one measures the temperature and the resistance of specimens. The other way is a slow heating at low power and measuring the specimen temperature and resistance without switching off the heater.
+
+The dependence $\sigma (T)$ obtained for typical semiconductor and metal samples illustrates the main difference between these materials.
+\smallskip
+
+\textbf{\textso{Directions}}
+\smallskip
+
+Measure the conductivity of semiconductor and copper specimens versus temperature.
+
+\begin{Enumerate}{tab} \Item. Plug the digital voltmeters to the mains $220\;\V$ and let them warm up for at least $10$ minutes.
+
+\Item. Push the button <<$\mathrm{R}$>> on the front panel of the voltmeter б$7$-$34$ю, thus switching the device to the resistance measurement mode. To prevent an accidental overload of the voltmeter push the button <<юбо>> which automatically selects the measurement limits. Push the button <<$\mathrm{T}_0$>> to set the measurement time of $0{.}25\;\s$.
+
+\Item. Switch the voltmeter б$7$-$38$ to the direct voltage measurement mode by pushing the button <<$\mathrm{V}$>> .
+
+\Item. Move the slide of the furnace rheostat $R$ to the middle position and turn the power on. 
+
+Heat the specimens starting from the room temperature up to $100\celsii$ using one of the proposed methods. Measure the resistance of semiconductor and copper specimens at every $10\celsii$ by connecting them in turn to the б$7$-$34$ю voltmeter using the switch $K$. 
+
+\Item. Plot the dependence $\sigma (T)$ for both specimens according to Eq.~(\refEquation{11_1_11}). Explain the difference in the dependence obtained for copper and semiconductor. Find the temperature coefficient of copper using the slope of the curve for the copper specimen. 
+
+\Item. Plot the logarithm of semiconductor conductivity vs. the inverse temperature: $\ln \sigma =f(1/T)$; find the energy band gap from the slope of the obtained straight line (at high temperatures) and express it in electronvolts. Use the results to determine the specimen material (either germanium or silicon).
+
+\Item. Evaluate the errors of the semiconductor band gap and the temperature coefficient of copper.
+
+\medskip
+\textbf{\textso{Additional experiment}}
+\smallskip
+
+Find the impurity ionization energy and the energy band gap of an extrinsic semiconductor ($\mathrm{InSb}$, $n$-type).
+
+For this purpose measure the semiconductor resistance at every $10\celsii$ in the temperature range from $77\;\kelvin$ (liquid nitrogen) to room temperature, using the same method of measurement.
+
+The semiconductor specimen and the copper-constantan thermocouple junction are placed on the butt end of a long thin-walled tube made of stainless steel. The leads from the specimen and the thermocouple passing through the tube are connected to the terminals at the other end of the tube.  The terminals are connected to the voltmeters б$7$-$34$ю and б$7$-$38$.
+
+Place the tube with the specimen into the Dewar vessel filled with nitrogen and cool the specimen down to $77\;\kelvin$, then gradually lift the specimen above the surface of nitrogen and measure its temperature.  Using Eq.~(\refEquation{11_1_11}) plot the dependence $\ln\sigma =f(1/T)$ (the specimen dimensions are indicated on the tube). Determine the impurity ionization energy (a smaller slope) and the energy band gap (a steeper slope) using the temperature dependence of conductivity and express these quantities in electrovolts. \end{Enumerate} \vspace{1ex}
+
+\textbf{\textsc{II. Measurement of $\boldsymbol{\sigma (\textit{T})}$ by means of AC bridge}}
+\smallskip
+
+The installation for measuring the dependence $\sigma (T)$ is shown in~\refFigure{11_1_3}.
+
+The semiconductor specimen $S$ is one of the arms of the AC bridge. Other arms of the bridge are represented by the ohmic resistances $R_{1}$, $R_{2}$, and $R_3$. The resistance $R_{2}$ is a precision resistance decade box. The bridge is powered by an audio-frequency generator \mbox{Gг-$34$.}. A cathode-ray oscilloscope is used as the bridge galvanometer. The specimen is placed into the furnace $\textit{F}$ connected to the mains $220\;\V$ via the rheostat $R\sub{f}$. The specimen is immersed into an oil bath to ensure uniform heating. The specimen temperature is measured by a copper-constantan thermocouple. One junction of the thermocouple is attached to the specimen, the other one is placed in the Dewar vessel \textit{D} filled with ice. The thermocouple emf is measured with the digital voltmeter б$7$-$38$. The thermocouple constant equals $41 \cdot 10^{-6}\;\V/\kelvin$.
+
+Let the specimen cross-section be $S$ and its length be $l$. The semiconductor conductivity can be found from the following equation:
+$$
+\sigma_{x} = \displaystyle\frac{l}{S} \frac{R_{1}}{R_{3}}\frac{1}{R_{2}}, \eqMark{11_1_12}
+$$
+where $R_{2}$~ is the resistance which balances the bridge.
+
+Measuring the temperature-dependent electric conductivity of semiconductor with an AC bridge allows one to neutralize the influence of the contact thermal emf on the measurement. During heating the specimen contacts inevitably have different temperatures. The difference between the emf of the contacts 
+%
+\hFigure{Schematic view of installation for measuring the dependence $\sigma(T)$  by means of AC bridge}11_1_3 {8.5cm}{5.5cm}{pic/L11_1_03.eps}
+%
+adds to the voltage drop across the specimen and distorts the measurement results. If the measurements are done with AC current this emf does not influence the results because it does not lead to blurring of the oscilloscope beam.
+
+When measuring an electric conductivity with the AC bridge one cannot eliminate the influence of the contact resistances completely. Therefore the contacts must be of high quality. Special solders and soldering technique should be used to connect the wires to the semiconductor sample. Good results can be achieved by using a tin-arsenic alloy ($0{.}5\%$) as a solder in the hydrogen atmosphere.
+\vspace{1ex}
+
+\textbf{\textso{Directions}}
+\vspace{4pt}
+
+\begin{Enumerate}{tab}
+
+\Item. Plug the oscilloscope to the mains $220\;\V$. To adjust the installation set the highest signal attenuation on the oscilloscope vertical amplifier input; set the highest amplification when measuring $\sigma (T)$ .
+
+\Item. Switch on the audio-frequency generator and set the output signal amplitude of $1\;\V$. The frequency should be selected in the range $500\div800\;\Hz$.
+
+\Item. Balance the bridge. Balancing is carried out with the aid of resistance box $R_{2}$. When the bridge is balanced the signal on the oscilloscope screen is minimal. Write down the corresponding resistance $R_{2}$.
+
+\Item. Measure the specimen temperature using the thermocouple. Switch on the furnace heater and slowly raising the temperature (by $R\sub{f}$ rheostat) measure the dependence of $R_{2}$ on the specimen temperature. Measurements should be done at every $10\celsii$ starting with  room temperature and up to $100\text{--}120\celsii$).
+
+\Item. Using Eq.~(\refEquation{11_1_12}) plot the dependence \mbox{$\sigma (T)$}. The specimen dimensions are indicated on the installation.
+
+\Item. Plot the dependence $\ln \sigma =f(1/T)$ . Determine the energy band gap of the semiconductor under study using the curve slope at high temperatures.
+
+\Item. Evaluate the error of the energy band gap obtained for the semiconductor under study. \end{Enumerate}%
+\vspace{1ex}
+
+\textbf{\textsc{III. Noncontact method of measurement of $\boldsymbol{\sigma (\textit{T})}$}}
+\vspace{4pt}
+
+The noncontact method of the measurement completely eliminates the influence of metal-semiconductor contacts on the results. The conductivity of semiconductor is determined by the $Q$-factor of the oscillator circuit (see~\refFigure{11_1_4}).
+
+A disc-shaped semiconductor specimen is placed between the plates of the capacitor of an oscillatory circuit. Thin dielectric spacers insulate the specimen from the capacitor plates.
+
+In the absence of a semiconductor specimen the oscillator circuit parameters are $L$, $C$, and $r_{0}$. The circuit resistance $r_{0}$ is the sum of the inductor and wire resistances. The $Q$-factor of the circuit is
+$$
+Q_{0} = \omega_{0} L/r _{0}. \eqMark{11_1_13}
+$$
+
+The specimen inserted between the plates changes the capacitance and the energy losses in the circuit. The $Q$-factor also changes. Let us derive the relevant equations. First of all, consider the semiconductor in the capacitor. The equivalent circuit of the capacitor with the specimen is shown in~\refFigure{11_1_4}\textit{b}. The capacitance $C_{1}$~is the capacitance of the gap between the semiconductor and the upper plate, $C_2$~is the capacitance between the semiconductor and the lower plate, $C$ and $R$ specify the capacitance between the upper and lower specimen faces and the corresponding leakage resistance.
+%
+\cFigure{Installation for measuring $\sigma(T)$ by a noncontact method}11_1_4 {9.6cm}{6.1cm}{pic/L11_1_04.eps}
+%
+This resistance is related to the conductivity $\sigma$ by the well-known equation
+$$
+R=\frac{1}{\sigma} \frac{l}{S}, \eqMark{11_1_14}
+$$
+where $l$~is the specimen thickness and $S$~is its area. In our case $S=12\;\cm^{2}$, $l=0{.}3\;\cm$, and $\sigma \Simeq 3\cdot 10 ^{-2}\;\Om^{-1} \cdot\cm^{-1}$. Substituting these values into Eq.~(\refEquation{11_1_13}) we can estimate the order of magnitude of the leakage resistance
+$$
+R\Simeq 0{.}8\;\Om . \eqMark{11_1_15}
+$$
+
+Now let us calculate the specimen capacitance $C$. Taking into account that the permittivity of germanium is about $16$ we find
+$$
+C= \epsilon \frac{S}{4 \fpi l} \Simeq 51\;\cm\Simeq 60\;\pF. \eqMark{11_1_16}
+$$
+
+The impedance of this capacitance at $20\;\MHz$ (the working frequency of the installation) is
+$$
+Z_{C} = \frac{1}{\fomega C} \Simeq 140\;\Om. \eqMark{11_1_17}
+$$
+
+Comparing Eqs.~(\refEquation{11_1_17}) and~(\refEquation{11_1_15}) one can see that at the working frequency the semiconductor specimen can be replaced by an equivalent ohmic resistance.
+
+Combining $C_1$ and $C_2$ into the equivalent capacitance $C\sub{equiv}$, we obtain the circuit shown in~(\refFigure{11_1_4}\textit{c}).
+
+Insertion of the semiconductor specimen in the capacitor does not change the circuit inductance while the specimen resistance $R$ is added to the circuit resistance, so
+$$
+r_{1} =r_{0} +R. \eqMark{11_1_18}
+$$
+
+Measuring the $Q$-factor of the circuit with the semiconductor inserted we find
+$$
+Q_{1}'=\frac{\fomega_{1}L}{r_{1}}=\frac{\fomega_{1}L}{r_{0}+R}. \eqMark{11_1_19}
+$$
+
+All quantities in Eqs.~(\refEquation{11_1_13}) and~(\refEquation{11_1_19}) can be measured except for $r_{0}$ and $r_{1}$. Solving these equations for the resistance and \mbox{excluding $r_{0}$,} we obtain
+$$
+R=L\left(\frac{\fomega_{1}}{Q_{1}}-\frac{\fomega_{0}}{Q_{0}}\right). \eqMark{11_1_20}
+$$
+
+The semiconductor conductivity can be found from Eq.~(\refEquation{11_1_14}).
+
+The installation for measuring temperature-dependent conductance is shown in~\refFigure{11_1_4}\textit{a} . The $Q$-factor of the circuit is measured by means of a standard $Q$-meter е$9$-$5$. The capacitor with semiconductor is placed into the heater \textit{м}. The power applied to the heating coil is regulated by means of the rheostat $R\sub{h}$. The temperature is measured by the thermometer $t$ and a thermocouple. One of the thermocouple junctions is attached to the semiconductor, the other one is placed into the Dewar vessel \textit{D} filled with ice. The thermocouple emf is measured by means of a voltmeter б$7$-$38$. The thermocouple constant is $41 \cdot 10^{-6}\;\V/\kelvin$.
+
+The oscillator circuit includes an air capacitor \linebreak{$C\Simeq200\;\pF$} and an inductance coil $L=0{.}2\;\mGn$ mounted on the terminals of the $Q$-meter. The resonant frequency of the circuit is about $20\;\MHz$. \vspace{1ex}
+
+\textbf{\textso{Directions}}
+\smallskip
+
+\begin{Enumerate}{tab}
+
+\Item. Switch on the е$9$-$5$ $Q$-meter. Install the inductance coil $L=0{.}2\;\mGn$ on its terminals. Let the device warm up for ten minutes.
+
+\Item. Set the <<Measurement range>> switch to intermediate position and the pointers of the $Q$ dial (<<Set zero $Q$>> knob) and $Q$ multiplier (<<Set zero multiplier>> knob) to zero position.
+
+\Item. Set the <<Measurement range>> switch to the first subrange of frequencies. Set the pointer of the level voltmeter to the $1{.}5$ multiplier using the <<Set $Q$ multiplier>> knob. Set the value $10\;\pF$ (the least value) using the <<Capacitance>> knob.
+
+\Item. Achieve the resonance by turning the frequency knob (the $Q$-voltmeter shows a maximal value). Measure the resonance values $Q_{0}$ and $f_{0}$ . The experiment should be carried out without the specimen in the capacitor. The circuit $Q$-factor equals the product of the $Q$-voltmeter and the level voltmeter readings.
+
+\Item. Measure the specimen thickness and diameter with a caliper.
+
+\Item. Insert a germanium specimen between the capacitor plates. Measure new resonance values $Q$ and $f$. Gradually increase the heater temperature and measure $Q$ and $f$ at every $10\celsii$ up to the temperature of $100\div110\celsii$; record the specimen temperature at each measurement.
+
+The capacitor and the specimen have relatively high thermal inertia. Thus, it is necessary to switch off the heater coil approximately $10$ minutes before a measurement. There is a thermometer on the furnace (in addition to the thermocouple) which can be useful for coarse adjustment of the temperature.
+
+\Item. Plot the dependence $\sigma (T)$ using Eqs.~(\refEquation{11_1_14}) and~(\refEquation{11_1_20}).
+
+\Item. Plot the dependence $\ln \sigma =f(1/T)$ and determine the energy band gap of the semiconductor under study from the line slope \\ (at high temperatures).
+
+\Item. Evaluate the error of the semiconductor band gap obtained. \end{Enumerate}%
+
+\Literat
+\small
+
+1.\:\emph{ L.\:L.Goldin, G.\:I.Novikova } Introduction in Atomic Physics.\,---\,M.: Nauka, 1988. Ch.\:XIII, \S\S\:64--67.
+
+2.\:\emph{Ch.Kittel } Introduction in Solid-State Physics.\,---\,M.: Nauka, 1978. Ch.\:11, p.\:379--407.
+
+3.\:\emph{R.Smith } Semiconductors.\,---\,M.: IL, 1962. Ch.\:1, \S\S\:3--4; Ch.\:4, \S\S\:1--3; Ch.\:9,~\S\:2.
+\normalsize

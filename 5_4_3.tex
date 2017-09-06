@@ -1,0 +1,102 @@
+%translator Savrov, date 23.12.12
+
+\setcounter{Equation}{0} \setcounter{Figure}{0}
+\Work
+{Measurement of total activity of a sample of $\boldsymbol{^{60}\mathrm{Co}}$\\ by method of $\boldsymbol{\gamma}$--$\boldsymbol{\gamma}$ coincidence} {Measurement of total activity of a sample of $\boldsymbol{^{60}\mathrm{Co}}$\\ by method of $\boldsymbol{\gamma}$--$\boldsymbol{\gamma}$ coincidence} {Total activity of radioactive sample of $^{60}\mathrm{Co}$ is measured by using the cascade $\gamma\text{-}$quantum transition.}
+
+The total number of decays of a radioactive sample per unit time is called the \textit{total activity}\Footnotemark \Footnotetext{Total activity is usually measured in units of curie ($\Kury$). $1\;\Kury$ corresponds to \mbox{$3{.}7\cdot10^{10}$} decays per second (this is the total activity of $1\;\g$) of radium. In the SI the total activity is measured in units of becquerel. Total activity of $1\;\text{Bq}$ corresponds to $1$ decay per second.}. If the number of radioactive nuclei in a sample is known, the  total activity allows one to determine the decay constant $\lambda$ using the law of radioactive decay, $N=N_0 e^{-\lambda t}$, i.e. the decay rate of $N$ nuclei is $dN/dt={-}\lambda N$.
+
+Suppose a radiation detector counted $n$ particles, then the total activity $N_0$ of a sample equals
+$$
+N_0=\frac{4 \text{\fontsize{9pt}{9pt}\selectfont{$\pi$}} n}{\text{\fontsize{9pt}{9pt}\selectfont$\epsilon\omega$}},
+\eqMark{4_3_1}
+$$
+where $\epsilon$~is the detector efficiency\Footnotemark \Footnotetext{Detector efficiency $\epsilon$ is the ratio of the number of particles registered by a detector to the total number of particles passed through the detector, i.e. the probability to detect a particle passing through the detector. Usually the detector efficiency depends on the particle energy.} and $\omega$~is the solid angle in which the particles are detected. Usually $\epsilon$ and $\omega$ are approximately known and must be eliminated in precision measurements of $N_0$. Sometimes $4\pi$-detectors are used to determine the total activity of $\alpha\text{-}$ and $\beta\text{-}$sources: a radioactive sample is placed inside a detector to ensure that $\epsilon \Simeq 1$ and $\omega =4\pi$.
+
+Measurement of $N_0$ of a $\gamma$-source is significantly simplified if one uses a radioactive element which decays via successive emissions of several particles. 
+%
+\fFigure{Radioactive \mbox{decay of $^{60}\mathrm{Co}$.} The number to the left is spin, the plus sign means positive parity, and the number near an arrow corresponds to the transition energy.}4_3_1 {6.1cm}{2.8cm}{pic/L04_3_01.eps}
+%
+Such a decay is called a \textit{cascade} one.
+
+In this experiment one measures the total activity of a sample of $^{60}\mathrm{Co}$ which decay diagram is shown in~\refFigure{4_3_1}. The spin of~$^{60}\mathrm{Co}$ nuclide equals $5$ and the spin of the ground state of the daughter nuclide $^{60}\mathrm{Ni}$ is zero. After the $\beta\text{-}$decay the $^{60}\mathrm{Ni}$ nuclide is in an excited state with a spin $4$. A transition to the ground state from this state requires a change of spin in $4$ units and therefore it is suppressed. A more probable process is a cascade transition in which two $\gamma\text{-}$quanta are emitted. The diagram in~\refFigure{4_3_1} shows that the nuclide spin decreases by $2$ in a transition while the parity remains the same, which means that each time an electric quadrupole $\gamma$-quantum is emitted. In other words, these are $E2$ transitions with $\gamma$-quanta carrying away an angular momentum of~$2^+$. The lifetime of an excited state is $\Simeq10^{-11}\;\s$.  The energies of quanta are $1{.}17\;\MeV$ and $1{.}33\;\MeV$.
+
+The $\gamma\text{-}$quanta emitted by the source are registered by two particle counters. Since the cascade quanta have close energies, their detection efficiencies are approximately equal. Let the first detector efficiency be $\epsilon_1$ and the angle subtended by the detector when viewed from the source be $\omega_1$. The probability of detection of a $\gamma\text{-}$quantum by the first detector is 
+$$
+P_1=\frac{\omega_1\epsilon_1}{4\pi}.
+\eqMark{4_3_2}
+$$ 
+For the second detector
+$$
+P_2=\frac{\omega_2 \epsilon_2}{4\pi}.
+\eqMark{4_3_3}
+$$ 
+If both detectors are included in the coincidence circuit with a temporal resolution of $\tau \gg 10^{-11}\;\s$, the cascade $\gamma\text{-}$quanta will be registered simultaneously. The probability of the coincidence is 
+$$
+P\sub{coin}=P_1 P_2.   \eqMark{4_3_4}
+$$
+
+Strictly speaking, Eq.~(\refEquation{4_3_4}) equals the coincidence probability provided the detection of $\gamma\text{-}$quanta in the first and the second particle counter are independent events. Therefore Eq.~(\refEquation{4_3_4}) is valid only under the assumption that the second quantum is emitted in a direction independent of the first one. Actually this assumption is not well satisfied, since the emission probability depends on the axis of the nuclide spin and the emission direction. An anisotropic radiation is observed for groups of nuclei with definite spatial orientation, or when one can somehow separate the nuclides with a certain spin direction. The latter case is realized in every act of cascade emission of two quanta, $\gamma_1$ and $\gamma_2$. If the direction of \mbox{emission of $\gamma_1$} is fixed, the subsequent emission of $\gamma_2$ is correlated with that of $\gamma_1$. Therefore the probability of true coincidence must be written as:
+$$
+P\sub{coin}=W(\theta)P_1P_2,   \eqMark{4_3_5}
+$$
+where $W(\theta)$~is the correlation function which determines the anisotropy of emission of the second $\gamma\text{-}$quantum with respect to the first. For isotropic emission $W(\theta)=1$. A decaying nucleus of $^{60}\mathrm{Co}$ emits the quanta at $180\degree$ with a greater probability than at $90\degree$. For $\theta =180\degree$ $W=1{.}08$. The beam of $\gamma$ quanta in this experiment is well collimated, so an angle between the detected quanta is close to $180\degree$ and the correction is only $1{.}08$.
+
+True detection rates of the first and the second particle counters, $N_1$ and $N_2$, for the total activity $N_0$ and the detection probabilities $P_1$ and $P_2$ are (two $\gamma\text{-}$quanta are emitted per each decay):
+$$   
+N_1=2N_0P_1,\, N_2=2N_0P_2,   \eqMark{4_3_6}
+$$ 
+and the rate of detection of true coincidences is
+$$   
+N\sub{совп}=2P\sub{совп}N_0=2P_1P_2N_0.   \eqMark{4_3_7}
+$$
+
+Using Eqs.~(\refEquation{4_3_6}) and (\refEquation{4_3_7}) and taking into account Eq.~(\refEquation{4_3_5}) one obtains the total activity of a $^{60}\mathrm{Co}$-source:
+$$   
+N_0=1{.}08\frac{N_1N_2}{2N\sub{coin}}.   \eqMark{4_3_8}
+$$ 
+The true detection rates $N_1$ and $N_2$ are determined experimentally as the difference between the total detection rate and the background of a detector:
+$$   
+N_1=n\sub{1t}-n\sub{1b},~~~N_2=n\sub{2t}-n\sub{2b},   \eqMark{4_3_9}
+$$ 
+while the true coincidence rate $N\sub{coin}$ equals the difference between the total coincidence rate and the random coincidence rate $n\sub{r}$:
+$$   
+n\sub{r}=2\tau n\sub{1t}n\sub{2t},   \eqMark{4_3_10}
+$$ 
+where $\tau$~is the temporal resolution of the coincidence circuit (see Appendix~IV).
+
+A block-diagram of experimental installation is shown in~\refFigure{4_3_2}.
+
+%
+\hFigure{Block-diagram of experimental installation ($\boldsymbol{\gamma}$--$\boldsymbol{\gamma}$ coincidence). $\textit{HSR}$~is a high-voltage stabilized rectifier; $\textit{S}$~is a scintillator, a crystal of sodium iodine $\mathrm{NaI(Ti)}$; $\textit{S}$~is a pulse generator; $\textit{CC}$~is a coincidence circuit; and $\textit{PC}$~is a pulse counter}4_3_2 {8.7cm}{4.0cm}{pic/L04_3_02.eps}
+%
+
+Gamma-quanta coming from a $^{60}\mathrm{Co}$-source are detected by two scintillation counters\Footnotemark \Footnotetext{A scintillation counter is described in Appendix~II.} consisting of a $\mathrm{NaI}(\mathrm{Tl})$ crystal and a photomutlipler tube (PMT). A \mbox{$\gamma$-}quantum absorbed in the crystal produces a scintillation which is then transformed into an electric pulse by the PMT. The pulse is then shaped and applied to the coincidence circuit~\textit{CC}. The PMTs are powered by a high-voltage stabilized rectifier.\looseness=-1 \vspace{10pt} 
+
+\textbf{\so{Laboratory assignment}}\vspace{5pt}
+
+\begin{Enumerate}{tab} 
+\Item. Read Appendix~II to learn the operation principles of the scintillation counter and the coincidence circuit. 
+
+\Item. Turn the installation on and set the working voltage on the PMT (the voltage is indicated on the installation).
+
+\Item. Check the installation. To do this set the coincidence circuit~\textit{CC} and the pulse counter in the required operation mode and bring one of the PMTs close to the $^{60}\mathrm{Co}$-source. Then move it away by observing the detection rate. The detector should <<feel>> the presence of the $\gamma$-source. Repeat the experiment with the other PMT.
+
+\Item. Move the PMT away from the source and measure the background detection rate with an accuracy of~$1\%$. Do the same measurement with the other counter.
+
+\Item. Install the $^{60}\mathrm{Co}$-source between the PMTs and measure the detection rate, $N_1$ and $N_2$, of the first and the second detectors with an accuracy of $0{.}5\%$.
+
+\Item. Turn on the \textit{CC}unit in the coincidence count regime and measure the coincidence rate  with an accuracy of $1\%$ for all temporal resolutions available.
+
+\Item. Calculate $N_0$ in Ci using Eq.~(\refEquation{4_3_8}) for all temporal resolutions~$\tau$ and plot $N_0$ versus $\tau$.
+
+\Item. Upon the experiment completion close the source with lead shields. 
+\end{Enumerate}%
+
+\begin{center}\so{\textsf{\small ЛИТЕРАТУРА}}\end{center} {\small
+
+1. \textit{Широков\;Ю.\;М., Юдин\;Н.\;П.} Ядерная физика.\,---\,М.: Наука, $1980$. Гл.\;VI, \textsection\;$6$; гл.\;IX, \textsection\;$4$.
+
+2. \textit{Мухин\;К.\;Н.} Экспериментальная ядерная физика. Том 1: Физика атомного ядра.\,---\,СПб: Лань, $2008$. \S\,$19$.
+
+3. \textit{Ципенюк\;Ю.\;М.} Принципы и методы ядерной физики.\,---\,М.: Энергоатомиздат, $1993$. Гл.\;$2$, \textsection\;$2.4$; гл.\;6, \textsection\textsection\;$6.6$, $6.7$. }

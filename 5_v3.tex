@@ -1,0 +1,142 @@
+%translator Shcherbakov, date 14.12.12
+
+\let\theEquation=\oldTheEquation
+\let\theFigure=\oldTheFigure
+
+\Chapter
+{Atom in magnetic field}
+{Atom in magnetic field}
+{Atom in magnetic field}
+
+\textbf{Spatial quantization.}
+
+A physical system can have either a discrete or continuous energy spectrum depending on the shape of a potential energy curve. At the same time another physical quantity, angular momentum, can accept only a discrete value from the specified set regardless of a system. Angular momentum describes spinning (rotational motion).
+%
+\fFigure{Spherical coordinate system: $r$~is distance from the origin, $\theta$~is polar angle, and $\phi$~is azimuth angle}3_1
+{3.4cm}{3.4cm}{pic/L03_01.eps}
+%
+It is convenient to use spherical coorinates when studying rotational motion (see~\refFigure{3_1}). Spherical coordinates of any point include the radial distance $r$ from the origin, the polar angle $\theta$ between $z$-axis and radius-vector $\mathbf{r}$, and the azimuth angle $\phi$ between $x$-axis and the orthogonal projection of the radius-vector on $xy$-plane.\looseness=-1
+
+Wave function, which describes a state with a fixed angular momentum component $M_z$ on $z$-axis, is somehow similar to a plane de~Broglie's wave in which a coordinate is replaced by azimuth angle $\phi$ (the angle of rotation about $z$-axis) and a translational momentum by an angular momentum:
+$$
+  \psi_{M_z}\sim e^{iM_z\phi/\hbar}.
+  \eqMark{3_1}
+$$
+
+Notice that angles $\phi$ and $\phi +2\pi$ describe the same particle position with respect to $x$-axis. Therefore, a wave function is single-valued providing:
+$$
+  \psi_{M_z}(\phi)=\psi_{M_z}(\phi+2\pi).
+  \eqMark{3_2}
+$$
+
+This equation holds if and only if $M_z/\hbar$ is an integer. Hence, in contrast to a translation momentum component, e.g. $p_z$,
+$$
+  M_z=m\hbar,~~~\text{where}~~m=0,\;\pm1,\;\pm2,\;...
+  \eqMark{3_3}
+$$
+
+The integer $m$, numerical value of angular momentum, is called a <<magnetic quantum number>>. The origin of this term is due to the fact, that the component of the magnetic momentum of a moving charged particle is proportional to the particle's angular momentum $m$. The maximal value of $m$ is commonly denoted by $l$, and the minimal one by ${m_{\mathrm{\min}}=-l}$. The integer $l$ specifies possible values of the angular momentum squared. It is called an <<orbital quantum number>>.
+
+Thus, the angular momentum projection on an arbitrary axis is quantized and equals an integer number of Planck's constants. (see~\refFigure{3_2}).
+%
+\fFigure{Diagram of quantized component $M_z$ of angular momentum}3_2
+{3.5cm}{5.7cm}{pic/L03_02.eps}
+%
+Quantization of angular momentum means that the angular momentum vector cannot be arbitrarily directed with respect to any fixed spatial axis. This fact is referred to as \textit{spatial quantization}. The statement sounds very unusual: since $z$-axis can be directed arbitrarily, then angular momentum components on any two different directions (say, $z$ and $z'$) must be identically quantized. The allowed values of $x$- and $y$-components are the same as in Eq.~(\refEquation{3_3}).
+
+Judging by the diagram one may assume that the angle between the axis and the angular momentum vector $\mathbf{M}$ can be equal only to a value from a certain set (see~\refFigure{3_2}). However, the result obtained has a completely different meaning. Equation~(\refEquation{3_3}) implies that any measurement of an angular momentum component gives a multiple of $\hbar$. And it does not mean that $M_z$ was equal to a multiple of $\hbar$ before the measurement. $\Psi$-functions before and after the measurement are not to be identical. The only thing is certain: any initial $\psi$-function, i.e. $\psi$-function of any physical state, can be represented as a superposition of eigenfunctions:
+$$
+  \psi=\sum_m c_m\psi_m=\sum_m c_m\left(\frac{1}{\sqrt{2\pi}}e^{im\phi}\right).
+  \eqMark{3_4}
+$$
+
+A system bescribed by such a $\psi$-function does not have a definite angular momentum component $\mathbf{M}$. Vector $\mathbf{M}$ can point to any direction, but the measurement outcome is always some integer $m$ from the sum in Eq.~(\refEquation{3_4}). According to the general rule, the probability of getting $M_z=m\hbar$ is given by $|c_m|^2$.
+
+Thus, the angular momentum vector does not have a definite direction. In this sence the diagram in~\refFigure{3_2} should not be taken literally. One can imagine that the angular momentum vector spins about $z$-axis, which leads to uncertainty in its $M_x$ and $M_y$ components providing that $M_z$ is fixed (see Fig.\refFigure{3_3}).
+
+A component of angular momentum vector cannot exceed its magnitude. Thus, the upper bound of $m$ is $l$, the momentum magnitude. For a given $l$, an angular momentum component can take $2l+1$ values.
+
+Let us find the allowed values of angular momentum. Suppose there were no preliminary actions aimed at fixing the angular momentum component in some direction (there is no preferred particle polarization).
+%
+\fFigure{Demonstration of inherent uncertainty of angular momentum vector in quantum mechanics.}3_3
+{3.5cm}{4.0cm}{pic/L03_03.eps}
+%
+Then all directions are eqivalent, and the mean squared angular momentum components are the same:
+$$
+  \langle M_x^2\rangle=\langle M_y^2\rangle=\langle M_z^2\rangle.
+  \eqMark{3_5}
+$$
+
+The sum of the mean squared components of angular momentum equals the mean squared value of the momentum. Taking into account Eq.~(\refEquation{3_5}), one obtains
+$$
+  \langle M^2\rangle=\langle M_x^2\rangle+\langle M_y^2\rangle+\langle M_z^2\rangle=3\langle M_z^2\rangle.
+  \eqMark{3_6}
+$$
+The squared angular momentum is the same regardless of the direction, so
+$$
+  M^2=\langle M^2\rangle=3\langle M_z^2\rangle.
+  \eqMark{3_7}
+$$
+
+All values of $M_z$ are equally probable providing the states are equivalent. Then $\langle M_z^2\rangle$ equals the sum of the squared eigenvalues of $M_z$ (from $l\hbar$ to $-l\hbar$) divided by $2l+1$:
+\begin{Multline}
+  \langle M_z^2\rangle=\hbar^2\frac{l^2+(l-1)^2+...+(-l)^2}{2l+1}=\frac{2\hbar^2}{2l+1}(1^2+2^2+3^2+...+l^2)=\\
+  =\frac{2\hbar^2}{2l+1}\sum_{n=1}^{l}n^2=\frac{2\hbar^2}{2l+1}\frac{l(l+1)(2l+1)}{6}=\frac{\hbar^2}{3}l(l+1).
+  \eqMark{3_8}
+\end{Multline}
+Substitution of $\langle M_z^2\rangle$ into Eq.~(\refEquation{3_7}), results in
+$$
+  M^2=\hbar^2l(l+1).
+  \eqMark{3_9}
+$$
+
+Equation~(\refEquation{3_9}) gives the rule of quantization of angular momentum.
+
+Notice that the maximum value of an angular momentum component ${\hbar}l$ is less than the momentum modulus $\hbar\sqrt{l(l+1)}$. We have already stressed that two different angular momentum components of a microparticle cannot be measured simultaneously because of the uncertainty relation. By fixing a state with definite $M_z$ we introduce an uncertainty in $M_x$ and $M_y$. In quantum mechanics a rotational state of microparticle is completely determined by the values of $M^2$ and an angular momentum component.
+\vspace{1ex}
+
+\textbf{Magnetic moment of atom.}
+Magnetic properties of atom are predicted even by Bohr's theory. An electron spinning around a nucleus is equivalent to a magnetic dipole. Therefore an atom placed in a magnetic field gains additional energy $W$ due to interaction between its magnetic moment and the field.
+
+Quantum mechanics tells us that both intrinsic magnetic moments of electrons (spin magnetic moments $m_S$) and the moments due to their orbital motion (orbital magnetic moments $m_L$) contribute to the magnetic moment of atom. Intrinsic magnetism of atomic nuclei is relatively small and can be neglected.
+
+When the interaction between spin and orbital moments is small compared to the electrostatic interaction between electron and nucleus (the so called $LS$-coupling approximation, which is valid for light atomic nuclei), the orbital and spin momenta of atomic electrons simply add to give the total orbital momentum $\mathbf{L}$ and the total spin $\mathbf{S}$ of the atom: $\mathbf{L}=\sum\mathbf{l}_i$ and $\mathbf{S}=\sum\mathbf{s}_i$. In the absence of external fields the energy of electron shell is determined by electron distribution over the energy levels (by the principal quantum numbers), the total angular momentum $\mathbf L$, spin $\mathbf S$, and the total angular momentum of the shell, \mbox{$\mathbf{J}=\mathbf{L}+\mathbf{S}$}. Notice that the total magnetic moment is not parallel to the total angular momentum $\mathbf{J}$ because the spin gyromagnetic ratio of electron is twice as that of the orbital motion. However, the components of magnetic moment and angular momentum perpendicular to $\mathbf{J}$ vanish after averaging over a quantum state, so the atom magnetic moment becomes:
+$$
+  \mathbf{m}_J=-\mathrm g\mu\sub{\tiny B}\mathbf{J}.
+  \eqMark{3_10}
+$$
+
+Here the index $J$ indicates the projection of magnetic moment on the total angular momentum, and $\mu\sub{\tiny B}$ is Bohr's magneton,
+$$
+  \mu\sub{\tiny B}=e\hbar/(2mc)=0{.}927\cdot10^{-20}\;\erg/\Gs=5{.}79\;\eV/\Gs.
+$$
+The coefficient $\mathrm g$ is called \textit{Land\'{e} factor}. The factor cannot be greater than $2$, it is given by the equation
+$$
+  \mathrm g=1+\frac{J(J+1)+S(S+1)-L(L+1)}{2J(J+1)}.
+  \eqMark{3_11}
+$$
+\vspace{1ex}
+
+\textbf{Energy level splitting.}
+
+Electrons with non-zero orbital angular momentum have magnetic moments, so there is an internal atomic magnetic field. The projection of electron spin on the direction of this field can take two values since $m_S=\pm 1/2$. Therefore an electron with $l\ne 0$ can be found in either of two states: \mbox{$J_1=l+1/2$} and \mbox{$J_2=l-1/2$}. In these states the intrinsic magnetic moment of electron interacts differently with the magnetic field originating due to the orbital motion. (This interaction is called the \textit{spin-orbit coupling}.) Therefore, the energy of these states is different and energy levels split, so that each level with $l\ne 0$ becomes a doublet. The splitting is referred to as \textit{fine structure} (it is called fine since the energy splitting is small compared to the energy difference for the levels with different principal quantum numbers $n$). A yellow doublet of sodium emission spectrum is an illustrative example of the fine structure.
+
+In an external magnetic field atomic electrons obtain additional potential energy
+$$
+  W=-\mathbf m_\mathbf{J}\mathbf{B},
+  \eqMark{3_12}
+$$
+where $\mathbf B$ is the magnetic field induction.
+
+Two most important cases which allow a relatively simple treatment correspond to <<weak>> and <<strong>> fields. A field is called <<weak>> if it is small compared to the internal atomic magnetic field and hence the spin-orbital coupling (between $m_S$ and $m_L$) is stronger than the interaction of both $m_S$ and $m_L$ with the external field. In other words the external magnetic field is weak when the additional level splitting it induces is small compared to the fine structure of level separation. A pattern of energy levels is similar to the one without the external field, only a small splitting of the levels occur. Combining Eqs.~(\refEquation{3_10}) and~(\refEquation{3_12}) one can calculate the corrections to atomic energy levels arising due to the interaction between the atomic magnetic moment and the external magnetic field:
+$$
+  \Delta E=W=\mathrm g\mu\sub{\tiny B}\mathbf{J}\mathbf{B}=\mathrm g\mu\sub{\tiny B}m_JB.
+  \eqMark{3_13}
+$$
+
+Equation~(\refEquation{3_13}) shows that in an external magnetic field each energy level splits into several components specified by $m_J$, according to the $\mathbf J$ projections. The total number of components of a level with angular momentum $J$ is
+$$
+  N_J=2J+1
+  \eqMark{3_14}
+$$
+and depends only on $\mathbf J$. At the same time the distance between the levels, which is defined by the Land\'{e} factor, depends on all three vectors: $\mathbf J$, $\mathbf S$, and $\mathbf L$.

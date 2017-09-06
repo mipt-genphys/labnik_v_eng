@@ -1,0 +1,304 @@
+%translator Svintsov, date 25.04.13
+
+\vspace{-12pt}
+\setcounter{Equation}{0} \setcounter{Figure}{0}
+\Work %11.4
+{Determination of electrical parameters of semiconductors}
+{Determination of electrical parameters of semiconductors}
+{Concentration and mobility of charge carriers as well as electric conductivity of a semiconductor sample are determined by using the Hall effect.}
+
+An external electric field applied to a semiconductor sample results in a directed motion of charge carriers in it. In an intrinsic semiconductor only electrons of partially occupied bands, where there are enough free levels, are involved in electric conductivity. Electrons driven by the electric field can occupy these levels and therefore move (drift) in the crystal. In the conduction band electrons move against the field, while electrons in the valence band with a negative mass due to the dispersion relation move in the opposite direction. For convenience, the latter are called <<holes>>, the particles with a positive charge and a positive mass moving along the field.
+
+The resulting electric conductivity called <<intrinsic conductivity>> is due to the charge carriers present in the conduction and valence bands. The concentrations of electrons and holes can be found from Eq.~(\refEquation{11_43}) for a known temperature $T$ and a semiconductor band gap width $\Delta$:
+\vspace{-6pt}
+$$
+n_{n} =n_{p} \Simeq \const\cdot\exp \left[-({\Delta}/{2{\kb}T})\right]. \eqMark{11_4_1}
+$$
+
+In an extrinsic (doped) semiconductor the concentration of electrons and holes depend significantly on concentration of dopant impurities which form local impurity levels (donors and acceptors) in the energy band gap. The difference between intrinsic and extrinsic semiconductors is determined by  impact of dopants on electric conductivity. If the concentration of donor electrons in a semiconductor exceeds the concentration of intrinsic electrons, the conductivity is mainly due to the electrons (not holes) since their concentration is higher than that of the holes; such semiconductor is called \textit {an electron or n-type semiconductor}. If the concentration of acceptor dopants in a semiconductor is such that acceptor holes in the valence band prevail over intrinsic holes, the hole conductivity emerges and the semiconductor is called \textit{a hole or p-type semiconductor }.
+
+At a temperature $T$ such that ${\kb}T \leqslant E_{\mathrm d} \ll \Delta$, electrons in the conduction band are due to ionization of donors, the electron concentration can be determined from Eq.~(\refEquation{11_43}):
+$$
+n_{n} =N_{\mathrm d}\Simeq \const\cdot \exp [-E_{\mathrm d}/(2{\kb}T)], \eqMark{11_4_2}
+$$
+where $E_{\mathrm d}$~is the energy of the donor level measured from the bottom of the conduction band. A similar equation can be written for a p-type semiconductor as well by substituting the energy of acceptor level $E_{\mathrm a}$ for $E_{\mathrm d}$.
+
+When there are both donors and acceptors in a semiconductor, the donor electrons can be transferred to acceptors, which results in their mutual compensation. If the concentration of donors $N_{\mathrm d}$ exceeds the concentration of acceptors $N_{\mathrm a}$, there are $N_{\mathrm a}$ negatively charged acceptors and the same number of positively charged donors. At the same time $N_{\mathrm d}-N_{\mathrm a}$ donors remain neutral and able to supply their electrons to the conduction band; such semiconductor exhibits electron conductivity ($n$-type semiconductor). If $N_{\mathrm a}> N_{\mathrm d}$, the semiconductor exhibits hole conductivity ($p$-type semiconductor). When $N_{\mathrm a} =N_{\mathrm d}$, the semiconductor is called \textit{a compensated semiconductor}.
+
+Let us consider a sample of an $n$-type semiconductor at some temperature $T$. In thermal equilibrium its electrons are in a state of continuous chaotic motion characterized by the average velocity $v_{0}$ (at room temperature $v_{0}\Simeq 8\cdot 10^{4}\;\m/\s$).
+
+Under the action of applied field $\EDS_{x}$ (along the sample) each free electron is  accelerated and receives an additional velocity of directed motion $\Delta v_{x}$ (without losing the velocity $v_{0}$ of chaotic motion). The velocity of an electron increases until it collides with a defect of crystal lattice and loses the gained momentum; then it is accelerated again and so on \td.
+%collisions with defects are elastic, for this reason electrons lose momentum but not energy.
+
+In a real crystal, in the presence of external field $\EDS_x$ electrons have an average velocity of directed motion $u$~, the so-called drift velocity; it is this velocity which determines the sample current. Because of  collisions electrons acquire a steady average velocity rather than a uniform acceleration due to the constant force $e \EDS_{x}$. Let us denote the electron mean free time between two successive collisions by $\tau$ and assume that an electron completely loses its drift velocity  in a collision. After the collision the electron starts accelerating again:
+$$
+a=-e \EDS_x/m. \eqMark{11_4_3}
+$$
+
+The average velocity between two successive collisions is $u=a\tau/2$. Since the defects are distributed chaotically, the time $\tau$ is not a constant, but changes from collision to collision. The average drift velocity is the average over all possible collisions:
+$$
+u=\frac{\int\limits_{0}^{\tau}\ftau_{i}u_{i}d\ftau}{\int\limits_{0}^{\tau}\ftau_{i}d\ftau}=a\frac{\overline{\ftau^{2}}}{2\overline{\ftau}}. \eqMark{11_4_4}
+$$
+
+Let us show that $\overline{\tau^{2}}=2\overline{\tau}^{2}$. To do this consider a beam consisting of $n_{0}$ electrons which are in the same state at the moment $t_{0}$. When moving through the crystal the electrons leave the beam due to collisions with defects. Let $n(t)$ be the number of  electrons in the beam at $t$. The number of particles $-dn$ leaving the beam within the period $dt$ is proportional to $n$, i.e.
+$$
+-dn= \alpha ndt,~~~\text{hence}~~~n=n_0e^{-\alpha t}, \eqMark{11_4_5}
+$$
+where $\alpha$ is a constant. Each of these $-dn$ particles did not experience collisions for the time $t$. Thus,
+$$
+\overline{\tau}=-\frac{1}{n_{0}}\int\limits_{0}^{\infty}tdn,~~~\overline{\tau^{2}}=-\frac{1}{n_{0}}\int\limits_{0}^{\infty} t^{2}dn. \eqMark{1_4_6}
+$$
+
+Integrating these expressions by parts we obtain
+$$
+\overline{\tau}= \int\limits_{0}^{\infty}t\alpha e^{-\alpha t}dt=-\int\limits_{0}^{\infty}td(e^{-\alpha t})=\frac{1}{\alpha}. \eqMark{11_4_7}
+$$
+
+$$
+\overline{\tau^{2}}=\frac{1}{n_{0}}\int\limits_{0}^{\infty} t^{2}\alpha e^{-\alpha t}dt= \frac{2}{\alpha n_{0}}\int\limits_{0}^{\infty}t \alpha n_{0}e^{-\alpha t}dt=\frac{2\overline{\tau}}{\alpha}. \eqMark{11_4_8}
+$$
+
+Equations~(\refEquation{11_4_7}) and~(\refEquation{11_4_8}) prove the statement made above and yield the number of electrons remained in the beam:
+$$
+n=n_{0} e^{-t/\overline{\tau}}. \eqMark{11_4_9}
+$$
+
+Thus, the drift velocity
+$$
+u=\alpha \overline{\tau} =-\frac{e\EDS\overline{\ftau}}{m}.
+$$
+
+Deceleration of electrons by lattice defects can be modeled by an effective resistance force $F_{\mathrm{r}}$. This force is proportional to the velocity of directed motion $v$ and directed against it 
+$$
+F_{\mathrm{r}}=\frac{d p}{d t} =-\frac{1}{\ftau} mv. \eqMark{11_4_10}
+$$
+
+To evaluate the time $\tau$ we switch off the field $\EDS_{x}$ and examine the electron dynamics. The equation of motion in the absence of external field is
+$$
+{m\dot{v}}=-F_{\mathrm{r}} =-\frac{mv}{\ftau}. \eqMark{11_4_11}
+$$
+
+Integrating it, we obtain
+$$
+v=ue^{-t/ \tau}. \eqMark{11_4_12}
+$$
+
+According to this equation the directed electron velocity is reduced by $e\Simeq 2{.}7$ for the time $t=\tau$. This time is called a \textit{relaxation time} or a \textit{mean free time} (for pure metals $\tau \simeq 10^{-14}\;\s$). During the mean free time an electron travels the distance between two defects; this distance is called \textit{a mean free path} $\lambda$:
+$$
+\lambda =u \tau. \eqMark{11_4_13}
+$$
+
+Actually an electron undergoes several collisions $\nu$ (rather than a single collision) with defects before it completely loses the initial momentum. This is attributed, in particular, to the fact that Coulomb scattering on a charged dopant occurs mostly at low angles. Thus the mean free path equals 
+$$
+L=\lambda \nu = \nu u \tau. \eqMark{11_4_14}
+$$
+
+The quantity $L$ is called \textit{a mean transport free path}, and the relaxation time $\tau$ in this case should be written as  
+$$
+\overline{\tau}=\frac{L}{\nu u}. \eqMark{11_4_15}
+$$
+
+Now we move on to determine the directed electron velocity $u$ and to express it via other quantities. The equation of the directed electron motion in external electric field $\EDS_{x}$ is 
+$$
+m\frac{d v_{x}}{d t} =-e \EDS_{x}-\frac{mv_{x}}{\ftau}. \eqMark{11_4_16}
+$$
+
+It follows from the equation that if the force exerted by the field becomes equal to the resistance force, the acceleration of electron vanishes and it moves at constant \mbox{drift velocity $u$}
+$$
+u=-\frac{e \EDS_{x}}{m}\tau. \eqMark{11_4_17}
+$$
+
+The ratio of the drift velocity $u$ to the applied field $\EDS_{x}$ is called a \textit{free charge carrier mobility}
+$$
+\mu = \frac{u}{\EDS_{x}}=\frac{e\ftau}{m}. \eqMark{11_4_18}
+$$
+
+The mobility expressed in $\cm/\s$ equals the drift velocity in the electric field of $1\;\V/\cm$.
+
+For electrons $\mu <0$ and for holes $\mu >0$. Conductivity can be evaluated if $\mu$ is known. The current density is
+$$
+j=-en_{n} u=en_{n} \mu \EDS_{x}. \eqMark{11_4_19}
+$$
+
+In accordance with Ohm's law,
+$$
+j=\sigma \EDS_{x}. \eqMark{11_4_20}
+$$
+Comparing Eqs.~(\refEquation{11_4_19}) and~(\refEquation{11_4_20}) we obtain
+$$
+\sigma =n_{n} e\mu_{n}=\frac{n_{n}e^{2}}{m}\tau. \eqMark{11_4_21}
+$$
+If the current is carried both by electrons and holes, then
+$$
+\sigma =e(n_{n}\mu_{n}+n_{p}\mu_{p}). \eqMark{11_4_21a}
+$$
+
+Thus, the conductivity of a semiconductor depends on two factors, the concentration of charge carriers and their mobility.
+
+Now let us consider methods of measuring the main characteristics of semiconductors.
+
+The simplest way to determine conductivity $\sigma$ is to measure the resistance of a sample of regular geometric shape with a uniform cross-section. The diagram in~\refFigure{11_4_1} shows a parallelepiped-shaped sample connected to a source of constant voltage. The voltage drop across the sample length is measured with two electrodes.
+
+The current density in the sample is
+$$
+j=\frac{I}{S} = \frac{I}{al}. \eqMark{11_4_22}
+$$
+
+The field strength between points \textit{1} and \textit{2} separated by a distance $b_{1}$ is determined by the voltage drop
+$$
+\EDS=\frac{U}{b_{1}}. \eqMark{11_4_23}
+$$
+
+In this case the conductivity is 
+$$
+\sigma = \frac{j}{\EDS} =\frac{I}{U}\frac{b_{1}}{al}. \eqMark{11_4_24}
+$$
+The value of $\sigma$ obtained is averaged over the sample volume, so the method can be applied only to a uniform sample.
+
+To determine the concentration and mobility of free charge carriers one can use the Hall effect. A simultaneous study of conductivity and the Hall effect makes it possible to find experimentally the main parameters of a semiconductor.
+%
+\begin{cFigures}
+\Figure
+{Measurement of sample resistance}11_4_1
+[t]{4.37cm}{1.9cm}{PIC/L11_4_01.eps}\quad
+\Figure
+{Diagram illustrating the Hall effect}11_4_2
+[t]{6.29cm}{3.0cm}{pic/L11_4_02.eps}
+\end{cFigures}
+The Hall effect allows us to determine the prevailing type of conductivity (either electron or hole). This study is the subject of this experiment.
+
+The Hall effect is a galvanometric effect occurring in a conducting sample placed in electric and magnetic fields. Let us consider an extrinsic (e.g. electron type) semiconductor sample placed in a magnetic field which is perpendicular to the direction of electric current (see~\refFigure{11_4_2}).
+
+Let the current $I$ pass through a uniform plate along $x$-axis. If the plate is placed into the magnetic field $\textbf{B}$ directed along the $y$-axis a potential difference between sides \emph{A} and \emph{B} emerges. This is due to the Lorentz force exerted on electron moving in the field $\EDS$ with drift velocity $\textbf{u}$:
+$$
+\textbf{F}\sub{L}=\frac{e}{c}\textbf{u}\times\textbf{H}. \eqMark{11_4_25}
+$$
+
+In our case the force is along $z$-axis:
+$$
+F_{z} =\frac{e}{c}uB. \eqMark{11_4_26}
+$$
+
+Electrons driven by the Lorentz force shift to the side \textit{À} and charge it negatively. On the side \textit{B} an uncompensated positive charge is accumulated. This creates an electric field $\EDS_{z}$, directed from \textit{B} to \textit{À} and the corresponding potential difference $\Delta V\sub{{ÀB}}$ between \textit{À} and \textit{B}:
+$$	
+\Delta V\sub{{ÀB}} =\EDS_{z}l. \eqMark{11_4_27}
+$$
+
+The field $\EDS_{z}$ exerts the force $F=e \EDS_z$ on electrons, it is opposite to the Lorentz force. In equlibrium the force $F$ balances the Lorentz force, and further accumulation of electric charges on the lateral sides of the plate stops. From the equilibrium condition $euB/c=e\EDS_z$ we find
+$$
+\EDS_{z}=uB/c. \eqMark{11_4_28}
+$$
+
+If the concentration of electrons in the sample is $n$, the current $I$ equals 
+$$
+I=neula. \eqMark{11_4_29}
+$$
+Substituting Eqs.~(\refEquation{11_4_28}) and~(\refEquation{11_4_29}) into Eq. (\refEquation{11_4_27}) we find that
+$$
+\Delta V\sub{{AB}}=\frac{IB}{neac}=R_{x}\frac{IB}{a}. \eqMark{11_4_30}
+$$
+
+The constant $R_{x}$ is called the \textit{Hall coefficient}. According to Eq.~(\refEquation{11_4_30}) it depends only on the concentration of charge carriers (electrons in this case):
+$$
+R_{x}=\frac{1}{nec}. \eqMark{11_4_31}
+$$
+Measuring $R_{x}$ we can determine the concentration of carriers $n$ using Eq.~(\refEquation{11_4_31}); the sign of the potential difference between the sides \textit{À} and \textit{B} determines whether the conductivity is due to electrons or holes. \vspace{1ex}
+
+%\textbf{\textso{Experimental installation}}
+\newpage
+\Experim
+
+The electric circuit diagram of the experimental installation is shown in~\refFigure{11_4_3}.
+
+The magnetic field is created by an electromagnet which is calibrated by means of a magnetic test coil and a milliwebermeter. The product of the number of coil turns and the turn cross-section $NS$ is indicated on the coil.
+%
+\cFigure{Electric circuit diagram of experimental installation}11_4_3 {9.2cm}{5.2cm}{pic/L11_4_03.eps}
+%
+The current passing through the electromagnet is varied by rheostat $R_{1}$ and measured with ammeter \textit{A}. Switch $S_{3}$ is used to change the direction of current in the magnet windings.
+
+The studied sample of doped germanium is mounted on a special holder; the sample dimensions are indicated on it. The current passing through the sample is varied by rheostat $R_{2}$ and measured with a milliammeter. The Hall emf is measured with a multi-purpose digital voltmeter V$7$-$34$À with an input resistance of $\Simeq 10^{9}\;\Om$ (in the measurement range $0{.}1\;\V$). The main measurement error limit is (in percent):
+$$
+\pm [0{.}006+0{.}002(U_{k} /U_{x}-1)].
+$$
+In this equation $U_{k}$~is the maximum value of the chosen measurement range and $U_{x}$~is the measured voltage.
+
+The Hall emf should be measured for two opposite directions of the magnetic field at each value of the sample current. The Hall emf is obtained by averaging the results. This is necessary because  contacts \textit{3} and \textit{4} might be soldered inaccurately, so the measured voltage could be due not only to the Hall effect but also to the ohmic voltage caused by the direct current passing through the sample.
+
+The measured potential difference is equal to the sum of the Hall emf and the ohmic voltage for one field direction and to their difference for the other. 
+$$
+\Delta V\sub{{\emph{ÀB}}}=\frac{| \Delta V\sub{{\emph{ÀB}}}^{+}-\Delta V\sub{{\emph{ÀB}}}^{-}|}{2}.
+$$
+Here the algebraic values of $\Delta V\sub{{\emph{ ÀB }}}^{+}$ and $\Delta V\sub{{\emph{ ÀB }}}^{-}$ must be substituted in the numerator, i.e. the values with their signs shown on the digital display of the voltmeter.
+
+The type of conductivity is determined by the sign of the Hall emf. To figure it out one must  know the direction of the current in the sample and the direction of the magnetic field. The direction of the current is indicated by the symbols ''$+$'' and ''$-$'' on the sample holder and the direction of the current in electromagnet windings, with the switch $S_{3}$ set, is shown by the arrow on the electromagnet.
+%\vspace{1ex}
+
+%\textbf{\textso{Task}} \vspace{1ex}
+\Task
+
+\textbf{\textsc{I. Measurement of sample conductivity}}
+\vspace{2pt}
+
+\begin{Enumerate}{tab} \Item. Connect the digital voltmeter V$7$-$34$À to the mains of $220\;\V$ and let it warm up for at least 10 minutes. Buttons ''AVP'', ''$U_{=}$'', $T_0$, on the front panel of the voltmeter must be pressed, in this case they become lit. Insert the wires of contacts $5$--$6$ (or $3$--$5$) of the sample into sockets $H_{x}$, $L_{x}$ of the voltmeter input.
+
+\Item. Set the sample current at $I\Simeq 1\;\mA$ and measure the voltage drop $U_{56}$ or $U_{35}$ across the contacts $5$--$6$ or $3$--$5$. Calculate the specific conductivity of the sample using the equation
+$$
+\sigma = \frac{i}{U}\frac{b_{1}}{al}.
+$$
+\end{Enumerate} %\vspace{1ex}
+
+\textbf{\textsc{II. Measurement of charge carrier concentration and mobility of the test sample}}
+\vspace{2pt}
+
+\begin{Enumerate}{tab} \Item. Insert the wires of Hall contacts \textit{3} and \textit{4} of the sample into sockets $H_{x}$ and $L_{x}$ of the voltmeter input.
+
+Depending on the voltage sign at the input $H_{x}$ (relative to $L_{x}$) the voltmeter display shows either ''$+$'' \linebreak or ''$-$''.
+
+\Item. Put the holder with the sample into the electromagnet bore. Set the switch of the electromagnet current direction to position \textit{1}.
+
+\Item. Set the current of $0{.}2\;\A$ in the electromagnet circuit using rheostat $R_{1}$ (or the knob of the LAT).
+
+\Item. Obtain the relationship between the Hall emf and the sample current within the range of $0{.}2\div1\;\mA$ at constant magnetic field. To do this close the sample power-supply circuit with switch $S_{2}$. Set the desired sample current using potentiometer $R_{2}$ and a milliammeter.  Change the sample current in steps of $0.3\;\mA$ and for each value measure the Hall emf for two directions of the magnetic field, which gives $\Delta V_{34}^{+}$ and $\Delta V_{34}^{-}$. The Hall emf can be calculated using the following relation
+$$
+\Delta V_{34}(I) = \frac{V_{34}^{+}(I) -V_{34}^{-}(I)}{2}.
+$$
+
+Verify that the Hall emf increases linearly with the sample current.
+
+\Item. Measure the Hall emf versus the sample current for five values of electromagnet current: $0{.}2\;\A$, $0{.}4\;\A$, $0{.}6\;\A$, $0{.}8\;\A$, $1{.}0\;\A$.
+
+At each value of the electromagnet current, measure the magnetic field induction $B$ in the electromagnet gap using the milliwebermeter. For this purpose insert the test coil mounted in a special holder into the electromagnet gap. The product of the number of turns in the coil $N$ and the coil winding cross-section $S$ is indicated on the holder. The magnetic flux $\Phi =BSN$ is measured by pulling the coil out of the gap and recording the deviation of the milliwebermeter pointer.
+
+\Item. Plot the family of characteristics $\Delta V\sub{{AB}}(I)$ at different values of magnetic induction $B$. According to Eq.~(\refEquation{11_4_30}) the characteristics must be straight lines. Find the slopes $k$ of these lines. Plot the slopes as a function of $B$. Determine the Hall constant from the slope of the obtained straight line and estimate its error.
+
+\Item. Calculate concentrations $n$ and mobility $\mu$ of current carriers of the semiconductor sample using Eqs.~(\refEquation{11_4_21}) and~(\refEquation{11_4_31}). The current carrier mobility $\mu$ should be measured in
+$$
+[\mu] =\frac{\cm^2}{\V\cdot\s}.
+$$
+\end{Enumerate} %\vspace{1ex}
+
+\textbf{\textsc{III. Determination of the type of conductivity of the sample}}
+
+\vspace{2pt}
+Determine the sign of the Hall effect and figure out which type of charge carriers contributes moslty to the sample conductivity. The direction of the sample current is indicated by symbols ''$+$'' and ''$-$'' on the sample holder. The direction of current through electromagnet windings (when the switch $S_{3}$ is in the position \textit{1}) is shown by an arrow on the magnet face. \vspace{1ex}
+
+\textbf{\textso{Additional task}}
+\vspace{2pt}
+
+Measure the dependence $\Delta V\sub{{AB}}(C)$ at the same sample current of $I=1\;\mA$ for copper and zinc samples. Calculate the Hall constant $R_{x}$, the concentration of charge carriers $n$, and the sign of current carriers for each sample. Pay special attention to different carrier signs in both samples. Why are the signs different? 
+
+Measure the potential difference across the contacts separated by the distance $b_{1}$ and determine the conductivity of sample material using Eq.~(\refEquation{11_4_17})
+$$
+\sigma = \frac{I}{U}\frac{b_{1}}{al},
+$$
+where $a$ is the sample thickness and $l$ is its width. Use the obtained carrier concentration and the specific conductivity to calculate the carrier mobility of the studied samples.
+
+\Literat
+
+\small
+1.\:\emph{L.L.Goldin, G.N.Novikova} Introduction to Atomic Physics.\,---\,Ì.: Nauka, 1988. Ch.\:XIII, \S\S\:64--67.
+
+2.\:\emph{Ch.Kittel} Introduction to Solid-State Physics.\,---\,Ì.: Nauka, 1973. Ch.\:11, p.\:379--400.
+
+3.\:\emph{R.Smith} Semiconductors.\,---\,Ì.: IL, 1962. Ch.\:1, \S\S\:3--4; Ch.\:4, \S\S\:1--3; Ch.\:5,~\S\:2.
+\normalsize

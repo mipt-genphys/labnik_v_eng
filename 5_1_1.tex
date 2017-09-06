@@ -1,0 +1,211 @@
+%translator Savrov, date 09.11.12
+
+\let\oldTheEquation=\theEquation \def\theEquation{\arabic{Equation}} \let\oldTheFigure=\theFigure \def\theFigure{\arabic{Figure}}
+
+\setcounter{Equation}{0} \setcounter{Figure}{0}
+
+\Work {Experimental verification of Einstein's equations for photoelectric effect and measurement of Planck's constant.} {Experimental verification of Einstein's equations for photoelectric effect and measurement of Planck's constant.} {In the experiment one studies the dependence of photoelectric current on retarding potential and the frequency of incident photons, which allows one to determine Planck's constant.}
+
+\markWork{1_1} Emission of electrons by a cathode illuminated by light is called \textit{photoelectric emission} or \textit{photoelectric effect}. This phenomenon is explained by the photon theory of light. Interaction between monochromatic light and matter can be described as the interaction between matter and a flow of particles with energy $\hbar\omega$ and momentum $\hbar\omega/c$ called photons. A photon striking an electron in the cathode transfers its energy to the electron and vanishes\Footnotemark \Footnotetext{A photon cannot be absorbed by a free electron because this process would violate the law of conservation of energy and momentum. However, an electron in a lattice can absorb a photon since an <<extra>> momentum can be transferred to the lattice.}. The energy of emitted electron (photoelectron) is determined by the equation
+$$
+\hbar\omega=E_{\max}+W,   \eqMark{w1.1_1}
+$$
+where $E_{\max}$~is the maximum kinetic energy of photoelectron and $W$~is the work function of the cathode material. Actually\todo[author=Nozik,fancyline]{figure position is broken}\fFigure {Photocurrent versus anode voltage of photocell}1_1_1 {4.47cm}{3.21cm}{PIC/l01_1_01.eps} the photoelectron energy can be anywhere in the range between zero and $E_{\max}$. Below we consider the factors which determine the energy distribution. 
+
+To measure the energy of photoelectrons one usually places the second electrode (anode) near the cathode with either retarding ($V<0$) or accelerating ($V>0$) potential applied to it. For a sufficiently large accelerating potential a photocurrent reaches the saturation (see \refFigure{1_1_1}): all photoelectrons reach the anode. A retarding potential prevents slow electrons from reaching the anode, they return to the cathode, so only energetic photoelectrons contribute to photocurrent. For a certain value of  $V=-V_0$ (the stopping potential) even the fastest photoelectrons do not reach the anode.
+
+The maximal kinetic energy $E_{\max}$ of photoelectrons is related to the stopping potential $V_0$ as
+$$
+E_{\max}=eV_0.
+$$
+Substituting this equation into Eq.~(\refEquation{w1.1_1}) we obtain Einstein's equation for photoelectric effect:
+$$
+eV_0=\hbar\omega-W.   \eqMark{w1.1_2} $$
+
+Now consider what determines the maximal energy $E_{\max}$ and the energy distribution of photoelectrons. 
+
+To begin with, consider a metal in which electrons can easily move around when an external electric field is applied. It is reasonable to assume that electrons of conduction band are the former valence electrons of the metal atoms because these electrons are loosely bound to the atoms. Their behavior is well described by the model of free electrons which assumes that the electrons of conduction band form the so called electron gas. The sides of a metal sample are considered as the walls confining electron gas in the sample volume, i.e. similar to the walls of a container filled with a real gas.
+
+Quantum mechanics made necessary corrections to the model of free electrons developed at the beginning of the XX-th century, mostly to the electron energy distribution. Photoelectric emission is essentially a quantum phenomenon in which all <<participants>>, both electrons and photons, reveal their quantum nature.
+
+According to quantum mechanics the energy of a particle residing in a potential well can take only a discrete set of values. Of course, this is also true for electrons of metal, although a separation between energy levels is so small while the number of levels is so large, that the energy levels form a band of allowed energies (conduction band\Footnotemark \Footnotetext{The band theory of solids is considered in detail in chapter XI.}. The electron spin (intrinsic angular momentum) equals $1/2$, such a particle called fermion obeys the Pauli exclusion principle. According to this principle only a couple of electrons with opposite directions of spin can occupy a single quantum state. In our case this means that the electrons of conduction band do not reside at the bottom of potential well, instead they occupy all allowed energy levels from $E=0$ (the bottom of conduction band) to some maximal energy $E_{\mathrm F}$ called the Fermi energy. The diagram in \refFigure{1_1_2} illustrates this statement. It should be emphasized that the number of free electrons in metal is very large, it is equal to the number of atoms providing every atom shares one valence electron. The Fermi energy is determined by the electron concentration, usually this energy equals several electron-volts, while thermal energy of electrons is approximately $25\;\meV$. One can see that thermally excited electrons constitute only a minor part of the total amount, so in the first approximation one can assume the metal temperature is equal to zero. 
+
+The Fermi energy level is necessarily lower than electron energy in vacuum since some energy is needed to move an electron from a metal to vacuum. A simple estimate of work function can be done by the method of mirror images. When an electron leaves a metal, the latter becomes positively charged; the force exerted on the electron can be calculated as the attraction force between the electron and its <<mirror image>> inside the metal. In other words, the electron residing at a distance $x$ above the metal surface induces a positive charge $e$ at the distance $x$ below the surface. The <<image>> exerts the attraction force \hFigure {A soild represented as a potential well filled with electron gas. For simplicity only conduction band is shown. The electron energy distribution is shown on the left (the number of electrons at a given energy) at $T=0\;\kelvin$ (the filled states are shaded), $E_{\textrm {vac}}$~is the energy of electron at rest in vacuum, $E_{\rm F}$~is the Fermi energy, and $W$~is the work function}1_1_2 {8.94cm}{4.86cm}{PIC/l01_1_02.eps} on the electron, which is equal to $e^2/(4x^2)$. Thus, the energy needed to move an electron from the metal surface at infinity is $e^2/r_0$, where $r_0$~is a distance of the same order as the distance between atoms. This energy can be taken as the work function $W$.
+
+One can see that removing electron from metal to vacuum requires an energy, i.e. some work has to be done. The diagram in \refFigure{1_1_2} shows that the minimal work is done when an electron is removed from the Fermi level. However, if the photon energy exceeds the work function, a photoelectron can be removed from a lower energy level; this results in energy distribution of  photoelectrons.
+
+Electron energy distribution in a semiconductor differs drastically from the distribution in a metal. At zero temperature valence electrons of a semiconductor completely fill the band of allowed energy levels (that is why it is called the valence band), while there are no electrons in the conduction band separated from the valence band by an energy gap (the forbidden energy values). Therefore a semiconductor is a poor electrical conductor because its conductivity is due to electrons which come into conduction band via thermal fluctuations, excitation by light, or by other means.
+
+The diagram in \refFigure{1_1_3} shows the main energy parameters of a semiconductor-vacuum interface, which specify \fFigure {Energy parameters of semiconductor-vacuum interface: $E_{\rm c}$~is the bottom of conduction band, $E_{\rm v}$~is the top of valence band, $\Delta$~is the energy gap, and $\chi$~-is the electron affinity; occupied electron states are shaded}1_1_3 {4.47cm}{6.65cm}{PIC/l01_1_03.eps} the photoelectric emission (compare to \refFigure{1_1_2}). The energy difference between the top of valence band $E_\mathrm{v}$ and the bottom of conduction band $E_\mathrm{c}$ is called the energy gap $\Delta$, while the difference between the edge of the conduction band $E_\mathrm{c}$ and the energy $E\sub{vac}$ of electron at rest in vacuum is called the electron affinity $\chi$. The minimal energy (the work function) needed to remove electron from a semiconductor must exceed the threshold value $\hbar\omega_{\min}$:
+$$
+W=\hbar\omega_{\min}=\Delta+\chi. 
+$$
+
+The important characteristics of photoelectric effect is the quantum yield defined as the number of electrons emitted by the surface of a substance divided by the number of incident photons. The quantum yield of metal is usually small, simply because incident photons are reflected by its surface. The photoelectric emission in a semiconductor is mostly due to light absorption in the bulk. An excited photoelectron on its way to the surface interacts with other electrons, impurities, etc. and transfers a part of its energy to lattice excitations. On the one hand, this reduces the quantum yield because the energy loss can be so great that a photoelectron will not be able to overcome the surface potential barrier. On the other hand, this results in additional energy dispersion of semiconductor photoelectrons compared to those of a metal.
+
+If the photosensitive layer of a photocell (photocathode) were very thin (about ten angstrom) the dependence of photocurrent on the retarding potential $V$ would have a sharp edge corresponding to the voltage $V_0=mv_0^2/2$, where $v_0$ is the velocity of emitted electrons. However a real dependence of photocurrent $I$ on $V$ looks like that one shown in~\refFigure{1_1_1}, i.e. the photocurrent smoothly decreases as the retarding potential grows.
+
+Such a behavior of photocurrent is due to the fact that the photosensitive layer is usually chosen to be equal to the photon mean free path which contains hundreds or even thousands of atomic layers. This implies that photoelectrons are generated in the layer bulk and therefore experience multiple \fFigure {Retarding potential vs frequency of incident light\vspace{12pt}}1_1_4 {3.39cm}{3.45cm}{PIC/l01_1_04.eps} scattering on atoms of the layer.
+
+To determine the stopping potential one must correctly extrapolate the obtained current dependence to zero, i.e. to determine the function $I(V)$. The calculation based on the simplest geometry, a flat cathode illuminated by light and a parallel anode, results in the following dependence
+$$
+ \sqrt{I}\propto (V_0-V),  \eqMark{w1.1_3}
+$$
+i.e. the square root of the photocurrent linearly depends on the stopping potential (see the Appendix). This dependence is in a good agreement with experimental data.
+
+In the experiment one measures the photocurrent versus the retarding potential $V$ for different  frequencies $\omega$ of visible light. To verify Einstein's equation one determines the stopping potential $V_0$ as a function of frequency and plot the dependence $V_0(\omega)$ which, according to Eq.~(\refEquation{w1.1_2}), must be
+$$
+V_0(\omega)=(\hbar\omega-W)/e.   \eqMark{w1.1_11} 
+$$
+
+For any cathode the stopping potential $V_0$ is a linear function of frequency $\omega$. Using the slope of $V_0(\omega)$ (see~\refFigure{1_1_4}) one can determine the Planck constant:
+$$
+\frac{dV_0}{d\omega}=\frac{\hbar}{e}.   \eqMark{w1.1_12} $$
+
+According to Eq.~(\refEquation{w1.1_12}) the slope of~$V_0(\omega)$ is independent of the photocathode material. However, the latter specifies photocurrent, work function $W$, and the shape of curve $I(V)$ (see~\refFigure{1_1_1}). All this should be taken into account when selecting the photocathode for experiment.
+
+\pagebreak \vspace{10pt} \so{\textbf{Experimental setup}} \vspace{5pt}
+
+The experimental setup is shown in~\refFigure{1_1_5}. A beam of light from a source $S$ (a regular incandescent bulb) is focused on the input slit of prism monochromator УМ-$2$ which separates a narrow spectral band and directs it to the cathode of photocell PC.
+
+\cFigure {Experimental setup}1_1_5 {8.67cm}{6.69cm}{PIC/l01_1_05.eps}
+
+The photocell consists of a photocathode and anode placed inside a high vacuum glass tube of $25\;\mm$ in diameter and $30\;\mm$ in height. The photocathode consists of a massive metal plate covered with a thin metal film doped with Na, K, Sb, and Cs. The anode is a thin round strip deposited on the internal side surface near the bulb top. This arrangement ensures the most efficient collection of the photoelectrons by the anode. Both electrodes have nickel terminals for connecting them to an external circuit. The photocell is sensitive in the spectral range between $300$ and $850$\;\nm. The sensitivity peak of the PC is between $400$ and $500$\;\nm.
+
+The photocurrent through the photocell is small, especially when potential $V$ is close to $V_0$, and cannot be directly measured, so an amplifier is used. The amplifier is placed in the same casing as the PC to reduce the error due to external electromagnetic interference. An absolute value of the photocurrent is not necessary, so it is measured in relative units by an analog voltmeter connected to the amplifier output. Voltmeter readings are proportional to photocurrent. The retarding potential is varied by means of two potentiometers, <<Coarse>> and <<Fine>>, mounted on the power unit. The retarding potential is measured by means of a digital voltmeter. 
+
+The Volta potential between the cathode and anode hampers determination of the value of~$V_0$, but it does not affect determination of the Planck constant which is expressed via derivative $dV_0/d\omega$. 
+
+\vspace{10pt} \so{\textbf{Directions}} \vspace{5pt}
+
+\begin{Enumerate}{dot} 1.\, Make sure that the PC input slit is shut. \textit{The PC input slit must not be exposed to light!}
+
+2.\, Turn the power source on. 
+
+3.\, Calibrate the monochromator drum by the spectrum of neon lamp using the eyepiece. A photo of neon color spectrum used for line identification is located next to the monochromator.
+
+4.\, After the monochromator is calibrated replace the eyepiece with the PC. Close the monochromator input slit (the switch is in the <<Closed>> position) and set the voltmeter arrow pointer to zero using the <<Zero>> knob. If the input slit is closed the voltmeter must point to zero, i.e. the amplifier must not detect a dark current. A significant deflection of the pointer indicates that either an extraneous light reaches the photocathode or the electric circuit is malfunctioning. In this case the installation must be fixed before carrying out the experiment.
+
+5.\, Set the width of the input and output monochromator slits about $0{.}3\;\mm$. Turn the lamp of the light source on. Moving the converging lens and the light source on the optical bench obtain bright and uniform illumination of the input monochromator slit. 
+
+6.\, Open the input slit of monochromator. Turning the drum find the wavelength corresponding to the maximal photocurrent. Adjust the width of the slits so that the voltmeter readings do not exceed $0.6$~V. It is not recommended to vary a slit width during the experiment.
+
+7.\, Using potentiometers <<Coarse>> and <<Fine>> measure the photocurrent versus retarding potential at several wavelengths. One must be especially careful near the stopping potential. To find the value of the stopping potential plot the data in coordinates ($\sqrt{I}$, $V$) according to Eq.~(\refEquation{w1.1_3}) and extrapolate the experimental curve to abscissa. Estimate the error of stopping potential and determine the photocurrent range and the number of measurements required to obtain valid results. 
+
+8.\, Following the described procedure determine the stopping potential for $10$--$12$ wavelengths in the range of $540\div700\;\nm$.
+
+9.\, Plot the dependence $V_0(\omega)$. Using the plot determine the Planck constant and compare the obtained result with the tabulated value.
+\end{Enumerate} 
+
+\begin{center}\so{\textsf{\small ЛИТЕРАТУРА}}\end{center} {\small
+
+1. \textit{Гольдин\;Л.\;Л., Новикова\;Г.\;И.} Введение в атомную физику.\;---\;М.: Наука, $1988$, \textsection\,$1$.
+
+2. \textit{Белонучкин\;В.\;Б., Заикин\;Д.\;А., Ципенюк\;Ю.\;М.} Основы физики. Т.\;II.\;---\;М.: Физматлит, $2007$. Гл.\;$2$, $9$. }
+
+\vspace{10pt} \so{\textbf{Appendix}} \vspace{5pt}
+
+Consider the simplest electrode geometry: a plane cathode illuminated by light and a parallel anode. Let $z$-axis point from the cathode to anode; a polar angle $\vartheta$ is measured from this direction. Let the cathode potential be zero and the anode potential be $\phi=-V<0$. The illuminated cathode emits photoelectrons in different directions and with velocities $v$ ranging from zero to the maximal $v_{\mathrm M}$ which can be found from Einstein's equation $mv^2_{\mathrm M}/2=\hbar\omega - W$.
+
+By applying to the anode the stopping potential $V_0$ determined from the equation $eV_0=mv^2_{\mathrm M}/2$ one forces all photoelectrons emitted by the cathode to turn around in the electric field and come back to the cathode. If the retarding voltage is less than the stopping potential, $V<V_0$, then only a part of the emitted electrons reaches the anode. Even an electron  leaving the cathode at maximal velocity $v_{\mathrm M}$ does not reach the anode if its velocity makes a large angle $\vartheta$ with $z$-axis. The angle must satisfy 
+$$
+\vartheta\leqslant\vartheta_{\mathrm M}, \eqMark{1.1.6}
+$$
+where $\vartheta_{\mathrm M}$ is determined by the obvious condition
+$$
+eV=\frac{mv^2_{\mathrm M}\cos^2\vartheta_{\mathrm M}}{2}. \eqMark{1.1.7} 
+$$
+
+Other electrons with $V<V_0$ reach the anode if their speed is in the interval
+$$
+v_{\mathrm m}<v<v_{\mathrm M}, \eqMark{1.1.8}
+$$
+where
+$$
+v_{\mathrm m}=v_{\mathrm{\min}}, \eqMark{1.1.9}
+$$
+$$ 
+eV=\frac{mv^2_{\mathrm m}}{2}. \eqMark{1.1.10}
+$$
+In so doing an electron which velocity near the cathode is $v=v_{\textrm m}$ can reach the anode if its velocity is perpendicular to the anode, i.e.
+$$
+\vartheta=0. \eqMark{1.1.11}
+$$
+Even in this case the electron velocity is zero when it approaches the anode.
+
+Consider the case when $V<V_0$ and
+$$
+V\simeq V_0, \eqMark{1.1.12}
+$$
+i.e. we look for the dependence of photocurrent on retarding potential when $V$ approaches $V_0$. In this case the velocity satisfies
+$$
+v_{\mathrm m}\simeq v_{\mathrm M}. \eqMark{1.1.13}
+$$
+Of course, always $v_{\mathrm m}<v_{\mathrm M}$, but we are interested in a narrow velocity range $v_{\mathrm m}<v< v_{\mathrm M}$.
+
+Now consider an electron escaping the cathode at some angle $\vartheta$ with a velocity $v$ in this narrow interval. The electron will reach the anode if the angle $\vartheta$ is small enough, i.e.
+$$
+\vartheta\leqslant\vartheta_{\mathrm m}, \eqMark{1.1.14}
+$$
+where
+$$
+eV=\frac{mv^2\cos^2\vartheta_{\mathrm m}}{2}. \eqMark{1.1.15}
+$$
+Besides, since $V$ is close to $V_0$ the following strong inequality is valid: 
+$$
+\vartheta_{\mathrm M}\ll1. \eqMark{1.1.16}
+$$
+It is due to this inequality that makes the angular dispersion of electron velocities at the cathode  unimportant: all angles $\vartheta$ are very small.
+
+Expanding Eq.~(\refEquation{1.1.15}) in Taylor series one obtains:
+$$
+\cos^2\vartheta_{\mathrm m}=\frac{2eV}{mv^2}\rightarrow\left(1-\frac{\vartheta_{\mathrm m}}{2}\right)^2\simeq\frac{2eV}{mv^2}\rightarrow1-\vartheta_{\mathrm m}\simeq\frac{2eV}{mv^2},
+$$
+or
+$$
+\vartheta_{\mathrm m}\simeq 1-\frac{2eV}{mv^2}. \eqMark{1.1.17} $$
+
+For an electron leaving the cathode at maximal velocity $v_{\mathrm M}$ one finds, in the same way, that
+$$
+\vartheta_{\mathrm M}\simeq1-\frac{2eV}{mv^2_{\mathrm M}}\simeq1\simeq\frac{V}{V_0}. \eqMark{1.1.18} $$
+
+The total number $N\sub{c}$ of electrons emitted by the cathode per second can be written as
+$$
+\frac{dN\sub{c}}{dt}=\int_{v_{\mathrm m}}^{v_{\mathrm M}}\frac{dn\sub{c}(v)}{dt}\;dv; \eqMark{1.1.19}
+$$
+The dimensions here are: $[dN\sub{c}/dt]=1/\s,~[dn\sub{c}/dt]={\s}^{-1}{(\cm/\s)}^{-1}$.
+
+Since the velocity range in the integral~(\refEquation{1.1.19}) is narrow, $v_{\mathrm m}<v< v_{\mathrm M}$, one can assume that
+$$
+\frac{dn\sub{c}}{dt}\simeq\const, \eqMark{1.1.20}
+$$
+i.e. a functional dependence of ${dn\sub{c}}/{dt}$ does not matter.
+
+Now, taking into account that the density of the current flowing to the anode is proportional to $z$-component of electron velocity, 
+$$
+v_z\propto\cos\vartheta, \eqMark{1.1.21}
+$$
+we write the expression for the current as
+\begin{Multline} I\propto\int_{v_{\mathrm m}}^{v_{\mathrm M}}\frac{dn\sub{c}(v)}{dt}\;dv\int_0^{2\pi}\;d\phi\int_0^{\vartheta_{\mathrm m}}\cos\vartheta\sin\vartheta d\vartheta=\\=2\pi\int_{v_{\mathrm m}}^{v_{\mathrm M}}\frac{dn\sub{c}(v)}{dt}\;dv\int_0^{\vartheta_{\mathrm m}}\cos\vartheta\sin\vartheta \;d\vartheta. \eqMark{1.1.22} \end{Multline}
+
+The current~(\refEquation{1.1.22}) is approximately proportional to the net amount of  photoelectrons emitted per second, to $\int_{v_{\mathrm m}}^{v_{\mathrm M}}{dn\sub{c}(v)}/{dt}\;dv$, and to the solid angle $\Delta\Omega_{\mathrm M}$ for electrons with maximal velocity $v_{\mathrm M}$. For small angles $\vartheta~(\cos\vartheta\simeq1,~\sin\vartheta\simeq\vartheta)$ and using the approximate equation~(\refEquation{1.1.20}) one obtains
+$$
+\Delta\Omega_{\mathrm M}=2\pi\int_0^{\vartheta_{\mathrm M}}\sin\vartheta\;d\vartheta\simeq2\pi\int_0^{\vartheta_{\mathrm M}}\vartheta\;d\vartheta\propto\theta^2_{\mathrm M}. \eqMark{1.1.23} $$
+
+Thus we obtain that 
+$$
+I\propto\int_{v_{\mathrm m}}^{v_{\mathrm M}}\frac{dn\sub{c}(v)}{dt}\;dv\cdot\Delta\Omega_{\mathrm M}\propto e\int_{v_{\mathrm m}}^{v_{\mathrm M}}\frac{dn\sub{c}}{dt}dv\cdot\vartheta^2_{\mathrm M} \simeq\\ \simeq e\left(\frac{dn\sub{c}}{dt}\right)(v_{\mathrm M}-v_{\mathrm m})\cdot\vartheta^2_{\mathrm M}, \eqMark{1.1.24}
+$$
+and $v_{\mathrm M}=\sqrt{2eV_0/m},~v_{\mathrm m}=\sqrt{2eV/m},~\vartheta^2_{\mathrm M}\simeq1-\frac{2eV}{mv^2_{\mathrm M}}=1-\frac{V}{V_0}$. Hence
+$$
+I\propto e\frac{dn\sub{c}}{dt}\sqrt{\frac{2e}{mV_0}}\left(\sqrt{V_0}-\sqrt V\right)^2. \eqMark{1.1.25}
+$$
+Let $V=V_0-\Delta V$ ($0<\Delta V\ll V_0$). Then according to Eq.~(\refEquation{1.1.25}) we obtain
+$$
+I\propto e\frac{dn\sub{c}}{dt}\sqrt{\frac{2e}{mV_0}}\left(\sqrt{V_0}-\sqrt{ V_0-\Delta V}\right)^2\simeq e\frac{dn\sub{c}}{dt}\sqrt{\frac{2e}{mV_0}}\frac{(\Delta V)^2}{V_0}, \eqMark{1.1.26}
+$$
+or, finally, $$I\propto(\Delta V)^2=(V_0-V)^2, \eqMark{1.1.27}$$ and
+$$
+\sqrt{I}\propto (V_0-V). \eqMark{1.1.28} $$
+
+Thus the square root of the photocurrent depends linearly on the stopping potential.

@@ -1,0 +1,58 @@
+%translator Savrov, date 11.04.13
+
+\setcounter{Chapter}{3}
+
+\Addition
+{Photomultiplier}
+{Photomultiplier}
+{Photomultiplier}
+
+A photocell, which operation is based on the photoelectric effect, is not able to detect a small luminous flux since the resulting photocurrent is very small. For this reason a photomultiplier tube (PMT), which amplifies a weak photocurrent by a factor of tens of millions without any additional equipment, is widely used. The internal photocurrent amplification of a PMT is based on emission of secondary electrons. Bombardment of the surface of a metal, a semiconductor, or a dielectric by accelerated electrons induces emission of secondary electrons from the material. The number of secondary electrons depends on the emitter material, its shape, a collector potential, and the velocity and the angle of incidence of primary electrons. For some surfaces the number of emitted photoelectrons exceeds the number of the incident ones.
+
+The emissivity of a surface depends on the secondary emission yield $\sigma=n_2/n_1$, where $n_2$ is the number of emitted electrons and $n_1$ is the number of incident electrons. The yield depends on the energy of incident electrons. A typical dependence is shown in~Fig.\,III.1. Usually $\sigma$ of a composite surface of an alloy is greater than the yield of a pure metal. Numerically $\sigma$ can be as high as 10 and depends on the incidence angle, the temperature and the thickness of emission layer, and other factors. Often $\sigma$ changes with the layer aging. A current density as low as 1\,mA/cm$^2$ can destroy some emission layers. 
+
+%
+\hFigure{Secondary emission yield of various materials versus energy of incident electrons}PR_3_1
+{5.5cm}{3.7cm}{pic/PR3_01.eps}
+%
+
+The block diagram of a PMT and its operation principle are illustrated in~Fig\,III.2. A PMT consists of a photosensitive cathode and a series of secondary emitters called dynodes. A dynode  configuration is designed to maximize the number of photoelectrons reaching a next dynode. The dynodes are made of a material with a large $\sigma$ and their geometry is determined by the specific method of electron focusing and acceleration. Usually both tasks are done by means of  electrostatic field. The field is due to the potential applied to the dynodes, so that each dynode is held at a more positive voltage than the previous one. Electrons emitted by the photocathode are accelerated by the field, so they strike the dynodes and proliferate until they reach the anode (a collector). Usually the several final PMT cascades are shunted by capacitors to prevent the dynode potentials from changing by the electron current. 
+
+%
+\hFigure{PMT design: 1~is input window; 2~is photocathode; 3~is focusing electrod; 4~are dynodes; 5~is PMT bulb; 6~is anode (collector); 7~is voltage divider; and 8~are shunting capacitors}PR_3_2
+{5.6cm}{2.8cm}{pic/PR3_02.eps}
+%
+
+\textbf{Basic specifications of photocathodes and PMTs.}
+The emission multiplication of a photoelectric device is specified by a gain $k$. This is the main specification of a PMT, it is defined as $k=i/i_0$, where $i$ is the output current and $i_0$ is the input current. The gain per one PMT cascade is determined by yield $\sigma$ and by the fraction $\alpha$ of emitted electrons which reach the next dynode. For a modern PMT $\alpha=0{.}7\div 0{.}9$. Assuming the same gain per each dynode, 
+$$
+k=(\alpha\sigma)^n\,.\eqMark{p3_1}
+$$
+where $n$ is the number of dynodes. The most common photocathodes are: caesium oxide, caesium-activated antimony, caesium-activated copper-sulfur, and others with $\sigma\simeq2\div 10$. The gain $k$ depends on the applied voltage and can be varied in a wide range. The optimal gain does not exceed $10^7\div 10^8$.
+
+The photocurrent depends both on the luminous flux and the wavelength of light incident on a photocathode. Therefore a photocathode is specified by a spectral sensitivity $S_{\lambda k}$. It is defined as the photocurrent induced in the photocathode circuit by a monochromatic light with a wavelength $\lambda$. If the PMT gain is $k$, its spectral sensitivity equals 
+$$
+S_\lambda=kS_{\lambda k}\,.\eqMark{p3_2}
+$$
+In practice the spectral sensitivity of a photocathode is usually specified by a dimensionless quantity 
+$$
+S_{0\lambda}={S_\lambda\over S_{\lambda_\textrm{max }}}\,,\eqMark{p3_3}
+$$
+called the relative spectral sensitivity. Here $S_{\lambda\textrm{max}}$ is the maximal spectral sensitivity of a photocathode at $\lambda=\lambda_\textrm{max}$ in a relevant spectral range.
+
+Figure\,III.3 shows the spectral sensitivities of some photocathodes used in PMTs, image intensifier tubes, and other photoelectric devices.
+%
+\hFigure{Spectral sensitivity of a photocathode: \emph{1}~multialkali; \emph{2}~antimony-caesium; \emph{3}~bismuth-caesium; and \emph{4}~silver-oxygen-caesium}PR_3_3
+{6.77cm}{2.58cm}{pic/PR3_03.eps}
+%
+A multialkali photocathode has the maximal sensitivity in the visible range \linebreak (${\lambda<7500}\,$\AA). Its quantum yield in the range of maximal sensitivity ($\simeq5300\,$\AA)  reaches $30\div 40$\%. The only photocathode in the longwave spectrum ($\lambda>8000\,$\AA)  is oxygen-caesium which red threshold is around 12000\,\AA.
+
+One of the most important parameters of a photoelectric device is a dark current, the output current of the operating device shut off light. The dark current can be due to thermal emission of electrons from a photocathode and possible leaks between its electrodes. Notice, that the dark current depends on the anode voltage. The signal-to-noise ratio is one of the main parameters of any electronic device.
+
+The least luminous flux which can be detected by a PMT is called the \emph{threshold sensitivity}. It is determined mostly by the quantum yield and the dark current.
+
+The spectral responsivity or a temporal resolution specifies the amplitude of an alternating photocurrent as a function of the modulation frequency of luminous flux; it is an important parameter of a PMT. The onset of the current in the collector circuit of PMT is delayed with respect to the incident light. The delay is due to inertia of electrons which velocities inside a PMT do not exceed $\simeq5\cdot10^8\,$cm/sec, so an electron covers the distance between the photocathode and the collector in several nanoseconds. It is also important that the electrons are not simultaneously knocked out from the last dynode. The time of flight significantly varies because of a large dispersion of the initial velocities and the paths of the secondary electrons. Because of these factors an instantaneous light pulse produces the pulse of current extending over an interval of $10^{-8}\div 10^{-9}\,$sec. The pulse shape is determined by the factors above.
+
+When a PMT is coupled to an inorganic scintillator crystal, its temporal resolution does not matter because the decay constant of the crystal is usually tenth of a microsecond or more, so the scintillator decay constant is determined by that of the crystal. However an organic scintillator decay constant can be comparable to the PMT response time, so the latter should be taken into account when estimating the decay constant of scintillator. 
+
+There are PMTs of special design which response time is $(1\div 2)\cdot10^{-10}\,$sec, they are used in experiments where high temporal resolution is necessary. The temporal resolution can be improved by reducing the distance between dynodes, by using dynodes of special shape to ensure isochronous electron paths, and by reducing the number of dynodes (and increasing the voltage between them).
